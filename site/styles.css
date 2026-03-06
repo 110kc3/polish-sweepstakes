@@ -1,0 +1,85 @@
+:root{
+  --bg:#0b1020;
+  --card:#121a33;
+  --text:#e9ecf1;
+  --muted:#a9b1c6;
+  --accent:#7dd3fc;
+  --danger:#fb7185;
+  --ok:#86efac;
+  --border:rgba(255,255,255,.08);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  background:linear-gradient(180deg,var(--bg),#070a14);
+  color:var(--text);
+}
+a{color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+h1{margin:18px 0 6px;font-size:28px}
+.muted{color:var(--muted)}
+.controls{
+  display:grid;
+  grid-template-columns: 180px 160px 1fr;
+  gap:12px;
+  align-items:end;
+  margin:16px 0 10px;
+}
+.controls label{display:grid;gap:6px;font-size:14px;color:var(--muted)}
+.controls input,.controls select{
+  width:100%;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.03);
+  color:var(--text);
+}
+.controls .checkbox{display:flex;gap:10px;align-items:center;padding-bottom:6px}
+.controls .checkbox input{width:auto}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:14px;
+  margin-top:14px;
+}
+.card{
+  border:1px solid var(--border);
+  background:linear-gradient(180deg,var(--card),rgba(18,26,51,.7));
+  border-radius:14px;
+  padding:14px;
+  display:grid;
+  gap:10px;
+}
+.card h2{font-size:16px;margin:0;line-height:1.25}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  color:var(--muted);
+}
+.badge.deadline{color:var(--text)}
+.badge.deadline.soon{border-color:rgba(251,113,133,.4);color:var(--danger)}
+.badge.deadline.ok{border-color:rgba(134,239,172,.35);color:var(--ok)}
+.row{display:grid;gap:6px}
+.k{font-size:12px;color:var(--muted)}
+.v{font-size:14px;color:var(--text)}
+.actions{display:flex;gap:10px;align-items:center;margin-top:4px}
+.btn{
+  display:inline-block;
+  padding:9px 12px;
+  border-radius:10px;
+  background:rgba(125,211,252,.12);
+  border:1px solid rgba(125,211,252,.25);
+  color:var(--text);
+  text-decoration:none;
+  font-size:14px;
+}
+.btn:hover{background:rgba(125,211,252,.18)}
+.footer{margin:22px 0 40px}
+@media (max-width:820px){
+  .controls{grid-template-columns:1fr;align-items:stretch}
+  h1{font-size:24px}
+}
