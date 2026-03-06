@@ -1,4 +1,4 @@
-"name: Scrape and Deploy
+name: Scrape and Deploy
 
 on:
   push:
@@ -47,4 +47,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./dist"
+          publish_dir: ./dist
