@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Konkursy i loterie bez zakupu (PL)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <h1>Konkursy i loterie w Polsce bez zakupu</h1>
+    <p class="muted">
+      Strona informacyjna. Nie jesteśmy organizatorem. Zawsze sprawdź regulamin w źródle.
+    </p>
+  </header>
+
+  <main class="wrap">
+    <section class="controls">
+      <label>
+        Źródło:
+        <select id="source">
+          <option value="all">Wszystkie</option>
+          <option value="fajnekonkursy">Fajnekonkursy.pl</option>
+          <option value="ofree">Ofree.pl</option>
+        </select>
+      </label>
+
+      <label class="checkbox">
+        <input id="activeOnly" type="checkbox" checked />
+        Tylko aktywne
+      </label>
+
+      <label>
+        Szukaj:
+        <input id="q" type="search" placeholder="np. aparat, voucher, gotówka" />
+      </label>
+    </section>
+
+    <p class="muted">Aktualizacja: <span id="updatedAt">-</span></p>
+
+    <section id="list" class="grid" aria-live="polite"></section>
+
+    <footer class="footer">
+      <p class="muted">
+        Źródła: <a href="https://fajnekonkursy.pl" target="_blank" rel="noopener">fajnekonkursy.pl</a>,
+        <a href="https://ofree.pl" target="_blank" rel="noopener">ofree.pl</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
