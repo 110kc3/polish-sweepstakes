@@ -1,10 +1,9 @@
-name: Scrape and Deploy
+"name: Scrape and Deploy
 
 on:
   workflow_dispatch:
   schedule:
-    # 06:00 Europe/Warsaw is typically 05:00 UTC (note: DST can shift; this is acceptable for MVP)
-    - cron: '0 5 * * *'
+    - cron: '0 5 * * *'  # 06:00 Europe/Warsaw ~ 05:00 UTC
 
 permissions:
   contents: write
@@ -26,8 +25,8 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install
-        run: npm ci
+      - name: Install dependencies
+        run: npm install
 
       - name: Scrape
         run: npm run scrape
@@ -35,14 +34,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy data into dist/
+      - name: Copy data into dist
         run: |
           mkdir -p dist/data
           cp data/lotteries.json dist/data/lotteries.json
 
-      - name: Deploy to GitHub Pages (gh-pages)
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./dist
+          publish_dir: ./dist"
