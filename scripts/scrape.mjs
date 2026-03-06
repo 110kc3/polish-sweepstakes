@@ -31,7 +31,6 @@ function firstSentence(text) {
 }
 
 function parsePolishDateToISO(dmy) {
-  // accepts DD.MM.YYYY or DD-MM-YYYY
   const m = dmy.match(/^(\d{1,2})[.\-](\d{1,2})[.\-](\d{4})$/);
   if (!m) return null;
   const dd = String(m[1]).padStart(2, '0');
@@ -59,29 +58,22 @@ function extractDeadline(text) {
 function extractPrizeSummary(text) {
   const t = (text || '').replace(/\s+/g, ' ').trim();
   if (!t) return 'Sprawdź nagrody w źródle.';
-
   const prizeLine = t.match(/(Wygraj[^.!?]{0,140}[.!?])/i)?.[1];
   if (prizeLine) return prizeLine.trim();
-
   const money = t.match(/(nagrod[^.!?]{0,160}\b\d+[\s\u00A0]*zł[^.!?]{0,40}[.!?])/i)?.[1];
   if (money) return money.trim();
-
   const generic = t.match(/(nagrod[^.!?]{0,160}[.!?])/i)?.[1];
   if (generic) return generic.trim();
-
   return 'Sprawdź nagrody w źródle.';
 }
 
 function extractEntrySummary(text) {
   const t = (text || '').replace(/\s+/g, ' ').trim();
   if (!t) return 'Sprawdź zasady udziału w źródle.';
-
   const m = t.match(/(Jak\s+wziąć\s+udział[^.!?]{0,200}[.!?])/i)?.[1];
   if (m) return m.trim();
-
   const generic = t.match(/(Aby\s+wziąć\s+udział[^.!?]{0,200}[.!?])/i)?.[1];
   if (generic) return generic.trim();
-
   return 'Sprawdź zasady udziału w źródle.';
 }
 
@@ -92,7 +84,6 @@ async function fetchJson(url) {
       'Accept': 'application/json',
     },
   });
-
   if (!res.ok) {
     const body = await res.text().catch(() => '');
     throw new Error(`HTTP ${res.status} for ${url}: ${body.slice(0, 200)}`);
@@ -101,7 +92,6 @@ async function fetchJson(url) {
 }
 
 async function fetchAllPostsForCategory(sourceCfg, categoryId, maxPages = 5) {
-  // Keep MVP bounded to avoid heavy scraping. Increase later if needed.
   const items = [];
   for (let page = 1; page <= maxPages; page++) {
     const url = new URL(sourceCfg.baseUrl + sourceCfg.wpPostsEndpoint);
@@ -109,18 +99,17 @@ async function fetchAllPostsForCategory(sourceCfg, categoryId, maxPages = 5) {
     url.searchParams.set('per_page', '50');
     url.searchParams.set('page', String(page));
     url.searchParams.set('_fields', 'id,date,modified,link,title,excerpt,content');
-
     let batch = [];
     try {
+      console.log(`Fetching: ${url.toString()}`);
       batch = await fetchJson(url.toString());
+      console.log(`Fetched ${batch.length} posts from page ${page} for category ${categoryId}`);
     } catch (e) {
-      // Stop on page-out-of-range or transient errors to be gentle.
+      console.error(`Error fetching page ${page} for category ${categoryId}:`, e);
       break;
     }
-
     if (!Array.isArray(batch) || batch.length === 0) break;
     items.push(...batch);
-
     await new Promise(r => setTimeout(r, 500));
   }
   return items;
@@ -129,13 +118,10 @@ async function fetchAllPostsForCategory(sourceCfg, categoryId, maxPages = 5) {
 function normalizePost(source, post) {
   const excerptText = stripText(post?.excerpt?.rendered || '');
   const contentText = stripText(post?.content?.rendered || '');
-
   const combined = `${excerptText} ${contentText}`.trim();
-
   const deadline = extractDeadline(combined);
   const prizeSummary = extractPrizeSummary(combined);
   const entrySummary = extractEntrySummary(combined);
-
   return {
     id: `${source.source}:${post.id}`,
     source: source.source,
@@ -166,15 +152,12 @@ function normalizePost(source, post) {
 async function main() {
   const now = new Date().toISOString();
   const all = [];
-
   for (const source of SOURCES) {
     for (const cat of source.categories) {
       const posts = await fetchAllPostsForCategory(source, cat);
       for (const p of posts) all.push(normalizePost(source, p));
     }
   }
-
-  // Deduplicate by id
   const byId = new Map(all.map(i => [i.id, i]));
   const items = Array.from(byId.values())
     .sort((a, b) => {
@@ -182,20 +165,17 @@ async function main() {
       const db = b.deadline || '9999-12-31';
       return da.localeCompare(db);
     });
-
   const out = {
     version: 1,
     generatedAt: now,
     items,
   };
-
   await fs.mkdir('data', { recursive: true });
   await fs.writeFile('data/lotteries.json', JSON.stringify(out, null, 2) + '\n', 'utf8');
-
   console.log(`Wrote data/lotteries.json with ${items.length} items`);
 }
 
 main().catch((e) => {
-  console.error(e);
+  console.error('Fatal error in scrape:', e);
   process.exit(1);
 });
