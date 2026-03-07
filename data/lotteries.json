@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-06T15:30:55.964Z",
+  "generatedAt": "2026-03-07T05:36:41.259Z",
   "items": [
     {
       "id": "ofree:7540",
@@ -25,7 +25,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:03.206Z"
+      "lastSeenAt": "2026-03-07T05:36:48.792Z"
     },
     {
       "id": "ofree:9236",
@@ -50,7 +50,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:03.205Z"
+      "lastSeenAt": "2026-03-07T05:36:48.791Z"
     },
     {
       "id": "fajnekonkursy:57898",
@@ -75,7 +75,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.874Z"
+      "lastSeenAt": "2026-03-07T05:36:47.010Z"
     },
     {
       "id": "ofree:10054",
@@ -100,7 +100,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:03.203Z"
+      "lastSeenAt": "2026-03-07T05:36:48.789Z"
     },
     {
       "id": "fajnekonkursy:55573",
@@ -125,7 +125,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.897Z"
+      "lastSeenAt": "2026-03-07T05:36:47.034Z"
     },
     {
       "id": "fajnekonkursy:54828",
@@ -150,7 +150,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.901Z"
+      "lastSeenAt": "2026-03-07T05:36:47.038Z"
     },
     {
       "id": "fajnekonkursy:56840",
@@ -175,7 +175,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.895Z"
+      "lastSeenAt": "2026-03-07T05:36:47.032Z"
     },
     {
       "id": "fajnekonkursy:57956",
@@ -186,7 +186,7 @@
       "publishedAt": "2026-02-27T16:43:52",
       "modifiedAt": "2026-02-27T16:43:52",
       "deadline": "2026-03-06",
-      "status": "active",
+      "status": "ended",
       "entry": {
         "summary": "Sprawdź zasady udziału w źródle.",
         "noPurchase": "altFreeEntry",
@@ -200,7 +200,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.867Z"
+      "lastSeenAt": "2026-03-07T05:36:47.002Z"
     },
     {
       "id": "fajnekonkursy:57953",
@@ -211,7 +211,7 @@
       "publishedAt": "2026-02-27T16:28:29",
       "modifiedAt": "2026-02-27T16:28:29",
       "deadline": "2026-03-06",
-      "status": "active",
+      "status": "ended",
       "entry": {
         "summary": "Sprawdź zasady udziału w źródle.",
         "noPurchase": "altFreeEntry",
@@ -225,7 +225,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.868Z"
+      "lastSeenAt": "2026-03-07T05:36:47.003Z"
     },
     {
       "id": "fajnekonkursy:57947",
@@ -236,7 +236,7 @@
       "publishedAt": "2026-02-27T16:09:55",
       "modifiedAt": "2026-02-27T16:09:55",
       "deadline": "2026-03-06",
-      "status": "active",
+      "status": "ended",
       "entry": {
         "summary": "Sprawdź zasady udziału w źródle.",
         "noPurchase": "altFreeEntry",
@@ -250,7 +250,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.869Z"
+      "lastSeenAt": "2026-03-07T05:36:47.004Z"
     },
     {
       "id": "fajnekonkursy:57888",
@@ -261,7 +261,7 @@
       "publishedAt": "2026-02-25T13:59:21",
       "modifiedAt": "2026-02-25T13:59:21",
       "deadline": "2026-03-06",
-      "status": "active",
+      "status": "ended",
       "entry": {
         "summary": "Sprawdź zasady udziału w źródle.",
         "noPurchase": "altFreeEntry",
@@ -275,7 +275,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.876Z"
+      "lastSeenAt": "2026-03-07T05:36:47.012Z"
     },
     {
       "id": "fajnekonkursy:57804",
@@ -286,7 +286,7 @@
       "publishedAt": "2026-02-21T13:41:38",
       "modifiedAt": "2026-02-21T13:41:38",
       "deadline": "2026-03-06",
-      "status": "active",
+      "status": "ended",
       "entry": {
         "summary": "Sprawdź zasady udziału w źródle.",
         "noPurchase": "altFreeEntry",
@@ -300,7 +300,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.881Z"
+      "lastSeenAt": "2026-03-07T05:36:47.015Z"
     },
     {
       "id": "fajnekonkursy:55658",
@@ -311,7 +311,7 @@
       "publishedAt": "2026-01-09T12:19:55",
       "modifiedAt": "2026-01-09T12:19:55",
       "deadline": "2026-03-06",
-      "status": "active",
+      "status": "ended",
       "entry": {
         "summary": "Sprawdź zasady udziału w źródle.",
         "noPurchase": "altFreeEntry",
@@ -325,7 +325,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.896Z"
+      "lastSeenAt": "2026-03-07T05:36:47.033Z"
     },
     {
       "id": "fajnekonkursy:57974",
@@ -350,7 +350,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.863Z"
+      "lastSeenAt": "2026-03-07T05:36:46.999Z"
     },
     {
       "id": "fajnekonkursy:58006",
@@ -375,7 +375,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.862Z"
+      "lastSeenAt": "2026-03-07T05:36:46.998Z"
     },
     {
       "id": "fajnekonkursy:57971",
@@ -400,7 +400,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.864Z"
+      "lastSeenAt": "2026-03-07T05:36:47.000Z"
     },
     {
       "id": "fajnekonkursy:57967",
@@ -425,7 +425,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.866Z"
+      "lastSeenAt": "2026-03-07T05:36:47.001Z"
     },
     {
       "id": "fajnekonkursy:57950",
@@ -450,7 +450,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.869Z"
+      "lastSeenAt": "2026-03-07T05:36:47.004Z"
     },
     {
       "id": "fajnekonkursy:57944",
@@ -475,7 +475,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.870Z"
+      "lastSeenAt": "2026-03-07T05:36:47.005Z"
     },
     {
       "id": "fajnekonkursy:57941",
@@ -500,7 +500,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.871Z"
+      "lastSeenAt": "2026-03-07T05:36:47.006Z"
     },
     {
       "id": "fajnekonkursy:57931",
@@ -525,7 +525,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.872Z"
+      "lastSeenAt": "2026-03-07T05:36:47.007Z"
     },
     {
       "id": "fajnekonkursy:57419",
@@ -550,7 +550,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.886Z"
+      "lastSeenAt": "2026-03-07T05:36:47.021Z"
     },
     {
       "id": "fajnekonkursy:58086",
@@ -575,7 +575,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.859Z"
+      "lastSeenAt": "2026-03-07T05:36:46.994Z"
     },
     {
       "id": "fajnekonkursy:57512",
@@ -600,7 +600,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.886Z"
+      "lastSeenAt": "2026-03-07T05:36:47.021Z"
     },
     {
       "id": "fajnekonkursy:58092",
@@ -625,7 +625,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.858Z"
+      "lastSeenAt": "2026-03-07T05:36:46.993Z"
     },
     {
       "id": "fajnekonkursy:57883",
@@ -650,7 +650,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.877Z"
+      "lastSeenAt": "2026-03-07T05:36:47.012Z"
     },
     {
       "id": "fajnekonkursy:57796",
@@ -675,7 +675,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.882Z"
+      "lastSeenAt": "2026-03-07T05:36:47.016Z"
     },
     {
       "id": "fajnekonkursy:57674",
@@ -700,7 +700,82 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.884Z"
+      "lastSeenAt": "2026-03-07T05:36:47.018Z"
+    },
+    {
+      "id": "fajnekonkursy:58172",
+      "source": "fajnekonkursy",
+      "sourceId": 58172,
+      "title": "Konkurs Adalbert’s Tea na Facebooku „Dzień Kobiet 2026”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/adalberts-tea-dzien-kobiet-2026/",
+      "publishedAt": "2026-03-06T20:43:50",
+      "modifiedAt": "2026-03-06T20:43:50",
+      "deadline": "2026-03-13",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw nagród Adalbert’s Tea (herbata i świeca) o wartości 98,99 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-03-07T05:36:46.986Z"
+    },
+    {
+      "id": "fajnekonkursy:58169",
+      "source": "fajnekonkursy",
+      "sourceId": 58169,
+      "title": "Konkurs x-kom na Instagramie „Słuchawki SteelSeries”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/x-kom-sluchawki-steelseries/",
+      "publishedAt": "2026-03-06T20:33:42",
+      "modifiedAt": "2026-03-06T20:33:42",
+      "deadline": "2026-03-13",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "wygrają słuchawki SteelSeries.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-03-07T05:36:46.986Z"
+    },
+    {
+      "id": "fajnekonkursy:58160",
+      "source": "fajnekonkursy",
+      "sourceId": 58160,
+      "title": "Konkurs Radia Złote Przeboje „Supermoce”",
+      "url": "https://fajnekonkursy.pl/latwe/radia-zlote-przeboje-supermoce/",
+      "publishedAt": "2026-03-06T17:51:13",
+      "modifiedAt": "2026-03-06T17:51:13",
+      "deadline": "2026-03-13",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 5 x nagroda pieniężna 300 zł oraz zestaw kosmetyków Ziaja (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-03-07T05:36:46.988Z"
     },
     {
       "id": "fajnekonkursy:55463",
@@ -725,7 +800,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.898Z"
+      "lastSeenAt": "2026-03-07T05:36:47.035Z"
     },
     {
       "id": "fajnekonkursy:53189",
@@ -750,7 +825,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.902Z"
+      "lastSeenAt": "2026-03-07T05:36:47.039Z"
     },
     {
       "id": "fajnekonkursy:57982",
@@ -775,7 +850,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.863Z"
+      "lastSeenAt": "2026-03-07T05:36:46.999Z"
     },
     {
       "id": "fajnekonkursy:57844",
@@ -800,7 +875,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.879Z"
+      "lastSeenAt": "2026-03-07T05:36:47.014Z"
     },
     {
       "id": "fajnekonkursy:58101",
@@ -825,7 +900,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.856Z"
+      "lastSeenAt": "2026-03-07T05:36:46.992Z"
     },
     {
       "id": "fajnekonkursy:58080",
@@ -850,7 +925,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.859Z"
+      "lastSeenAt": "2026-03-07T05:36:46.994Z"
     },
     {
       "id": "fajnekonkursy:58040",
@@ -875,7 +950,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.860Z"
+      "lastSeenAt": "2026-03-07T05:36:46.995Z"
     },
     {
       "id": "fajnekonkursy:57987",
@@ -900,7 +975,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.862Z"
+      "lastSeenAt": "2026-03-07T05:36:46.999Z"
     },
     {
       "id": "fajnekonkursy:57959",
@@ -925,7 +1000,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.867Z"
+      "lastSeenAt": "2026-03-07T05:36:47.002Z"
     },
     {
       "id": "fajnekonkursy:57913",
@@ -950,7 +1025,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.873Z"
+      "lastSeenAt": "2026-03-07T05:36:47.009Z"
     },
     {
       "id": "fajnekonkursy:55189",
@@ -975,7 +1050,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.899Z"
+      "lastSeenAt": "2026-03-07T05:36:47.036Z"
     },
     {
       "id": "fajnekonkursy:57841",
@@ -1000,7 +1075,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.880Z"
+      "lastSeenAt": "2026-03-07T05:36:47.014Z"
     },
     {
       "id": "fajnekonkursy:58136",
@@ -1025,7 +1100,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.854Z"
+      "lastSeenAt": "2026-03-07T05:36:46.990Z"
     },
     {
       "id": "fajnekonkursy:55637",
@@ -1050,7 +1125,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.896Z"
+      "lastSeenAt": "2026-03-07T05:36:47.034Z"
     },
     {
       "id": "fajnekonkursy:57828",
@@ -1075,7 +1150,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.880Z"
+      "lastSeenAt": "2026-03-07T05:36:47.015Z"
     },
     {
       "id": "fajnekonkursy:56857",
@@ -1100,7 +1175,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.894Z"
+      "lastSeenAt": "2026-03-07T05:36:47.032Z"
     },
     {
       "id": "fajnekonkursy:58116",
@@ -1125,7 +1200,57 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.856Z"
+      "lastSeenAt": "2026-03-07T05:36:46.992Z"
+    },
+    {
+      "id": "fajnekonkursy:58175",
+      "source": "fajnekonkursy",
+      "sourceId": 58175,
+      "title": "Konkurs plastyczny Bambino „Maski”",
+      "url": "https://fajnekonkursy.pl/dla-dzieci/bambino-maski/",
+      "publishedAt": "2026-03-06T21:55:59",
+      "modifiedAt": "2026-03-06T21:55:59",
+      "deadline": "2026-03-22",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Nagrody otrzyma grupa, której pracę najwyżej oceni jury konkursu.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-03-07T05:36:46.985Z"
+    },
+    {
+      "id": "fajnekonkursy:58163",
+      "source": "fajnekonkursy",
+      "sourceId": 58163,
+      "title": "Konkurs na Instagramie „Dzień Kobiet z K-sport”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/dzien-kobiet-z-k-sport/",
+      "publishedAt": "2026-03-06T17:57:18",
+      "modifiedAt": "2026-03-06T17:57:18",
+      "deadline": "2026-03-22",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x duży i wygodny hamak wraz ze stelażem (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-03-07T05:36:46.987Z"
     },
     {
       "id": "fajnekonkursy:57937",
@@ -1150,7 +1275,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.871Z"
+      "lastSeenAt": "2026-03-07T05:36:47.006Z"
     },
     {
       "id": "fajnekonkursy:57623",
@@ -1175,7 +1300,32 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.885Z"
+      "lastSeenAt": "2026-03-07T05:36:47.019Z"
+    },
+    {
+      "id": "fajnekonkursy:58178",
+      "source": "fajnekonkursy",
+      "sourceId": 58178,
+      "title": "Konkurs plastyczny „Inspiracje 2026”",
+      "url": "https://fajnekonkursy.pl/plastyczne/inspiracje-2026/",
+      "publishedAt": "2026-03-06T22:36:42",
+      "modifiedAt": "2026-03-06T22:36:42",
+      "deadline": "2026-03-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-03-07T05:36:46.984Z"
     },
     {
       "id": "fajnekonkursy:58119",
@@ -1200,7 +1350,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.855Z"
+      "lastSeenAt": "2026-03-07T05:36:46.991Z"
     },
     {
       "id": "fajnekonkursy:57901",
@@ -1225,7 +1375,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.873Z"
+      "lastSeenAt": "2026-03-07T05:36:47.009Z"
     },
     {
       "id": "fajnekonkursy:57002",
@@ -1250,7 +1400,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.890Z"
+      "lastSeenAt": "2026-03-07T05:36:47.026Z"
     },
     {
       "id": "fajnekonkursy:56996",
@@ -1275,7 +1425,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.891Z"
+      "lastSeenAt": "2026-03-07T05:36:47.027Z"
     },
     {
       "id": "fajnekonkursy:56959",
@@ -1300,7 +1450,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.892Z"
+      "lastSeenAt": "2026-03-07T05:36:47.028Z"
     },
     {
       "id": "fajnekonkursy:54831",
@@ -1325,7 +1475,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.900Z"
+      "lastSeenAt": "2026-03-07T05:36:47.037Z"
     },
     {
       "id": "fajnekonkursy:53185",
@@ -1350,7 +1500,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.903Z"
+      "lastSeenAt": "2026-03-07T05:36:47.040Z"
     },
     {
       "id": "fajnekonkursy:57860",
@@ -1375,7 +1525,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.878Z"
+      "lastSeenAt": "2026-03-07T05:36:47.013Z"
     },
     {
       "id": "fajnekonkursy:56937",
@@ -1400,7 +1550,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.893Z"
+      "lastSeenAt": "2026-03-07T05:36:47.028Z"
     },
     {
       "id": "fajnekonkursy:58089",
@@ -1425,7 +1575,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.858Z"
+      "lastSeenAt": "2026-03-07T05:36:46.993Z"
     },
     {
       "id": "fajnekonkursy:56866",
@@ -1450,7 +1600,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.894Z"
+      "lastSeenAt": "2026-03-07T05:36:47.031Z"
     },
     {
       "id": "fajnekonkursy:58142",
@@ -1475,7 +1625,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.853Z"
+      "lastSeenAt": "2026-03-07T05:36:46.989Z"
     },
     {
       "id": "fajnekonkursy:57891",
@@ -1500,7 +1650,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.875Z"
+      "lastSeenAt": "2026-03-07T05:36:47.011Z"
     },
     {
       "id": "fajnekonkursy:56885",
@@ -1525,7 +1675,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.893Z"
+      "lastSeenAt": "2026-03-07T05:36:47.029Z"
     },
     {
       "id": "fajnekonkursy:57572",
@@ -1550,7 +1700,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.885Z"
+      "lastSeenAt": "2026-03-07T05:36:47.020Z"
     },
     {
       "id": "fajnekonkursy:57391",
@@ -1575,7 +1725,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.887Z"
+      "lastSeenAt": "2026-03-07T05:36:47.022Z"
     },
     {
       "id": "fajnekonkursy:58126",
@@ -1600,7 +1750,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.854Z"
+      "lastSeenAt": "2026-03-07T05:36:46.990Z"
     },
     {
       "id": "fajnekonkursy:57701",
@@ -1625,7 +1775,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.883Z"
+      "lastSeenAt": "2026-03-07T05:36:47.017Z"
     },
     {
       "id": "fajnekonkursy:57238",
@@ -1650,7 +1800,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.888Z"
+      "lastSeenAt": "2026-03-07T05:36:47.023Z"
     },
     {
       "id": "fajnekonkursy:58030",
@@ -1675,7 +1825,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.861Z"
+      "lastSeenAt": "2026-03-07T05:36:46.997Z"
     },
     {
       "id": "fajnekonkursy:57087",
@@ -1700,7 +1850,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.890Z"
+      "lastSeenAt": "2026-03-07T05:36:47.025Z"
     },
     {
       "id": "fajnekonkursy:54960",
@@ -1725,7 +1875,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.900Z"
+      "lastSeenAt": "2026-03-07T05:36:47.037Z"
     },
     {
       "id": "fajnekonkursy:57157",
@@ -1750,7 +1900,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.889Z"
+      "lastSeenAt": "2026-03-07T05:36:47.024Z"
     },
     {
       "id": "fajnekonkursy:58012",
@@ -1775,7 +1925,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.861Z"
+      "lastSeenAt": "2026-03-07T05:36:46.997Z"
     },
     {
       "id": "fajnekonkursy:54579",
@@ -1800,7 +1950,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.902Z"
+      "lastSeenAt": "2026-03-07T05:36:47.038Z"
     },
     {
       "id": "fajnekonkursy:57894",
@@ -1825,7 +1975,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.875Z"
+      "lastSeenAt": "2026-03-07T05:36:47.011Z"
     },
     {
       "id": "fajnekonkursy:57761",
@@ -1850,7 +2000,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-03-06T15:31:00.882Z"
+      "lastSeenAt": "2026-03-07T05:36:47.017Z"
     },
     {
       "id": "ofree:10060",
@@ -1875,7 +2025,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-03-06T15:31:03.201Z"
+      "lastSeenAt": "2026-03-07T05:36:48.787Z"
     },
     {
       "id": "ofree:9929",
@@ -1900,7 +2050,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-03-06T15:31:03.204Z"
+      "lastSeenAt": "2026-03-07T05:36:48.790Z"
     },
     {
       "id": "ofree:8880",
@@ -1925,7 +2075,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-03-06T15:31:03.205Z"
+      "lastSeenAt": "2026-03-07T05:36:48.792Z"
     },
     {
       "id": "ofree:7486",
@@ -1950,7 +2100,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-03-06T15:31:03.206Z"
+      "lastSeenAt": "2026-03-07T05:36:48.792Z"
     },
     {
       "id": "ofree:7144",
@@ -1975,7 +2125,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-03-06T15:31:03.206Z"
+      "lastSeenAt": "2026-03-07T05:36:48.793Z"
     },
     {
       "id": "ofree:6992",
@@ -2000,7 +2150,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-03-06T15:31:03.207Z"
+      "lastSeenAt": "2026-03-07T05:36:48.793Z"
     },
     {
       "id": "ofree:3963",
@@ -2025,7 +2175,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-03-06T15:31:03.207Z"
+      "lastSeenAt": "2026-03-07T05:36:48.793Z"
     }
   ]
 }
