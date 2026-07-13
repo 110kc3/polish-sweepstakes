@@ -238,8 +238,10 @@ function normalizeRssItem(source, item) {
   const links = extractLinks(item.description || '');
   const deadline = extractDeadline(combined);
   const published = item.pubDate ? new Date(item.pubDate) : null;
-  // Prefer the numeric thread id from the URL for a stable id; fall back to guid/link.
-  const sourceId = item.link.match(/(\d{4,})/)?.[1] || item.guid || item.link;
+  // Pepper thread URLs end with "-<threadId>"; a leading match would grab
+  // years/prices from the slug ("kalendarz-adwentowy-2025-1172087") and
+  // collide across threads. Fall back to guid/link.
+  const sourceId = item.link.match(/-(\d+)\/?$/)?.[1] || item.guid || item.link;
 
   return {
     id: `${source.source}:${sourceId}`,
