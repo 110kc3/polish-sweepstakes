@@ -112,8 +112,11 @@ async function fetchAllPostsForCategory(sourceCfg, categoryId, maxPages = 5) {
 
     let batch = [];
     try {
+      console.log(`Fetching: ${url.toString()}`);
       batch = await fetchJson(url.toString());
+      console.log(`Fetched ${batch.length} posts from page ${page} for category ${categoryId}`);
     } catch (e) {
+      console.error(`Error fetching page ${page} for category ${categoryId}:`, e);
       // Stop on page-out-of-range or transient errors to be gentle.
       break;
     }
@@ -196,6 +199,6 @@ async function main() {
 }
 
 main().catch((e) => {
-  console.error(e);
+  console.error('Fatal error in scrape:', e);
   process.exit(1);
 });

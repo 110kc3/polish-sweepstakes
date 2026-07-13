@@ -1,4 +1,4 @@
-"name: Scrape and Deploy
+name: Scrape and Deploy
 
 on:
   push:
