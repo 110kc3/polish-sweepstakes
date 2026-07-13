@@ -23,36 +23,49 @@ function stripText(html) {
   return root.text.trim().replace(/\s+/g, ' ');
 }
 
-function firstSentence(text) {
-  const t = (text || '').trim();
-  if (!t) return '';
-  const m = t.match(/^(.+?[.!?])\s/);
-  return (m ? m[1] : t).trim();
-}
+const PL_MONTHS = {
+  stycznia: '01', lutego: '02', marca: '03', kwietnia: '04',
+  maja: '05', czerwca: '06', lipca: '07', sierpnia: '08',
+  września: '09', października: '10', listopada: '11', grudnia: '12',
+};
+
+const NUMERIC_DATE = String.raw`\d{1,2}[.\-]\d{1,2}[.\-]\d{4}`;
+const TEXT_DATE = String.raw`\d{1,2}\s+(?:${Object.keys(PL_MONTHS).join('|')})\s+\d{4}`;
 
 function parsePolishDateToISO(dmy) {
-  // accepts DD.MM.YYYY or DD-MM-YYYY
-  const m = dmy.match(/^(\d{1,2})[.\-](\d{1,2})[.\-](\d{4})$/);
-  if (!m) return null;
-  const dd = String(m[1]).padStart(2, '0');
-  const mm = String(m[2]).padStart(2, '0');
-  const yyyy = m[3];
-  return `${yyyy}-${mm}-${dd}`;
+  // accepts DD.MM.YYYY, DD-MM-YYYY or "DD <miesiąca> YYYY"
+  const num = dmy.match(/^(\d{1,2})[.\-](\d{1,2})[.\-](\d{4})$/);
+  const txt = num ? null : dmy.match(/^(\d{1,2})\s+(\p{L}+)\s+(\d{4})$/u);
+  if (!num && !txt) return null;
+  const dd = Number(num ? num[1] : txt[1]);
+  const mm = num ? Number(num[2]) : Number(PL_MONTHS[txt[2].toLowerCase()] ?? NaN);
+  const yyyy = num ? num[3] : txt[3];
+  if (!(dd >= 1 && dd <= 31) || !(mm >= 1 && mm <= 12)) return null;
+  const iso = `${yyyy}-${String(mm).padStart(2, '0')}-${String(dd).padStart(2, '0')}`;
+  // Reject impossible dates like 30.02 (Date would roll them over).
+  if (new Date(`${iso}T00:00:00Z`).toISOString().slice(0, 10) !== iso) return null;
+  return iso;
 }
 
 function extractDeadline(text) {
   const t = text || '';
-  const patterns = [
-    /(?:do\s+dnia|do|w\s+terminie\s+do|zgłoszenia\s+do)\s*(\d{1,2}[.\-]\d{1,2}[.\-]\d{4})/i,
-    /(\d{1,2}[.\-]\d{1,2}[.\-]\d{4})\s*(?:r\.|roku)?\s*(?:włącznie)?\s*(?:do\s+godz\.|do\s+\d{1,2}:\d{2})?/i,
-  ];
-  for (const re of patterns) {
-    const m = t.match(re);
-    if (m?.[1]) {
-      const iso = parsePolishDateToISO(m[1]);
-      if (iso) return iso;
-    }
+
+  // Prefer a date explicitly marked as a deadline ("do dnia ...", "zgłoszenia do ...").
+  const explicit = t.match(new RegExp(
+    String.raw`(?:do\s+dnia|do|w\s+terminie\s+do|zgłoszenia\s+do)\s*(${NUMERIC_DATE}|${TEXT_DATE})`, 'iu'
+  ));
+  if (explicit?.[1]) {
+    const iso = parsePolishDateToISO(explicit[1]);
+    if (iso) return iso;
   }
+
+  // Fallback: posts often list the start date first and the end date later,
+  // so take the latest date mentioned rather than the first.
+  const all = [...t.matchAll(new RegExp(`${NUMERIC_DATE}|${TEXT_DATE}`, 'giu'))]
+    .map(m => parsePolishDateToISO(m[0]))
+    .filter(Boolean);
+  if (all.length) return all.sort().at(-1);
+
   return null;
 }
 

@@ -26,8 +26,11 @@ function daysUntil(isoDate) {
 function deadlineBadge(deadline) {
   if (!deadline) return `<span class="badge deadline">Brak daty</span>`;
   const d = daysUntil(deadline);
+  if (d !== null && d < 0) {
+    return `<span class="badge deadline soon">Do: ${escapeHtml(deadline)} (zakończony)</span>`;
+  }
   const cls = d !== null && d <= 3 ? 'soon' : 'ok';
-  const suffix = d !== null ? ` (${d} dni)` : '';
+  const suffix = d !== null ? ` (${d} ${d === 1 ? 'dzień' : 'dni'})` : '';
   return `<span class="badge deadline ${cls}">Do: ${escapeHtml(deadline)}${escapeHtml(suffix)}</span>`;
 }
 
@@ -114,5 +117,9 @@ async function load() {
 }
 
 load().catch((e) => {
-  els.list.innerHTML = `<div class="card"><h2>Błąd</h2><p class="muted">${escapeHtml(e.message)}</p></div>`;
+  // Keep pre-rendered (build-time) listings if present; only show the error
+  // when there is nothing to fall back to.
+  if (!els.list.children.length) {
+    els.list.innerHTML = `<div class="card"><h2>Błąd</h2><p class="muted">${escapeHtml(e.message)}</p></div>`;
+  }
 });

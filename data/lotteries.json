@@ -1,5 +1,2406 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-06T00:00:00.000Z",
-  "items": []
+  "generatedAt": "2026-07-13T14:50:17.483Z",
+  "items": [
+    {
+      "id": "ofree:6992",
+      "source": "ofree",
+      "sourceId": 6992,
+      "title": "Loteria Cinkciarz do wygrania łącznie aż 500 tysięcy złotych",
+      "url": "https://www.ofree.pl/loteria-cinkciarz-do-wygrania-lacznie-az-500-tysiecy-zlotych/",
+      "publishedAt": "2021-09-08T16:48:02",
+      "modifiedAt": "2025-08-21T06:30:13",
+      "deadline": "2021-09-01",
+      "status": "ended",
+      "entry": {
+        "summary": "Jak wziąć udział w loterii Cinkciarz?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrodami są pokaźne sumy pieniędzy.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.931Z"
+    },
+    {
+      "id": "ofree:7144",
+      "source": "ofree",
+      "sourceId": 7144,
+      "title": "Coca Cola loteria – wygraj darmowe gadżety [Konkurs]",
+      "url": "https://www.ofree.pl/coca-cola-loteria-wygraj-darmowe-gadzety-konkurs/",
+      "publishedAt": "2022-02-06T10:55:51",
+      "modifiedAt": "2025-08-21T06:18:34",
+      "deadline": "2022-06-14",
+      "status": "ended",
+      "entry": {
+        "summary": "Aby wziąć udział w zabawie, należy pobrać aplikację na swój smartfon, zarejestrować konto i zbierać punkty oraz monety.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody można wygrać w loterii „Skanuj i wygrywaj” oraz w konkursie „Przed Ekranem” ?",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.930Z"
+    },
+    {
+      "id": "ofree:7540",
+      "source": "ofree",
+      "sourceId": 7540,
+      "title": "GoWork.pl konkurs dla absolwentów – „Praca dziś i za 50 lat”",
+      "url": "https://www.ofree.pl/gowork-pl-konkurs-dla-absolwentow-praca-dzis-i-za-50-lat/",
+      "publishedAt": "2022-06-12T14:20:02",
+      "modifiedAt": "2022-06-12T17:07:38",
+      "deadline": "2022-06-30",
+      "status": "ended",
+      "entry": {
+        "summary": "jak wziąć udział?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody w postaci tabletu i voucherów do Empiku.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.928Z"
+    },
+    {
+      "id": "ofree:8880",
+      "source": "ofree",
+      "sourceId": 8880,
+      "title": "Loteria Blikomania – odbierz darmowe ebooki od Blik",
+      "url": "https://www.ofree.pl/loteria-blikomania-odbierz-darmowe-ebooki-od-blik/",
+      "publishedAt": "2023-04-19T21:03:54",
+      "modifiedAt": "2025-08-21T04:58:40",
+      "deadline": "2023-06-06",
+      "status": "ended",
+      "entry": {
+        "summary": "Jak wziąć udział w loterii i zarejestrować się w Blikomanii 2023?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Nagrodami głównymi w Blikomanii 2023 są 63 sztabki złota oraz 9450 czeków po 100 i 200 zł.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.928Z"
+    },
+    {
+      "id": "ofree:9236",
+      "source": "ofree",
+      "sourceId": 9236,
+      "title": "Wielka loteria Carrefour: Wygraj karty podarunkowe i pieniądze na zakupy",
+      "url": "https://www.ofree.pl/wielka-loteria-carrefour-wygraj-karty-podarunkowe-i-pieniadze-na-zakupy/",
+      "publishedAt": "2023-10-15T15:24:16",
+      "modifiedAt": "2025-08-21T04:25:47",
+      "deadline": "2023-10-31",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj atrakcyjne nagrody i spełnij swoje marzenia.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.927Z"
+    },
+    {
+      "id": "ofree:10054",
+      "source": "ofree",
+      "sourceId": 10054,
+      "title": "Loteria Allegro Smart 2025 – Wygraj 500 000 zł, rowery i smartfony!",
+      "url": "https://www.ofree.pl/loteria-allegro-smart-2025/",
+      "publishedAt": "2025-10-12T17:25:02",
+      "modifiedAt": "2025-10-12T17:25:03",
+      "deadline": "2025-11-09",
+      "status": "ended",
+      "entry": {
+        "summary": "jak wziąć udział?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Nagrody tygodniowe do zgarnięcia Co tydzień, przez cały okres trwania loterii, rozlosowywane będą nagrody pieniężne w wysokości 25 000 zł.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.924Z"
+    },
+    {
+      "id": "ofree:10060",
+      "source": "ofree",
+      "sourceId": 10060,
+      "title": "Loteria PayPo Granie – Wygraj 10 000 zł na wakacje!",
+      "url": "https://www.ofree.pl/loteria-paypo-granie/",
+      "publishedAt": "2025-10-19T13:32:31",
+      "modifiedAt": "2025-10-19T13:32:31",
+      "deadline": "2025-11-13",
+      "status": "ended",
+      "entry": {
+        "summary": "Jak wziąć udział w loterii PayPo Granie 2025?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody o łącznej wartości 145 000 zł.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.922Z"
+    },
+    {
+      "id": "fajnekonkursy:56840",
+      "source": "fajnekonkursy",
+      "sourceId": 56840,
+      "title": "Konkurs literacki „Astronomia jest kobietą”",
+      "url": "https://fajnekonkursy.pl/literackie/astronomia-jest-kobieta/",
+      "publishedAt": "2026-01-15T16:50:53",
+      "modifiedAt": "2026-01-15T16:50:53",
+      "deadline": "2026-01-31",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 6 x publikacja dzieła w czasopiśmie Urania-Postępy Astronomii • publikacja dzieła na portalu Uranii (nieograniczona liczba prac) (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.331Z"
+    },
+    {
+      "id": "ofree:9929",
+      "source": "ofree",
+      "sourceId": 9929,
+      "title": "Loteria InPost 2025: Otwórz InBoxa i wygraj mieszkanie lub Porsche!",
+      "url": "https://www.ofree.pl/loteria-inpost-2025/",
+      "publishedAt": "2025-09-20T20:47:38",
+      "modifiedAt": "2025-09-20T20:47:38",
+      "deadline": "2026-02-28",
+      "status": "ended",
+      "entry": {
+        "summary": "Jak wziąć udział w Loterii InPost?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody główne: Porsche Cayenne (Nagroda główna I) – wartość całkowita 514 000 zł (z dopłatą podatkową).",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.926Z"
+    },
+    {
+      "id": "fajnekonkursy:59817",
+      "source": "fajnekonkursy",
+      "sourceId": 59817,
+      "title": "Loteria Coca Cola x Żabka „Wyzwanie dla wyjadaczy”",
+      "url": "https://fajnekonkursy.pl/bez-zakupu/wyzwanie-dla-wyjadaczy/",
+      "publishedAt": "2026-04-29T12:18:49",
+      "modifiedAt": "2026-05-13T12:11:57",
+      "deadline": "2026-05-12",
+      "status": "ended",
+      "entry": {
+        "summary": "Aby wziąć udział w loterii, w terminie 29.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody natychmiastowe oraz główne.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.324Z"
+    },
+    {
+      "id": "fajnekonkursy:64130",
+      "source": "fajnekonkursy",
+      "sourceId": 64130,
+      "title": "Konkurs Da Grasso x Kanał Sportowy ”Pizza na finał”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/da-grasso-pizza-na-final/",
+      "publishedAt": "2026-07-01T20:52:29",
+      "modifiedAt": "2026-07-01T20:52:29",
+      "deadline": "2026-07-12",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw kibica Da Grasso + turbo wygodna pufa Da Grasso (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.285Z"
+    },
+    {
+      "id": "fajnekonkursy:63869",
+      "source": "fajnekonkursy",
+      "sourceId": 63869,
+      "title": "Konkurs „Chwile letnich przyjemności z Kinder Bueno”",
+      "url": "https://fajnekonkursy.pl/latwe/chwile-z-kinder-bueno/",
+      "publishedAt": "2026-06-23T21:04:40",
+      "modifiedAt": "2026-06-23T21:04:40",
+      "deadline": "2026-07-12",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 15 x podwójny karnet na „Olsztyn Green Festival” w Olsztynie • 40 x voucher Douglas o wartości 100 zł + zestaw słodyczy Kinder (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.298Z"
+    },
+    {
+      "id": "fajnekonkursy:63752",
+      "source": "fajnekonkursy",
+      "sourceId": 63752,
+      "title": "Konkurs Sekret Urody „Ava-Ritual with Matcha”",
+      "url": "https://fajnekonkursy.pl/latwe/sekret-urody-ava-ritual/",
+      "publishedAt": "2026-06-19T18:30:35",
+      "modifiedAt": "2026-06-19T18:30:35",
+      "deadline": "2026-07-12",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw kosmetyków marki Ava z serii Ritual with Macha (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.304Z"
+    },
+    {
+      "id": "fajnekonkursy:64363",
+      "source": "fajnekonkursy",
+      "sourceId": 64363,
+      "title": "Konkurs Empik na Instagramie „Trychomania”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/empik-trychomania/",
+      "publishedAt": "2026-07-08T23:02:42",
+      "modifiedAt": "2026-07-08T23:02:42",
+      "deadline": "2026-07-14",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x książka „Trychomania” + zestaw kosmetyków Only Bio o wartości 420 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.261Z"
+    },
+    {
+      "id": "fajnekonkursy:64208",
+      "source": "fajnekonkursy",
+      "sourceId": 64208,
+      "title": "Konkurs Aclari na Instagramie „Wyjątkowy moment”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/aclari-wyjatkowy-moment/",
+      "publishedAt": "2026-07-03T11:00:09",
+      "modifiedAt": "2026-07-03T11:00:09",
+      "deadline": "2026-07-14",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x kolczyki, zawieszka albo pierścionek wybrane przez laureata (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.279Z"
+    },
+    {
+      "id": "fajnekonkursy:64053",
+      "source": "fajnekonkursy",
+      "sourceId": 64053,
+      "title": "Konkurs DRE „Dom, który czuje klimat lata”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/dom-ktory-czuje-klimat-lata/",
+      "publishedAt": "2026-06-30T20:08:01",
+      "modifiedAt": "2026-06-30T20:08:01",
+      "deadline": "2026-07-14",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x voucher do wykorzystania w sklepie internetowym Westwing o wartości 500 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.289Z"
+    },
+    {
+      "id": "fajnekonkursy:64047",
+      "source": "fajnekonkursy",
+      "sourceId": 64047,
+      "title": "Konkurs Filmweb „Zaproszenie”",
+      "url": "https://fajnekonkursy.pl/latwe/filmweb-zaproszenie/",
+      "publishedAt": "2026-06-30T16:47:22",
+      "modifiedAt": "2026-06-30T16:47:22",
+      "deadline": "2026-07-14",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "wygrają gry planszowe.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.291Z"
+    },
+    {
+      "id": "fajnekonkursy:64360",
+      "source": "fajnekonkursy",
+      "sourceId": 64360,
+      "title": "Konkurs na Instagramie „House: Summer Side Quest”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/house-summer-side-quest/",
+      "publishedAt": "2026-07-08T22:52:11",
+      "modifiedAt": "2026-07-08T22:52:11",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 5 x voucher na zakupy w sklepie internetowym House o wartości 500 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.262Z"
+    },
+    {
+      "id": "fajnekonkursy:64222",
+      "source": "fajnekonkursy",
+      "sourceId": 64222,
+      "title": "Konkurs Vezzi „Połączenie biżuterii i fryzury”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/polaczenie-bizuterii-i-fryzury/",
+      "publishedAt": "2026-07-03T11:56:13",
+      "modifiedAt": "2026-07-03T11:56:13",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Nagrody otrzymają autorzy 3 najciekawszych odpowiedzi.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.278Z"
+    },
+    {
+      "id": "fajnekonkursy:64215",
+      "source": "fajnekonkursy",
+      "sourceId": 64215,
+      "title": "Konkurs na Facebooku „Rock Point x Nortera”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/rock-point-nortera/",
+      "publishedAt": "2026-07-03T11:29:27",
+      "modifiedAt": "2026-07-03T11:29:27",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x plecak trekkingowy Nortera • 1 x nadmuchiwana karimata Nortera • 1 x termos na żywność Nortera (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.279Z"
+    },
+    {
+      "id": "fajnekonkursy:64156",
+      "source": "fajnekonkursy",
+      "sourceId": 64156,
+      "title": "Konkurs na Facebooku „Kibicuj z Gree”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/kibicuj-z-gree/",
+      "publishedAt": "2026-07-02T09:51:53",
+      "modifiedAt": "2026-07-02T09:51:53",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody dodatkowe uzależnione od liczby osób, które dołączą do konkursu (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.282Z"
+    },
+    {
+      "id": "fajnekonkursy:64149",
+      "source": "fajnekonkursy",
+      "sourceId": 64149,
+      "title": "Konkurs Continental na Facebooku „Tour de France”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/continental-tour-de-france/",
+      "publishedAt": "2026-07-02T09:25:18",
+      "modifiedAt": "2026-07-02T09:25:18",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw: koszulka z autografem Tadeja + limitowane opony rowerowe + zestaw gadżetów (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.282Z"
+    },
+    {
+      "id": "fajnekonkursy:64094",
+      "source": "fajnekonkursy",
+      "sourceId": 64094,
+      "title": "Konkurs „Zestaw Piknikowy DIET-FOOD”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/zestaw-piknikowy-diet-food/",
+      "publishedAt": "2026-07-01T17:25:28",
+      "modifiedAt": "2026-07-01T17:25:28",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "wygrają zestaw piknikowy DIET-FOOD.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.285Z"
+    },
+    {
+      "id": "fajnekonkursy:64088",
+      "source": "fajnekonkursy",
+      "sourceId": 64088,
+      "title": "Konkurs Dziki Motyl „Przemilczana”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/dziki-motyl-przemilczana/",
+      "publishedAt": "2026-07-01T14:58:47",
+      "modifiedAt": "2026-07-01T14:58:47",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x książka ,,Przemilczana” autorstwa Agnieszki Lis o wartości 49,90 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.287Z"
+    },
+    {
+      "id": "fajnekonkursy:63850",
+      "source": "fajnekonkursy",
+      "sourceId": 63850,
+      "title": "Konkurs Josera „Psi bohater”",
+      "url": "https://fajnekonkursy.pl/kreatywne/josera-psi-bohater/",
+      "publishedAt": "2026-06-23T10:16:39",
+      "modifiedAt": "2026-06-23T10:16:39",
+      "deadline": "2026-07-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Nagrody otrzymają autorzy 30 odpowiedzi, które wybierze organizator konkursu.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.301Z"
+    },
+    {
+      "id": "fajnekonkursy:64374",
+      "source": "fajnekonkursy",
+      "sourceId": 64374,
+      "title": "Konkurs Basso „Smak włoskich wakacji”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/smak-wloskich-wakacji/",
+      "publishedAt": "2026-07-09T17:32:22",
+      "modifiedAt": "2026-07-09T17:32:22",
+      "deadline": "2026-07-16",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Nagrody otrzymają autorzy 5 najbardziej kreatywnych odpowiedzi.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.260Z"
+    },
+    {
+      "id": "fajnekonkursy:64312",
+      "source": "fajnekonkursy",
+      "sourceId": 64312,
+      "title": "Konkurs „Wygraj aparat Instax Mini 12”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/wygraj-instax-mini-12/",
+      "publishedAt": "2026-07-07T16:52:34",
+      "modifiedAt": "2026-07-07T16:52:34",
+      "deadline": "2026-07-16",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj aparat Instax Mini 12” Do dnia 16.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.270Z"
+    },
+    {
+      "id": "fajnekonkursy:64240",
+      "source": "fajnekonkursy",
+      "sourceId": 64240,
+      "title": "Konkurs Prószyński na Facebooku „Messi”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/proszynski-messi/",
+      "publishedAt": "2026-07-04T10:11:40",
+      "modifiedAt": "2026-07-04T10:11:40",
+      "deadline": "2026-07-16",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 2 x zestaw: koszulka reprezentacji Argentyny adidas 2026 dla juniora lub osoby dorosłej + książka „Messi.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.274Z"
+    },
+    {
+      "id": "fajnekonkursy:64383",
+      "source": "fajnekonkursy",
+      "sourceId": 64383,
+      "title": "Konkurs na Facebooku „Wygraj zestaw biżuterii Yvon”",
+      "url": "https://fajnekonkursy.pl/latwe/zestaw-bizuterii-yvon/",
+      "publishedAt": "2026-07-09T23:49:25",
+      "modifiedAt": "2026-07-09T23:49:25",
+      "deadline": "2026-07-17",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj zestaw biżuterii Yvon” Do dnia 17.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.257Z"
+    },
+    {
+      "id": "fajnekonkursy:64357",
+      "source": "fajnekonkursy",
+      "sourceId": 64357,
+      "title": "Konkurs na Instagramie „Idealny letni outfit”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/idealny-letni-outfit/",
+      "publishedAt": "2026-07-08T22:38:40",
+      "modifiedAt": "2026-07-08T22:38:40",
+      "deadline": "2026-07-17",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Nagrody otrzymają autorzy 3 najciekawszych odpowiedzi.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.263Z"
+    },
+    {
+      "id": "fajnekonkursy:63740",
+      "source": "fajnekonkursy",
+      "sourceId": 63740,
+      "title": "Konkurs Rotenso „Jak zmieniło się Twoje lato?”",
+      "url": "https://fajnekonkursy.pl/latwe/rotenso-twoje-lato/",
+      "publishedAt": "2026-06-19T14:54:23",
+      "modifiedAt": "2026-06-19T14:54:23",
+      "deadline": "2026-07-17",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.307Z"
+    },
+    {
+      "id": "fajnekonkursy:64395",
+      "source": "fajnekonkursy",
+      "sourceId": 64395,
+      "title": "Konkurs Booklips „Król Złodziei”",
+      "url": "https://fajnekonkursy.pl/latwe/booklips-krol-zlodziei/",
+      "publishedAt": "2026-07-10T18:10:21",
+      "modifiedAt": "2026-07-10T18:10:21",
+      "deadline": "2026-07-18",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x książka „Król Złodziei” autorstwa Cornelii Funke o wartości 49,90 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.253Z"
+    },
+    {
+      "id": "fajnekonkursy:63709",
+      "source": "fajnekonkursy",
+      "sourceId": 63709,
+      "title": "Konkurs Komputronik na Instagramie „Tryb samolotowy”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/komputronik-tryb-samolotowy/",
+      "publishedAt": "2026-06-18T17:35:18",
+      "modifiedAt": "2026-06-18T17:35:18",
+      "deadline": "2026-07-18",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x telefon Apple iPhone 16 128GB Biały o wartości 3 299 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.310Z"
+    },
+    {
+      "id": "fajnekonkursy:64421",
+      "source": "fajnekonkursy",
+      "sourceId": 64421,
+      "title": "Konkurs Lenovo „Zostań Selekcjonerem Marzeń”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/lenovo-zostan-selekcjonerem/",
+      "publishedAt": "2026-07-11T13:56:09",
+      "modifiedAt": "2026-07-11T13:56:09",
+      "deadline": "2026-07-19",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x tablet LENOVO Idea Tab FIFA World Cup 26 Edition o wartości 1 399 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.247Z"
+    },
+    {
+      "id": "fajnekonkursy:64281",
+      "source": "fajnekonkursy",
+      "sourceId": 64281,
+      "title": "Konkurs „Casting na najzabawniejsze straszydło”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/najzabawniejsze-straszydlo/",
+      "publishedAt": "2026-07-06T12:11:17",
+      "modifiedAt": "2026-07-06T12:11:17",
+      "deadline": "2026-07-19",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw walizek marki Wittchen o wartości 419,90 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.272Z"
+    },
+    {
+      "id": "fajnekonkursy:64189",
+      "source": "fajnekonkursy",
+      "sourceId": 64189,
+      "title": "Konkurs Życie ma smak „Smaki lata”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/zycie-ma-smak-smaki-lata/",
+      "publishedAt": "2026-07-02T17:28:41",
+      "modifiedAt": "2026-07-02T17:28:41",
+      "deadline": "2026-07-19",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.280Z"
+    },
+    {
+      "id": "fajnekonkursy:64186",
+      "source": "fajnekonkursy",
+      "sourceId": 64186,
+      "title": "Konkurs „Wygraj karnet na festiwal ERSTE Letnie Brzmienia dzięki Ptasie Mleczko”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/wygraj-karnet-na-festiwal-erste-letnie-brzmienia-dzieki-ptasie-mleczko/",
+      "publishedAt": "2026-07-02T17:18:48",
+      "modifiedAt": "2026-07-10T18:43:12",
+      "deadline": "2026-07-19",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj karnet na festiwal ERSTE Letnie Brzmienia dzięki Ptasie Mleczko” Konkurs prowadzony jest na Facebooku i Instagramie.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.281Z"
+    },
+    {
+      "id": "fajnekonkursy:64067",
+      "source": "fajnekonkursy",
+      "sourceId": 64067,
+      "title": "Konkurs MusicMate „Summer Vibe”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/musicmate-summer-vibe/",
+      "publishedAt": "2026-07-01T11:43:35",
+      "modifiedAt": "2026-07-01T11:44:01",
+      "deadline": "2026-07-19",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "wygrają sprzęt MusicMate.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.287Z"
+    },
+    {
+      "id": "fajnekonkursy:64443",
+      "source": "fajnekonkursy",
+      "sourceId": 64443,
+      "title": "Konkurs solarny towarzyszący wystawie sunrise_sunset",
+      "url": "https://fajnekonkursy.pl/na-facebooku/solarny/",
+      "publishedAt": "2026-07-13T16:40:12",
+      "modifiedAt": "2026-07-13T16:40:12",
+      "deadline": "2026-07-20",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.239Z"
+    },
+    {
+      "id": "fajnekonkursy:64333",
+      "source": "fajnekonkursy",
+      "sourceId": 64333,
+      "title": "Konkurs Dolina Noteci „Pupil na boisku”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/pupil-na-boisku/",
+      "publishedAt": "2026-07-08T18:40:14",
+      "modifiedAt": "2026-07-08T18:40:14",
+      "deadline": "2026-07-20",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x Smakoboks z produktami Dolina Noteci dla psa lub kota (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.266Z"
+    },
+    {
+      "id": "fajnekonkursy:64329",
+      "source": "fajnekonkursy",
+      "sourceId": 64329,
+      "title": "Konkurs MSI „Świat z gier na wakacyjny wyjazd”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/msi-swiat-z-gier/",
+      "publishedAt": "2026-07-07T23:45:03",
+      "modifiedAt": "2026-07-07T23:45:03",
+      "deadline": "2026-07-20",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.267Z"
+    },
+    {
+      "id": "fajnekonkursy:63895",
+      "source": "fajnekonkursy",
+      "sourceId": 63895,
+      "title": "Konkurs na Instagramie „Moje Lato z LR”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/moje-lato-z-lr/",
+      "publishedAt": "2026-06-24T17:30:27",
+      "modifiedAt": "2026-06-24T17:30:27",
+      "deadline": "2026-07-20",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 5 x zestaw letnich must-have z serii Mint & Melon: leżak LR, sorbet oczyszczający, żel pod prysznic, żel-krem i krem do ciała (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.296Z"
+    },
+    {
+      "id": "fajnekonkursy:60539",
+      "source": "fajnekonkursy",
+      "sourceId": 60539,
+      "title": "XIV Konkurs poetycki im. Stanisława Czernika",
+      "url": "https://fajnekonkursy.pl/literackie/xiv-im-stanislawa-czernika/",
+      "publishedAt": "2026-05-19T10:56:16",
+      "modifiedAt": "2026-05-19T10:56:16",
+      "deadline": "2026-07-20",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagroda pieniężna 1 100 zł • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 900zł • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 700 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.318Z"
+    },
+    {
+      "id": "fajnekonkursy:64418",
+      "source": "fajnekonkursy",
+      "sourceId": 64418,
+      "title": "Konkurs Sportano „Biwakowanie”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/sportano-biwakowanie/",
+      "publishedAt": "2026-07-11T13:48:40",
+      "modifiedAt": "2026-07-11T13:48:40",
+      "deadline": "2026-07-21",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x namiot trekkingowy Vango EXEDRA 200 • 2 x śpiwór Vango ATLAS 250 Deep Atlantic (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.249Z"
+    },
+    {
+      "id": "fajnekonkursy:64140",
+      "source": "fajnekonkursy",
+      "sourceId": 64140,
+      "title": "Konkurs „Sezon na przyjemność z Lubellą”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/przyjemnosc-z-lubella/",
+      "publishedAt": "2026-07-01T21:57:14",
+      "modifiedAt": "2026-07-01T21:57:14",
+      "deadline": "2026-07-22",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "wygrają autorzy 160 najciekawszych odpowiedzi.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.283Z"
+    },
+    {
+      "id": "fajnekonkursy:64398",
+      "source": "fajnekonkursy",
+      "sourceId": 64398,
+      "title": "Konkurs Filmweb „Nocna niania”",
+      "url": "https://fajnekonkursy.pl/latwe/filmweb-nocna-niania/",
+      "publishedAt": "2026-07-10T18:19:05",
+      "modifiedAt": "2026-07-10T18:19:05",
+      "deadline": "2026-07-23",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 5 x książka „Nocna niania”, autorstwa Nelle Lamarr o wartości ok.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.252Z"
+    },
+    {
+      "id": "fajnekonkursy:64428",
+      "source": "fajnekonkursy",
+      "sourceId": 64428,
+      "title": "Konkurs Dziki Motyl „Kinari”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/dziki-motyl-kinari/",
+      "publishedAt": "2026-07-12T12:36:21",
+      "modifiedAt": "2026-07-12T12:36:21",
+      "deadline": "2026-07-24",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x książka „Kinnari.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.244Z"
+    },
+    {
+      "id": "fajnekonkursy:63860",
+      "source": "fajnekonkursy",
+      "sourceId": 63860,
+      "title": "Promocja „Chwytaj sens działania”",
+      "url": "https://fajnekonkursy.pl/promocje/chwytaj-sens-dzialania/",
+      "publishedAt": "2026-06-23T17:05:29",
+      "modifiedAt": "2026-06-23T17:05:29",
+      "deadline": "2026-07-24",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 2 500 x torba Coca-Cola • 2 500 x torba Coca-Cola z przegródkami na butelki (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.299Z"
+    },
+    {
+      "id": "fajnekonkursy:63809",
+      "source": "fajnekonkursy",
+      "sourceId": 63809,
+      "title": "Konkurs literacki „Gniewińskie Pióro 2026”",
+      "url": "https://fajnekonkursy.pl/literackie/gniewinskie-pioro-2026/",
+      "publishedAt": "2026-06-22T18:28:38",
+      "modifiedAt": "2026-06-22T18:28:38",
+      "deadline": "2026-07-24",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • nagrody finansowe (pula nagród do podziału wynosi 6 000 zł) – dorośli • nagrody rzeczowe – młodzież w wieku 13-17 lat (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.302Z"
+    },
+    {
+      "id": "fajnekonkursy:64002",
+      "source": "fajnekonkursy",
+      "sourceId": 64002,
+      "title": "Konkurs x-kom „RAMy na kilogramy”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/ramy-na-kilogramy/",
+      "publishedAt": "2026-06-29T12:22:18",
+      "modifiedAt": "2026-06-29T12:22:18",
+      "deadline": "2026-07-26",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 9 x pamięć RAM Lexar 32GB (2x16GB) 6000 CL30 Ares RGB o wartości 1 859 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.292Z"
+    },
+    {
+      "id": "fajnekonkursy:60182",
+      "source": "fajnekonkursy",
+      "sourceId": 60182,
+      "title": "Konkurs fotograficzny „Kolej na Twój kadr 2026”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/kolej-na-twoj-kadr-2026/",
+      "publishedAt": "2026-05-08T13:00:18",
+      "modifiedAt": "2026-05-08T13:00:18",
+      "deadline": "2026-07-26",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody rzeczowe • 10 x upominki o tematyce kolejowej (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.322Z"
+    },
+    {
+      "id": "fajnekonkursy:64309",
+      "source": "fajnekonkursy",
+      "sourceId": 64309,
+      "title": "Konkurs inkBOOK „Wycieczki do wnętrza książek”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/inkbook-do-wnetrza-ksiazek/",
+      "publishedAt": "2026-07-07T16:46:05",
+      "modifiedAt": "2026-07-07T16:46:05",
+      "deadline": "2026-07-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.271Z"
+    },
+    {
+      "id": "fajnekonkursy:64284",
+      "source": "fajnekonkursy",
+      "sourceId": 64284,
+      "title": "Konkurs Helios „Drugie Życie Białych Butów”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/drugie-zycie-bialych-butow/",
+      "publishedAt": "2026-07-06T12:23:39",
+      "modifiedAt": "2026-07-06T12:23:39",
+      "deadline": "2026-07-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "wygrają zestaw Helios proSPORT do białych butów.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.272Z"
+    },
+    {
+      "id": "fajnekonkursy:61345",
+      "source": "fajnekonkursy",
+      "sourceId": 61345,
+      "title": "Konkurs na najlepsze opowiadanie roku 2026",
+      "url": "https://fajnekonkursy.pl/literackie/najlepsze-opowiadanie-roku-2026/",
+      "publishedAt": "2026-06-09T13:27:06",
+      "modifiedAt": "2026-06-09T13:27:06",
+      "deadline": "2026-07-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • jedna, dwie lub trzy nagrody pieniężne o łącznej wartości 3 000 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.317Z"
+    },
+    {
+      "id": "fajnekonkursy:64425",
+      "source": "fajnekonkursy",
+      "sourceId": 64425,
+      "title": "Konkurs plastyczny Helios „Vaiana”",
+      "url": "https://fajnekonkursy.pl/plastyczne/helios-vaiana/",
+      "publishedAt": "2026-07-11T14:10:56",
+      "modifiedAt": "2026-07-11T14:10:56",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x voucher do zrealizowania w Grano Hotel**** Solmarina w pokoju 2+2 o wartości 10 000 zł • 10 x maskotka z filmu Vaiana o wys.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.245Z"
+    },
+    {
+      "id": "fajnekonkursy:64415",
+      "source": "fajnekonkursy",
+      "sourceId": 64415,
+      "title": "Konkurs Kapitan Nauka „Lato pełne zabawy”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/lato-pelne-zabawy/",
+      "publishedAt": "2026-07-11T11:39:43",
+      "modifiedAt": "2026-07-11T11:39:43",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw gier ze sklepu Kapitan Nauka wybrany przez każdego ze zwycięzców (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.250Z"
+    },
+    {
+      "id": "fajnekonkursy:64412",
+      "source": "fajnekonkursy",
+      "sourceId": 64412,
+      "title": "Konkurs Komputronik „Wygraj GTA VI”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/komputronik-gta-vi/",
+      "publishedAt": "2026-07-11T11:31:24",
+      "modifiedAt": "2026-07-11T11:31:24",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x preorder gry Grand Theft Auto VI (PS5) o wartości 379 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.251Z"
+    },
+    {
+      "id": "fajnekonkursy:64380",
+      "source": "fajnekonkursy",
+      "sourceId": 64380,
+      "title": "Konkurs Paclan „To lato będzie idealne”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/paclan-to-lato/",
+      "publishedAt": "2026-07-09T22:16:22",
+      "modifiedAt": "2026-07-09T22:16:22",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x voucher Allegro o wartości 500 zł • 2 x zestaw produktów marki Paclan (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.258Z"
+    },
+    {
+      "id": "fajnekonkursy:64377",
+      "source": "fajnekonkursy",
+      "sourceId": 64377,
+      "title": "Konkurs „Wygraj Starpak Pins”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/wygraj-starpak-pins/",
+      "publishedAt": "2026-07-09T22:00:13",
+      "modifiedAt": "2026-07-09T22:00:13",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x zestaw z kolekcji Starpak PINS: plecak, piórnik i worek w wybranym wzorze (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.258Z"
+    },
+    {
+      "id": "fajnekonkursy:64266",
+      "source": "fajnekonkursy",
+      "sourceId": 64266,
+      "title": "Konkurs Moliv „Mikrobiom nie bierze urlopu”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/moliv-mikrobiom/",
+      "publishedAt": "2026-07-04T18:23:44",
+      "modifiedAt": "2026-07-04T18:23:44",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw: torba plażowa Moliv + miniatury produktów Moliv do twarzy + ręcznik do twarzy Moliv (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.273Z"
+    },
+    {
+      "id": "fajnekonkursy:64061",
+      "source": "fajnekonkursy",
+      "sourceId": 64061,
+      "title": "Konkurs Clinex #MultiCleanChallenge",
+      "url": "https://fajnekonkursy.pl/kreatywne/multicleanchallenge/",
+      "publishedAt": "2026-07-01T11:28:49",
+      "modifiedAt": "2026-07-01T11:28:49",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw produktów marki Clinex o wartości 500 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.288Z"
+    },
+    {
+      "id": "fajnekonkursy:59994",
+      "source": "fajnekonkursy",
+      "sourceId": 59994,
+      "title": "Konkurs na komiks „Skok w przeszłość”",
+      "url": "https://fajnekonkursy.pl/plastyczne/skok-w-przeszlosc/",
+      "publishedAt": "2026-05-04T18:16:28",
+      "modifiedAt": "2026-05-04T18:16:44",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrodzona w innym konkursie Każdy uczestnik może zgłosić na konkurs tylko jedną pracę.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.323Z"
+    },
+    {
+      "id": "fajnekonkursy:64236",
+      "source": "fajnekonkursy",
+      "sourceId": 64236,
+      "title": "Konkurs Elektrosegregacja „Wspólnie dla środowiska”",
+      "url": "https://fajnekonkursy.pl/kreatywne/wspolnie-dla-srodowiska/",
+      "publishedAt": "2026-07-04T09:49:38",
+      "modifiedAt": "2026-07-04T09:49:38",
+      "deadline": "2026-08-03",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.274Z"
+    },
+    {
+      "id": "fajnekonkursy:64322",
+      "source": "fajnekonkursy",
+      "sourceId": 64322,
+      "title": "Konkurs MultiSport „Aktywuj tryb wyjazdowy!”",
+      "url": "https://fajnekonkursy.pl/latwe/aktywuj-tryb-wyjazdowy/",
+      "publishedAt": "2026-07-07T19:48:59",
+      "modifiedAt": "2026-07-07T19:48:59",
+      "deadline": "2026-08-05",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 150 x zestaw Kubota: longsleeve oversize, torbę, skarpetki oraz klapki (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.268Z"
+    },
+    {
+      "id": "fajnekonkursy:63635",
+      "source": "fajnekonkursy",
+      "sourceId": 63635,
+      "title": "XV Konkurs poetycki im. Pawła Brylińskiego",
+      "url": "https://fajnekonkursy.pl/literackie/im-pawla-brylinskiego/",
+      "publishedAt": "2026-06-18T11:48:11",
+      "modifiedAt": "2026-06-18T11:48:44",
+      "deadline": "2026-08-07",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagroda pieniężna 600 zł • 4 x nagroda pieniężna 300 zł • 3 x nagroda pieniężna 250 zł • wyróżnienia: nagrody książkowe (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.314Z"
+    },
+    {
+      "id": "fajnekonkursy:61597",
+      "source": "fajnekonkursy",
+      "sourceId": 61597,
+      "title": "Konkurs fotograficzny „Jak z obrazka”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/jak-z-obrazka/",
+      "publishedAt": "2026-06-16T16:26:40",
+      "modifiedAt": "2026-06-16T16:27:38",
+      "deadline": "2026-08-08",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x nagroda pieniężna 400 zł • 1 x nagroda pieniężna 300 zł • 1 x nagroda pieniężna 200 zł • wyróżnienia: nagrody rzeczowe (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.315Z"
+    },
+    {
+      "id": "fajnekonkursy:63989",
+      "source": "fajnekonkursy",
+      "sourceId": 63989,
+      "title": "Konkurs Sportano „Wygraj kask dziecięcy Abus”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/sportano-kask-abus/",
+      "publishedAt": "2026-06-28T11:32:15",
+      "modifiedAt": "2026-06-28T11:32:15",
+      "deadline": "2026-08-10",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x kask rowerowy dziecięcy ABUS Youn-I 2.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.295Z"
+    },
+    {
+      "id": "fajnekonkursy:63744",
+      "source": "fajnekonkursy",
+      "sourceId": 63744,
+      "title": "Konkurs Eska 2 „Polska Jest Najfajniejsza”",
+      "url": "https://fajnekonkursy.pl/latwe/polska-jest-najfajniejsza/",
+      "publishedAt": "2026-06-19T16:05:25",
+      "modifiedAt": "2026-06-19T16:05:25",
+      "deadline": "2026-08-14",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 8 x voucher na pobyt w hotelu o wartości 3 000 zł • 40 x zestaw kosmetyków Ziaja o wartości 300 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.305Z"
+    },
+    {
+      "id": "fajnekonkursy:58388",
+      "source": "fajnekonkursy",
+      "sourceId": 58388,
+      "title": "Konkurs poetycki „Środek Wyrazu 2026”",
+      "url": "https://fajnekonkursy.pl/literackie/srodek-wyrazu-2026/",
+      "publishedAt": "2026-03-12T20:21:02",
+      "modifiedAt": "2026-03-12T20:21:02",
+      "deadline": "2026-08-14",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne o łącznej wartości 5 000 zł podzielone wg uznania jury (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.327Z"
+    },
+    {
+      "id": "fajnekonkursy:64440",
+      "source": "fajnekonkursy",
+      "sourceId": 64440,
+      "title": "Konkurs „Wakacje z Changanem”",
+      "url": "https://fajnekonkursy.pl/latwe/wakacje-z-changanem/",
+      "publishedAt": "2026-07-13T13:15:05",
+      "modifiedAt": "2026-07-13T13:15:05",
+      "deadline": "2026-08-18",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody główne – po jednej od każdego dealera.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.242Z"
+    },
+    {
+      "id": "fajnekonkursy:64387",
+      "source": "fajnekonkursy",
+      "sourceId": 64387,
+      "title": "Konkurs RMF FM „Wakacyjne SOS”",
+      "url": "https://fajnekonkursy.pl/latwe/wakacyjne-sos/",
+      "publishedAt": "2026-07-10T00:00:02",
+      "modifiedAt": "2026-07-10T00:00:02",
+      "deadline": "2026-08-21",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 18 x karta podarunkowa do Media Expert o wartości 1 000 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.256Z"
+    },
+    {
+      "id": "fajnekonkursy:63731",
+      "source": "fajnekonkursy",
+      "sourceId": 63731,
+      "title": "XXX Konkurs Poetycki im. Marii Pawlikowskiej – Jasnorzewskiej",
+      "url": "https://fajnekonkursy.pl/literackie/xxx-pawlikowskiej-jasnorzewskiej/",
+      "publishedAt": "2026-06-19T10:41:42",
+      "modifiedAt": "2026-06-19T10:41:42",
+      "deadline": "2026-08-21",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne i wyróżnienia przyznane według uznania jury (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.309Z"
+    },
+    {
+      "id": "fajnekonkursy:64091",
+      "source": "fajnekonkursy",
+      "sourceId": 64091,
+      "title": "Konkurs fotograficzny „Wakacje z naturą. Kwietne łąki”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/wakacje-z-natura-kwietne-laki/",
+      "publishedAt": "2026-07-01T17:18:07",
+      "modifiedAt": "2026-07-02T09:29:47",
+      "deadline": "2026-08-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 2 x profesjonalny śpiwór o wartości 1 200 zł • 4 x termos obiadowy (lunch box) o wartości 220 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.286Z"
+    },
+    {
+      "id": "fajnekonkursy:63996",
+      "source": "fajnekonkursy",
+      "sourceId": 63996,
+      "title": "Konkurs Caparol „Złap morski klimat”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/caparol-zlap-morski-klimat/",
+      "publishedAt": "2026-06-29T10:23:14",
+      "modifiedAt": "2026-06-29T10:23:14",
+      "deadline": "2026-08-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 10 x nagrody niespodzianki związane z kolorem roku marki Caparol (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.293Z"
+    },
+    {
+      "id": "fajnekonkursy:60290",
+      "source": "fajnekonkursy",
+      "sourceId": 60290,
+      "title": "XXVII Konkurs Literacki im. Eugeniusza Paukszty",
+      "url": "https://fajnekonkursy.pl/literackie/xxvii-im-eugeniusza-paukszty/",
+      "publishedAt": "2026-05-12T11:11:41",
+      "modifiedAt": "2026-05-12T11:12:39",
+      "deadline": "2026-08-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne (ostateczny podział wyróżnień finansowych zależy od decyzji jury) (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.320Z"
+    },
+    {
+      "id": "fajnekonkursy:58867",
+      "source": "fajnekonkursy",
+      "sourceId": 58867,
+      "title": "Konkurs Literacki im. Jana Grossa 2026",
+      "url": "https://fajnekonkursy.pl/literackie/im-jana-grossa-2026/",
+      "publishedAt": "2026-03-30T09:54:35",
+      "modifiedAt": "2026-03-30T09:54:35",
+      "deadline": "2026-08-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 100 zł • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 600 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.327Z"
+    },
+    {
+      "id": "fajnekonkursy:58245",
+      "source": "fajnekonkursy",
+      "sourceId": 58245,
+      "title": "Konkurs plastyczny „Grafika znad Wisły”",
+      "url": "https://fajnekonkursy.pl/plastyczne/grafika-znad-wisly/",
+      "publishedAt": "2026-03-10T10:00:14",
+      "modifiedAt": "2026-03-10T10:00:14",
+      "deadline": "2026-09-15",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x nagroda pieniężna 7 000 zł • 1 x nagroda pieniężna 5 000 zł • 1 x nagroda pieniężna 3 000 zł • 2 x nagroda pieniężna 1 500 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.329Z"
+    },
+    {
+      "id": "fajnekonkursy:59459",
+      "source": "fajnekonkursy",
+      "sourceId": 59459,
+      "title": "Konkurs poetycki „O Pióro Pegaza 2026”",
+      "url": "https://fajnekonkursy.pl/literackie/o-pioro-pegaza-2026/",
+      "publishedAt": "2026-04-17T12:43:27",
+      "modifiedAt": "2026-04-17T12:43:27",
+      "deadline": "2026-09-19",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 600 zł • 3 x nagroda pieniężna 300 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.325Z"
+    },
+    {
+      "id": "fajnekonkursy:64230",
+      "source": "fajnekonkursy",
+      "sourceId": 64230,
+      "title": "Konkurs fotograficzny „Ulica fascynuje 2026”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/ulica-fascynuje-2026/",
+      "publishedAt": "2026-07-03T20:12:21",
+      "modifiedAt": "2026-07-03T20:12:21",
+      "deadline": "2026-09-20",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x dyplom i bon podarunkowy na kwotę 1 500 zł • 1 x dyplom i bon podarunkowy na kwotę 1 000 zł • 1 x dyplom i bon podarunkowy na kwotę 500 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.277Z"
+    },
+    {
+      "id": "fajnekonkursy:54579",
+      "source": "fajnekonkursy",
+      "sourceId": 54579,
+      "title": "Konkurs fotograficzny „Natura Sportu 2026”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/konkurs-fotograficzny-natura-sportu-2026/",
+      "publishedAt": "2025-11-28T12:57:02",
+      "modifiedAt": "2025-11-28T13:57:27",
+      "deadline": "2026-09-21",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagroda rzeczowa • 1 x nagroda pieniężna 700 zł + nagroda rzeczowa • 2 x nagroda pieniężna 500 zł + nagroda rzeczowa (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.332Z"
+    },
+    {
+      "id": "fajnekonkursy:61483",
+      "source": "fajnekonkursy",
+      "sourceId": 61483,
+      "title": "Konkurs fotograficzny „Niebo nad Kaliszem – lato 2026″",
+      "url": "https://fajnekonkursy.pl/fotograficzne/niebo-nad-kaliszem-lato-2026/",
+      "publishedAt": "2026-06-12T20:51:37",
+      "modifiedAt": "2026-06-12T20:51:37",
+      "deadline": "2026-09-23",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagroda pieniężna 500 zł – dla najlepszej fotografii wykonanej techniką Solarigrafii • 1 x nagroda pieniężna 500 zł – nagroda Publiczności (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.316Z"
+    },
+    {
+      "id": "fajnekonkursy:57894",
+      "source": "fajnekonkursy",
+      "sourceId": 57894,
+      "title": "Konkurs poetycki „W trzech wierszach”",
+      "url": "https://fajnekonkursy.pl/literackie/poetycki-w-trzech-wierszach/",
+      "publishedAt": "2026-02-25T15:25:57",
+      "modifiedAt": "2026-02-25T15:25:57",
+      "deadline": "2026-09-25",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 600 zł • 1 x nagroda pieniężna 400 zł • 1 x nagroda rzeczowa (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.330Z"
+    },
+    {
+      "id": "fajnekonkursy:64349",
+      "source": "fajnekonkursy",
+      "sourceId": 64349,
+      "title": "Konkurs literacki „W imię wolności 2026”",
+      "url": "https://fajnekonkursy.pl/literackie/w-imie-wolnosci-2026/",
+      "publishedAt": "2026-07-08T21:55:49",
+      "modifiedAt": "2026-07-08T21:55:49",
+      "deadline": "2026-09-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x tytuł Laureata Konkursu „W imię wolności.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.265Z"
+    },
+    {
+      "id": "fajnekonkursy:64136",
+      "source": "fajnekonkursy",
+      "sourceId": 64136,
+      "title": "Konkurs plastyczny „À propos Derwicha 2026”",
+      "url": "https://fajnekonkursy.pl/plastyczne/a-propos-derwicha-2026/",
+      "publishedAt": "2026-07-01T21:41:29",
+      "modifiedAt": "2026-07-01T21:41:29",
+      "deadline": "2026-09-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 5 500 zł • 1 x nagroda pieniężna 3 500 zł • 1 x nagroda pieniężna 2 500 zł (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.284Z"
+    },
+    {
+      "id": "fajnekonkursy:63755",
+      "source": "fajnekonkursy",
+      "sourceId": 63755,
+      "title": "Konkurs fotograficzny „Moja pasja w kadrze!”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/moja-pasja-w-kadrze/",
+      "publishedAt": "2026-06-20T12:45:55",
+      "modifiedAt": "2026-06-20T12:45:55",
+      "deadline": "2026-09-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x aparat fotograficzny Sony ZV-1 • 1 x słuchawki bezprzewodowe Sony LinkBuds WF-L900 • 1 x słuchawki bezprzewodowe Sony WF-C510 (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.303Z"
+    },
+    {
+      "id": "fajnekonkursy:63694",
+      "source": "fajnekonkursy",
+      "sourceId": 63694,
+      "title": "XIX Konkurs Poetycki im. Feliksa Raka",
+      "url": "https://fajnekonkursy.pl/literackie/im-feliksa-raka/",
+      "publishedAt": "2026-06-18T16:22:27",
+      "modifiedAt": "2026-06-18T16:22:27",
+      "deadline": "2026-09-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • nagrody rzeczowe, książkowe oraz pieniężne przyznane w każdej kategorii wiekowej (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.311Z"
+    },
+    {
+      "id": "fajnekonkursy:63691",
+      "source": "fajnekonkursy",
+      "sourceId": 63691,
+      "title": "Konkurs fotograficzny „Leśne sady – dziedzictwo, które trwa”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/lesne-sady-dziedzictwo-ktore-trwa/",
+      "publishedAt": "2026-06-18T14:03:17",
+      "modifiedAt": "2026-06-18T14:03:17",
+      "deadline": "2026-09-30",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x nagroda pieniężna 500 zł • 1 x nagroda pieniężna 300 zł • 1 x nagroda pieniężna 200 zł • wyróżnienia specjalne (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.313Z"
+    },
+    {
+      "id": "fajnekonkursy:64391",
+      "source": "fajnekonkursy",
+      "sourceId": 64391,
+      "title": "42. Ogólnopolski Konkurs Literacki im. J.I. Kraszewskiego",
+      "url": "https://fajnekonkursy.pl/literackie/42-im-kraszewskiego/",
+      "publishedAt": "2026-07-10T17:32:51",
+      "modifiedAt": "2026-07-10T17:32:51",
+      "deadline": "2026-10-01",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody w kategoriach specjalnych (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.254Z"
+    },
+    {
+      "id": "fajnekonkursy:63993",
+      "source": "fajnekonkursy",
+      "sourceId": 63993,
+      "title": "Konkurs „Sephora Summer Vibes”",
+      "url": "https://fajnekonkursy.pl/latwe/sephora-summer-vibes/",
+      "publishedAt": "2026-06-28T22:57:33",
+      "modifiedAt": "2026-06-28T22:57:33",
+      "deadline": "2026-10-18",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x udział w evencie Sephoria w terminie 15-18.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.294Z"
+    },
+    {
+      "id": "fajnekonkursy:61761",
+      "source": "fajnekonkursy",
+      "sourceId": 61761,
+      "title": "Konkurs artystyczny Arche „Szukamy Nikifora 2026”",
+      "url": "https://fajnekonkursy.pl/plastyczne/szukamy-nikifora-2026/",
+      "publishedAt": "2026-06-17T16:23:32",
+      "modifiedAt": "2026-06-17T16:24:20",
+      "deadline": "2026-10-19",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 600 zł • 1 x nagroda pieniężna 400 zł • 1 x uczestnictwo w plenerze malarskim (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.315Z"
+    },
+    {
+      "id": "fajnekonkursy:63889",
+      "source": "fajnekonkursy",
+      "sourceId": 63889,
+      "title": "Konkurs fotograficzny „Mój Gdańsk 2026”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/moj-gdansk-2026/",
+      "publishedAt": "2026-06-24T16:39:20",
+      "modifiedAt": "2026-06-24T16:39:20",
+      "deadline": "2026-10-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 500 zł • 1 x nagroda pieniężna 250 zł • 1 x pakiet darczyńcy Muzeum Gdańska (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.297Z"
+    },
+    {
+      "id": "fajnekonkursy:60342",
+      "source": "fajnekonkursy",
+      "sourceId": 60342,
+      "title": "Konkurs fotograficzny „Miejsca, które stały się domem”",
+      "url": "https://fajnekonkursy.pl/fotograficzne/miejsca-ktore-staly-sie-domem/",
+      "publishedAt": "2026-05-13T16:48:46",
+      "modifiedAt": "2026-05-13T16:48:46",
+      "deadline": "2026-10-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x Canon EOS R6 Mark III z obiektywem Canon RF 24mm F1.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.320Z"
+    },
+    {
+      "id": "fajnekonkursy:64255",
+      "source": "fajnekonkursy",
+      "sourceId": 64255,
+      "title": "Konkurs plastyczny „Szkoły Artystycznej 2027”",
+      "url": "https://fajnekonkursy.pl/plastyczne/szkoly-artystycznej-2027/",
+      "publishedAt": "2026-07-04T17:39:02",
+      "modifiedAt": "2026-07-04T17:39:02",
+      "deadline": "2026-11-27",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x nagroda finansowa w wysokości 4000 zł + możliwość odbycia praktyk w Wydziale Promocji, Marketingu i Wydawnictw CEA (adsbygoogle = window.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.273Z"
+    },
+    {
+      "id": "fajnekonkursy:57761",
+      "source": "fajnekonkursy",
+      "sourceId": 57761,
+      "title": "Konkurs Useme „Pocztówka z wyprawy”",
+      "url": "https://fajnekonkursy.pl/kreatywne/pocztowka-z-wyprawy/",
+      "publishedAt": "2026-02-19T12:51:52",
+      "modifiedAt": "2026-04-24T09:49:32",
+      "deadline": "2026-12-31",
+      "status": "active",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrody 🎁 • 1 x laptop Apple MacBook Air o wartości 3 899 zł (nagroda publiczności) • 1 x gogle Majesty The Force ATC, książka “Moje bieguny.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T14:50:21.330Z"
+    },
+    {
+      "id": "ofree:7486",
+      "source": "ofree",
+      "sourceId": 7486,
+      "title": "Castorama „Moja kuchnia marzeń” konkurs – wygraj vouchery",
+      "url": "https://www.ofree.pl/castorama-moja-kuchnia-marzen-konkurs-wygraj-vouchery/",
+      "publishedAt": "2022-05-29T15:39:23",
+      "modifiedAt": "2025-08-21T05:30:22",
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "jak wziąć udział?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj vouchery na zakupy do Castoramy!",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.929Z"
+    },
+    {
+      "id": "ofree:3963",
+      "source": "ofree",
+      "sourceId": 3963,
+      "title": "Testuj za darmo telefony, kosmetyki, perfumy, zostań testerem",
+      "url": "https://www.ofree.pl/testuj-za-darmo-telefony-kosmetyki-perfumy-zostan-testerem/",
+      "publishedAt": "2014-01-24T15:45:02",
+      "modifiedAt": "2025-08-21T07:02:51",
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "jak wziąć udział?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T14:50:22.932Z"
+    }
+  ]
 }
