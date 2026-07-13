@@ -98,6 +98,14 @@ async function load() {
 
   const all = Array.isArray(data.items) ? data.items : [];
 
+  // Populate the source filter from the data so new sources show up automatically.
+  for (const src of [...new Set(all.map((it) => it.source))].sort()) {
+    const opt = document.createElement('option');
+    opt.value = src;
+    opt.textContent = src;
+    els.source.appendChild(opt);
+  }
+
   function rerender() {
     const filtered = applyFilters(all);
     // Sort by deadline (nulls last)

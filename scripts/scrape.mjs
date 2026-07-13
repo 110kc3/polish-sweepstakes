@@ -6,15 +6,31 @@ const USER_AGENT = 'polish-sweepstakes/0.1 (+https://github.com/110kc3/polish-sw
 const SOURCES = [
   {
     source: 'fajnekonkursy',
+    type: 'wp',
     baseUrl: 'https://fajnekonkursy.pl',
     wpPostsEndpoint: '/wp-json/wp/v2/posts',
+    // 88 = bez-zakupu. Every contest on this site is tagged either 88 or 89
+    // (z-zakupem), so 88 alone covers all no-purchase content.
     categories: [88],
+    excludeCategories: [89],
+    noPurchaseNotes: 'Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną).',
   },
   {
     source: 'ofree',
+    type: 'wp',
     baseUrl: 'https://ofree.pl',
     wpPostsEndpoint: '/wp-json/wp/v2/posts',
-    categories: [3],
+    categories: [3], // darmowe-konkursy
+    excludeCategories: [],
+    noPurchaseNotes: 'Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną).',
+  },
+  {
+    source: 'pepper',
+    type: 'rss',
+    feedUrl: 'https://www.pepper.pl/rss/grupa/konkursy',
+    // Community-posted contests; overwhelmingly free entry, but not editorially
+    // guaranteed like the category-based sources.
+    noPurchaseNotes: 'Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle.',
   },
 ];
 
@@ -113,6 +129,20 @@ async function fetchJson(url) {
   return res.json();
 }
 
+async function fetchText(url) {
+  const res = await fetch(url, {
+    headers: {
+      'User-Agent': USER_AGENT,
+      'Accept': 'application/rss+xml, application/xml, text/xml',
+    },
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`HTTP ${res.status} for ${url}: ${body.slice(0, 200)}`);
+  }
+  return res.text();
+}
+
 async function fetchAllPostsForCategory(sourceCfg, categoryId, maxPages = 5) {
   // Keep MVP bounded to avoid heavy scraping. Increase later if needed.
   const items = [];
@@ -121,7 +151,7 @@ async function fetchAllPostsForCategory(sourceCfg, categoryId, maxPages = 5) {
     url.searchParams.set('categories', String(categoryId));
     url.searchParams.set('per_page', '50');
     url.searchParams.set('page', String(page));
-    url.searchParams.set('_fields', 'id,date,modified,link,title,excerpt,content');
+    url.searchParams.set('_fields', 'id,date,modified,link,title,excerpt,content,categories');
 
     let batch = [];
     try {
@@ -139,7 +169,80 @@ async function fetchAllPostsForCategory(sourceCfg, categoryId, maxPages = 5) {
 
     await new Promise(r => setTimeout(r, 500));
   }
-  return items;
+  const exclude = sourceCfg.excludeCategories || [];
+  return items.filter((p) => !(p.categories || []).some((c) => exclude.includes(c)));
+}
+
+// Minimal RSS 2.0 item parser (regex-based; enough for title/link/description/
+// pubDate/guid with optional CDATA). Avoids adding an XML dependency.
+function parseRssItems(xml) {
+  const unwrap = (v) => v.replace(/^<!\[CDATA\[([\s\S]*)\]\]>$/, (_, inner) => inner).trim();
+  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => {
+    const block = m[1];
+    const tag = (name) => {
+      const mm = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`));
+      return mm ? unwrap(mm[1].trim()) : '';
+    };
+    return {
+      title: tag('title'),
+      link: tag('link'),
+      description: tag('description'),
+      pubDate: tag('pubDate'),
+      guid: tag('guid'),
+    };
+  });
+}
+
+// Community feeds are not curated for the no-purchase premise, so drop items
+// that clearly require buying something (receipt lotteries etc.). Conservative
+// on purpose: only unambiguous phrases, and an explicit "bez zakupu" wins.
+function requiresPurchase(text) {
+  const t = (text || '').toLowerCase();
+  if (/bez\s+zakupu/.test(t)) return false;
+  return /paragon|dowód zakupu|dowod zakupu|kup\s+(?:produkt|dowoln|min|za)|za\s+zakup|zeskanuj\s+paragon|skanuj\s+i\s+wygrywaj/.test(t);
+}
+
+async function fetchRssItems(sourceCfg) {
+  console.log(`Fetching: ${sourceCfg.feedUrl}`);
+  const xml = await fetchText(sourceCfg.feedUrl);
+  const items = parseRssItems(xml).filter((it) => it.link && it.title);
+  const kept = items.filter((it) => !requiresPurchase(`${it.title} ${stripText(it.description || '')}`));
+  console.log(`Fetched ${items.length} items from feed for ${sourceCfg.source} (kept ${kept.length}, dropped ${items.length - kept.length} purchase-required)`);
+  return kept;
+}
+
+function normalizeRssItem(source, item) {
+  const combined = stripText(item.description || '');
+  const deadline = extractDeadline(combined);
+  const published = item.pubDate ? new Date(item.pubDate) : null;
+  // Prefer the numeric thread id from the URL for a stable id; fall back to guid/link.
+  const sourceId = item.link.match(/(\d{4,})/)?.[1] || item.guid || item.link;
+
+  return {
+    id: `${source.source}:${sourceId}`,
+    source: source.source,
+    sourceId,
+    title: stripText(item.title),
+    url: item.link,
+    publishedAt: published && !Number.isNaN(published) ? published.toISOString() : null,
+    modifiedAt: null,
+    deadline,
+    status: deadline ? (new Date(deadline) >= new Date(new Date().toISOString().slice(0, 10)) ? 'active' : 'ended') : 'unknown',
+    entry: {
+      summary: extractEntrySummary(combined),
+      noPurchase: 'altFreeEntry',
+      noPurchaseNotes: source.noPurchaseNotes,
+    },
+    prize: {
+      summary: extractPrizeSummary(combined),
+      value: null,
+      currency: 'PLN',
+    },
+    extraction: {
+      deadlineFound: Boolean(deadline),
+    },
+    lastSeenAt: new Date().toISOString(),
+  };
 }
 
 function normalizePost(source, post) {
@@ -165,7 +268,7 @@ function normalizePost(source, post) {
     entry: {
       summary: entrySummary || 'Sprawdź zasady udziału w źródle.',
       noPurchase: 'altFreeEntry',
-      noPurchaseNotes: 'Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną).',
+      noPurchaseNotes: source.noPurchaseNotes,
     },
     prize: {
       summary: prizeSummary || 'Sprawdź nagrody w źródle.',
@@ -184,9 +287,19 @@ async function main() {
   const all = [];
 
   for (const source of SOURCES) {
-    for (const cat of source.categories) {
-      const posts = await fetchAllPostsForCategory(source, cat);
-      for (const p of posts) all.push(normalizePost(source, p));
+    try {
+      if (source.type === 'rss') {
+        const items = await fetchRssItems(source);
+        for (const it of items) all.push(normalizeRssItem(source, it));
+      } else {
+        for (const cat of source.categories) {
+          const posts = await fetchAllPostsForCategory(source, cat);
+          for (const p of posts) all.push(normalizePost(source, p));
+        }
+      }
+    } catch (e) {
+      // One broken source shouldn't take down the whole scrape.
+      console.error(`Error scraping source ${source.source}:`, e);
     }
   }
 

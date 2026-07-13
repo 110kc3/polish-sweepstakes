@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-13T14:50:17.483Z",
+  "generatedAt": "2026-07-13T15:05:51.914Z",
   "items": [
     {
       "id": "ofree:6992",
@@ -25,7 +25,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.931Z"
+      "lastSeenAt": "2026-07-13T15:05:58.503Z"
     },
     {
       "id": "ofree:7144",
@@ -50,7 +50,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.930Z"
+      "lastSeenAt": "2026-07-13T15:05:58.503Z"
     },
     {
       "id": "ofree:7540",
@@ -75,7 +75,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.928Z"
+      "lastSeenAt": "2026-07-13T15:05:58.502Z"
     },
     {
       "id": "ofree:8880",
@@ -100,7 +100,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.928Z"
+      "lastSeenAt": "2026-07-13T15:05:58.501Z"
     },
     {
       "id": "ofree:9236",
@@ -125,7 +125,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.927Z"
+      "lastSeenAt": "2026-07-13T15:05:58.500Z"
     },
     {
       "id": "ofree:10054",
@@ -150,7 +150,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.924Z"
+      "lastSeenAt": "2026-07-13T15:05:58.498Z"
     },
     {
       "id": "ofree:10060",
@@ -175,7 +175,32 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.922Z"
+      "lastSeenAt": "2026-07-13T15:05:58.495Z"
+    },
+    {
+      "id": "pepper:202526",
+      "source": "pepper",
+      "sourceId": "202526",
+      "title": "Przygotowanie do Olimpiady Matematycznej Juniorów - OD PODSTAW - za darmo",
+      "url": "https://www.pepper.pl/dyskusji/olimpiada-matematyczna-juniorow-przygotowanie-od-podstaw-202526-1157124",
+      "publishedAt": "2025-11-18T08:55:57.000Z",
+      "modifiedAt": null,
+      "deadline": "2025-11-29",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
     },
     {
       "id": "fajnekonkursy:56840",
@@ -200,7 +225,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.331Z"
+      "lastSeenAt": "2026-07-13T15:05:56.766Z"
     },
     {
       "id": "ofree:9929",
@@ -225,7 +250,32 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:22.926Z"
+      "lastSeenAt": "2026-07-13T15:05:58.499Z"
+    },
+    {
+      "id": "pepper:1237753",
+      "source": "pepper",
+      "sourceId": "1237753",
+      "title": "Wielkanocne Polowanie na Ogniste Renifery! Wygraj PS5, Nintendo Switch 2, Meta Quest 3, Ninja Air Fryer, vouchery i inne nagrody!",
+      "url": "https://www.pepper.pl/dyskusji/wielkanocne-polowanie-na-ogniste-renifery-wygraj-ps5-nintendo-switch-2-meta-quest-3-ninja-air-fryer-vouchery-i-inne-nagrody-1237753",
+      "publishedAt": "2026-04-02T14:01:13.000Z",
+      "modifiedAt": null,
+      "deadline": "2026-04-08",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "nagrody!",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.684Z"
     },
     {
       "id": "fajnekonkursy:59817",
@@ -250,7 +300,32 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.324Z"
+      "lastSeenAt": "2026-07-13T15:05:56.752Z"
+    },
+    {
+      "id": "pepper:1297886",
+      "source": "pepper",
+      "sourceId": "1297886",
+      "title": "Wielkie wakacyjne piłkarskie polowanie! Wygraj PS5, Nintendo switch 2, vouchery oraz inne nagrody!",
+      "url": "https://www.pepper.pl/dyskusji/wielkie-wakacyjne-pilkarskie-polowanie-wygraj-ps5-nintendo-switch-2-vouchery-oraz-inne-nagrody-1297886",
+      "publishedAt": "2026-07-01T14:02:00.000Z",
+      "modifiedAt": null,
+      "deadline": "2026-07-07",
+      "status": "ended",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Nagrody natychmiastowe: 150 x voucher Allegro 20 zł50 x voucher Allegro 50 zł50 x voucher Amazon 50 zł (dla posiadaczy Złotego lub Platynowego członkostwa).",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.682Z"
     },
     {
       "id": "fajnekonkursy:64130",
@@ -275,7 +350,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.285Z"
+      "lastSeenAt": "2026-07-13T15:05:56.711Z"
     },
     {
       "id": "fajnekonkursy:63869",
@@ -300,7 +375,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.298Z"
+      "lastSeenAt": "2026-07-13T15:05:56.723Z"
     },
     {
       "id": "fajnekonkursy:63752",
@@ -325,7 +400,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.304Z"
+      "lastSeenAt": "2026-07-13T15:05:56.726Z"
     },
     {
       "id": "fajnekonkursy:64363",
@@ -350,7 +425,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.261Z"
+      "lastSeenAt": "2026-07-13T15:05:56.673Z"
     },
     {
       "id": "fajnekonkursy:64208",
@@ -375,7 +450,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.279Z"
+      "lastSeenAt": "2026-07-13T15:05:56.702Z"
     },
     {
       "id": "fajnekonkursy:64053",
@@ -400,7 +475,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.289Z"
+      "lastSeenAt": "2026-07-13T15:05:56.718Z"
     },
     {
       "id": "fajnekonkursy:64047",
@@ -425,7 +500,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.291Z"
+      "lastSeenAt": "2026-07-13T15:05:56.719Z"
     },
     {
       "id": "fajnekonkursy:64360",
@@ -450,7 +525,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.262Z"
+      "lastSeenAt": "2026-07-13T15:05:56.675Z"
     },
     {
       "id": "fajnekonkursy:64222",
@@ -475,7 +550,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.278Z"
+      "lastSeenAt": "2026-07-13T15:05:56.699Z"
     },
     {
       "id": "fajnekonkursy:64215",
@@ -500,7 +575,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.279Z"
+      "lastSeenAt": "2026-07-13T15:05:56.701Z"
     },
     {
       "id": "fajnekonkursy:64156",
@@ -525,7 +600,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.282Z"
+      "lastSeenAt": "2026-07-13T15:05:56.706Z"
     },
     {
       "id": "fajnekonkursy:64149",
@@ -550,7 +625,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.282Z"
+      "lastSeenAt": "2026-07-13T15:05:56.707Z"
     },
     {
       "id": "fajnekonkursy:64094",
@@ -575,7 +650,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.285Z"
+      "lastSeenAt": "2026-07-13T15:05:56.713Z"
     },
     {
       "id": "fajnekonkursy:64088",
@@ -600,7 +675,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.287Z"
+      "lastSeenAt": "2026-07-13T15:05:56.715Z"
     },
     {
       "id": "fajnekonkursy:63850",
@@ -625,7 +700,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.301Z"
+      "lastSeenAt": "2026-07-13T15:05:56.724Z"
     },
     {
       "id": "fajnekonkursy:64374",
@@ -650,7 +725,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.260Z"
+      "lastSeenAt": "2026-07-13T15:05:56.672Z"
     },
     {
       "id": "fajnekonkursy:64312",
@@ -675,7 +750,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.270Z"
+      "lastSeenAt": "2026-07-13T15:05:56.684Z"
     },
     {
       "id": "fajnekonkursy:64240",
@@ -700,7 +775,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.274Z"
+      "lastSeenAt": "2026-07-13T15:05:56.693Z"
     },
     {
       "id": "fajnekonkursy:64383",
@@ -725,7 +800,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.257Z"
+      "lastSeenAt": "2026-07-13T15:05:56.666Z"
     },
     {
       "id": "fajnekonkursy:64357",
@@ -750,7 +825,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.263Z"
+      "lastSeenAt": "2026-07-13T15:05:56.676Z"
     },
     {
       "id": "fajnekonkursy:63740",
@@ -775,7 +850,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.307Z"
+      "lastSeenAt": "2026-07-13T15:05:56.728Z"
     },
     {
       "id": "fajnekonkursy:64395",
@@ -800,7 +875,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.253Z"
+      "lastSeenAt": "2026-07-13T15:05:56.663Z"
     },
     {
       "id": "fajnekonkursy:63709",
@@ -825,7 +900,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.310Z"
+      "lastSeenAt": "2026-07-13T15:05:56.733Z"
     },
     {
       "id": "fajnekonkursy:64421",
@@ -850,7 +925,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.247Z"
+      "lastSeenAt": "2026-07-13T15:05:56.657Z"
     },
     {
       "id": "fajnekonkursy:64281",
@@ -875,7 +950,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.272Z"
+      "lastSeenAt": "2026-07-13T15:05:56.688Z"
     },
     {
       "id": "fajnekonkursy:64189",
@@ -900,7 +975,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.280Z"
+      "lastSeenAt": "2026-07-13T15:05:56.704Z"
     },
     {
       "id": "fajnekonkursy:64186",
@@ -925,7 +1000,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.281Z"
+      "lastSeenAt": "2026-07-13T15:05:56.705Z"
     },
     {
       "id": "fajnekonkursy:64067",
@@ -950,7 +1025,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.287Z"
+      "lastSeenAt": "2026-07-13T15:05:56.716Z"
     },
     {
       "id": "fajnekonkursy:64443",
@@ -975,7 +1050,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.239Z"
+      "lastSeenAt": "2026-07-13T15:05:56.649Z"
     },
     {
       "id": "fajnekonkursy:64333",
@@ -1000,7 +1075,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.266Z"
+      "lastSeenAt": "2026-07-13T15:05:56.680Z"
     },
     {
       "id": "fajnekonkursy:64329",
@@ -1025,7 +1100,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.267Z"
+      "lastSeenAt": "2026-07-13T15:05:56.682Z"
     },
     {
       "id": "fajnekonkursy:63895",
@@ -1050,7 +1125,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.296Z"
+      "lastSeenAt": "2026-07-13T15:05:56.722Z"
     },
     {
       "id": "fajnekonkursy:60539",
@@ -1075,7 +1150,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.318Z"
+      "lastSeenAt": "2026-07-13T15:05:56.744Z"
     },
     {
       "id": "fajnekonkursy:64418",
@@ -1100,7 +1175,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.249Z"
+      "lastSeenAt": "2026-07-13T15:05:56.660Z"
     },
     {
       "id": "fajnekonkursy:64140",
@@ -1125,7 +1200,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.283Z"
+      "lastSeenAt": "2026-07-13T15:05:56.709Z"
     },
     {
       "id": "fajnekonkursy:64398",
@@ -1150,7 +1225,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.252Z"
+      "lastSeenAt": "2026-07-13T15:05:56.662Z"
     },
     {
       "id": "fajnekonkursy:64428",
@@ -1175,7 +1250,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.244Z"
+      "lastSeenAt": "2026-07-13T15:05:56.654Z"
     },
     {
       "id": "fajnekonkursy:63860",
@@ -1200,7 +1275,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.299Z"
+      "lastSeenAt": "2026-07-13T15:05:56.723Z"
     },
     {
       "id": "fajnekonkursy:63809",
@@ -1225,7 +1300,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.302Z"
+      "lastSeenAt": "2026-07-13T15:05:56.725Z"
     },
     {
       "id": "fajnekonkursy:64002",
@@ -1250,7 +1325,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.292Z"
+      "lastSeenAt": "2026-07-13T15:05:56.719Z"
     },
     {
       "id": "fajnekonkursy:60182",
@@ -1275,7 +1350,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.322Z"
+      "lastSeenAt": "2026-07-13T15:05:56.749Z"
     },
     {
       "id": "fajnekonkursy:64309",
@@ -1300,7 +1375,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.271Z"
+      "lastSeenAt": "2026-07-13T15:05:56.685Z"
     },
     {
       "id": "fajnekonkursy:64284",
@@ -1325,7 +1400,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.272Z"
+      "lastSeenAt": "2026-07-13T15:05:56.687Z"
     },
     {
       "id": "fajnekonkursy:61345",
@@ -1350,7 +1425,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.317Z"
+      "lastSeenAt": "2026-07-13T15:05:56.743Z"
     },
     {
       "id": "fajnekonkursy:64425",
@@ -1375,7 +1450,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.245Z"
+      "lastSeenAt": "2026-07-13T15:05:56.656Z"
     },
     {
       "id": "fajnekonkursy:64415",
@@ -1400,7 +1475,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.250Z"
+      "lastSeenAt": "2026-07-13T15:05:56.661Z"
     },
     {
       "id": "fajnekonkursy:64412",
@@ -1425,7 +1500,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.251Z"
+      "lastSeenAt": "2026-07-13T15:05:56.661Z"
     },
     {
       "id": "fajnekonkursy:64380",
@@ -1450,7 +1525,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.258Z"
+      "lastSeenAt": "2026-07-13T15:05:56.667Z"
     },
     {
       "id": "fajnekonkursy:64377",
@@ -1475,7 +1550,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.258Z"
+      "lastSeenAt": "2026-07-13T15:05:56.669Z"
     },
     {
       "id": "fajnekonkursy:64266",
@@ -1500,7 +1575,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.273Z"
+      "lastSeenAt": "2026-07-13T15:05:56.690Z"
     },
     {
       "id": "fajnekonkursy:64061",
@@ -1525,7 +1600,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.288Z"
+      "lastSeenAt": "2026-07-13T15:05:56.717Z"
     },
     {
       "id": "fajnekonkursy:59994",
@@ -1550,7 +1625,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.323Z"
+      "lastSeenAt": "2026-07-13T15:05:56.750Z"
     },
     {
       "id": "fajnekonkursy:64236",
@@ -1575,7 +1650,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.274Z"
+      "lastSeenAt": "2026-07-13T15:05:56.694Z"
     },
     {
       "id": "fajnekonkursy:64322",
@@ -1600,7 +1675,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.268Z"
+      "lastSeenAt": "2026-07-13T15:05:56.683Z"
     },
     {
       "id": "fajnekonkursy:63635",
@@ -1625,7 +1700,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.314Z"
+      "lastSeenAt": "2026-07-13T15:05:56.737Z"
     },
     {
       "id": "fajnekonkursy:61597",
@@ -1650,7 +1725,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.315Z"
+      "lastSeenAt": "2026-07-13T15:05:56.740Z"
     },
     {
       "id": "fajnekonkursy:63989",
@@ -1675,7 +1750,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.295Z"
+      "lastSeenAt": "2026-07-13T15:05:56.721Z"
     },
     {
       "id": "fajnekonkursy:63744",
@@ -1700,7 +1775,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.305Z"
+      "lastSeenAt": "2026-07-13T15:05:56.726Z"
     },
     {
       "id": "fajnekonkursy:58388",
@@ -1725,7 +1800,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.327Z"
+      "lastSeenAt": "2026-07-13T15:05:56.758Z"
     },
     {
       "id": "fajnekonkursy:64440",
@@ -1750,7 +1825,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.242Z"
+      "lastSeenAt": "2026-07-13T15:05:56.652Z"
     },
     {
       "id": "fajnekonkursy:64387",
@@ -1775,7 +1850,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.256Z"
+      "lastSeenAt": "2026-07-13T15:05:56.666Z"
     },
     {
       "id": "fajnekonkursy:63731",
@@ -1800,7 +1875,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.309Z"
+      "lastSeenAt": "2026-07-13T15:05:56.732Z"
     },
     {
       "id": "fajnekonkursy:64091",
@@ -1825,7 +1900,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.286Z"
+      "lastSeenAt": "2026-07-13T15:05:56.714Z"
     },
     {
       "id": "fajnekonkursy:63996",
@@ -1850,7 +1925,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.293Z"
+      "lastSeenAt": "2026-07-13T15:05:56.720Z"
     },
     {
       "id": "fajnekonkursy:60290",
@@ -1875,7 +1950,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.320Z"
+      "lastSeenAt": "2026-07-13T15:05:56.747Z"
     },
     {
       "id": "fajnekonkursy:58867",
@@ -1900,7 +1975,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.327Z"
+      "lastSeenAt": "2026-07-13T15:05:56.757Z"
     },
     {
       "id": "fajnekonkursy:58245",
@@ -1925,7 +2000,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.329Z"
+      "lastSeenAt": "2026-07-13T15:05:56.760Z"
     },
     {
       "id": "fajnekonkursy:59459",
@@ -1950,7 +2025,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.325Z"
+      "lastSeenAt": "2026-07-13T15:05:56.755Z"
     },
     {
       "id": "fajnekonkursy:64230",
@@ -1975,7 +2050,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.277Z"
+      "lastSeenAt": "2026-07-13T15:05:56.698Z"
     },
     {
       "id": "fajnekonkursy:54579",
@@ -2000,7 +2075,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.332Z"
+      "lastSeenAt": "2026-07-13T15:05:56.767Z"
     },
     {
       "id": "fajnekonkursy:61483",
@@ -2025,7 +2100,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.316Z"
+      "lastSeenAt": "2026-07-13T15:05:56.741Z"
     },
     {
       "id": "fajnekonkursy:57894",
@@ -2050,7 +2125,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.330Z"
+      "lastSeenAt": "2026-07-13T15:05:56.762Z"
     },
     {
       "id": "fajnekonkursy:64349",
@@ -2075,7 +2150,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.265Z"
+      "lastSeenAt": "2026-07-13T15:05:56.678Z"
     },
     {
       "id": "fajnekonkursy:64136",
@@ -2100,7 +2175,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.284Z"
+      "lastSeenAt": "2026-07-13T15:05:56.710Z"
     },
     {
       "id": "fajnekonkursy:63755",
@@ -2125,7 +2200,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.303Z"
+      "lastSeenAt": "2026-07-13T15:05:56.725Z"
     },
     {
       "id": "fajnekonkursy:63694",
@@ -2150,7 +2225,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.311Z"
+      "lastSeenAt": "2026-07-13T15:05:56.734Z"
     },
     {
       "id": "fajnekonkursy:63691",
@@ -2175,7 +2250,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.313Z"
+      "lastSeenAt": "2026-07-13T15:05:56.736Z"
     },
     {
       "id": "fajnekonkursy:64391",
@@ -2200,7 +2275,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.254Z"
+      "lastSeenAt": "2026-07-13T15:05:56.664Z"
     },
     {
       "id": "fajnekonkursy:63993",
@@ -2225,7 +2300,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.294Z"
+      "lastSeenAt": "2026-07-13T15:05:56.721Z"
     },
     {
       "id": "fajnekonkursy:61761",
@@ -2250,7 +2325,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.315Z"
+      "lastSeenAt": "2026-07-13T15:05:56.739Z"
     },
     {
       "id": "fajnekonkursy:63889",
@@ -2275,7 +2350,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.297Z"
+      "lastSeenAt": "2026-07-13T15:05:56.722Z"
     },
     {
       "id": "fajnekonkursy:60342",
@@ -2300,7 +2375,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.320Z"
+      "lastSeenAt": "2026-07-13T15:05:56.745Z"
     },
     {
       "id": "fajnekonkursy:64255",
@@ -2325,7 +2400,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.273Z"
+      "lastSeenAt": "2026-07-13T15:05:56.691Z"
     },
     {
       "id": "fajnekonkursy:57761",
@@ -2350,7 +2425,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T14:50:21.330Z"
+      "lastSeenAt": "2026-07-13T15:05:56.764Z"
     },
     {
       "id": "ofree:7486",
@@ -2375,7 +2450,7 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T14:50:22.929Z"
+      "lastSeenAt": "2026-07-13T15:05:58.502Z"
     },
     {
       "id": "ofree:3963",
@@ -2400,7 +2475,657 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T14:50:22.932Z"
+      "lastSeenAt": "2026-07-13T15:05:58.503Z"
+    },
+    {
+      "id": "pepper:1297889",
+      "source": "pepper",
+      "sourceId": "1297889",
+      "title": "Wielkie wakacyjne piłkarskie polowanie! Wymiana reniferów!",
+      "url": "https://www.pepper.pl/dyskusji/wielkie-wakacyjne-pilkarskie-polowanie-wymiana-reniferow-1297889",
+      "publishedAt": "2026-07-01T14:04:00.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.681Z"
+    },
+    {
+      "id": "pepper:1292290",
+      "source": "pepper",
+      "sourceId": "1292290",
+      "title": "Paczkomat Challenge - 150 nagród (PSVR2, smartwatche, Kindle, gaming, słuchawki)",
+      "url": "https://www.pepper.pl/dyskusji/paczkomat-challenge-150-nagrod-psvr2-smartwatche-kindle-gaming-sluchawki-1292290",
+      "publishedAt": "2026-06-05T08:49:04.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "nagrodę kodem odbioru i nr telefonu (jest na stronie).",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+    },
+    {
+      "id": "pepper:1290350",
+      "source": "pepper",
+      "sourceId": "1290350",
+      "title": "Darmowy Notione Go Plus",
+      "url": "https://www.pepper.pl/dyskusji/darmowy-notione-go-plus-1290350",
+      "publishedAt": "2026-06-02T05:16:59.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+    },
+    {
+      "id": "pepper:1282061",
+      "source": "pepper",
+      "sourceId": "1282061",
+      "title": "Sockio Hunt - Poluj na darmowe skarpetki w automatach DPD",
+      "url": "https://www.pepper.pl/dyskusji/sockio-hunt-poluj-na-darmowe-skarpetki-w-automatach-dpd-1282061",
+      "publishedAt": "2026-05-18T11:17:08.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+    },
+    {
+      "id": "pepper:1269629",
+      "source": "pepper",
+      "sourceId": "1269629",
+      "title": "jak długo są ważne wouchery z wygranych ?",
+      "url": "https://www.pepper.pl/dyskusji/jak-dlugo-sa-wazne-wouchery-z-wygranych-1269629",
+      "publishedAt": "2026-04-26T20:17:59.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+    },
+    {
+      "id": "pepper:1265251",
+      "source": "pepper",
+      "sourceId": "1265251",
+      "title": "Rozdam 400 żabsów za free bo nie wiem na co wydać",
+      "url": "https://www.pepper.pl/dyskusji/rozdam-400-zabsow-za-free-bo-nie-wiem-na-co-wydac-1265251",
+      "publishedAt": "2026-04-19T16:39:35.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+    },
+    {
+      "id": "pepper:1257256",
+      "source": "pepper",
+      "sourceId": "1257256",
+      "title": "Jak odebrać voucher od Peppera?",
+      "url": "https://www.pepper.pl/dyskusji/jak-odebrac-voucher-od-peppera-1257256",
+      "publishedAt": "2026-04-06T09:47:42.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.683Z"
+    },
+    {
+      "id": "pepper:1255476",
+      "source": "pepper",
+      "sourceId": "1255476",
+      "title": "O co chodzi z tymi ognistymi reniferami?",
+      "url": "https://www.pepper.pl/dyskusji/o-co-chodzi-z-tymi-ognistymi-reniferami-1255476",
+      "publishedAt": "2026-04-03T05:08:01.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.683Z"
+    },
+    {
+      "id": "pepper:1237757",
+      "source": "pepper",
+      "sourceId": "1237757",
+      "title": "Wielkanocne Polowanie na Ogniste Renifery! Wymiana reniferów!",
+      "url": "https://www.pepper.pl/dyskusji/wielkanocne-polowanie-na-ogniste-renifery-wymiana-reniferow-1237757",
+      "publishedAt": "2026-04-02T14:01:33.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.683Z"
+    },
+    {
+      "id": "pepper:1253690",
+      "source": "pepper",
+      "sourceId": "1253690",
+      "title": "renki",
+      "url": "https://www.pepper.pl/dyskusji/renki-1253690",
+      "publishedAt": "2026-03-31T07:50:19.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.684Z"
+    },
+    {
+      "id": "pepper:1239589",
+      "source": "pepper",
+      "sourceId": "1239589",
+      "title": "jakie",
+      "url": "https://www.pepper.pl/dyskusji/jakie-skarpety-nosza-pepperowicze-1239589",
+      "publishedAt": "2026-03-09T16:18:20.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:1233682",
+      "source": "pepper",
+      "sourceId": "1233682",
+      "title": "kod Inpost bilety na mecz Polska - Albania",
+      "url": "https://www.pepper.pl/dyskusji/kod-inpost-bilety-na-mecz-polska-albania-1233682",
+      "publishedAt": "2026-02-27T11:25:00.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:1211986",
+      "source": "pepper",
+      "sourceId": "1211986",
+      "title": "Oddam kupon 10% Ostrovit, Master Sport, G2A",
+      "url": "https://www.pepper.pl/dyskusji/oddam-kupon-10-ostrovit-master-sport-g2a-1211986",
+      "publishedAt": "2026-01-26T08:59:10.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:1190455",
+      "source": "pepper",
+      "sourceId": "1190455",
+      "title": "Audioteka 30 dni - za darmo",
+      "url": "https://www.pepper.pl/dyskusji/audioteka-30-dni-za-darmo-1190455",
+      "publishedAt": "2025-12-23T12:09:51.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:1184337",
+      "source": "pepper",
+      "sourceId": "1184337",
+      "title": "5-rok obserwuje refniery",
+      "url": "https://www.pepper.pl/dyskusji/5-rok-obserwuje-refniery-1184337",
+      "publishedAt": "2025-12-16T00:42:28.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:1176573",
+      "source": "pepper",
+      "sourceId": "1176573",
+      "title": "Darmowe 4 miechy Spotify kod.",
+      "url": "https://www.pepper.pl/dyskusji/darmowe-4-miechy-spotify-kod-1176573",
+      "publishedAt": "2025-12-06T18:50:05.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:2025",
+      "source": "pepper",
+      "sourceId": "2025",
+      "title": "Kalendarz Adwentowy 2025",
+      "url": "https://www.pepper.pl/dyskusji/kalendarz-adwentowy-2025-1172087",
+      "publishedAt": "2025-12-01T07:20:23.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:1170783",
+      "source": "pepper",
+      "sourceId": "1170783",
+      "title": "Może komuś przydadzą się 3 kody (15 zł/każdy) z pizzy Guseppe do wykorzystania na g2a.",
+      "url": "https://www.pepper.pl/dyskusji/moze-komus-przydadza-sie-3-kody-15-zlkazdy-z-pizzy-guseppe-do-wykorzystania-na-g2a-1170783",
+      "publishedAt": "2025-11-29T13:06:30.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+    },
+    {
+      "id": "pepper:1145521",
+      "source": "pepper",
+      "sourceId": "1145521",
+      "title": "Kody na quiz do Biedronki",
+      "url": "https://www.pepper.pl/dyskusji/kody-na-quiz-do-biedronki-1145521",
+      "publishedAt": "2025-11-04T08:03:36.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+    },
+    {
+      "id": "pepper:1136237",
+      "source": "pepper",
+      "sourceId": "1136237",
+      "title": "Polowanie na renifery",
+      "url": "https://www.pepper.pl/dyskusji/polowanie-na-renifery-1136237",
+      "publishedAt": "2025-10-22T09:09:11.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+    },
+    {
+      "id": "pepper:1134941",
+      "source": "pepper",
+      "sourceId": "1134941",
+      "title": "InPost kod na Polska vs Holandia",
+      "url": "https://www.pepper.pl/dyskusji/inpost-kod-na-polska-vs-holandia-1134941",
+      "publishedAt": "2025-10-20T07:02:03.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+    },
+    {
+      "id": "pepper:1124539",
+      "source": "pepper",
+      "sourceId": "1124539",
+      "title": "Quiz biedronka",
+      "url": "https://www.pepper.pl/dyskusji/quiz-biedronka-1124539",
+      "publishedAt": "2025-10-04T06:03:09.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+    },
+    {
+      "id": "pepper:7643",
+      "source": "pepper",
+      "sourceId": "7643",
+      "title": "zniżka na TCL 98P81K 98\" QLED 144 Hz 4K Google TV Dolby Atmos Vision za 7643pln w x-kom",
+      "url": "https://www.pepper.pl/dyskusji/tcl-98p81k-98-qled-144-hz-4k-google-tv-dolby-atmos-vision-za-7643-1123279",
+      "publishedAt": "2025-10-02T06:25:43.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+    },
+    {
+      "id": "pepper:1119821",
+      "source": "pepper",
+      "sourceId": "1119821",
+      "title": "Konkurs na 3x PS5 slim od allegro za szybkie odebranie EA Sports 26 na premierę",
+      "url": "https://www.pepper.pl/dyskusji/konkurs-na-3x-ps5-slim-od-allegro-za-szybkie-odebranie-ea-sports-26-na-premiere-1119821",
+      "publishedAt": "2025-09-25T22:45:00.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+    },
+    {
+      "id": "pepper:1109543",
+      "source": "pepper",
+      "sourceId": "1109543",
+      "title": "Kody na quiz do Biedronki (biedroniaki)",
+      "url": "https://www.pepper.pl/dyskusji/kody-na-quiz-do-biedronki-biedroniaki-1109543",
+      "publishedAt": "2025-09-06T11:26:06.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "Sprawdź nagrody w źródle.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+    },
+    {
+      "id": "pepper:1083207",
+      "source": "pepper",
+      "sourceId": "1083207",
+      "title": "Potrząśnij i wygraj - aliexpress",
+      "url": "https://www.pepper.pl/dyskusji/potrzasnij-i-wygraj-aliexpress-1083207",
+      "publishedAt": "2025-07-19T17:54:40.000Z",
+      "modifiedAt": null,
+      "deadline": null,
+      "status": "unknown",
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
+      },
+      "prize": {
+        "summary": "wygraj\" jakimś cudem udało mi się wylosowacć konsole Ps5, niestety moje zadowolenie szybko zamieniło sie w lekkie zdenerwowanie.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": false
+      },
+      "lastSeenAt": "2026-07-13T15:05:58.686Z"
     }
   ]
 }
