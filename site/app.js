@@ -34,6 +34,18 @@ function deadlineBadge(deadline) {
   return `<span class="badge deadline ${cls}">Do: ${escapeHtml(deadline)}${escapeHtml(suffix)}</span>`;
 }
 
+function contestLink(it) {
+  const target = it.links?.regulamin || it.links?.organizer;
+  if (!target) return '';
+  const label = it.links?.regulamin ? 'Regulamin' : 'Strona konkursu';
+  return `<a class="btn" href="${escapeHtml(target)}" target="_blank" rel="noopener nofollow">${label}</a>`;
+}
+
+function organizerWarning(it) {
+  if (it.verification?.organizerOk !== false) return '';
+  return `<p class="muted warn">⚠ Nasza weryfikacja: strona konkursu może już nie działać.</p>`;
+}
+
 function render(items) {
   els.list.innerHTML = items.map((it) => {
     return `
@@ -56,8 +68,10 @@ function render(items) {
         </div>
 
         <div class="actions">
-          <a class="btn" href="${escapeHtml(it.url)}" target="_blank" rel="noopener">Zobacz szczegóły / regulamin</a>
+          <a class="btn" href="${escapeHtml(it.url)}" target="_blank" rel="noopener">Zobacz szczegóły</a>
+          ${contestLink(it)}
         </div>
+        ${organizerWarning(it)}
       </article>
     `;
   }).join('');

@@ -55,9 +55,21 @@ function card(it) {
         </div>
 
         <div class="actions">
-          <a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener">Zobacz szczegóły / regulamin</a>
-        </div>
+          <a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener">Zobacz szczegóły</a>${contestLink(it)}
+        </div>${organizerWarning(it)}
       </article>`;
+}
+
+function contestLink(it) {
+  const target = it.links?.regulamin || it.links?.organizer;
+  if (!target) return '';
+  const label = it.links?.regulamin ? 'Regulamin' : 'Strona konkursu';
+  return `\n          <a class="btn" href="${esc(target)}" target="_blank" rel="noopener nofollow">${label}</a>`;
+}
+
+function organizerWarning(it) {
+  if (it.verification?.organizerOk !== false) return '';
+  return `\n        <p class="muted warn">⚠ Nasza weryfikacja: strona konkursu może już nie działać.</p>`;
 }
 
 function buildJsonLd(items, generatedAt) {

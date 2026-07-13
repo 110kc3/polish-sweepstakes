@@ -39,6 +39,28 @@ function stripText(html) {
   return root.text.trim().replace(/\s+/g, ' ');
 }
 
+// Links we never treat as the contest venue: share intents, media files,
+// and the source sites themselves.
+const LINK_BLOCKLIST = /sharer|\/intent\/|\/share\?|wa\.me|mailto:|\.(?:jpg|jpeg|png|gif|webp|svg|pdf)(?:\?|$)|fajnekonkursy\.pl|ofree\.pl|pepper\.pl/i;
+
+// Extract the organizer/entry link and (if present) a direct regulamin link
+// from article HTML. These feed our own checker so we can verify contests
+// at the source instead of trusting the aggregator alone.
+function extractLinks(html) {
+  const root = parse(html || '');
+  const anchors = root.querySelectorAll('a')
+    .map((a) => ({ href: a.getAttribute('href') || '', text: a.text.trim() }))
+    .filter((a) => /^https?:\/\//i.test(a.href) && !LINK_BLOCKLIST.test(a.href));
+
+  const regulamin = anchors.find((a) => /regulamin/i.test(a.text) || /regulamin/i.test(a.href));
+  const organizer = anchors.find((a) => a !== regulamin);
+
+  return {
+    organizer: organizer?.href || null,
+    regulamin: regulamin?.href || null,
+  };
+}
+
 const PL_MONTHS = {
   stycznia: '01', lutego: '02', marca: '03', kwietnia: '04',
   maja: '05', czerwca: '06', lipca: '07', sierpnia: '08',
@@ -213,6 +235,7 @@ async function fetchRssItems(sourceCfg) {
 
 function normalizeRssItem(source, item) {
   const combined = stripText(item.description || '');
+  const links = extractLinks(item.description || '');
   const deadline = extractDeadline(combined);
   const published = item.pubDate ? new Date(item.pubDate) : null;
   // Prefer the numeric thread id from the URL for a stable id; fall back to guid/link.
@@ -226,6 +249,7 @@ function normalizeRssItem(source, item) {
     url: item.link,
     publishedAt: published && !Number.isNaN(published) ? published.toISOString() : null,
     modifiedAt: null,
+    links,
     deadline,
     status: deadline ? (new Date(deadline) >= new Date(new Date().toISOString().slice(0, 10)) ? 'active' : 'ended') : 'unknown',
     entry: {
@@ -248,6 +272,7 @@ function normalizeRssItem(source, item) {
 function normalizePost(source, post) {
   const excerptText = stripText(post?.excerpt?.rendered || '');
   const contentText = stripText(post?.content?.rendered || '');
+  const links = extractLinks(post?.content?.rendered || '');
 
   const combined = `${excerptText} ${contentText}`.trim();
 
@@ -263,6 +288,7 @@ function normalizePost(source, post) {
     url: post.link,
     publishedAt: post.date,
     modifiedAt: post.modified,
+    links,
     deadline,
     status: deadline ? (new Date(deadline) >= new Date(new Date().toISOString().slice(0, 10)) ? 'active' : 'ended') : 'unknown',
     entry: {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-13T15:05:51.914Z",
+  "generatedAt": "2026-07-13T15:13:04.973Z",
   "items": [
     {
       "id": "ofree:6992",
@@ -10,6 +10,10 @@
       "url": "https://www.ofree.pl/loteria-cinkciarz-do-wygrania-lacznie-az-500-tysiecy-zlotych/",
       "publishedAt": "2021-09-08T16:48:02",
       "modifiedAt": "2025-08-21T06:30:13",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2021-09-01",
       "status": "ended",
       "entry": {
@@ -25,7 +29,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.503Z"
+      "lastSeenAt": "2026-07-13T15:13:11.035Z"
     },
     {
       "id": "ofree:7144",
@@ -35,6 +39,10 @@
       "url": "https://www.ofree.pl/coca-cola-loteria-wygraj-darmowe-gadzety-konkurs/",
       "publishedAt": "2022-02-06T10:55:51",
       "modifiedAt": "2025-08-21T06:18:34",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2022-06-14",
       "status": "ended",
       "entry": {
@@ -50,7 +58,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.503Z"
+      "lastSeenAt": "2026-07-13T15:13:11.033Z"
     },
     {
       "id": "ofree:7540",
@@ -60,6 +68,10 @@
       "url": "https://www.ofree.pl/gowork-pl-konkurs-dla-absolwentow-praca-dzis-i-za-50-lat/",
       "publishedAt": "2022-06-12T14:20:02",
       "modifiedAt": "2022-06-12T17:07:38",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2022-06-30",
       "status": "ended",
       "entry": {
@@ -75,7 +87,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.502Z"
+      "lastSeenAt": "2026-07-13T15:13:11.032Z"
     },
     {
       "id": "ofree:8880",
@@ -85,6 +97,10 @@
       "url": "https://www.ofree.pl/loteria-blikomania-odbierz-darmowe-ebooki-od-blik/",
       "publishedAt": "2023-04-19T21:03:54",
       "modifiedAt": "2025-08-21T04:58:40",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2023-06-06",
       "status": "ended",
       "entry": {
@@ -100,7 +116,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.501Z"
+      "lastSeenAt": "2026-07-13T15:13:11.031Z"
     },
     {
       "id": "ofree:9236",
@@ -110,6 +126,10 @@
       "url": "https://www.ofree.pl/wielka-loteria-carrefour-wygraj-karty-podarunkowe-i-pieniadze-na-zakupy/",
       "publishedAt": "2023-10-15T15:24:16",
       "modifiedAt": "2025-08-21T04:25:47",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2023-10-31",
       "status": "ended",
       "entry": {
@@ -125,7 +145,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.500Z"
+      "lastSeenAt": "2026-07-13T15:13:11.030Z"
     },
     {
       "id": "ofree:10054",
@@ -135,6 +155,10 @@
       "url": "https://www.ofree.pl/loteria-allegro-smart-2025/",
       "publishedAt": "2025-10-12T17:25:02",
       "modifiedAt": "2025-10-12T17:25:03",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2025-11-09",
       "status": "ended",
       "entry": {
@@ -150,7 +174,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.498Z"
+      "lastSeenAt": "2026-07-13T15:13:11.026Z"
     },
     {
       "id": "ofree:10060",
@@ -160,6 +184,10 @@
       "url": "https://www.ofree.pl/loteria-paypo-granie/",
       "publishedAt": "2025-10-19T13:32:31",
       "modifiedAt": "2025-10-19T13:32:31",
+      "links": {
+        "organizer": "https://www.e-konkursy.info/konkurs/loteria-paypogranie-20251",
+        "regulamin": null
+      },
       "deadline": "2025-11-13",
       "status": "ended",
       "entry": {
@@ -175,7 +203,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.495Z"
+      "lastSeenAt": "2026-07-13T15:13:11.023Z"
     },
     {
       "id": "pepper:202526",
@@ -185,6 +213,10 @@
       "url": "https://www.pepper.pl/dyskusji/olimpiada-matematyczna-juniorow-przygotowanie-od-podstaw-202526-1157124",
       "publishedAt": "2025-11-18T08:55:57.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2025-11-29",
       "status": "ended",
       "entry": {
@@ -200,7 +232,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.294Z"
     },
     {
       "id": "fajnekonkursy:56840",
@@ -210,6 +242,10 @@
       "url": "https://fajnekonkursy.pl/literackie/astronomia-jest-kobieta/",
       "publishedAt": "2026-01-15T16:50:53",
       "modifiedAt": "2026-01-15T16:50:53",
+      "links": {
+        "organizer": "https://www.urania.edu.pl/konkursy/astronomia-jest-kobieta/zasady",
+        "regulamin": null
+      },
       "deadline": "2026-01-31",
       "status": "ended",
       "entry": {
@@ -225,7 +261,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.766Z"
+      "lastSeenAt": "2026-07-13T15:13:09.415Z"
     },
     {
       "id": "ofree:9929",
@@ -235,6 +271,10 @@
       "url": "https://www.ofree.pl/loteria-inpost-2025/",
       "publishedAt": "2025-09-20T20:47:38",
       "modifiedAt": "2025-09-20T20:47:38",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": "2026-02-28",
       "status": "ended",
       "entry": {
@@ -250,7 +290,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.499Z"
+      "lastSeenAt": "2026-07-13T15:13:11.028Z"
     },
     {
       "id": "pepper:1237753",
@@ -260,6 +300,10 @@
       "url": "https://www.pepper.pl/dyskusji/wielkanocne-polowanie-na-ogniste-renifery-wygraj-ps5-nintendo-switch-2-meta-quest-3-ninja-air-fryer-vouchery-i-inne-nagrody-1237753",
       "publishedAt": "2026-04-02T14:01:13.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": "https://www.facebook.com/pl.pepper/)",
+        "regulamin": null
+      },
       "deadline": "2026-04-08",
       "status": "ended",
       "entry": {
@@ -275,7 +319,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.684Z"
+      "lastSeenAt": "2026-07-13T15:13:11.292Z"
     },
     {
       "id": "fajnekonkursy:59817",
@@ -285,6 +329,10 @@
       "url": "https://fajnekonkursy.pl/bez-zakupu/wyzwanie-dla-wyjadaczy/",
       "publishedAt": "2026-04-29T12:18:49",
       "modifiedAt": "2026-05-13T12:11:57",
+      "links": {
+        "organizer": "https://www.wyzwaniedlawyjadaczy.pl/",
+        "regulamin": null
+      },
       "deadline": "2026-05-12",
       "status": "ended",
       "entry": {
@@ -300,7 +348,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.752Z"
+      "lastSeenAt": "2026-07-13T15:13:09.399Z"
     },
     {
       "id": "pepper:1297886",
@@ -310,6 +358,10 @@
       "url": "https://www.pepper.pl/dyskusji/wielkie-wakacyjne-pilkarskie-polowanie-wygraj-ps5-nintendo-switch-2-vouchery-oraz-inne-nagrody-1297886",
       "publishedAt": "2026-07-01T14:02:00.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": "https://www.facebook.com/pl.pepper/",
+        "regulamin": null
+      },
       "deadline": "2026-07-07",
       "status": "ended",
       "entry": {
@@ -325,7 +377,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+      "lastSeenAt": "2026-07-13T15:13:11.289Z"
     },
     {
       "id": "fajnekonkursy:64130",
@@ -335,6 +387,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/da-grasso-pizza-na-final/",
       "publishedAt": "2026-07-01T20:52:29",
       "modifiedAt": "2026-07-01T20:52:29",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1470920985078464&set=a.705801311590439",
+        "regulamin": null
+      },
       "deadline": "2026-07-12",
       "status": "ended",
       "entry": {
@@ -350,7 +406,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.711Z"
+      "lastSeenAt": "2026-07-13T15:13:09.311Z"
     },
     {
       "id": "fajnekonkursy:63869",
@@ -360,6 +416,10 @@
       "url": "https://fajnekonkursy.pl/latwe/chwile-z-kinder-bueno/",
       "publishedAt": "2026-06-23T21:04:40",
       "modifiedAt": "2026-06-23T21:04:40",
+      "links": {
+        "organizer": "https://wyborcza.pl/0,185230.html",
+        "regulamin": null
+      },
       "deadline": "2026-07-12",
       "status": "ended",
       "entry": {
@@ -375,7 +435,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.723Z"
+      "lastSeenAt": "2026-07-13T15:13:09.339Z"
     },
     {
       "id": "fajnekonkursy:63752",
@@ -385,6 +445,10 @@
       "url": "https://fajnekonkursy.pl/latwe/sekret-urody-ava-ritual/",
       "publishedAt": "2026-06-19T18:30:35",
       "modifiedAt": "2026-06-19T18:30:35",
+      "links": {
+        "organizer": "https://sekreturody.com/spolecznosc/konkursy",
+        "regulamin": null
+      },
       "deadline": "2026-07-12",
       "status": "ended",
       "entry": {
@@ -400,7 +464,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.726Z"
+      "lastSeenAt": "2026-07-13T15:13:09.354Z"
     },
     {
       "id": "fajnekonkursy:64363",
@@ -410,6 +474,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/empik-trychomania/",
       "publishedAt": "2026-07-08T23:02:42",
       "modifiedAt": "2026-07-08T23:02:42",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DaiNK3WD2s9/",
+        "regulamin": null
+      },
       "deadline": "2026-07-14",
       "status": "active",
       "entry": {
@@ -425,7 +493,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.673Z"
+      "lastSeenAt": "2026-07-13T15:13:09.270Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64208",
@@ -435,6 +508,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/aclari-wyjatkowy-moment/",
       "publishedAt": "2026-07-03T11:00:09",
       "modifiedAt": "2026-07-03T11:00:09",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DaST_ekHPfH/",
+        "regulamin": null
+      },
       "deadline": "2026-07-14",
       "status": "active",
       "entry": {
@@ -450,7 +527,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.702Z"
+      "lastSeenAt": "2026-07-13T15:13:09.304Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64053",
@@ -460,6 +542,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/dom-ktory-czuje-klimat-lata/",
       "publishedAt": "2026-06-30T20:08:01",
       "modifiedAt": "2026-06-30T20:08:01",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=1587799986062925&set=pb.100044988167872.-2207520000",
+        "regulamin": null
+      },
       "deadline": "2026-07-14",
       "status": "active",
       "entry": {
@@ -475,7 +561,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.718Z"
+      "lastSeenAt": "2026-07-13T15:13:09.321Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64047",
@@ -485,6 +576,10 @@
       "url": "https://fajnekonkursy.pl/latwe/filmweb-zaproszenie/",
       "publishedAt": "2026-06-30T16:47:22",
       "modifiedAt": "2026-06-30T16:47:22",
+      "links": {
+        "organizer": "https://www.filmweb.pl/contest/5887",
+        "regulamin": null
+      },
       "deadline": "2026-07-14",
       "status": "active",
       "entry": {
@@ -500,7 +595,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.719Z"
+      "lastSeenAt": "2026-07-13T15:13:09.323Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64360",
@@ -510,6 +610,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/house-summer-side-quest/",
       "publishedAt": "2026-07-08T22:52:11",
       "modifiedAt": "2026-07-08T22:52:11",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DaildAct-IZ/",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -525,7 +629,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.675Z"
+      "lastSeenAt": "2026-07-13T15:13:09.272Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64222",
@@ -535,6 +644,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/polaczenie-bizuterii-i-fryzury/",
       "publishedAt": "2026-07-03T11:56:13",
       "modifiedAt": "2026-07-03T11:56:13",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DaU0UljsOWL/",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -550,7 +663,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.699Z"
+      "lastSeenAt": "2026-07-13T15:13:09.301Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64215",
@@ -560,6 +678,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/rock-point-nortera/",
       "publishedAt": "2026-07-03T11:29:27",
       "modifiedAt": "2026-07-03T11:29:27",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=122290151432081180&set=a.122101119128081180",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -575,7 +697,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.701Z"
+      "lastSeenAt": "2026-07-13T15:13:09.303Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64156",
@@ -585,6 +712,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/kibicuj-z-gree/",
       "publishedAt": "2026-07-02T09:51:53",
       "modifiedAt": "2026-07-02T09:51:53",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=2003553340588672&set=pb.100028020776619.-2207520000",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -600,7 +731,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.706Z"
+      "lastSeenAt": "2026-07-13T15:13:09.308Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64149",
@@ -610,6 +746,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/continental-tour-de-france/",
       "publishedAt": "2026-07-02T09:25:18",
       "modifiedAt": "2026-07-02T09:25:18",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1990277881861175&set=a.1147625412793097",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -625,7 +765,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.707Z"
+      "lastSeenAt": "2026-07-13T15:13:09.309Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64094",
@@ -635,6 +780,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/zestaw-piknikowy-diet-food/",
       "publishedAt": "2026-07-01T17:25:28",
       "modifiedAt": "2026-07-01T17:25:28",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1559572809295865&set=a.745238540729300&locale=pl_PL",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -650,7 +799,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.713Z"
+      "lastSeenAt": "2026-07-13T15:13:09.313Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64088",
@@ -660,6 +814,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/dziki-motyl-przemilczana/",
       "publishedAt": "2026-07-01T14:58:47",
       "modifiedAt": "2026-07-01T14:58:47",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DaPx2D7jc-Q/",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -675,7 +833,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.715Z"
+      "lastSeenAt": "2026-07-13T15:13:09.315Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63850",
@@ -685,6 +848,10 @@
       "url": "https://fajnekonkursy.pl/kreatywne/josera-psi-bohater/",
       "publishedAt": "2026-06-23T10:16:39",
       "modifiedAt": "2026-06-23T10:16:39",
+      "links": {
+        "organizer": "https://lp.josera.pl/psibohater-konkurs/",
+        "regulamin": null
+      },
       "deadline": "2026-07-15",
       "status": "active",
       "entry": {
@@ -700,7 +867,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.724Z"
+      "lastSeenAt": "2026-07-13T15:13:09.345Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64374",
@@ -710,6 +882,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/smak-wloskich-wakacji/",
       "publishedAt": "2026-07-09T17:32:22",
       "modifiedAt": "2026-07-09T17:32:22",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=2000808154200066&set=a.959602564987302",
+        "regulamin": null
+      },
       "deadline": "2026-07-16",
       "status": "active",
       "entry": {
@@ -725,7 +901,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.672Z"
+      "lastSeenAt": "2026-07-13T15:13:09.267Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64312",
@@ -735,6 +916,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/wygraj-instax-mini-12/",
       "publishedAt": "2026-07-07T16:52:34",
       "modifiedAt": "2026-07-07T16:52:34",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DacTi2CDFAo/",
+        "regulamin": null
+      },
       "deadline": "2026-07-16",
       "status": "active",
       "entry": {
@@ -750,7 +935,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.684Z"
+      "lastSeenAt": "2026-07-13T15:13:09.278Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64240",
@@ -760,6 +950,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/proszynski-messi/",
       "publishedAt": "2026-07-04T10:11:40",
       "modifiedAt": "2026-07-04T10:11:40",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1668657118602201&set=pb.100063737852850.-2207520000&locale=pl_PL",
+        "regulamin": null
+      },
       "deadline": "2026-07-16",
       "status": "active",
       "entry": {
@@ -775,7 +969,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.693Z"
+      "lastSeenAt": "2026-07-13T15:13:09.293Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64383",
@@ -785,6 +984,10 @@
       "url": "https://fajnekonkursy.pl/latwe/zestaw-bizuterii-yvon/",
       "publishedAt": "2026-07-09T23:49:25",
       "modifiedAt": "2026-07-09T23:49:25",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1478843414273453&set=a.569485155209288",
+        "regulamin": null
+      },
       "deadline": "2026-07-17",
       "status": "active",
       "entry": {
@@ -800,7 +1003,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.666Z"
+      "lastSeenAt": "2026-07-13T15:13:09.260Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64357",
@@ -810,6 +1018,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/idealny-letni-outfit/",
       "publishedAt": "2026-07-08T22:38:40",
       "modifiedAt": "2026-07-08T22:38:40",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DahhaKStDqo/",
+        "regulamin": null
+      },
       "deadline": "2026-07-17",
       "status": "active",
       "entry": {
@@ -825,7 +1037,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.676Z"
+      "lastSeenAt": "2026-07-13T15:13:09.273Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63740",
@@ -835,6 +1052,10 @@
       "url": "https://fajnekonkursy.pl/latwe/rotenso-twoje-lato/",
       "publishedAt": "2026-06-19T14:54:23",
       "modifiedAt": "2026-06-19T14:54:23",
+      "links": {
+        "organizer": "https://konkurs.rotenso.com/",
+        "regulamin": null
+      },
       "deadline": "2026-07-17",
       "status": "active",
       "entry": {
@@ -850,7 +1071,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.728Z"
+      "lastSeenAt": "2026-07-13T15:13:09.359Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64395",
@@ -860,6 +1086,10 @@
       "url": "https://fajnekonkursy.pl/latwe/booklips-krol-zlodziei/",
       "publishedAt": "2026-07-10T18:10:21",
       "modifiedAt": "2026-07-10T18:10:21",
+      "links": {
+        "organizer": "https://booklips.pl/konkursy/ksiazkowe/wygraj-egzemplarze-krola-zlodziei-cornelii-funke/",
+        "regulamin": null
+      },
       "deadline": "2026-07-18",
       "status": "active",
       "entry": {
@@ -875,7 +1105,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.663Z"
+      "lastSeenAt": "2026-07-13T15:13:09.252Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63709",
@@ -885,6 +1120,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/komputronik-tryb-samolotowy/",
       "publishedAt": "2026-06-18T17:35:18",
       "modifiedAt": "2026-06-18T17:35:18",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DZupd_iAN6s/",
+        "regulamin": null
+      },
       "deadline": "2026-07-18",
       "status": "active",
       "entry": {
@@ -900,7 +1139,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.733Z"
+      "lastSeenAt": "2026-07-13T15:13:09.367Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64421",
@@ -910,6 +1154,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/lenovo-zostan-selekcjonerem/",
       "publishedAt": "2026-07-11T13:56:09",
       "modifiedAt": "2026-07-11T13:56:09",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1346714847570509&set=a.584254213816580",
+        "regulamin": null
+      },
       "deadline": "2026-07-19",
       "status": "active",
       "entry": {
@@ -925,7 +1173,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.657Z"
+      "lastSeenAt": "2026-07-13T15:13:09.238Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64281",
@@ -935,6 +1188,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/najzabawniejsze-straszydlo/",
       "publishedAt": "2026-07-06T12:11:17",
       "modifiedAt": "2026-07-06T12:11:17",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DaQG21HCoTE/",
+        "regulamin": null
+      },
       "deadline": "2026-07-19",
       "status": "active",
       "entry": {
@@ -950,7 +1207,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.688Z"
+      "lastSeenAt": "2026-07-13T15:13:09.285Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64189",
@@ -960,6 +1222,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/zycie-ma-smak-smaki-lata/",
       "publishedAt": "2026-07-02T17:28:41",
       "modifiedAt": "2026-07-02T17:28:41",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1481672200668095&set=a.568490561986268",
+        "regulamin": null
+      },
       "deadline": "2026-07-19",
       "status": "active",
       "entry": {
@@ -975,7 +1241,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.704Z"
+      "lastSeenAt": "2026-07-13T15:13:09.305Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64186",
@@ -985,6 +1256,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/wygraj-karnet-na-festiwal-erste-letnie-brzmienia-dzieki-ptasie-mleczko/",
       "publishedAt": "2026-07-02T17:18:48",
       "modifiedAt": "2026-07-10T18:43:12",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1539180404903748&set=a.554252290063236",
+        "regulamin": null
+      },
       "deadline": "2026-07-19",
       "status": "active",
       "entry": {
@@ -1000,7 +1275,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.705Z"
+      "lastSeenAt": "2026-07-13T15:13:09.307Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64067",
@@ -1010,6 +1290,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/musicmate-summer-vibe/",
       "publishedAt": "2026-07-01T11:43:35",
       "modifiedAt": "2026-07-01T11:44:01",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=122141920791029004&set=a.122141065857029004",
+        "regulamin": null
+      },
       "deadline": "2026-07-19",
       "status": "active",
       "entry": {
@@ -1025,7 +1309,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.716Z"
+      "lastSeenAt": "2026-07-13T15:13:09.317Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64443",
@@ -1035,6 +1324,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/solarny/",
       "publishedAt": "2026-07-13T16:40:12",
       "modifiedAt": "2026-07-13T16:40:12",
+      "links": {
+        "organizer": "https://www.facebook.com/reel/1329538822666612",
+        "regulamin": null
+      },
       "deadline": "2026-07-20",
       "status": "active",
       "entry": {
@@ -1050,7 +1343,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.649Z"
+      "lastSeenAt": "2026-07-13T15:13:09.223Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64333",
@@ -1060,6 +1358,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/pupil-na-boisku/",
       "publishedAt": "2026-07-08T18:40:14",
       "modifiedAt": "2026-07-08T18:40:14",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1572229017648962&set=a.719340412937831",
+        "regulamin": null
+      },
       "deadline": "2026-07-20",
       "status": "active",
       "entry": {
@@ -1075,7 +1377,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.680Z"
+      "lastSeenAt": "2026-07-13T15:13:09.275Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64329",
@@ -1085,6 +1392,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/msi-swiat-z-gier/",
       "publishedAt": "2026-07-07T23:45:03",
       "modifiedAt": "2026-07-07T23:45:03",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1447013790791051&set=a.544280251064414",
+        "regulamin": null
+      },
       "deadline": "2026-07-20",
       "status": "active",
       "entry": {
@@ -1100,7 +1411,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.682Z"
+      "lastSeenAt": "2026-07-13T15:13:09.276Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63895",
@@ -1110,6 +1426,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/moje-lato-z-lr/",
       "publishedAt": "2026-06-24T17:30:27",
       "modifiedAt": "2026-06-24T17:30:27",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DZ9ujzgABvp/",
+        "regulamin": null
+      },
       "deadline": "2026-07-20",
       "status": "active",
       "entry": {
@@ -1125,7 +1445,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.722Z"
+      "lastSeenAt": "2026-07-13T15:13:09.336Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:60539",
@@ -1135,6 +1460,10 @@
       "url": "https://fajnekonkursy.pl/literackie/xiv-im-stanislawa-czernika/",
       "publishedAt": "2026-05-19T10:56:16",
       "modifiedAt": "2026-05-19T10:56:16",
+      "links": {
+        "organizer": "https://bp.ostrzeszow.pl/asp/pl_start.asp?typ=13&submenu=3&menu=3&schemat=&dzialy=3&akcja=artykul&artykul=2026",
+        "regulamin": null
+      },
       "deadline": "2026-07-20",
       "status": "active",
       "entry": {
@@ -1150,7 +1479,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.744Z"
+      "lastSeenAt": "2026-07-13T15:13:09.388Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64418",
@@ -1160,6 +1494,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/sportano-biwakowanie/",
       "publishedAt": "2026-07-11T13:48:40",
       "modifiedAt": "2026-07-11T13:48:40",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=1064354652776587&set=a.177066448172083",
+        "regulamin": null
+      },
       "deadline": "2026-07-21",
       "status": "active",
       "entry": {
@@ -1175,7 +1513,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.660Z"
+      "lastSeenAt": "2026-07-13T15:13:09.239Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64140",
@@ -1185,6 +1528,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/przyjemnosc-z-lubella/",
       "publishedAt": "2026-07-01T21:57:14",
       "modifiedAt": "2026-07-01T21:57:14",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1436121275225285&set=a.653907463446674",
+        "regulamin": null
+      },
       "deadline": "2026-07-22",
       "status": "active",
       "entry": {
@@ -1200,7 +1547,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.709Z"
+      "lastSeenAt": "2026-07-13T15:13:09.310Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64398",
@@ -1210,6 +1562,10 @@
       "url": "https://fajnekonkursy.pl/latwe/filmweb-nocna-niania/",
       "publishedAt": "2026-07-10T18:19:05",
       "modifiedAt": "2026-07-10T18:19:05",
+      "links": {
+        "organizer": "https://www.filmweb.pl/contest/5889",
+        "regulamin": null
+      },
       "deadline": "2026-07-23",
       "status": "active",
       "entry": {
@@ -1225,7 +1581,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.662Z"
+      "lastSeenAt": "2026-07-13T15:13:09.249Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64428",
@@ -1235,6 +1596,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/dziki-motyl-kinari/",
       "publishedAt": "2026-07-12T12:36:21",
       "modifiedAt": "2026-07-12T12:36:21",
+      "links": {
+        "organizer": "https://www.instagram.com/p/Dam9AS8AnEr/",
+        "regulamin": null
+      },
       "deadline": "2026-07-24",
       "status": "active",
       "entry": {
@@ -1250,7 +1615,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.654Z"
+      "lastSeenAt": "2026-07-13T15:13:09.233Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63860",
@@ -1260,6 +1630,10 @@
       "url": "https://fajnekonkursy.pl/promocje/chwytaj-sens-dzialania/",
       "publishedAt": "2026-06-23T17:05:29",
       "modifiedAt": "2026-06-23T17:05:29",
+      "links": {
+        "organizer": "https://chwytajsensdzialania.pl/",
+        "regulamin": null
+      },
       "deadline": "2026-07-24",
       "status": "active",
       "entry": {
@@ -1275,7 +1649,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.723Z"
+      "lastSeenAt": "2026-07-13T15:13:09.342Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63809",
@@ -1285,6 +1664,10 @@
       "url": "https://fajnekonkursy.pl/literackie/gniewinskie-pioro-2026/",
       "publishedAt": "2026-06-22T18:28:38",
       "modifiedAt": "2026-06-22T18:28:38",
+      "links": {
+        "organizer": "https://ckib.gniewino.pl/n,ruszyla-xxv-edycja-ogolnopolskiego-konkursu-literackiego-gniewinskie-pioro",
+        "regulamin": null
+      },
       "deadline": "2026-07-24",
       "status": "active",
       "entry": {
@@ -1300,7 +1683,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.725Z"
+      "lastSeenAt": "2026-07-13T15:13:09.348Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64002",
@@ -1310,6 +1698,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/ramy-na-kilogramy/",
       "publishedAt": "2026-06-29T12:22:18",
       "modifiedAt": "2026-06-29T12:22:18",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1451951523623599&set=a.547485940736833",
+        "regulamin": null
+      },
       "deadline": "2026-07-26",
       "status": "active",
       "entry": {
@@ -1325,7 +1717,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.719Z"
+      "lastSeenAt": "2026-07-13T15:13:09.325Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:60182",
@@ -1335,6 +1732,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/kolej-na-twoj-kadr-2026/",
       "publishedAt": "2026-05-08T13:00:18",
       "modifiedAt": "2026-05-08T13:00:18",
+      "links": {
+        "organizer": "https://prokolej.org/kolej-na-twoj-kadr-ii-edycja-konkursu-fotograficznego/",
+        "regulamin": null
+      },
       "deadline": "2026-07-26",
       "status": "active",
       "entry": {
@@ -1350,7 +1751,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.749Z"
+      "lastSeenAt": "2026-07-13T15:13:09.395Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64309",
@@ -1360,6 +1766,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/inkbook-do-wnetrza-ksiazek/",
       "publishedAt": "2026-07-07T16:46:05",
       "modifiedAt": "2026-07-07T16:46:05",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1338542295152652&set=a.479842794355944",
+        "regulamin": null
+      },
       "deadline": "2026-07-30",
       "status": "active",
       "entry": {
@@ -1375,7 +1785,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.685Z"
+      "lastSeenAt": "2026-07-13T15:13:09.281Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64284",
@@ -1385,6 +1800,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/drugie-zycie-bialych-butow/",
       "publishedAt": "2026-07-06T12:23:39",
       "modifiedAt": "2026-07-06T12:23:39",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1618771210252672&set=a.530052812457856",
+        "regulamin": null
+      },
       "deadline": "2026-07-30",
       "status": "active",
       "entry": {
@@ -1400,7 +1819,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.687Z"
+      "lastSeenAt": "2026-07-13T15:13:09.283Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:61345",
@@ -1410,6 +1834,10 @@
       "url": "https://fajnekonkursy.pl/literackie/najlepsze-opowiadanie-roku-2026/",
       "publishedAt": "2026-06-09T13:27:06",
       "modifiedAt": "2026-06-09T13:27:06",
+      "links": {
+        "organizer": "https://opowiadania.org/festiwal/22-opowiadania/konkurs/",
+        "regulamin": null
+      },
       "deadline": "2026-07-30",
       "status": "active",
       "entry": {
@@ -1425,7 +1853,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.743Z"
+      "lastSeenAt": "2026-07-13T15:13:09.384Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64425",
@@ -1435,6 +1868,10 @@
       "url": "https://fajnekonkursy.pl/plastyczne/helios-vaiana/",
       "publishedAt": "2026-07-11T14:10:56",
       "modifiedAt": "2026-07-11T14:10:56",
+      "links": {
+        "organizer": "https://konkursy.helios.pl/landing/vaiana",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1450,7 +1887,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.656Z"
+      "lastSeenAt": "2026-07-13T15:13:09.235Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "fajnekonkursy:64415",
@@ -1460,6 +1902,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/lato-pelne-zabawy/",
       "publishedAt": "2026-07-11T11:39:43",
       "modifiedAt": "2026-07-11T11:39:43",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1413970564086647&set=a.309184527898595",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1475,7 +1921,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.661Z"
+      "lastSeenAt": "2026-07-13T15:13:09.241Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64412",
@@ -1485,6 +1936,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/komputronik-gta-vi/",
       "publishedAt": "2026-07-11T11:31:24",
       "modifiedAt": "2026-07-11T11:31:24",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1465150588977643&set=gm.1932083241512753&idorvanity=693886865332403",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1500,7 +1955,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.661Z"
+      "lastSeenAt": "2026-07-13T15:13:09.244Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64380",
@@ -1510,6 +1970,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/paclan-to-lato/",
       "publishedAt": "2026-07-09T22:16:22",
       "modifiedAt": "2026-07-09T22:16:22",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=1497717572391653&set=a.567090628787690",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1525,7 +1989,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.667Z"
+      "lastSeenAt": "2026-07-13T15:13:09.263Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64377",
@@ -1535,6 +2004,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/wygraj-starpak-pins/",
       "publishedAt": "2026-07-09T22:00:13",
       "modifiedAt": "2026-07-09T22:00:13",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1474639158011375&set=a.413242164151085",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1550,7 +2023,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.669Z"
+      "lastSeenAt": "2026-07-13T15:13:09.264Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64266",
@@ -1560,6 +2038,10 @@
       "url": "https://fajnekonkursy.pl/na-instagramie/moliv-mikrobiom/",
       "publishedAt": "2026-07-04T18:23:44",
       "modifiedAt": "2026-07-04T18:23:44",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DaXgsq4uti8/",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1575,7 +2057,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.690Z"
+      "lastSeenAt": "2026-07-13T15:13:09.288Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64061",
@@ -1585,6 +2072,10 @@
       "url": "https://fajnekonkursy.pl/kreatywne/multicleanchallenge/",
       "publishedAt": "2026-07-01T11:28:49",
       "modifiedAt": "2026-07-01T11:28:49",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1626795796117859&set=pb.100063623616530.-2207520000",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1600,7 +2091,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.717Z"
+      "lastSeenAt": "2026-07-13T15:13:09.318Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:59994",
@@ -1610,6 +2106,10 @@
       "url": "https://fajnekonkursy.pl/plastyczne/skok-w-przeszlosc/",
       "publishedAt": "2026-05-04T18:16:28",
       "modifiedAt": "2026-05-04T18:16:44",
+      "links": {
+        "organizer": "https://komiksfestiwal.com/konkursy/konkurs-dla-dzieci/",
+        "regulamin": null
+      },
       "deadline": "2026-07-31",
       "status": "active",
       "entry": {
@@ -1625,7 +2125,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.750Z"
+      "lastSeenAt": "2026-07-13T15:13:09.397Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64236",
@@ -1635,6 +2140,10 @@
       "url": "https://fajnekonkursy.pl/kreatywne/wspolnie-dla-srodowiska/",
       "publishedAt": "2026-07-04T09:49:38",
       "modifiedAt": "2026-07-04T09:49:38",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=122163535610418996&set=a.122100819482418996",
+        "regulamin": null
+      },
       "deadline": "2026-08-03",
       "status": "active",
       "entry": {
@@ -1650,7 +2159,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.694Z"
+      "lastSeenAt": "2026-07-13T15:13:09.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64322",
@@ -1660,6 +2174,10 @@
       "url": "https://fajnekonkursy.pl/latwe/aktywuj-tryb-wyjazdowy/",
       "publishedAt": "2026-07-07T19:48:59",
       "modifiedAt": "2026-07-07T19:48:59",
+      "links": {
+        "organizer": "https://konkurs.miedzynarodowa.kartamultisport.pl/",
+        "regulamin": null
+      },
       "deadline": "2026-08-05",
       "status": "active",
       "entry": {
@@ -1675,7 +2193,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.683Z"
+      "lastSeenAt": "2026-07-13T15:13:09.277Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63635",
@@ -1685,6 +2208,10 @@
       "url": "https://fajnekonkursy.pl/literackie/im-pawla-brylinskiego/",
       "publishedAt": "2026-06-18T11:48:11",
       "modifiedAt": "2026-06-18T11:48:44",
+      "links": {
+        "organizer": "https://biblioteka-sieroszewice.pl/2026/06/11/konkurs-poetycki-ogloszony/",
+        "regulamin": null
+      },
       "deadline": "2026-08-07",
       "status": "active",
       "entry": {
@@ -1700,7 +2227,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.737Z"
+      "lastSeenAt": "2026-07-13T15:13:09.375Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:61597",
@@ -1710,6 +2242,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/jak-z-obrazka/",
       "publishedAt": "2026-06-16T16:26:40",
       "modifiedAt": "2026-06-16T16:27:38",
+      "links": {
+        "organizer": "https://ckpolkowice.pl/aktualnosc/konkursy-wiatrak/3381-konkurs-fotograficzny-jak-z-obrazka",
+        "regulamin": null
+      },
       "deadline": "2026-08-08",
       "status": "active",
       "entry": {
@@ -1725,7 +2261,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.740Z"
+      "lastSeenAt": "2026-07-13T15:13:09.380Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63989",
@@ -1735,6 +2276,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/sportano-kask-abus/",
       "publishedAt": "2026-06-28T11:32:15",
       "modifiedAt": "2026-06-28T11:32:15",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=1052025430676176&set=a.177066438172084",
+        "regulamin": null
+      },
       "deadline": "2026-08-10",
       "status": "active",
       "entry": {
@@ -1750,7 +2295,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.721Z"
+      "lastSeenAt": "2026-07-13T15:13:09.335Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63744",
@@ -1760,6 +2310,10 @@
       "url": "https://fajnekonkursy.pl/latwe/polska-jest-najfajniejsza/",
       "publishedAt": "2026-06-19T16:05:25",
       "modifiedAt": "2026-06-19T16:05:25",
+      "links": {
+        "organizer": "https://polskajestnajfajniejsza.dwa.eska.pl/",
+        "regulamin": null
+      },
       "deadline": "2026-08-14",
       "status": "active",
       "entry": {
@@ -1775,7 +2329,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.726Z"
+      "lastSeenAt": "2026-07-13T15:13:09.356Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:58388",
@@ -1785,6 +2344,10 @@
       "url": "https://fajnekonkursy.pl/literackie/srodek-wyrazu-2026/",
       "publishedAt": "2026-03-12T20:21:02",
       "modifiedAt": "2026-03-12T20:21:02",
+      "links": {
+        "organizer": "https://dokursynow.pl/konkursy/konkurs-poetycki-srodek-wyrazu-2/",
+        "regulamin": null
+      },
       "deadline": "2026-08-14",
       "status": "active",
       "entry": {
@@ -1800,7 +2363,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.758Z"
+      "lastSeenAt": "2026-07-13T15:13:09.406Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64440",
@@ -1810,6 +2378,10 @@
       "url": "https://fajnekonkursy.pl/latwe/wakacje-z-changanem/",
       "publishedAt": "2026-07-13T13:15:05",
       "modifiedAt": "2026-07-13T13:15:05",
+      "links": {
+        "organizer": "https://www.changaneurope.com/pl/siuuu-drive",
+        "regulamin": null
+      },
       "deadline": "2026-08-18",
       "status": "active",
       "entry": {
@@ -1825,7 +2397,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.652Z"
+      "lastSeenAt": "2026-07-13T15:13:09.228Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64387",
@@ -1835,6 +2412,10 @@
       "url": "https://fajnekonkursy.pl/latwe/wakacyjne-sos/",
       "publishedAt": "2026-07-10T00:00:02",
       "modifiedAt": "2026-07-10T00:00:02",
+      "links": {
+        "organizer": "https://www.rmf.fm/r/media-expert-wakacje-2026.html",
+        "regulamin": null
+      },
       "deadline": "2026-08-21",
       "status": "active",
       "entry": {
@@ -1850,7 +2431,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.666Z"
+      "lastSeenAt": "2026-07-13T15:13:09.258Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63731",
@@ -1860,6 +2446,10 @@
       "url": "https://fajnekonkursy.pl/literackie/xxx-pawlikowskiej-jasnorzewskiej/",
       "publishedAt": "2026-06-19T10:41:42",
       "modifiedAt": "2026-06-19T10:41:42",
+      "links": {
+        "organizer": "https://mdk.katowice.pl/jubileuszowy-konkurs-poetycki-im-m-pawlikowskiej-jasnorzewskiej",
+        "regulamin": null
+      },
       "deadline": "2026-08-21",
       "status": "active",
       "entry": {
@@ -1875,7 +2465,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.732Z"
+      "lastSeenAt": "2026-07-13T15:13:09.363Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64091",
@@ -1885,6 +2480,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/wakacje-z-natura-kwietne-laki/",
       "publishedAt": "2026-07-01T17:18:07",
       "modifiedAt": "2026-07-02T09:29:47",
+      "links": {
+        "organizer": "https://www.gov.pl/web/gdos/wakacje-z-natura-kwietne-laki--konkurs-fotograficzny",
+        "regulamin": null
+      },
       "deadline": "2026-08-31",
       "status": "active",
       "entry": {
@@ -1900,7 +2499,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.714Z"
+      "lastSeenAt": "2026-07-13T15:13:09.314Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63996",
@@ -1910,6 +2514,10 @@
       "url": "https://fajnekonkursy.pl/na-facebooku/caparol-zlap-morski-klimat/",
       "publishedAt": "2026-06-29T10:23:14",
       "modifiedAt": "2026-06-29T10:23:14",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=1630968155700826&set=a.726763279454656",
+        "regulamin": null
+      },
       "deadline": "2026-08-31",
       "status": "active",
       "entry": {
@@ -1925,7 +2533,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.720Z"
+      "lastSeenAt": "2026-07-13T15:13:09.329Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:60290",
@@ -1935,6 +2548,10 @@
       "url": "https://fajnekonkursy.pl/literackie/xxvii-im-eugeniusza-paukszty/",
       "publishedAt": "2026-05-12T11:11:41",
       "modifiedAt": "2026-05-12T11:12:39",
+      "links": {
+        "organizer": "https://gckkargowa.pl/zapraszamy-do-udzialu-w-xxvii-ogolnopolskim-konkursie-literackim-im-eugeniusza-paukszty/",
+        "regulamin": null
+      },
       "deadline": "2026-08-31",
       "status": "active",
       "entry": {
@@ -1950,7 +2567,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.747Z"
+      "lastSeenAt": "2026-07-13T15:13:09.392Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:58867",
@@ -1960,6 +2582,10 @@
       "url": "https://fajnekonkursy.pl/literackie/im-jana-grossa-2026/",
       "publishedAt": "2026-03-30T09:54:35",
       "modifiedAt": "2026-03-30T09:54:35",
+      "links": {
+        "organizer": "https://www.wimbp.gorzow.pl/ogolnopolski-konkurs-literacki-im-jana-grossa.html",
+        "regulamin": null
+      },
       "deadline": "2026-08-31",
       "status": "active",
       "entry": {
@@ -1975,7 +2601,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.757Z"
+      "lastSeenAt": "2026-07-13T15:13:09.404Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:58245",
@@ -1985,6 +2616,10 @@
       "url": "https://fajnekonkursy.pl/plastyczne/grafika-znad-wisly/",
       "publishedAt": "2026-03-10T10:00:14",
       "modifiedAt": "2026-03-10T10:00:14",
+      "links": {
+        "organizer": "https://galeriasztuki.wloclawek.pl/wydarzenia/ogolnopolski-konkurs-grafika-znad-wisly/",
+        "regulamin": null
+      },
       "deadline": "2026-09-15",
       "status": "active",
       "entry": {
@@ -2000,7 +2635,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.760Z"
+      "lastSeenAt": "2026-07-13T15:13:09.408Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:59459",
@@ -2010,6 +2650,10 @@
       "url": "https://fajnekonkursy.pl/literackie/o-pioro-pegaza-2026/",
       "publishedAt": "2026-04-17T12:43:27",
       "modifiedAt": "2026-04-17T12:43:27",
+      "links": {
+        "organizer": "https://wimbp.rzeszow.pl/aktualnosci/5806-xii-ogolnopolski-konkurs-poetycki-o-pioro-pegaza-2026.html",
+        "regulamin": null
+      },
       "deadline": "2026-09-19",
       "status": "active",
       "entry": {
@@ -2025,7 +2669,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.755Z"
+      "lastSeenAt": "2026-07-13T15:13:09.401Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64230",
@@ -2035,6 +2684,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/ulica-fascynuje-2026/",
       "publishedAt": "2026-07-03T20:12:21",
       "modifiedAt": "2026-07-03T20:12:21",
+      "links": {
+        "organizer": "https://ztf.zgora.pl/xii-edycja-konkursu-ulica-fascynuje/",
+        "regulamin": null
+      },
       "deadline": "2026-09-20",
       "status": "active",
       "entry": {
@@ -2050,7 +2703,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.698Z"
+      "lastSeenAt": "2026-07-13T15:13:09.298Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:54579",
@@ -2060,6 +2718,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/konkurs-fotograficzny-natura-sportu-2026/",
       "publishedAt": "2025-11-28T12:57:02",
       "modifiedAt": "2025-11-28T13:57:27",
+      "links": {
+        "organizer": "https://www.zpfp.pl/natura-sportu-konkurs-przyrodniczo-sportowy/",
+        "regulamin": null
+      },
       "deadline": "2026-09-21",
       "status": "active",
       "entry": {
@@ -2075,7 +2737,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.767Z"
+      "lastSeenAt": "2026-07-13T15:13:09.417Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:61483",
@@ -2085,6 +2752,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/niebo-nad-kaliszem-lato-2026/",
       "publishedAt": "2026-06-12T20:51:37",
       "modifiedAt": "2026-06-12T20:51:37",
+      "links": {
+        "organizer": "https://www.malapert.pl/foto2026/",
+        "regulamin": null
+      },
       "deadline": "2026-09-23",
       "status": "active",
       "entry": {
@@ -2100,7 +2771,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.741Z"
+      "lastSeenAt": "2026-07-13T15:13:09.382Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:57894",
@@ -2110,6 +2786,10 @@
       "url": "https://fajnekonkursy.pl/literackie/poetycki-w-trzech-wierszach/",
       "publishedAt": "2026-02-25T15:25:57",
       "modifiedAt": "2026-02-25T15:25:57",
+      "links": {
+        "organizer": "https://publuu.com/flip-book/1064084/2365767",
+        "regulamin": null
+      },
       "deadline": "2026-09-25",
       "status": "active",
       "entry": {
@@ -2125,7 +2805,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.762Z"
+      "lastSeenAt": "2026-07-13T15:13:09.410Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64349",
@@ -2135,6 +2820,10 @@
       "url": "https://fajnekonkursy.pl/literackie/w-imie-wolnosci-2026/",
       "publishedAt": "2026-07-08T21:55:49",
       "modifiedAt": "2026-07-08T21:55:49",
+      "links": {
+        "organizer": "https://www.prezydent.pl/aktualnosci/inicjatywy/sergiusz-piasecki/konkurs",
+        "regulamin": null
+      },
       "deadline": "2026-09-30",
       "status": "active",
       "entry": {
@@ -2150,7 +2839,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.678Z"
+      "lastSeenAt": "2026-07-13T15:13:09.274Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64136",
@@ -2160,6 +2854,10 @@
       "url": "https://fajnekonkursy.pl/plastyczne/a-propos-derwicha-2026/",
       "publishedAt": "2026-07-01T21:41:29",
       "modifiedAt": "2026-07-01T21:41:29",
+      "links": {
+        "organizer": "https://bw.poznan.pl/biblioteka/aktualnosci/konkurs-plastyczny-a-propos-derwicha-satyra-jest-kobieta/",
+        "regulamin": null
+      },
       "deadline": "2026-09-30",
       "status": "active",
       "entry": {
@@ -2175,7 +2873,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.710Z"
+      "lastSeenAt": "2026-07-13T15:13:09.311Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63755",
@@ -2185,6 +2888,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/moja-pasja-w-kadrze/",
       "publishedAt": "2026-06-20T12:45:55",
       "modifiedAt": "2026-06-20T12:45:55",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=1432417098903482&set=a.443042507840951",
+        "regulamin": null
+      },
       "deadline": "2026-09-30",
       "status": "active",
       "entry": {
@@ -2200,7 +2907,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.725Z"
+      "lastSeenAt": "2026-07-13T15:13:09.351Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63694",
@@ -2210,6 +2922,10 @@
       "url": "https://fajnekonkursy.pl/literackie/im-feliksa-raka/",
       "publishedAt": "2026-06-18T16:22:27",
       "modifiedAt": "2026-06-18T16:22:27",
+      "links": {
+        "organizer": "http://www.biblioteka-krasocin.pl/2026/06/xx-ogolnopolski-konkurs-poetycki-im-feliksa-raka-zapraszamy-do-udzialu/",
+        "regulamin": null
+      },
       "deadline": "2026-09-30",
       "status": "active",
       "entry": {
@@ -2225,7 +2941,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.734Z"
+      "lastSeenAt": "2026-07-13T15:13:09.369Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63691",
@@ -2235,6 +2956,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/lesne-sady-dziedzictwo-ktore-trwa/",
       "publishedAt": "2026-06-18T14:03:17",
       "modifiedAt": "2026-06-18T14:03:17",
+      "links": {
+        "organizer": "https://www.okl.lasy.gov.pl/aktualnosci/-/asset_publisher/LrsLAsMDHb9B/content/ogolnopolski-konkurs-fotograficzny-lesne-sady-dziedzictwo-ktore-trwa-",
+        "regulamin": null
+      },
       "deadline": "2026-09-30",
       "status": "active",
       "entry": {
@@ -2250,7 +2975,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.736Z"
+      "lastSeenAt": "2026-07-13T15:13:09.373Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64391",
@@ -2260,6 +2990,10 @@
       "url": "https://fajnekonkursy.pl/literackie/42-im-kraszewskiego/",
       "publishedAt": "2026-07-10T17:32:51",
       "modifiedAt": "2026-07-10T17:32:51",
+      "links": {
+        "organizer": "https://mbp.org.pl/a,1623,42-ogolnopolski-konkurs-literacki-im-ji-kraszewskiego",
+        "regulamin": null
+      },
       "deadline": "2026-10-01",
       "status": "active",
       "entry": {
@@ -2275,7 +3009,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.664Z"
+      "lastSeenAt": "2026-07-13T15:13:09.255Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63993",
@@ -2285,6 +3024,10 @@
       "url": "https://fajnekonkursy.pl/latwe/sephora-summer-vibes/",
       "publishedAt": "2026-06-28T22:57:33",
       "modifiedAt": "2026-06-28T22:57:33",
+      "links": {
+        "organizer": "https://gameon.sephora.pl/",
+        "regulamin": null
+      },
       "deadline": "2026-10-18",
       "status": "active",
       "entry": {
@@ -2300,7 +3043,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.721Z"
+      "lastSeenAt": "2026-07-13T15:13:09.332Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:61761",
@@ -2310,6 +3058,10 @@
       "url": "https://fajnekonkursy.pl/plastyczne/szukamy-nikifora-2026/",
       "publishedAt": "2026-06-17T16:23:32",
       "modifiedAt": "2026-06-17T16:24:20",
+      "links": {
+        "organizer": "https://arche.pl/aktualnosci/konkurs-sztuki-nieprofesjonalnej-szukamy-nikifora-2026/",
+        "regulamin": null
+      },
       "deadline": "2026-10-19",
       "status": "active",
       "entry": {
@@ -2325,7 +3077,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.739Z"
+      "lastSeenAt": "2026-07-13T15:13:09.378Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:63889",
@@ -2335,6 +3092,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/moj-gdansk-2026/",
       "publishedAt": "2026-06-24T16:39:20",
       "modifiedAt": "2026-06-24T16:39:20",
+      "links": {
+        "organizer": null,
+        "regulamin": "https://muzeumgdansk.pl/odkryj-gdansk-przez-historie/szczegoly/news/regulamin-vii-edycji-2026/"
+      },
       "deadline": "2026-10-31",
       "status": "active",
       "entry": {
@@ -2350,7 +3111,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.722Z"
+      "lastSeenAt": "2026-07-13T15:13:09.337Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:60342",
@@ -2360,6 +3126,10 @@
       "url": "https://fajnekonkursy.pl/fotograficzne/miejsca-ktore-staly-sie-domem/",
       "publishedAt": "2026-05-13T16:48:46",
       "modifiedAt": "2026-05-13T16:48:46",
+      "links": {
+        "organizer": "https://www.domd.pl/blog/miejsca-ktore-staly-sie-domem-wez-udzial",
+        "regulamin": null
+      },
       "deadline": "2026-10-31",
       "status": "active",
       "entry": {
@@ -2375,7 +3145,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.745Z"
+      "lastSeenAt": "2026-07-13T15:13:09.390Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:64255",
@@ -2385,6 +3160,10 @@
       "url": "https://fajnekonkursy.pl/plastyczne/szkoly-artystycznej-2027/",
       "publishedAt": "2026-07-04T17:39:02",
       "modifiedAt": "2026-07-04T17:39:02",
+      "links": {
+        "organizer": "https://www.gov.pl/web/cea/konkurs-na-i-iv-okladke-i-grzbiet-czterech-numerow-szkoly-artystycznej-2027",
+        "regulamin": null
+      },
       "deadline": "2026-11-27",
       "status": "active",
       "entry": {
@@ -2400,7 +3179,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.691Z"
+      "lastSeenAt": "2026-07-13T15:13:09.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "fajnekonkursy:57761",
@@ -2410,6 +3194,10 @@
       "url": "https://fajnekonkursy.pl/kreatywne/pocztowka-z-wyprawy/",
       "publishedAt": "2026-02-19T12:51:52",
       "modifiedAt": "2026-04-24T09:49:32",
+      "links": {
+        "organizer": "https://pocztowkazwyprawy.pl/",
+        "regulamin": null
+      },
       "deadline": "2026-12-31",
       "status": "active",
       "entry": {
@@ -2425,7 +3213,12 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-07-13T15:05:56.764Z"
+      "lastSeenAt": "2026-07-13T15:13:09.413Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "ofree:7486",
@@ -2435,6 +3228,10 @@
       "url": "https://www.ofree.pl/castorama-moja-kuchnia-marzen-konkurs-wygraj-vouchery/",
       "publishedAt": "2022-05-29T15:39:23",
       "modifiedAt": "2025-08-21T05:30:22",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2450,7 +3247,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.502Z"
+      "lastSeenAt": "2026-07-13T15:13:11.032Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "ofree:3963",
@@ -2460,6 +3262,10 @@
       "url": "https://www.ofree.pl/testuj-za-darmo-telefony-kosmetyki-perfumy-zostan-testerem/",
       "publishedAt": "2014-01-24T15:45:02",
       "modifiedAt": "2025-08-21T07:02:51",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2475,7 +3281,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.503Z"
+      "lastSeenAt": "2026-07-13T15:13:11.036Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1297889",
@@ -2485,6 +3296,10 @@
       "url": "https://www.pepper.pl/dyskusji/wielkie-wakacyjne-pilkarskie-polowanie-wymiana-reniferow-1297889",
       "publishedAt": "2026-07-01T14:04:00.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2500,7 +3315,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.681Z"
+      "lastSeenAt": "2026-07-13T15:13:11.288Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1292290",
@@ -2510,6 +3330,10 @@
       "url": "https://www.pepper.pl/dyskusji/paczkomat-challenge-150-nagrod-psvr2-smartwatche-kindle-gaming-sluchawki-1292290",
       "publishedAt": "2026-06-05T08:49:04.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": "https://paczkomatchallenge.pl/",
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2525,7 +3349,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+      "lastSeenAt": "2026-07-13T15:13:11.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "pepper:1290350",
@@ -2535,6 +3364,10 @@
       "url": "https://www.pepper.pl/dyskusji/darmowy-notione-go-plus-1290350",
       "publishedAt": "2026-06-02T05:16:59.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": "https://youtu.be/JzCkObbvA3o",
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2550,7 +3383,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+      "lastSeenAt": "2026-07-13T15:13:11.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "pepper:1282061",
@@ -2560,6 +3398,10 @@
       "url": "https://www.pepper.pl/dyskusji/sockio-hunt-poluj-na-darmowe-skarpetki-w-automatach-dpd-1282061",
       "publishedAt": "2026-05-18T11:17:08.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2575,7 +3417,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+      "lastSeenAt": "2026-07-13T15:13:11.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1269629",
@@ -2585,6 +3432,10 @@
       "url": "https://www.pepper.pl/dyskusji/jak-dlugo-sa-wazne-wouchery-z-wygranych-1269629",
       "publishedAt": "2026-04-26T20:17:59.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2600,7 +3451,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+      "lastSeenAt": "2026-07-13T15:13:11.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1265251",
@@ -2610,6 +3466,10 @@
       "url": "https://www.pepper.pl/dyskusji/rozdam-400-zabsow-za-free-bo-nie-wiem-na-co-wydac-1265251",
       "publishedAt": "2026-04-19T16:39:35.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2625,7 +3485,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.682Z"
+      "lastSeenAt": "2026-07-13T15:13:11.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1257256",
@@ -2635,6 +3500,10 @@
       "url": "https://www.pepper.pl/dyskusji/jak-odebrac-voucher-od-peppera-1257256",
       "publishedAt": "2026-04-06T09:47:42.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": "https://redeem.totallygiftcards.com/",
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2650,7 +3519,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.683Z"
+      "lastSeenAt": "2026-07-13T15:13:11.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "pepper:1255476",
@@ -2660,6 +3534,10 @@
       "url": "https://www.pepper.pl/dyskusji/o-co-chodzi-z-tymi-ognistymi-reniferami-1255476",
       "publishedAt": "2026-04-03T05:08:01.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2675,7 +3553,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.683Z"
+      "lastSeenAt": "2026-07-13T15:13:11.290Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1237757",
@@ -2685,6 +3568,10 @@
       "url": "https://www.pepper.pl/dyskusji/wielkanocne-polowanie-na-ogniste-renifery-wymiana-reniferow-1237757",
       "publishedAt": "2026-04-02T14:01:33.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2700,7 +3587,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.683Z"
+      "lastSeenAt": "2026-07-13T15:13:11.291Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1253690",
@@ -2710,6 +3602,10 @@
       "url": "https://www.pepper.pl/dyskusji/renki-1253690",
       "publishedAt": "2026-03-31T07:50:19.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2725,7 +3621,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.684Z"
+      "lastSeenAt": "2026-07-13T15:13:11.292Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1239589",
@@ -2735,6 +3636,10 @@
       "url": "https://www.pepper.pl/dyskusji/jakie-skarpety-nosza-pepperowicze-1239589",
       "publishedAt": "2026-03-09T16:18:20.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2750,7 +3655,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.293Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1233682",
@@ -2760,6 +3670,10 @@
       "url": "https://www.pepper.pl/dyskusji/kod-inpost-bilety-na-mecz-polska-albania-1233682",
       "publishedAt": "2026-02-27T11:25:00.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2775,7 +3689,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.293Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1211986",
@@ -2785,6 +3704,10 @@
       "url": "https://www.pepper.pl/dyskusji/oddam-kupon-10-ostrovit-master-sport-g2a-1211986",
       "publishedAt": "2026-01-26T08:59:10.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2800,7 +3723,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.293Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1190455",
@@ -2810,6 +3738,10 @@
       "url": "https://www.pepper.pl/dyskusji/audioteka-30-dni-za-darmo-1190455",
       "publishedAt": "2025-12-23T12:09:51.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2825,7 +3757,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.293Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1184337",
@@ -2835,6 +3772,10 @@
       "url": "https://www.pepper.pl/dyskusji/5-rok-obserwuje-refniery-1184337",
       "publishedAt": "2025-12-16T00:42:28.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2850,7 +3791,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.293Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1176573",
@@ -2860,6 +3806,10 @@
       "url": "https://www.pepper.pl/dyskusji/darmowe-4-miechy-spotify-kod-1176573",
       "publishedAt": "2025-12-06T18:50:05.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2875,7 +3825,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.294Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:2025",
@@ -2885,6 +3840,10 @@
       "url": "https://www.pepper.pl/dyskusji/kalendarz-adwentowy-2025-1172087",
       "publishedAt": "2025-12-01T07:20:23.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": "https://buduj24.pl/budowlany-kalendarz-adwentowy-2025",
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2900,7 +3859,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.294Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": true
+      }
     },
     {
       "id": "pepper:1170783",
@@ -2910,6 +3874,10 @@
       "url": "https://www.pepper.pl/dyskusji/moze-komus-przydadza-sie-3-kody-15-zlkazdy-z-pizzy-guseppe-do-wykorzystania-na-g2a-1170783",
       "publishedAt": "2025-11-29T13:06:30.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2925,7 +3893,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.685Z"
+      "lastSeenAt": "2026-07-13T15:13:11.294Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1145521",
@@ -2935,6 +3908,10 @@
       "url": "https://www.pepper.pl/dyskusji/kody-na-quiz-do-biedronki-1145521",
       "publishedAt": "2025-11-04T08:03:36.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2950,7 +3927,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.294Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1136237",
@@ -2960,6 +3942,10 @@
       "url": "https://www.pepper.pl/dyskusji/polowanie-na-renifery-1136237",
       "publishedAt": "2025-10-22T09:09:11.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -2975,7 +3961,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1134941",
@@ -2985,6 +3976,10 @@
       "url": "https://www.pepper.pl/dyskusji/inpost-kod-na-polska-vs-holandia-1134941",
       "publishedAt": "2025-10-20T07:02:03.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -3000,7 +3995,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1124539",
@@ -3010,6 +4010,10 @@
       "url": "https://www.pepper.pl/dyskusji/quiz-biedronka-1124539",
       "publishedAt": "2025-10-04T06:03:09.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -3025,7 +4029,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:7643",
@@ -3035,6 +4044,10 @@
       "url": "https://www.pepper.pl/dyskusji/tcl-98p81k-98-qled-144-hz-4k-google-tv-dolby-atmos-vision-za-7643-1123279",
       "publishedAt": "2025-10-02T06:25:43.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -3050,7 +4063,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1119821",
@@ -3060,6 +4078,10 @@
       "url": "https://www.pepper.pl/dyskusji/konkurs-na-3x-ps5-slim-od-allegro-za-szybkie-odebranie-ea-sports-26-na-premiere-1119821",
       "publishedAt": "2025-09-25T22:45:00.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -3075,7 +4097,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1109543",
@@ -3085,6 +4112,10 @@
       "url": "https://www.pepper.pl/dyskusji/kody-na-quiz-do-biedronki-biedroniaki-1109543",
       "publishedAt": "2025-09-06T11:26:06.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -3100,7 +4131,12 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     },
     {
       "id": "pepper:1083207",
@@ -3110,6 +4146,10 @@
       "url": "https://www.pepper.pl/dyskusji/potrzasnij-i-wygraj-aliexpress-1083207",
       "publishedAt": "2025-07-19T17:54:40.000Z",
       "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
       "deadline": null,
       "status": "unknown",
       "entry": {
@@ -3125,7 +4165,13 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-07-13T15:05:58.686Z"
+      "lastSeenAt": "2026-07-13T15:13:11.295Z",
+      "verification": {
+        "checkedAt": "2026-07-13T15:15:03.580Z",
+        "sourceOk": true,
+        "organizerOk": null
+      }
     }
-  ]
+  ],
+  "checkedAt": "2026-07-13T15:15:03.580Z"
 }

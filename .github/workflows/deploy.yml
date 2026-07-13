@@ -36,6 +36,9 @@ jobs:
       - name: Scrape
         run: npm run scrape
 
+      - name: Check (own verification of scraped items)
+        run: npm run check
+
       - name: Build
         run: npm run build
 

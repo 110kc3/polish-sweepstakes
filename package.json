@@ -6,6 +6,7 @@
   "description": "GitHub Pages site reporting current sweepstakes/lotteries in Poland that don't require purchase (including alternative free entry).",
   "scripts": {
     "scrape": "node scripts/scrape.mjs",
+    "check": "node scripts/check.mjs",
     "build": "node scripts/build.mjs",
     "dev": "node scripts/dev.mjs"
   },

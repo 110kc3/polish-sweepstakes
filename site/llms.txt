@@ -11,11 +11,16 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
 
 ## Dataset shape (data/lotteries.json)
 
-- Top level: { version, generatedAt (ISO 8601), items: [...] }
+- Top level: { version, generatedAt (ISO 8601), checkedAt (ISO 8601), items: [...] }
 - Each item: id, source (fajnekonkursy|ofree|pepper), title, url (source article with full rules),
   publishedAt, modifiedAt, deadline (YYYY-MM-DD or null), status (active|ended|unknown),
+  links.organizer (contest entry page, may be null), links.regulamin (official rules, may be null),
   entry.summary (how to enter, Polish), prize.summary (Polish),
-  prize.currency (PLN), lastSeenAt.
+  prize.currency (PLN), lastSeenAt, verification.
+- verification (our own first-party check, not from the aggregators; non-ended items only):
+  { checkedAt, sourceOk, organizerOk } — true = reachable, false = definitively dead
+  (404/410/DNS), null = inconclusive (bot-blocked or transient error) or not checked.
+  Items whose source article is definitively dead are removed from the dataset.
 - deadline/status/summaries are heuristic extractions from the source article text —
   always confirm against the linked regulamin (official rules) at item.url.
 

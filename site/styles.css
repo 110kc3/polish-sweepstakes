@@ -78,6 +78,7 @@ h1{margin:18px 0 6px;font-size:28px}
   font-size:14px;
 }
 .btn:hover{background:rgba(125,211,252,.18)}
+.warn{color:var(--danger);font-size:13px;margin:0}
 .footer{margin:22px 0 40px}
 @media (max-width:820px){
   .controls{grid-template-columns:1fr;align-items:stretch}
