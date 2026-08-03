@@ -30,12 +30,20 @@ function escapeHtml(s) {
     .replace(/'/g, '&#039;');
 }
 
+// The contests are Polish, so day counts are measured against the date in
+// Warsaw rather than the viewer's own timezone or UTC.
+function todayInWarsaw() {
+  // 'sv-SE' formats as YYYY-MM-DD, which compares lexicographically.
+  return new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Warsaw' });
+}
+
 function daysUntil(isoDate) {
   if (!isoDate) return null;
-  const now = new Date();
-  const end = new Date(isoDate + 'T23:59:59Z');
-  const diff = end.getTime() - now.getTime();
-  return Math.ceil(diff / (1000 * 60 * 60 * 24));
+  const MS_PER_DAY = 24 * 60 * 60 * 1000;
+  const end = Date.parse(isoDate + 'T00:00:00Z');
+  const today = Date.parse(todayInWarsaw() + 'T00:00:00Z');
+  if (Number.isNaN(end) || Number.isNaN(today)) return null;
+  return Math.round((end - today) / MS_PER_DAY);
 }
 
 function deadlineBadge(deadline) {
@@ -45,7 +53,7 @@ function deadlineBadge(deadline) {
     return `<span class="badge deadline soon">Do: ${escapeHtml(deadline)} (zakończony)</span>`;
   }
   const cls = d !== null && d <= 3 ? 'soon' : 'ok';
-  const suffix = d !== null ? ` (${d} ${d === 1 ? 'dzień' : 'dni'})` : '';
+  const suffix = d === null ? '' : d === 0 ? ' (dziś)' : ` (${d} ${d === 1 ? 'dzień' : 'dni'})`;
   return `<span class="badge deadline ${cls}">Do: ${escapeHtml(deadline)}${escapeHtml(suffix)}</span>`;
 }
 
@@ -119,16 +127,14 @@ function applyFilters(all) {
   const activeOnly = els.activeOnly.checked;
   const q = (els.q.value || '').trim().toLowerCase();
 
-  const now = new Date();
+  const today = todayInWarsaw();
   return all.filter((it) => {
     if (source !== 'all' && it.source !== source) return false;
     if (tag !== 'all' && !itemTagSlugs(it).includes(tag)) return false;
 
     if (activeOnly) {
-      if (it.deadline) {
-        const end = new Date(it.deadline + 'T23:59:59Z');
-        if (end < now) return false;
-      }
+      // Deadline day counts as active for all of it (Warsaw date).
+      if (it.deadline && it.deadline < today) return false;
       // If deadline missing: keep (unknown)
     }
 
@@ -163,9 +169,17 @@ async function load() {
   }
 
   // Tag filter, grouped by kind and ordered by how many contests use each tag,
-  // so the useful tags sit at the top of every group.
+  // so the useful tags sit at the top of every group. Counted over the items the
+  // default view shows (ended ones hidden) rather than the whole dataset, so the
+  // number next to a tag matches what selecting it yields. data.tagCounts stays
+  // dataset-wide for consumers of the JSON.
   if (els.tag) {
-    const counts = data.tagCounts || {};
+    const today = todayInWarsaw();
+    const counts = {};
+    for (const it of all) {
+      if (it.deadline && it.deadline < today) continue;
+      for (const slug of itemTagSlugs(it)) counts[slug] = (counts[slug] || 0) + 1;
+    }
     const kindLabels = data.tagKindLabels || {};
     const byKind = new Map(tagKinds.map((k) => [k, new Set()]));
     for (const it of all) {

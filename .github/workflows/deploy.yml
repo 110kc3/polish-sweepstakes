@@ -33,6 +33,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test (extraction, tagging and merge logic)
+        run: npm test
+
       - name: Scrape
         run: npm run scrape
 

@@ -25,11 +25,16 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
   nagroda = what you can win, mechanika = what entering requires, temat = subject/type,
   marka = brand or organizer, odbiorca = intended audience, zasieg = reach.
   Top-level tagKinds gives the display order, tagKindLabels the Polish name per kind,
-  tagLabels the Polish display label per slug, tagCounts how many items use each slug.
+  tagLabels the Polish display label per slug, tagCounts how many items in this dataset use
+  each slug (all items, including ended ones).
   Tags come from each source's own taxonomy where one exists, plus keyword rules over the
   article text; they are a controlled vocabulary, so filtering on a slug is stable across runs.
 - alsoOn: [{ source, url, id }] — present when the same contest was listed by several sources
   and the entries were merged into one item (matched on identical normalised titles).
+  If the item's own article later dies but one of these is still reachable, that source is
+  promoted to be the item's id/source/url and verification.promotedFrom records the previous id.
+- status is computed against the current date in Europe/Warsaw; a contest whose deadline is
+  today is still "active" for the whole of that day.
 - verification (our own first-party check, not from the aggregators; non-ended items only):
   { checkedAt, sourceOk, organizerOk } — true = reachable, false = definitively dead
   (404/410/DNS), null = inconclusive (bot-blocked or transient error) or not checked.

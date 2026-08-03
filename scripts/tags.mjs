@@ -122,6 +122,7 @@ def('temat', {
   budowlane: 'Budowlane',
   edukacja: 'Edukacja',
   finanse: 'Finanse',
+  praca: 'Praca',
   handel: 'Handel',
   turystyka: 'Turystyka',
   rozrywka: 'Rozrywka',
@@ -321,6 +322,11 @@ const NATIVE_MAP = {
   'testowanie-produktow': 'nagrody-rzeczowe',
   'darmowe-probki': 'nagrody-rzeczowe',
   gratisy: 'nagrody-rzeczowe',
+  remont: 'budowlane',
+  'wymiana-walut': 'finanse',
+  'testuj-perfumy': 'nagrody-rzeczowe',
+  'testuj-produkty': 'nagrody-rzeczowe',
+  'zostan-testerem': 'nagrody-rzeczowe',
   'karty-lojalnosciowe': null,
   'programy-lojalnosciowe': null,
   'karty-klienta': null,
@@ -393,6 +399,7 @@ const BRAND_SLUGS = new Set([
   'naviexpert', 't-mobile', 'blik', 'visa', 'kruk', 'bankier-pl', 'player-pl', 'cinema-city',
   'polskie-radio', 'politechnika-morska', 'adidas', 'panetti',
   'allegro', 'inpost', 'legimi', 'gowork', 'cinkciarz-pl', 'apple-store', 'google-play',
+  'paypo', 'testclub',
 ]);
 
 // Brand slugs whose display name isn't recoverable by title-casing.

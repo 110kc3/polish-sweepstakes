@@ -182,6 +182,13 @@ async function main() {
     }
     await fs.writeFile('dist/index.html', html, 'utf8');
     console.log(`Pre-rendered ${items.length} listings into dist/index.html`);
+
+    // The listing changes every day, so tell crawlers when it last did.
+    if (data.generatedAt) {
+      const sitemap = await fs.readFile('dist/sitemap.xml', 'utf8');
+      const lastmod = `<lastmod>${esc(data.generatedAt.slice(0, 10))}</lastmod>`;
+      await fs.writeFile('dist/sitemap.xml', sitemap.replace('<!-- LASTMOD -->', () => lastmod), 'utf8');
+    }
   }
 
   console.log('Built dist/ from site/');

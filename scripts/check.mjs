@@ -9,6 +9,11 @@
 // Conservative on purpose: 403/429/5xx/timeouts are inconclusive (bot
 // blocking, hiccups), only unambiguous signals count as "dead".
 import fs from 'node:fs/promises';
+import { todayInWarsaw } from './extract.mjs';
+import { collectTagLabels, collectTagCounts } from './tags.mjs';
+
+// Overridable so the verification pass can be exercised against a fixture.
+const DATA_PATH = process.argv[2] || 'data/lotteries.json';
 
 const USER_AGENT = 'polish-sweepstakes/0.1 (+https://github.com/110kc3/polish-sweepstakes)';
 const TIMEOUT_MS = 10_000;
@@ -56,8 +61,9 @@ async function checkUrl(url) {
 
 function recomputeStatus(item) {
   if (!item.deadline) return 'unknown';
-  const today = new Date().toISOString().slice(0, 10);
-  return item.deadline >= today ? 'active' : 'ended';
+  // Warsaw, not UTC: the contests are Polish, and a UTC date would flip
+  // same-day deadlines up to two hours early.
+  return item.deadline >= todayInWarsaw() ? 'active' : 'ended';
 }
 
 async function mapWithConcurrency(items, limit, fn) {
@@ -74,7 +80,7 @@ async function mapWithConcurrency(items, limit, fn) {
 }
 
 async function main() {
-  const data = JSON.parse(await fs.readFile('data/lotteries.json', 'utf8'));
+  const data = JSON.parse(await fs.readFile(DATA_PATH, 'utf8'));
   const items = Array.isArray(data.items) ? data.items : [];
   const checkedAt = new Date().toISOString();
 
@@ -96,14 +102,33 @@ async function main() {
     it.verification = { checkedAt, sourceOk, organizerOk };
   });
 
+  // A merged item's card points at one source, but the same contest is listed
+  // elsewhere. If the primary article is gone, promote a live alternative
+  // instead of dropping a contest that is still published.
   const dead = toCheck.filter((it) => it.verification?.sourceOk === false);
-  for (const it of dead) console.log(`Dropping (source article gone): ${it.id} ${it.url}`);
+  let promoted = 0;
+  for (const it of dead) {
+    for (const alt of it.alsoOn || []) {
+      if (await checkUrl(alt.url) !== true) continue;
+      console.log(`Promoting alternative source for ${it.id}: ${alt.id} ${alt.url}`);
+      const previous = { source: it.source, url: it.url, id: it.id };
+      it.alsoOn = [previous, ...(it.alsoOn || [])].filter((o) => o.id !== alt.id);
+      Object.assign(it, { id: alt.id, source: alt.source, url: alt.url });
+      it.verification = { ...it.verification, sourceOk: true, promotedFrom: previous.id };
+      promoted++;
+      break;
+    }
+  }
+
+  const stillDead = toCheck.filter((it) => it.verification?.sourceOk === false);
+  for (const it of stillDead) console.log(`Dropping (source article gone): ${it.id} ${it.url}`);
   const kept = items.filter((it) => it.verification?.sourceOk !== false);
 
   const summary = {
     checked: toCheck.length,
     sourceAlive: toCheck.filter((i) => i.verification?.sourceOk === true).length,
-    sourceDeadDropped: dead.length,
+    sourceDeadPromoted: promoted,
+    sourceDeadDropped: stillDead.length,
     organizerAlive: toCheck.filter((i) => i.verification?.organizerOk === true).length,
     organizerDead: toCheck.filter((i) => i.verification?.organizerOk === false).length,
     inconclusive: toCheck.filter((i) => i.verification?.sourceOk === null).length,
@@ -112,9 +137,15 @@ async function main() {
 
   data.items = kept;
   data.checkedAt = checkedAt;
-  await fs.writeFile('data/lotteries.json', JSON.stringify(data, null, 2) + '\n', 'utf8');
+  // Dropping items changes which tags are still in use, so the legend has to be
+  // rebuilt or it would advertise tags and counts the dataset no longer backs.
+  if (data.tagLabels || data.tagCounts) {
+    data.tagLabels = collectTagLabels(kept);
+    data.tagCounts = collectTagCounts(kept);
+  }
+  await fs.writeFile(DATA_PATH, JSON.stringify(data, null, 2) + '\n', 'utf8');
   console.log('Check summary:', JSON.stringify(summary));
-  console.log(`Wrote data/lotteries.json with ${kept.length} items`);
+  console.log(`Wrote ${DATA_PATH} with ${kept.length} items`);
 }
 
 main().catch((e) => {

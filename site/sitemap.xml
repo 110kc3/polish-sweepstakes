@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://110kc3.github.io/polish-sweepstakes/</loc></url>
+  <!-- LASTMOD is filled in by scripts/build.mjs from the scrape timestamp. -->
+  <url><loc>https://110kc3.github.io/polish-sweepstakes/</loc><!-- LASTMOD --></url>
 </urlset>

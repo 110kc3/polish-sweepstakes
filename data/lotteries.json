@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-03T12:42:32.138Z",
+  "generatedAt": "2026-08-03T14:26:17.696Z",
   "tagKinds": [
     "nagroda",
     "mechanika",
@@ -39,6 +39,7 @@
     "facebook": "Facebook",
     "film": "Film",
     "filmowe": "Filmowe",
+    "finanse": "Finanse",
     "formularz": "Formularz zgłoszeniowy",
     "fotograficzne": "Fotograficzne",
     "gadzety": "Gadżety",
@@ -71,8 +72,10 @@
     "odpowiedz": "Odpowiedź na pytanie",
     "odziez": "Odzież",
     "ogolnopolskie": "Ogólnopolskie",
+    "paypo": "Paypo",
     "pieniadze": "Pieniądze",
     "plastyczne": "Plastyczne",
+    "praca": "Praca",
     "produkty-spozywcze": "Produkty spożywcze",
     "quiz": "Quiz",
     "rejestracja": "Rejestracja",
@@ -99,10 +102,11 @@
   },
   "tagCounts": {
     "pieniadze": 67,
-    "literackie": 52,
+    "literackie": 51,
     "dla-mlodziezy": 4,
     "ogolnopolskie": 43,
     "losowanie": 9,
+    "finanse": 2,
     "loteria": 8,
     "cinkciarz-pl": 1,
     "gadzety": 16,
@@ -117,8 +121,9 @@
     "karta-podarunkowa": 22,
     "voucher": 14,
     "film": 3,
+    "praca": 1,
     "gowork": 1,
-    "ksiazka": 21,
+    "ksiazka": 20,
     "nagrody-rzeczowe": 13,
     "formularz": 15,
     "rejestracja": 5,
@@ -137,6 +142,7 @@
     "bilety": 5,
     "kosmetyki": 20,
     "wycieczka": 21,
+    "paypo": 1,
     "youtube": 5,
     "agd": 9,
     "samochod": 2,
@@ -148,10 +154,10 @@
     "dom": 3,
     "zabka": 1,
     "internetowe": 1,
-    "odpowiedz": 39,
-    "latwe": 18,
     "obserwowanie": 19,
+    "odpowiedz": 38,
     "zabawki": 5,
+    "latwe": 17,
     "produkty-spozywcze": 10,
     "sprzet-sportowy": 10,
     "kreatywne": 9,
@@ -207,7 +213,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Napisz zestaw 3 wierszy, prześlij do 20 lipca br.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
@@ -219,7 +225,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.606Z"
+      "lastSeenAt": "2026-08-03T14:26:38.617Z"
     },
     {
       "id": "ofree:6992",
@@ -243,6 +249,7 @@
           "losowanie"
         ],
         "temat": [
+          "finanse",
           "loteria"
         ],
         "marka": [
@@ -262,7 +269,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.295Z"
+      "lastSeenAt": "2026-08-03T14:26:27.029Z"
     },
     {
       "id": "ofree:7144",
@@ -312,7 +319,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.293Z"
+      "lastSeenAt": "2026-08-03T14:26:27.024Z"
     },
     {
       "id": "ofree:7540",
@@ -336,6 +343,9 @@
         "mechanika": [
           "film"
         ],
+        "temat": [
+          "praca"
+        ],
         "marka": [
           "gowork"
         ]
@@ -353,7 +363,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.290Z"
+      "lastSeenAt": "2026-08-03T14:26:27.018Z"
     },
     {
       "id": "ofree:8880",
@@ -401,7 +411,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.288Z"
+      "lastSeenAt": "2026-08-03T14:26:27.013Z"
     },
     {
       "id": "ofree:9236",
@@ -436,7 +446,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "jak dołączyć i wziąć udział w konkursie?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -448,7 +458,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.286Z"
+      "lastSeenAt": "2026-08-03T14:26:27.008Z"
     },
     {
       "id": "wygrajta:11523",
@@ -485,14 +495,14 @@
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Nagrody • pula nagród wynosi 6000 złotych STRONA KONKURSU",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.616Z"
+      "lastSeenAt": "2026-08-03T14:26:38.629Z"
     },
     {
       "id": "wygrajta:11389",
@@ -530,14 +540,14 @@
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "nagrody rzeczowe (w poprzedniej edycji były to dyski przenośne, powerbanki i książki) i dyplomy.",
+        "summary": "Nagrody • Najlepsze prace zostaną nagrodzone i zaprezentowane na stronie internetowej Wydziału Nauk Geograficznych Uniwersytetu Łódzkiego oraz przedstawione na imprezie organizowanej w Światowy Dzień…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.635Z"
+      "lastSeenAt": "2026-08-03T14:26:38.657Z"
     },
     {
       "id": "wygrajta:11463",
@@ -574,7 +584,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.626Z"
+      "lastSeenAt": "2026-08-03T14:26:38.640Z"
     },
     {
       "id": "wygrajta:11482",
@@ -610,14 +620,14 @@
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody • Pula nagród wynosi 9.",
+        "summary": "Nagrody • Pula nagród wynosi 9.000 zł.",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.624Z"
+      "lastSeenAt": "2026-08-03T14:26:38.637Z"
     },
     {
       "id": "wygrajta:11459",
@@ -644,19 +654,19 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Prześlij minimum 4 projektów ubiorów utrzymanych w offowym, niebanalnym klimacie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody I miejsce: tytuł najlepszego projektanta offowego, statuetka oraz 15.",
+        "summary": "Nagrody I miejsce: tytuł najlepszego projektanta offowego, statuetka oraz 15.000 zł • II miejsce: 10.",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.628Z"
+      "lastSeenAt": "2026-08-03T14:26:38.644Z"
     },
     {
       "id": "wygrajta:11548",
@@ -686,7 +696,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: formularz zgłoszeniowy — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
@@ -698,7 +708,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.614Z"
+      "lastSeenAt": "2026-08-03T14:26:38.626Z"
     },
     {
       "id": "ofree:10054",
@@ -739,14 +749,14 @@
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody tygodniowe do zgarnięcia Co tydzień, przez cały okres trwania loterii, rozlosowywane będą nagrody pieniężne w wysokości 25 000 zł.",
+        "summary": "nagrodę główną w wysokości 500 000 zł oraz tysiące innych atrakcyjnych nagród",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.281Z"
+      "lastSeenAt": "2026-08-03T14:26:26.994Z"
     },
     {
       "id": "ofree:10060",
@@ -781,7 +791,11 @@
           "sms"
         ],
         "temat": [
+          "finanse",
           "loteria"
+        ],
+        "marka": [
+          "paypo"
         ]
       },
       "entry": {
@@ -797,7 +811,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.276Z"
+      "lastSeenAt": "2026-08-03T14:26:26.983Z"
     },
     {
       "id": "wygrajta:11604",
@@ -828,14 +842,14 @@
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Nagrody • Rozdanie nagród 15 listopada 2025 STRONA KONKURSU",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.610Z"
+      "lastSeenAt": "2026-08-03T14:26:38.620Z"
     },
     {
       "id": "pepper:1157124",
@@ -860,7 +874,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: youtube — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -872,7 +886,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.742Z"
+      "lastSeenAt": "2026-08-03T14:26:43.186Z"
     },
     {
       "id": "fajnekonkursy:56840",
@@ -894,19 +908,19 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "napisz opowiadanie science-fiction lub fantasy inspirowane odkryciami i pasją kobiet zajmujących się badaniami astronomicznymi.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 6 x publikacja dzieła w czasopiśmie Urania-Postępy Astronomii • publikacja dzieła na portalu Uranii (nieograniczona liczba prac)",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.477Z"
+      "lastSeenAt": "2026-08-03T14:26:24.265Z"
     },
     {
       "id": "ofree:9929",
@@ -954,7 +968,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:41.284Z"
+      "lastSeenAt": "2026-08-03T14:26:27.002Z"
     },
     {
       "id": "pepper:1237753",
@@ -987,19 +1001,19 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wystarczy posiadanie jednego białego i jednego srebrnego renifera danego typu, aby mieć szansę na złapanie złotego.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
       "prize": {
-        "summary": "nagrody!",
+        "summary": "Sprawdź nagrody w źródle.",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.740Z"
+      "lastSeenAt": "2026-08-03T14:26:43.179Z"
     },
     {
       "id": "fajnekonkursy:59817",
@@ -1039,14 +1053,14 @@
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody natychmiastowe oraz główne.",
+        "summary": "Wygraj nagrody 🎁 • 1 x bon na zakup wycieczki do Tokio o wartości 60 000 zł • 1 x bon na zakup wycieczki do Marakeszu o wartości 25 000 zł • 1 x bon na zakup wycieczki do Porto o wartości 20 000 zł •…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.469Z"
+      "lastSeenAt": "2026-08-03T14:26:24.242Z"
     },
     {
       "id": "wygrajta:11492",
@@ -1079,14 +1093,14 @@
         "noPurchaseNotes": "Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody • nagroda główna w wysokości 10 000 zł prawo do publikacji utworu w formie książki.",
+        "summary": "Nagrody • nagroda główna w wysokości 10 000 zł prawo do publikacji utworu w formie ksi",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:50.622Z"
+      "lastSeenAt": "2026-08-03T14:26:38.634Z"
     },
     {
       "id": "pepper:1297886",
@@ -1121,60 +1135,19 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wystarczy posiadanie jednego białego i jednego srebrnego renifera danego typu, aby mieć szansę na złapanie złotego.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
       "prize": {
-        "summary": "Nagrody natychmiastowe: 150 x voucher Allegro 20 zł50 x voucher Allegro 50 zł50 x voucher Amazon 50 zł (dla posiadaczy Złotego lub Platynowego członkostwa).",
+        "summary": "Nagrody natychmiastowe: 150 x voucher Allegro 20 zł50 x voucher Allegro 50 zł50 x voucher Amazon 50 zł (dla posiadaczy Złotego lub Platynowego",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.734Z"
-    },
-    {
-      "id": "fajnekonkursy:64730",
-      "source": "fajnekonkursy",
-      "sourceId": 64730,
-      "title": "Konkurs Booklips „Mater 2-10”",
-      "url": "https://fajnekonkursy.pl/latwe/booklips-mater-2-10/",
-      "publishedAt": "2026-07-24T16:24:46",
-      "modifiedAt": "2026-07-24T16:24:46",
-      "links": {
-        "organizer": "https://booklips.pl/konkursy/ksiazkowe/wygraj-egzemplarze-powiesci-mater-2-10-hwang-sok-yonga/",
-        "regulamin": null
-      },
-      "deadline": "2026-08-02",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "ksiazka"
-        ],
-        "mechanika": [
-          "odpowiedz"
-        ],
-        "temat": [
-          "latwe",
-          "literackie"
-        ]
-      },
-      "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "nagrody 🎁 • 3 x książka „Mater 2-10” autorstwa pisarza Hwang Sok-yonga o wartości 49,90 zł Zasady konkursu Booklips „Mater 2-10” Do dnia 02.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-08-03T12:42:38.393Z"
+      "lastSeenAt": "2026-08-03T14:26:43.166Z"
     },
     {
       "id": "fajnekonkursy:64631",
@@ -1202,19 +1175,19 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Z czym kojarzy Ci się zapach świeżego prania?”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 10 x zestaw 4 zapachów perfum do prania Corri d’Italia o wartości 132 zł Zasady konkursu Corri d’Italia „Zapach świeżego prania” Do dnia 02.",
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw 4 zapachów perfum do prania Corri d’Italia o wartości 132 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.412Z"
+      "lastSeenAt": "2026-08-03T14:26:24.114Z"
     },
     {
       "id": "fajnekonkursy:64740",
@@ -1242,21 +1215,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zarejestruj się na platformie Studium Przedsiębiorczości; wybierz i zrealizuj bezpłatny kurs; wymyśl oryginalną odpowiedź na pytanie konkursowe: „Gdyby jeden kurs ze Studium miał trafić na wakacyjną listę poleceń dla znajomych, który by to był i….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 3 x zestaw: kubek Stanley + notes + długopis + ściereczki do okularów Zasady wakacyjnego konkursu Studium Przedsiębiorczości 2026 Do dnia 03.",
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw: kubek Stanley + notes + długopis + ściereczki do okularów Zasady wakacyjnego konkursu Studium Przedsiębiorczości 2026",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.388Z",
+      "lastSeenAt": "2026-08-03T14:26:24.047Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1287,21 +1260,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedz na pytanie: „Dlaczego chcesz wziąć w udział w testowaniu zestawów kreatywnych Wow Box?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 50 najciekawszych odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw Wow Box: Makrama + Haft + Pompomy • 10 x zestaw Wow Box: 10x Makrama + Haft + Projektant Mody • 10 x zestaw Wow Box: Makrama + String Art • 10 x zestaw Wow Box Haft +…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.394Z",
+      "lastSeenAt": "2026-08-03T14:26:24.061Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1330,21 +1303,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "opublikuj na swoim Instagramie post lub reels (min. 10 sekund w pionie) przedstawiający Twój ulubiony letni moment z Kolastyną (w publikacji musi być widoczny….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 10 publikacji najwyżej ocenionych przez organizatora konkursu.",
+        "summary": "Wygraj nagrody 🎁 • 1 x suszarka DYSON Supersonic Travel + zestaw 9 kosmetyków Kolastyna • 1 x głośnik mobilny JBL Flip 7 + zestaw 9 kosmetyków Kolastyna • 1 x lodówka turystyczna POLARBOX + zestaw 9…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.408Z",
+      "lastSeenAt": "2026-08-03T14:26:24.098Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1376,21 +1349,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wystaw opinię stronie Super Prezenty na Facebooku; zaobserwuj profil Super Prezenty na Facebooku Do konkursu możesz przesłać dowolną liczbę zgłoszeń. Zwycięzcami konkursu zostaną autorzy 3 najciekawszych opinii.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x karta podarunkowa TK Maxx o wartości 100 zł Zasady konkursu Super Prezenty „Wystaw opinię 2026” Do dnia 03.",
+        "summary": "Wygraj nagrody 🎁 • 3 x karta podarunkowa TK Maxx o wartości 100 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.411Z",
+      "lastSeenAt": "2026-08-03T14:26:24.110Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1424,21 +1397,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 03.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x voucher turystyczny Travelplanet o wartości 5 000 zł • 5 x walizka i biszkopty marki Andante o wartości 239,91 zł • 20 x zestaw produktów i gadżetów Andante o wartości 132,32…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.414Z",
+      "lastSeenAt": "2026-08-03T14:26:24.118Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1472,21 +1445,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedz na 2 pytania: 🔹Które z miejsc wspomnianych w słuchowisku chciałbyś odwiedzić i dlaczego?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw podróżnika składające się z: plecaka, worka z materiału z recyklingu, bidonu na napoje, kosmetyczki podróżnej, książki podróżnika Mateusza Waligóry pt.",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.443Z",
+      "lastSeenAt": "2026-08-03T14:26:24.186Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1536,9 +1509,9 @@
         "detailFetched": true,
         "detailVersion": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:54.183Z",
+      "lastSeenAt": "2026-08-03T14:26:42.437Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1568,21 +1541,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zrób zdjęcie miejsca lub chwili, w której najbardziej czujesz, że jesteś częścią natury; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku i napisz w 1.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 1 x wybrana para butów z kolekcji Salewa Puez dostępna w sklepie Skalnik Zasady konkursu Skalnik na Facebook „We Are Nature” Do dnia 04.",
+        "summary": "Wygraj nagrody 🎁 • 1 x wybrana para butów z kolekcji Salewa Puez dostępna w sklepie Skalnik",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.371Z",
+      "lastSeenAt": "2026-08-03T14:26:23.996Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1611,7 +1584,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na temat: „Opisz swój komputer tytułem filmu i uzasadnij swój wybór.”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku Do konkursu możesz przesłać tylko 1 zgłoszenie. Autor najciekawszej odpowiedzi….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -1623,9 +1596,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.410Z",
+      "lastSeenAt": "2026-08-03T14:26:24.107Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1660,21 +1633,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wypełnij formularz zgłoszeniowy na stronie konkursu i wyślij swój wynik Nagrody otrzymają osoby z najlepszym wynikiem w grze.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają osoby z najlepszym wynikiem w grze.",
+        "summary": "Wygraj nagrody 🎁 • 1 x komputer customizowany przez moddera Łukasza 'CzugA’ Maczugę o wartości 16 000 zł • 100 x karta podarunkowa Fortnite o wartości 100 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.418Z",
+      "lastSeenAt": "2026-08-03T14:26:24.134Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -1705,21 +1678,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 05.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "wygrają bon podarunkowy Ochnik.",
+        "summary": "Wygraj nagrody 🎁 • 3 x bon podarunkowy do sklepu internetowego Ochnik o wartości 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.369Z",
+      "lastSeenAt": "2026-08-03T14:26:23.987Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1750,21 +1723,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Jaki jest Twój ulubiony sposób na zdrowy start dnia?”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj blender Smoothie Maker” Do dnia 05.",
+        "summary": "Wygraj nagrody 🎁 • 5 x blender kielichowy Smoothie Maker Concept SM3380 o wartości 199 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.397Z",
+      "lastSeenAt": "2026-08-03T14:26:24.069Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1793,21 +1766,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na temat: „Opisz moment, w którym czujesz, że naprawdę odpoczywasz. Co wtedy robisz?”.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x zestaw: Bardzo wysoka ochrona Ultra-serum natychmiastowo wypełniające SPF50+ 30 ml, Bardzo wysoka ochrona przeciwsłoneczna Spray SPF 50 200 ml, Woda Termalna 150 ml, pojemna…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.404Z",
+      "lastSeenAt": "2026-08-03T14:26:24.085Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1836,21 +1809,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw 3 wierszy o dowolnej tematyce.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 400 zł • 1 x nagroda pieniężna 200 zł • wyróżnienia książkowe i rzeczowe Zasady XII konkursu poetyckiego „O Wstęgę Sanu” W terminie do 05.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 600 zł • 1 x nagroda pieniężna 400 zł • 1 x nagroda pieniężna 200 zł • wyróżnienia książkowe i rzeczowe Zasady XII konkursu poetyckiego „O Wstęgę Sanu” W…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.416Z",
+      "lastSeenAt": "2026-08-03T14:26:24.127Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1883,21 +1856,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "prześlij przez formularz udostępniony na stronie konkursu.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 150 x zestaw Kubota: longsleeve oversize, torbę, skarpetki oraz klapki Zasady konkursu MultiSport „Aktywuj tryb wyjazdowy!",
+        "summary": "Wygraj nagrody 🎁 • 150 x zestaw Kubota: longsleeve oversize, torbę, skarpetki oraz klapki",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.441Z",
+      "lastSeenAt": "2026-08-03T14:26:24.181Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -1933,16 +1906,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I nagroda – 600 zł • II nagroda – 400 zł • III nagroda – 200 zł Konkurs trwa do 5 sierpnia 2026 r.",
+        "summary": "Nagrody: • I nagroda – 600 zł • II nagroda – 400 zł • III nagroda – 200 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.448Z",
+      "lastSeenAt": "2026-08-03T14:26:42.827Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -1972,21 +1945,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Budzisz się po 100 latach, jaką grę odpalasz jako pierwszą i dlaczego?”.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x Dark Project ALU81A Terra Nostra White g3ms Moonstone i Dark Project Nexus Ultra • 1 x Dark Project ALU87B Celestial Dark Project Novus Pro • 1 x Dark Project ALU87 Onionite i…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.396Z",
+      "lastSeenAt": "2026-08-03T14:26:24.066Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2016,21 +1989,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "przygotuj ciekawą odpowiedź na temat: Opisz swój największy „pomięty kryzys”; sytuację, w której ubranie totalnie nie współpracowało, a Ty musiałaś/musiałeś szybko uratować swój look.; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x Philips OneTurn oraz gadżety o wartości 900 zł Zasady konkursu Philips na Instagramie „Pomięty Kryzys” Do dnia 06.",
+        "summary": "Wygraj nagrody 🎁 • 3 x Philips OneTurn oraz gadżety o wartości 900 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.402Z",
+      "lastSeenAt": "2026-08-03T14:26:24.081Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2062,21 +2035,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Co kupujesz jako pierwsze i dodaj gif obrazujący Twoją reakcję.”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku; zaobserwuj instagramowy profil @HalfPrice.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x karta podarunkowa na zakupy w sklepach Modivo na kwotę 250 zł Zasady konkursu „Co z HalfPrice uratowałoby Twoją podróż?",
+        "summary": "Wygraj nagrody 🎁 • 3 x karta podarunkowa na zakupy w sklepach Modivo na kwotę 250 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.423Z",
+      "lastSeenAt": "2026-08-03T14:26:24.147Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2106,21 +2079,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl nową herbatę LOYD inspirowaną Energylandią (nadaj jej nazwę i opisz jej smak); swoją propozycję opublikuj w komentarzu pod postem konkursowym na Instagramie Do konkursu możesz wysłać dowolną liczbę zgłoszeń. Nagrody otrzymają autorzy 10….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 10 najciekawszych odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 10 x pakiet 4 wejściówek do Energylandii + zestaw herbat i gadżetów LOYD o łącznej wartości 890 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.336Z",
+      "lastSeenAt": "2026-08-03T14:26:23.899Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2151,7 +2124,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij e-mailem na adres: konkursy.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -2163,9 +2136,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.359Z",
+      "lastSeenAt": "2026-08-03T14:26:23.963Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2196,21 +2169,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 07.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x grill węglowy + fartuch do grillowania z zestawem narzędzi do grilla BBQ + zestaw serów Bonfire o łącznej wartości 996,29 zł • 1 x zestaw 10 serów Bonfire o wartości 178,50 zł…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.379Z",
+      "lastSeenAt": "2026-08-03T14:26:24.026Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2240,21 +2213,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na temat: „Opisz w 5 słowach Wasze przygotowania do szkoły.”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 4 x zestaw do szkoły (plecak, piórnik, worek na WF, portfel) Zasady konkursu Mokida „Back to School 2026” Do dnia 07.",
+        "summary": "Wygraj nagrody 🎁 • 4 x zestaw do szkoły (plecak, piórnik, worek na WF, portfel)",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.381Z",
+      "lastSeenAt": "2026-08-03T14:26:24.030Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2288,21 +2261,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wypełnij formularz zgłoszeniowy na stronie konkursu i w oryginalny sposób odpowiedz na pytanie „Co jest Twoim niezbędnikiem na udane wakacje oprócz przekąsek Good Mood i dlaczego?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 10 x pakiet produktów spożywczych i gadżetów Good Mood o wartości 815,48 zł Zasady konkursu Eska „Twój Good Mood na wakacje – II Edycja” W terminie do 07.",
+        "summary": "Wygraj nagrody 🎁 • 10 x pakiet produktów spożywczych i gadżetów Good Mood o wartości 815,48 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.389Z",
+      "lastSeenAt": "2026-08-03T14:26:24.051Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2333,21 +2306,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Każdy mundial zapisuje się w historii; jak zapamiętamy ten?”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 3 najciekawszych odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 1 x LEGO Editions Oficjalny Puchar Świata FIFA 2842 elementy o wartości 649 zł • 1 x LEGO Editions Football Cristiano Ronaldo — piłkarska legenda 854 elementy o wartości 255 zł • 1…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.424Z",
+      "lastSeenAt": "2026-08-03T14:26:24.151Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2379,21 +2352,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś do konkursu 3 wiersze o dowolnej tematyce.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 600 zł • 4 x nagroda pieniężna 300 zł • 3 x nagroda pieniężna 250 zł • wyróżnienia: nagrody książkowe Zasady XV Konkursu poetyckiego im.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 800 zł • 1 x nagroda pieniężna 900 zł • 1 x nagroda pieniężna 600 zł • 4 x nagroda pieniężna 300 zł • 3 x nagroda pieniężna 250 zł • wyróżnienia: nagrody…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.459Z",
+      "lastSeenAt": "2026-08-03T14:26:24.222Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2423,16 +2396,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "nagroda: 2 000 zł • II nagroda: 1 200 zł • III nagroda: 700 zł Termin nadsyłania prac upływa 7 sierpnia 2026 r.",
+        "summary": "nagroda: 2 000 zł • II nagroda: 1 200 zł • III nagroda: 700 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.448Z",
+      "lastSeenAt": "2026-08-03T14:26:42.826Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -2469,9 +2442,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.449Z",
+      "lastSeenAt": "2026-08-03T14:26:42.829Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -2511,9 +2484,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.459Z",
+      "lastSeenAt": "2026-08-03T14:26:42.869Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -2547,21 +2520,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Czy uważasz, że zdrowy romans w książkach, bez opisów scen erotycznych, może być dobrym i wartościowym romansem?”; zasubskrybuj kanał „Dziki Motyl” na YouTube.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 3 x książka „Ich Skrzydła” autorstwa Jagody Smyczek o wartości 39,90 zł Zasady konkursu Dziki Motyl na Instagramie „Ich Skrzydła” Do dnia 08.",
+        "summary": "Wygraj nagrody 🎁 • 3 x książka „Ich Skrzydła” autorstwa Jagody Smyczek o wartości 39,90 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.372Z",
+      "lastSeenAt": "2026-08-03T14:26:24.000Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2591,21 +2564,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "prześlij na adres: animacja@ckpolkowice.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 200 zł • wyróżnienia: nagrody rzeczowe Zasady konkursu fotograficznego „Jak z obrazka” Konkurs jest adresowany do mieszkańców Gminy Polkowice.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 400 zł • 1 x nagroda pieniężna 300 zł • 1 x nagroda pieniężna 200 zł • wyróżnienia: nagrody rzeczowe",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.462Z",
+      "lastSeenAt": "2026-08-03T14:26:24.229Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2636,21 +2609,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 09.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "wygrają powerbank PowerPlay Pro.",
+        "summary": "Wygraj nagrody 🎁 • 3 x powerbank Greencell PowerPlay Pro 20 800 mAh o wartości 199,95 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.345Z",
+      "lastSeenAt": "2026-08-03T14:26:23.920Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2680,21 +2653,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "w ciekawy sposób dokończ zdanie: „Prawdziwa przyjaźń pachnie dla mnie jak…”, a następnie napisz, dlaczego właśnie tak.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw perfum: La Vie Est Belle: La Vie Est Belle EDP o pojemności 100 ml + La Vie Est Belle L’Elixir o pojemności 50 ml o wartości 1 304 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.347Z",
+      "lastSeenAt": "2026-08-03T14:26:23.924Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2725,21 +2698,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie temat: „Opisz lub zaproponuj najbardziej nietypowe, zaskakujące lub kreatywne użycie Karmelków z Wawelu w codziennym….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 5 x zestaw Karmelków Wawel + filiżanka ze spodkiem Ligne Barolo marki La Mania + herbata owocowa i kawa mielona Wawel",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.364Z",
+      "lastSeenAt": "2026-08-03T14:26:23.971Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2773,21 +2746,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedz na pytanie: „Dlaczego chciałabyś otrzymać zestaw kosmetyków dla dzieci Ziaja med?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 10 x zestaw czterech kosmetyków dla dzieci marki Ziaja med Zasady konkursu Familie „Pierwsza kosmetyczka” W terminie do 09.",
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw czterech kosmetyków dla dzieci marki Ziaja med",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.366Z",
+      "lastSeenAt": "2026-08-03T14:26:23.979Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2818,21 +2791,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Jakiego produktu do pielęgnacji włosów używasz najczęściej?”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 10 x zestaw kosmetyków do pielęgnacji włosów Biopoint Extreme Repair Zasady konkursu na Facebooku „Biopoint Extreme Repair” Do dnia 09.",
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw kosmetyków do pielęgnacji włosów Biopoint Extreme Repair",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.375Z",
+      "lastSeenAt": "2026-08-03T14:26:24.008Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2863,21 +2836,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "prześlij przez formularz udostępniony na stronie konkursu.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 10 x podwójny bilet na Fajer Festiwal 2026 w Chorzowie o wartości 1298 zł Zasady konkursu 4FUN TV „Fajer Festiwal 2026” W terminie do 09.",
+        "summary": "Wygraj nagrody 🎁 • 10 x podwójny bilet na Fajer Festiwal 2026 w Chorzowie o wartości 1298 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.383Z",
+      "lastSeenAt": "2026-08-03T14:26:24.037Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2908,21 +2881,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij na adres: konkurs@sekreturody.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 10 x zestaw kosmetyków firmy Corii z serii Biopoint oraz Tesori d`Oriente Zasady konkursu Sekret Urody „Letnia pielęgnacja skóry” W terminie do 09.",
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw kosmetyków firmy Corii z serii Biopoint oraz Tesori d`Oriente",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.409Z",
+      "lastSeenAt": "2026-08-03T14:26:24.102Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -2952,16 +2925,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • najlepsza etiuda „Live Action”: 2 000 zł • najlepsza animacja: 2 000 zł Zgłoszenia będą przyjmowane do 9 sierpnia 2026 r.",
+        "summary": "Nagrody: • najlepsza etiuda „Live Action”: 2 000 zł • najlepsza animacja: 2 000 zł Zgłoszenia będą przyjmowane do 9 sierpn",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.442Z",
+      "lastSeenAt": "2026-08-03T14:26:42.804Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -2994,9 +2967,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.464Z",
+      "lastSeenAt": "2026-08-03T14:26:42.884Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -3028,21 +3001,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 10.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "wygrają zestaw wyjazdowych kosmetyków CeraVe + limitowana kosmetyczka.",
+        "summary": "Wygraj nagrody 🎁 • 5 x zestaw kosmetyków CeraVe + limitowana kosmetyczka o wartości 151,29 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.376Z",
+      "lastSeenAt": "2026-08-03T14:26:24.012Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3074,7 +3047,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Pamiętasz swoją pierwszą jazdę bez bocznych kółek?”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku; zaobserwuj facebookowy profil @Sportano.pl.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -3086,9 +3059,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.451Z",
+      "lastSeenAt": "2026-08-03T14:26:24.205Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3119,21 +3092,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Gdybyś mogła/mógł zabrać tylko jeden kosmetyk na bezludną wyspę, co by to było i dlaczego?”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 3 najciekawszych odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw kosmetyków marki Trimay (Pianka oczyszczająca, Kojący tonik do twarzy, Kojąca emulsja krem do twarzy, Gluta Ci Caffeine Płatki)",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.361Z",
+      "lastSeenAt": "2026-08-03T14:26:23.968Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3164,21 +3137,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "w ciekawy sposób dokończ zdanie: „Gdybym mogła/mógł pozbyć się jednej najbardziej irytującej rzeczy związanej z praniem, byłoby to…”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie; zaobserwuj instagramowy profil @bioexpertpolska.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj rok prania” Do dnia 12.",
+        "summary": "Wygraj nagrody 🎁 • 3 x EKO saszetka do prania bioExpert o wartości 124,99 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.355Z",
+      "lastSeenAt": "2026-08-03T14:26:23.950Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3209,21 +3182,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedz na pytanie: „Dlaczego chcesz wziąć udział w testowaniu oraz który zestaw chciałabyś otrzymać?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 40 najciekawszych odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 10 x zestaw: suplementy diety femaltiker plus oraz organizer • 10 x zestaw kosmetyków Pink Mama • 10 x zestawów suplementów diety Floradix Żelazo i witaminy • 10 x zestaw…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.365Z",
+      "lastSeenAt": "2026-08-03T14:26:23.975Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3253,21 +3226,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl najciekawsze grillowe wyzwanie lub pytanie; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Instagramie Do konkursu możesz przesłać tylko 1 zgłoszenie. Zwycięzcami konkursu zostaną….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 30 x grill turystyczny i talia kart „Sokołów” + zestaw produktów grillowych Sokołów",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.370Z",
+      "lastSeenAt": "2026-08-03T14:26:23.992Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3303,21 +3276,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 12.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x podwójna sakwa rowerowa + uchwyt na telefon + zapięcie + bidon + czapka + notes + długopis + karteczki samoprzylepne + magnes + kubek + torba z płótna + naklejka + brelok + kod…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.386Z",
+      "lastSeenAt": "2026-08-03T14:26:24.044Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3349,21 +3322,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Jaki przedmiot, smak, zapach albo zabawa z Waszego dzieciństwa potrafi w jednej chwili przenieść Was do tamtych lat i z…; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 3 x książka „Pamiętniki z betonowych bloków” autorstwa Andrzeja Bodysa Zasady konkursu Dziki Motyl „Pamiętniki z betonowych bloków” Do dnia 13.",
+        "summary": "Wygraj nagrody 🎁 • 3 x książka „Pamiętniki z betonowych bloków” autorstwa Andrzeja Bodysa",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.348Z",
+      "lastSeenAt": "2026-08-03T14:26:23.931Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3394,21 +3367,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Dlaczego Twoja przyjaciółka jest niezastąpiona?”; oznacz koleżankę w odpowiedzi; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 4 x zestaw suplementów dla kobiet marki DailyMe Zasady konkursu „DailyMe dla Ciebie i Twojej Bestie” Do dnia 13.",
+        "summary": "Wygraj nagrody 🎁 • 4 x zestaw suplementów dla kobiet marki DailyMe",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.350Z",
+      "lastSeenAt": "2026-08-03T14:26:23.935Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3445,21 +3418,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wykonaj zdjęcie lub pracę plastyczną pokazującą Twoje zabawy z wodą; gotowe dzieło opublikuj jako komentarz pod postem konkursowym na Facebooku Do konkursu możesz przesłać tylko 1 zgłoszenie. Zwycięzcami konkursu zostaną autorzy….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 10 x ręcznik plażowy z grafiką z filmu animowanego „Ekipa zwierzaków” Zasady konkursu Helios dla Dzieci „Ekipa zwierzaków” Do dnia 14.",
+        "summary": "Wygraj nagrody 🎁 • 10 x ręcznik plażowy z grafiką z filmu animowanego „Ekipa zwierzaków”",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.341Z",
+      "lastSeenAt": "2026-08-03T14:26:23.909Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3490,21 +3463,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Jakie szkolne wspomnienie wróciło do Ciebie po latach, gdy zobaczyłeś_aś, że Twoje dziecko przeżywa….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygrają autorzy 3 najbardziej kreatywnych odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 3 x szkolna wyprawka na każdy dzień szkoły – stylizacje wybrane przez stylistkę Coccodrillo",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.367Z",
+      "lastSeenAt": "2026-08-03T14:26:23.983Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3539,21 +3512,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wypełnij formularz zgłoszeniowy na stronie konkursu i w oryginalny sposób odpowiedz na pytanie „Który z wakacyjnych zakątków Polski kochasz najbardziej i dlaczego?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają osoby, które uzyskały najwyższą liczbę punktów w quizie.",
+        "summary": "Wygraj nagrody 🎁 • 8 x voucher na pobyt w hotelu o wartości 3 000 zł • 40 x zestaw kosmetyków Ziaja o wartości 300 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.455Z",
+      "lastSeenAt": "2026-08-03T14:26:24.212Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3582,21 +3555,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw 3 wierszy o dowolnej tematyce.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne o łącznej wartości 5 000 zł podzielone wg uznania jury",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.473Z",
+      "lastSeenAt": "2026-08-03T14:26:24.251Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3629,9 +3602,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.445Z",
+      "lastSeenAt": "2026-08-03T14:26:42.816Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -3661,16 +3634,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I nagroda: 5 000 zł • II nagroda: 4 000 zł Termin nadsyłania prac upływa 15 sierpnia 2026 r.",
+        "summary": "Nagrody: • I nagroda: 5 000 zł • II nagroda: 4 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.461Z",
+      "lastSeenAt": "2026-08-03T14:26:42.876Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -3702,21 +3675,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Jaki zapach najbardziej kojarzy Ci się ze szczęśliwymi chwilami i dlaczego właśnie on?”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 1 x kolekcja zapachów Divine Harmony marki Harmoniq o wartości 532,79 zł Zasady konkursu Drogerie Natura na Facebooku „Harmoniq” Do dnia 16.",
+        "summary": "Wygraj nagrody 🎁 • 1 x kolekcja zapachów Divine Harmony marki Harmoniq o wartości 532,79 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.323Z",
+      "lastSeenAt": "2026-08-03T14:26:23.867Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3749,21 +3722,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: Czy „Moja Kawa” towarzyszy Wam podczas kibicowania, a może pijecie ją przed własnym treningiem, by dodać….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrodzonych 5 najbardziej kreatywnych odpowiedzi, które najlepiej oddadzą emocje prawdziwego kibicowania.",
+        "summary": "Wygraj nagrody 🎁 • 5 x podwójne zaproszenie na Memoriał Wagnera w Krakowie + zestaw kaw MK Café + kubek termiczny MK Café o łącznej wartości 491 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.384Z",
+      "lastSeenAt": "2026-08-03T14:26:24.040Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3797,21 +3770,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "przygotuj zdjęcie, film, screen lub inną kreatywną formę wizualną pokazującą, jak rywalizujecie: na boisku lub podwórku, w domu, przed komputerem, przed….",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 1 x konsola Nintendo Switch • 1 x gogle do PS5 VR • 5 x piłka nożna Adidas Trionda Zasady konkursu na Facebooku „Bakusiowe Igrzyska” Do dnia 16.",
+        "summary": "Wygraj nagrody 🎁 • 1 x konsola Nintendo Switch • 1 x gogle do PS5 VR • 5 x piłka nożna Adidas Trionda",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.426Z",
+      "lastSeenAt": "2026-08-03T14:26:24.157Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3861,9 +3834,9 @@
         "detailFetched": true,
         "detailVersion": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:54.184Z",
+      "lastSeenAt": "2026-08-03T14:26:42.440Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3903,9 +3876,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.455Z",
+      "lastSeenAt": "2026-08-03T14:26:42.854Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -3937,21 +3910,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 17.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj Pakiet Regeneracyjny Medivon” Konkurs prowadzony jest na Facebooku i Instagramie.",
+        "summary": "Wygraj nagrody 🎁 • 1 x Pakiet Regeneracyjny Medivon zawierający: Medivon Lumi – Maseczka Led, Medivon Bella Go – Roler do masażu i Medivon DualTherm – Urządzenie do termoterapii",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.334Z",
+      "lastSeenAt": "2026-08-03T14:26:23.893Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -3982,21 +3955,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Co znajduje się w Twojej wakacyjnej torebce i dlaczego właśnie bez tego nie wyobrażasz sobie lata?”.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorki 3 najciekawszych odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 1 x zestaw kosmetyków Nacomi Next Level + torebka O bag Standard • 1 x kosmetyczka Nacomi Next Level x O bag z dwoma serami Nacomi Next Level + torebka O Bag Mini • 1 x kosmetyczka…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.338Z",
+      "lastSeenAt": "2026-08-03T14:26:23.903Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4028,21 +4001,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Jak wyglądałby Twój idealny poranny rytuał z kawą i co musiałoby się w nim znaleźć, żeby był naprawdę Twój?”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 1 x ekspres kolbowy Sage the Barista ExpressTM, model SES875BSS2 o wartości 2 399 zł • 5 x waga Sage model SEA001 o wartości 99 zł Zasady konkursu „Jeden Ekspres.",
+        "summary": "Wygraj nagrody 🎁 • 1 x ekspres kolbowy Sage the Barista ExpressTM, model SES875BSS2 o wartości 2 399 zł • 5 x waga Sage model SEA001 o wartości 99 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.351Z",
+      "lastSeenAt": "2026-08-03T14:26:23.939Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4082,9 +4055,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.456Z",
+      "lastSeenAt": "2026-08-03T14:26:42.860Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4121,9 +4094,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.462Z",
+      "lastSeenAt": "2026-08-03T14:26:42.877Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4159,21 +4132,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij formularz zgłoszeniowy 🔹podczas jazdy testowej zrób zdjęcie lub wideo z samochodem Changan, prezentując na nim piłkarską cieszynkę 🔹gotowy materiał opublikuj na swoim publicznym profilu Facebooku lub Instagramie wraz",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody główne – po jednej od każdego dealera.",
+        "summary": "Wygraj nagrody 🎁 • 3 x użyczenie samochodu marki Changan na 14 dni kalendarzowych o wartości 2 000 zł • 6 x piłka Adidas FIFA World Cup 26 Trionda League",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.437Z",
+      "lastSeenAt": "2026-08-03T14:26:24.171Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4210,9 +4183,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.443Z",
+      "lastSeenAt": "2026-08-03T14:26:42.808Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4248,21 +4221,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedzi, które wybierze organizator konkursu.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 3 odpowiedzi, które wybierze organizator konkursu.",
+        "summary": "Wygraj nagrody 🎁 • 1 x e-voucher Świat Książki o wartości 300 zł • 1 x e-voucher Świat Książki o wartości 200 zł • 1 x e-voucher Świat Książki o wartości 100 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.405Z",
+      "lastSeenAt": "2026-08-03T14:26:24.091Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4299,9 +4272,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.439Z",
+      "lastSeenAt": "2026-08-03T14:26:42.797Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4344,9 +4317,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.443Z",
+      "lastSeenAt": "2026-08-03T14:26:42.807Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4378,21 +4351,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedzi to 200 znaków.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 18 x karta podarunkowa do Media Expert o wartości 1 000 zł Zasady konkursu RMF FM „Wakacyjne SOS” W terminie do 21.",
+        "summary": "Wygraj nagrody 🎁 • 18 x karta podarunkowa do Media Expert o wartości 1 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.439Z",
+      "lastSeenAt": "2026-08-03T14:26:24.176Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4420,7 +4393,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs maksymalnie 3 wiersze o tematyce miłości.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -4432,9 +4405,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.456Z",
+      "lastSeenAt": "2026-08-03T14:26:24.215Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4477,9 +4450,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.458Z",
+      "lastSeenAt": "2026-08-03T14:26:42.868Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4513,21 +4486,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "nagraj krótki film wideo, w którym: 🔹przedstawisz się i powiesz, ile masz lat 🔹powiesz, skąd jesteś oraz coś ciekawego o swojej miejscowości 🔹pozdrowisz widzów 4FUN KIDS Gotowy materiał prześlij przez formularz dostępny na",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 21 x zabawka wskazana przez uczestnika o wartości do 200 zł Zasady konkursu „Przedstaw się w 4Fun Kids 2026” W terminie do 23.",
+        "summary": "Wygraj nagrody 🎁 • 21 x zabawka wskazana przez uczestnika o wartości do 200 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.353Z",
+      "lastSeenAt": "2026-08-03T14:26:23.944Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4556,21 +4529,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedzialny wypoczynek nad wodą.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x kamera sportowa marki GoPro • organizator zastrzega sobie prawo do przyznania dodatkowych wyróżnień",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.425Z",
+      "lastSeenAt": "2026-08-03T14:26:24.154Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4614,9 +4587,9 @@
         "detailFetched": true,
         "detailVersion": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:54.183Z",
+      "lastSeenAt": "2026-08-03T14:26:42.438Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4647,21 +4620,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 25.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 5 x laptop Acer Chromebook 315 CB315-7HC04P o wartości 1 299,99 zł Zasady konkursu “Zgarnij nowiutki Acer Chromebook 315!",
+        "summary": "Wygraj nagrody 🎁 • 5 x laptop Acer Chromebook 315 CB315-7HC04P o wartości 1 299,99 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.434Z",
+      "lastSeenAt": "2026-08-03T14:26:24.166Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4713,9 +4686,9 @@
         "detailFetched": true,
         "detailVersion": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:54.182Z",
+      "lastSeenAt": "2026-08-03T14:26:42.436Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4752,9 +4725,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.459Z",
+      "lastSeenAt": "2026-08-03T14:26:42.872Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4791,9 +4764,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.457Z",
+      "lastSeenAt": "2026-08-03T14:26:42.861Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4830,9 +4803,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.444Z",
+      "lastSeenAt": "2026-08-03T14:26:42.812Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -4862,21 +4835,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "w komentarzu pod postem konkursowym na Instagramie poleć jedno mniej oczywiste miejsce w Polsce na aktywną przygodę; napisz, jaką aktywność sportową można tam uprawiać i dlaczego właśnie tam zaczyna się Twój moment; zaobserwuj instagramowy profil @yatra.pl.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrodzi 8 najbardziej kreatywnych, ciekawych i inspirujących odpowiedzi.",
+        "summary": "Wygraj nagrody 🎁 • 1 x deska SUP Yatra w kolorze niebieskim o wartości 1 299 zł • 1 x deska SUP Yatra w kolorze pomarańczowym o wartości 1 199 zł • 3 x lodówka turystyczna Yatra ICE Box o wartości…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.332Z",
+      "lastSeenAt": "2026-08-03T14:26:23.888Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4907,21 +4880,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedz na 4 pytania zamknięte dotyczące postrzegania i używania produktów marki Winiary 🔹następnie w kreatywny sposób odpowiedz na pytanie: „Dlaczego to właśnie Tobie powinniśmy wysłać paczkę z nowościami Winiary?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 100 odpowiedzi najwyżej ocenionych przez jury konkursu.",
+        "summary": "Wygraj nagrody 🎁 • 100 x zestaw produktów marki Winiary o łącznej wartości 12,50 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.342Z",
+      "lastSeenAt": "2026-08-03T14:26:23.915Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4954,16 +4927,16 @@
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 10 x karta podarunkowa do sklepu internetowego Zooart o wartości 100 zł Zasady konkursu „Letnia gra Wamiz” W terminie do 31.",
+        "summary": "Wygraj nagrody 🎁 • 10 x karta podarunkowa do sklepu internetowego Zooart o wartości 100 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.356Z",
+      "lastSeenAt": "2026-08-03T14:26:23.954Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -4992,21 +4965,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs 3 wiersze literackie o tematyce związanej z życiem wsi, obrzędami, tradycjami, związkami z naturą.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne, rzeczowe i dyplomy przyznane w obu kategoriach wiekowych Zasadky konkursu poetyckiego „Ziemia moich wierszy 2026” Konkurs adresowany jest do twórców…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.358Z",
+      "lastSeenAt": "2026-08-03T14:26:23.959Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5040,21 +5013,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zrób kreatywne, wakacyjne zdjęcie z dowolnym produktem MagMari; gotowe zdjęcie opublikuj jako komentarz pod postem konkursowym na Facebooku; oznacz min. 2 osoby; zaobserwuj facebookowy profil MagMari.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x zestaw kosmetyków MagMari: 3 Szampony 1L (Royal, Aureum i Optimum) + Maska 200 ml Accanto i Scarto + Eliksir Orygeness",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.378Z",
+      "lastSeenAt": "2026-08-03T14:26:24.021Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5086,21 +5059,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "nagraj film (do 2 minut) lub stwórz prezentację PDF przedstawiającą Twój cel i wyzwania rozwojowe, przeszkody stojące na drodze do jego osiągnięcia oraz wsparcia jakiego potrzebujesz, aby rozwinąć skrzydła i zbliżyć się do cel",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 5 x udział w programie rozwojowym Trust Your Wings o wartości 20 000 zł Zasady konkursu AA „Trust Your Wings” W terminie 17.",
+        "summary": "Wygraj nagrody 🎁 • 5 x udział w programie rozwojowym Trust Your Wings o wartości 20 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.391Z",
+      "lastSeenAt": "2026-08-03T14:26:24.057Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5134,21 +5107,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zrób kreatywne zdjęcie, które będzie Twoją interpretację hasła „SEEwithkodano”; gotową fotografię opublikuj na swoim publicznym profilu na Instagramie z hasztagiem #seewithkodano oraz oznaczeniem @kodano.pl.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 5 000 zł • 10 x voucher do wykorzystania w salonach Kodano o wartości 500 zł Zasady konkursu na Instagramie „SEEwithkodano” Do dnia 31.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 5 000 zł • 10 x voucher do wykorzystania w salonach Kodano o wartości 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.407Z",
+      "lastSeenAt": "2026-08-03T14:26:24.095Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5180,21 +5153,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Aby dołączyć do konkursu, do dnia 31.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "wygrają zestaw dla niemowlaka.",
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw kosmetyków dla najmłodszych, śliniak i miękki ręcznik kąpielowy o wartości 100 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.420Z",
+      "lastSeenAt": "2026-08-03T14:26:24.139Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5226,21 +5199,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wybierz się na wycieczkę do miejsca, w którym można zdobyć pieczątkę; listę miejsc znajdziesz w Mapoprzewodniku Podkarpackie oraz na liście na stronie konkursowej; przybij pieczątkę w aplikacji.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 4 x Garmin Vivoactive 5 granatowy • 4 x Garmin Vivoactive 5 grafitowy • 2 x GoPro13 Hero + travel kit Zasady konkursu Traseo „Podkarpackie.",
+        "summary": "Wygraj nagrody 🎁 • 4 x Garmin Vivoactive 5 granatowy • 4 x Garmin Vivoactive 5 grafitowy • 2 x GoPro13 Hero + travel kit",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.422Z",
+      "lastSeenAt": "2026-08-03T14:26:24.144Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5273,16 +5246,16 @@
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • za 20 zebranych ananasów dyplom uczestnictwa • za 40 zebranych ananasów dyplom uczestnictwa z wyróżnieniem Zasady projektu „Wakacje z Matzoo” W terminie 01.",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.433Z",
+      "lastSeenAt": "2026-08-03T14:26:24.164Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5313,21 +5286,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij na adres: konkurs@gdos.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 2 x profesjonalny śpiwór o wartości 1 200 zł • 4 x termos obiadowy (lunch box) o wartości 220 zł Zasady konkursu fotograficznego „Wakacje z naturą.",
+        "summary": "Wygraj nagrody 🎁 • 2 x profesjonalny śpiwór o wartości 1 200 zł • 4 x termos obiadowy (lunch box) o wartości 220 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.447Z",
+      "lastSeenAt": "2026-08-03T14:26:24.197Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5356,21 +5329,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zrób ciekawe zdjęcie z motywem morza, oceanu lub nawiązujące do niego w klimacie trendu kolorystycznego Caparol 2026.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 10 x nagrody niespodzianki związane z kolorem roku marki Caparol Zasady konkursu Caparol „Złap morski klimat” Do dnia 31.",
+        "summary": "Wygraj nagrody 🎁 • 10 x nagrody niespodzianki związane z kolorem roku marki Caparol",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.448Z",
+      "lastSeenAt": "2026-08-03T14:26:24.200Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5398,21 +5371,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "napisz tekst prozatorski (opowiadanie, nowela, esej, recenzja, publicystyka, wspomnienia itp.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne (ostateczny podział wyróżnień finansowych zależy od decyzji jury) Zasady konkursu literackiego im.",
+        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne (ostateczny podział wyróżnień finansowych zależy od decyzji jury)",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.468Z",
+      "lastSeenAt": "2026-08-03T14:26:24.239Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5443,21 +5416,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw 8 fraszek o tematyce obyczajowej.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 100 zł • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 600 zł Zasady konkursu literackiego im.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 100 zł • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 600 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.471Z",
+      "lastSeenAt": "2026-08-03T14:26:24.248Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5487,16 +5460,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I miejsce – 4 000 zł • II miejsce – 2 500 zł • III miejsce – 1 500 zł Zgłoszenia będą przyjmowane do 31 sierpnia 2026 r.",
+        "summary": "Nagrody: • I miejsce – 4 000 zł • II miejsce – 2 500 zł • III miejsce – 1 500 zł Zgłoszenia będą przyjmowane do 31 sierp",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.441Z",
+      "lastSeenAt": "2026-08-03T14:26:42.803Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5533,9 +5506,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.444Z",
+      "lastSeenAt": "2026-08-03T14:26:42.813Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5571,16 +5544,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I miejsce – 1 000 zł • II miejsce – 600 zł • III miejsce – 400 zł Termin nadsyłania prac mija 31 sierpnia 2026 r.",
+        "summary": "Nagrody: • I miejsce – 1 000 zł • II miejsce – 600 zł • III miejsce – 400 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.456Z",
+      "lastSeenAt": "2026-08-03T14:26:42.858Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5617,9 +5590,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.456Z",
+      "lastSeenAt": "2026-08-03T14:26:42.859Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5656,9 +5629,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.457Z",
+      "lastSeenAt": "2026-08-03T14:26:42.865Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5698,9 +5671,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.459Z",
+      "lastSeenAt": "2026-08-03T14:26:42.871Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5732,21 +5705,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „W jaką grę komputerową lub konsolową możesz grać bez końca i DLACZEGO?”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x konsola Sony PlayStation 5 z dyskiem 1TB o wartości 2 500 zł • 1 x kamera IP Imou Cruiser Dual 10MP • 1 x zestaw: bezprzewodowa klawiatura i mysz Accura Delano • 1 x zestaw:…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.330Z",
+      "lastSeenAt": "2026-08-03T14:26:23.882Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5783,21 +5756,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "odpowiedz na pytanie: „W jaki sposób włączasz swój tryb samolotowy, czyli odpoczynek i relaks?",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy 3 odpowiedzi najwyżej ocenionych przez jury konkursu.",
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw past SEYSSO Pure Guard + szczoteczka soniczna Edge Infinity + irygator Edge Nova + voucher na profesjonalny zabieg czyszczenia zębów GBT w gabinecie Enel-Med",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.417Z",
+      "lastSeenAt": "2026-08-03T14:26:24.131Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -5840,9 +5813,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.453Z",
+      "lastSeenAt": "2026-08-03T14:26:42.847Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5879,9 +5852,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.458Z",
+      "lastSeenAt": "2026-08-03T14:26:42.866Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5918,9 +5891,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.465Z",
+      "lastSeenAt": "2026-08-03T14:26:42.885Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5963,9 +5936,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.440Z",
+      "lastSeenAt": "2026-08-03T14:26:42.798Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -5996,7 +5969,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: rysunek / praca plastyczna — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
@@ -6008,9 +5981,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.444Z",
+      "lastSeenAt": "2026-08-03T14:26:42.814Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6047,9 +6020,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.448Z",
+      "lastSeenAt": "2026-08-03T14:26:42.828Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6092,9 +6065,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.440Z",
+      "lastSeenAt": "2026-08-03T14:26:42.799Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6131,9 +6104,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.451Z",
+      "lastSeenAt": "2026-08-03T14:26:42.837Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6170,9 +6143,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.446Z",
+      "lastSeenAt": "2026-08-03T14:26:42.820Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6212,9 +6185,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.442Z",
+      "lastSeenAt": "2026-08-03T14:26:42.806Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6247,16 +6220,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I miejsce: 3 000 zł • II miejsce: 2 000 zł • III miejsce: 1 000 zł Termin nadsyłania prac upływa 13 września 2026 r.",
+        "summary": "Nagrody: • I miejsce: 3 000 zł • II miejsce: 2 000 zł • III miejsce: 1 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.452Z",
+      "lastSeenAt": "2026-08-03T14:26:42.845Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6299,9 +6272,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.449Z",
+      "lastSeenAt": "2026-08-03T14:26:42.832Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6341,9 +6314,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.464Z",
+      "lastSeenAt": "2026-08-03T14:26:42.882Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6376,16 +6349,16 @@
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody finansowe.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 7 000 zł • 1 x nagroda pieniężna 5 000 zł • 1 x nagroda pieniężna 3 000 zł • 2 x nagroda pieniężna 1 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.474Z",
+      "lastSeenAt": "2026-08-03T14:26:24.254Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -6425,9 +6398,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.441Z",
+      "lastSeenAt": "2026-08-03T14:26:42.801Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6463,16 +6436,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "nagroda – 300 zł • II nagroda – 200 zł • III nagroda – 100 zł Termin nadsyłania prac upływa 15 września 2026 r.",
+        "summary": "nagroda – 300 zł • II nagroda – 200 zł • III nagroda – 100 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.442Z",
+      "lastSeenAt": "2026-08-03T14:26:42.805Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6512,9 +6485,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.445Z",
+      "lastSeenAt": "2026-08-03T14:26:42.818Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6551,9 +6524,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.451Z",
+      "lastSeenAt": "2026-08-03T14:26:42.842Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6593,9 +6566,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.450Z",
+      "lastSeenAt": "2026-08-03T14:26:42.836Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6638,9 +6611,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.438Z",
+      "lastSeenAt": "2026-08-03T14:26:42.794Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6680,9 +6653,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.450Z",
+      "lastSeenAt": "2026-08-03T14:26:42.834Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6722,9 +6695,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.451Z",
+      "lastSeenAt": "2026-08-03T14:26:42.840Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6752,21 +6725,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "napisz wiersz inspirowany twórczością Krzysztofa Kamila Baczyńskiego.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody finansowe.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 600 zł • 3 x nagroda pieniężna 300 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.470Z",
+      "lastSeenAt": "2026-08-03T14:26:24.245Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -6794,21 +6767,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij na adres: Foto-salon Rever ul.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrodzone dyplomami oraz bonami podarunkowymi.",
+        "summary": "Wygraj nagrody 🎁 • 1 x dyplom i bon podarunkowy na kwotę 1 500 zł • 1 x dyplom i bon podarunkowy na kwotę 1 000 zł • 1 x dyplom i bon podarunkowy na kwotę 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.444Z",
+      "lastSeenAt": "2026-08-03T14:26:24.189Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -6854,9 +6827,9 @@
         "detailFetched": true,
         "detailVersion": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:54.184Z",
+      "lastSeenAt": "2026-08-03T14:26:42.443Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -6896,9 +6869,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.449Z",
+      "lastSeenAt": "2026-08-03T14:26:42.831Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -6930,21 +6903,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś do konkursu zdjęcia przedstawiające sportowców lub elementy symbolizujące sport w otoczeniu dzikiej przyrody uwiecznionej na wolności, w stanie dzikim.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 700 zł + nagroda rzeczowa • 2 x nagroda pieniężna 500 zł + nagroda rzeczowa Zasady konkursu fotograficznego „Natura Sportu 2026” W terminie do 21.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 500 zł + nagroda rzeczowa • 2 x nagroda pieniężna 1 000 zł + nagroda rzeczowa • 1 x nagroda pieniężna 700 zł + nagroda rzeczowa • 2 x nagroda pieniężna 500…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.478Z",
+      "lastSeenAt": "2026-08-03T14:26:24.269Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -6976,21 +6949,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "opublikuj w formie posta na grupie Astronomia w Kaliszu na Facebooku.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody finansowe.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 700 zł • 1 x nagroda pieniężna 500 zł Nagrody dodatkowe: • 1 x nagroda pieniężna 500 zł – dla najlepszej fotografii…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.464Z",
+      "lastSeenAt": "2026-08-03T14:26:24.232Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7020,16 +6993,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I miejsce: 15 000 zł • II miejsce: 10 000 zł • III miejsce: 7 000 zł Konkurs trwa do 24 września 2026 r.",
+        "summary": "Nagrody: • I miejsce: 15 000 zł • II miejsce: 10 000 zł • III miejsce: 7 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.454Z",
+      "lastSeenAt": "2026-08-03T14:26:42.851Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7059,21 +7032,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "prześlij na adres: wystawy.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 500 zł • 3 x karta podarunkowa o wartości 250 zł Zasady konkursu fotograficznego „Wakacje z aparatem” W terminie do 25.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 300 zł • 1 x nagroda pieniężna 700 zł • 1 x nagroda pieniężna 500 zł • 3 x karta podarunkowa o wartości 250 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.382Z",
+      "lastSeenAt": "2026-08-03T14:26:24.034Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7105,21 +7078,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij na adres: Komenda Główna Policji – Biuro Prewencji, ul.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody rzeczowe.",
+        "summary": "Wygraj nagrody 🎁 • nagrody rzeczowe oraz wyróżnienia przyznane w obu kategoriach wiekowych",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.415Z",
+      "lastSeenAt": "2026-08-03T14:26:24.123Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7148,21 +7121,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś do konkursu 3 wiersze o dowolnej tematyce.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda rzeczowa Zasady konkursu poetyckiego „W trzech wierszach” Konkurs przeznaczony jest dla wszystkich autorów wierszy powyżej 18 roku życia.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 800 zł • 1 x nagroda pieniężna 600 zł • 1 x nagroda pieniężna 400 zł • 1 x nagroda rzeczowa",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.475Z",
+      "lastSeenAt": "2026-08-03T14:26:24.258Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7195,16 +7168,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I miejsce: 1 000 zł • II miejsce: 700 zł • III miejsce: 500 zł • wyróżnienie: 300 zł Zdjęcia można przesyłać do 25 września 2026 r.",
+        "summary": "Nagrody: • I miejsce: 1 000 zł • II miejsce: 700 zł • III miejsce: 500 zł • wyróżnienie: 300 zł Zdjęcia można przesyłać do 25 września",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.453Z",
+      "lastSeenAt": "2026-08-03T14:26:42.849Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7235,7 +7208,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw wierszy (do 5 utworów) własnego autorstwa o dowolnej tematyce.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -7247,9 +7220,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.374Z",
+      "lastSeenAt": "2026-08-03T14:26:24.004Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7277,21 +7250,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw 3 wierszy o dowolnej tematyce.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 3 000 zł • 1 x nagroda pieniężna 2 000 zł • 6 x nagroda pieniężna 500 zł Zasady konkursu poetyckiego „Exodus ‘26” W terminie do 30.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 4 000 zł • 1 x nagroda pieniężna 3 000 zł • 1 x nagroda pieniężna 2 000 zł • 6 x nagroda pieniężna 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.431Z",
+      "lastSeenAt": "2026-08-03T14:26:24.159Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7321,21 +7294,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij za pośrednictwem formularza dostępnego na stronie konkursowej i zonacz miejsce gdzie je zrobiłeś Do konkursu możesz dodać dowolną liczbę zgłoszeń.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda gwarantowana: 25% zniżki na zakupy w sklepie internetowym Dafi Zasady konkursu Dafi „Filtr to podstawa” W terminie do 30.",
+        "summary": "Wygraj nagrody 🎁 • 1 x zestaw Dafi: szklany dzbanek filtrujący + PushAir Saturator do Wody + Stalowa Butelka 0,75 + 4 syropy + szklana Butelka Filtrująca o łącznej wartości 800 zł • 1 x zestaw Dafi:…",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.436Z",
+      "lastSeenAt": "2026-08-03T14:26:24.169Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7363,7 +7336,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "napisz opowiadanie inspirowane jedną, dowolnie wybraną publikacją autorstwa Sergiusza Piaseckiego, przedstawiające literacką kontynuację losów jej bohaterów.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -7375,9 +7348,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.440Z",
+      "lastSeenAt": "2026-08-03T14:26:24.178Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7409,21 +7382,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: formularz zgłoszeniowy — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 2 500 zł Zasady konkursu plastycznego „À propos Derwicha 2026” W konkursie mogą uczestniczyć wszystkie osoby, które ukończyły 16 lat.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 5 500 zł • 1 x nagroda pieniężna 3 500 zł • 1 x nagroda pieniężna 2 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.446Z",
+      "lastSeenAt": "2026-08-03T14:26:24.193Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7451,21 +7424,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wyślij swoje zgłoszenie na adres: konkurs.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Sprawdź nagrody w źródle.",
+        "summary": "Wygraj nagrody 🎁 • 1 x aparat fotograficzny Sony ZV-1 • 1 x słuchawki bezprzewodowe Sony LinkBuds WF-L900 • 1 x słuchawki bezprzewodowe Sony WF-C510",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.453Z",
+      "lastSeenAt": "2026-08-03T14:26:24.210Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7495,21 +7468,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs 3 wiersze o dowolnej tematyce.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Wygraj nagrody 🎁 • nagrody rzeczowe, książkowe oraz pieniężne przyznane w każdej kategorii wiekowej Zasady konkursu XX Konkursu Poetyckiego im.",
+        "summary": "Wygraj nagrody 🎁 • nagrody rzeczowe, książkowe oraz pieniężne przyznane w każdej kategorii wiekowej",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.457Z",
+      "lastSeenAt": "2026-08-03T14:26:24.217Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7540,21 +7513,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zdjęcia pokazujące niezwykłe miejsca, w których historia spotyka się z przyrodą.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody finansowe.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 500 zł • 1 x nagroda pieniężna 300 zł • 1 x nagroda pieniężna 200 zł • wyróżnienia specjalne",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.458Z",
+      "lastSeenAt": "2026-08-03T14:26:24.220Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -7597,9 +7570,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.441Z",
+      "lastSeenAt": "2026-08-03T14:26:42.800Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7632,16 +7605,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I nagroda – 4 000 zł • II nagroda – 3 000 zł • III nagroda – 2 000 zł • 6 wyróżnień po 500 zł Termin nadsyłania prac mija 30 września 2026 r.",
+        "summary": "Nagrody: • I nagroda – 4 000 zł • II nagroda – 3 000 zł • III nagroda – 2 000 zł • 6 wyróżnień po 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.443Z",
+      "lastSeenAt": "2026-08-03T14:26:42.810Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7678,9 +7651,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.447Z",
+      "lastSeenAt": "2026-08-03T14:26:42.824Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7720,9 +7693,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.451Z",
+      "lastSeenAt": "2026-08-03T14:26:42.839Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7762,9 +7735,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.452Z",
+      "lastSeenAt": "2026-08-03T14:26:42.844Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7801,9 +7774,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.452Z",
+      "lastSeenAt": "2026-08-03T14:26:42.846Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7840,9 +7813,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.453Z",
+      "lastSeenAt": "2026-08-03T14:26:42.848Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7875,16 +7848,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I nagroda – 5 500 zł brutto • II nagroda – 3 500 zł brutto • III nagroda – 2 500 zł brutto Termin nadsyłania prac mija 30 września 2026 r.",
+        "summary": "Nagrody: • I nagroda – 5 500 zł brutto • II nagroda – 3 500 zł brutto • III nagroda – 2 500 zł brutto",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.455Z",
+      "lastSeenAt": "2026-08-03T14:26:42.856Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7924,9 +7897,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.457Z",
+      "lastSeenAt": "2026-08-03T14:26:42.863Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -7962,16 +7935,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I miejsce – 7 000 zł • II miejsce – 6 000 zł • III miejsce – 5 000 zł Zgłoszenia można przesłać do 30 września 2026 r.",
+        "summary": "Nagrody: • I miejsce – 7 000 zł • II miejsce – 6 000 zł • III miejsce – 5 000 zł Zgłoszenia można przesłać do 30 wrześni",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.457Z",
+      "lastSeenAt": "2026-08-03T14:26:42.864Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8011,9 +7984,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.457Z",
+      "lastSeenAt": "2026-08-03T14:26:42.865Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8050,9 +8023,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.461Z",
+      "lastSeenAt": "2026-08-03T14:26:42.875Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8092,9 +8065,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.463Z",
+      "lastSeenAt": "2026-08-03T14:26:42.879Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8134,9 +8107,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.464Z",
+      "lastSeenAt": "2026-08-03T14:26:42.881Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8164,21 +8137,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw obejmujący nie więcej niż 45 utworów poetyckich, mieszczący się na maksymalnie 54 stronach (nie licząc spisu treści i strony tytułowej).",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • nagrody finansowe podzielone wg uznania jury + nagroda honorowa Zasady konkursu literackiego „Złoty Syfon Szerfera 2026” W terminie do 01.",
+        "summary": "Wygraj nagrody 🎁 • nagrody finansowe podzielone wg uznania jury + nagroda honorowa",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.399Z",
+      "lastSeenAt": "2026-08-03T14:26:24.074Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -8209,21 +8182,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw 5 wierszy o dowolnej tematyce i formie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody pieniężne o łącznej wartości nie mniejszej niż 2 500 zł podzielone wg uznania jury Zasady konkursu literackiego „Złoty Syfon 2026” W terminie do 01.",
+        "summary": "Wygraj nagrody 🎁 • nagrody pieniężne o łącznej wartości nie mniejszej niż 2 500 zł podzielone wg uznania jury",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.400Z",
+      "lastSeenAt": "2026-08-03T14:26:24.077Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -8257,12 +8230,12 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zestaw do 5 wierszy lub/i jeden utwór prozatorski.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody w kategoriach specjalnych Zasady 42.",
+        "summary": "Wygraj nagrody 🎁 • nagrody finansowe o łącznej wartości około 7 500 zł podzielone w dwóch głównych kategoriach: Proza (trzy miejsca), Poezja (trzy miejsca) oraz trzy nagrody w kategoriach specjalnych…",
         "value": null,
         "currency": "PLN"
       },
@@ -8270,7 +8243,7 @@
         "deadlineFound": true,
         "mergedFrom": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:38.438Z",
+      "lastSeenAt": "2026-08-03T14:26:24.174Z",
       "alsoOn": [
         {
           "source": "aktualnekonkursy",
@@ -8279,7 +8252,7 @@
         }
       ],
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -8316,9 +8289,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.455Z",
+      "lastSeenAt": "2026-08-03T14:26:42.853Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8355,9 +8328,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.460Z",
+      "lastSeenAt": "2026-08-03T14:26:42.874Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8401,9 +8374,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.439Z",
+      "lastSeenAt": "2026-08-03T14:26:42.796Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8446,9 +8419,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.463Z",
+      "lastSeenAt": "2026-08-03T14:26:42.878Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8481,16 +8454,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I nagroda: 2 500 zł • II nagroda: 1 500 zł • III nagroda: 1 000 zł Termin nadsyłania zdjęć upływa 8 października 2026 r.",
+        "summary": "Nagrody: • I nagroda: 2 500 zł • II nagroda: 1 500 zł • III nagroda: 1 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.443Z",
+      "lastSeenAt": "2026-08-03T14:26:42.809Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8533,9 +8506,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.438Z",
+      "lastSeenAt": "2026-08-03T14:26:42.792Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8569,7 +8542,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zarejestruj się na stronie konkursu, Loguj się codziennie w aplikacji i wykonuj proste zadania – granie w gry, wykonywanie misji specjalnych, czy szukanie secret letter na mapie.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -8581,9 +8554,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.449Z",
+      "lastSeenAt": "2026-08-03T14:26:24.202Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -8612,21 +8585,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "napisz czytelnie imię i nazwisko autora, tytuł, technikę, rok powstania i wymiary pracy Do konkursu możesz zgłosić maksymalnie 3 pojedyncze prace lub jeden cykl złożony maksymalnie z 3 prac.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody otrzymają autorzy prac wybranych przez jury konkursu.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 3 000 zł • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 600 zł • 1 x nagroda pieniężna 400 zł • 1 x uczestnictwo w plenerze malarskim",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.461Z",
+      "lastSeenAt": "2026-08-03T14:26:24.226Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -8663,9 +8636,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.460Z",
+      "lastSeenAt": "2026-08-03T14:26:42.873Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8693,21 +8666,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "prześlij przez formularz dostępny na stronie konkursowej.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody finansowe.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 3 000 zł • 1 x nagroda pieniężna 2 000 zł • 1 x nagroda pieniężna 1 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.432Z",
+      "lastSeenAt": "2026-08-03T14:26:24.162Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -8737,16 +8710,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I miejsce: 3 000 zł • II miejsce: 2 000 zł • III miejsce: 1 000 zł Termin nadsyłania prac mija 20 października 2026 r.",
+        "summary": "Nagrody: • I miejsce: 3 000 zł • II miejsce: 2 000 zł • III miejsce: 1 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.448Z",
+      "lastSeenAt": "2026-08-03T14:26:42.825Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8786,9 +8759,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.463Z",
+      "lastSeenAt": "2026-08-03T14:26:42.880Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8831,9 +8804,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.460Z",
+      "lastSeenAt": "2026-08-03T14:26:42.873Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8876,9 +8849,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.452Z",
+      "lastSeenAt": "2026-08-03T14:26:42.843Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8911,16 +8884,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody • I miejsce – 5 000 zł • II miejsce – 3 500 zł • III miejsce – 2 500 zł Zgłoszenia będą przyjmowane do 27 października 2026 r.",
+        "summary": "Nagrody • I miejsce – 5 000 zł • II miejsce – 3 500 zł • III miejsce – 2 500 zł Zgłoszenia będą przyjmowane do 27 paźdz",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.455Z",
+      "lastSeenAt": "2026-08-03T14:26:42.852Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -8951,21 +8924,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "zgłoś na konkurs zdjęcia wykonane w Gdańsku od 01.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagroda pieniężna 500 zł • 1 x nagroda pieniężna 250 zł • 1 x pakiet darczyńcy Muzeum Gdańska Zasady konkursu fotograficznego „Mój Gdańsk 2026” W terminie do 31.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 500 zł • 1 x nagroda pieniężna 250 zł • 1 x pakiet darczyńcy Muzeum Gdańska",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.452Z",
+      "lastSeenAt": "2026-08-03T14:26:24.207Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -8996,7 +8969,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "opublikuj na publicznym profilu autora na Instagramie z oznaczeniem @domdevelopment i hasztagami #KonkursDomDevelopment oraz #30LatDomDevelopment, a następnie prześlij plik o min.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
@@ -9008,9 +8981,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.466Z",
+      "lastSeenAt": "2026-08-03T14:26:24.234Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9051,9 +9024,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.446Z",
+      "lastSeenAt": "2026-08-03T14:26:42.821Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9086,16 +9059,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "nagrody pieniężne: • I miejsce – 1 300 zł • II miejsce – 950 zł • III miejsce – 650 zł • 3 wyróżnienia po 350 zł Termin nadsyłania prac mija 31 października 2026 r.",
+        "summary": "nagrody pieniężne: • I miejsce – 1 300 zł • II miejsce – 950 zł • III miejsce – 650 zł • 3 wyróżnienia po 350 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.446Z",
+      "lastSeenAt": "2026-08-03T14:26:42.823Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9138,9 +9111,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.454Z",
+      "lastSeenAt": "2026-08-03T14:26:42.849Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9177,9 +9150,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.450Z",
+      "lastSeenAt": "2026-08-03T14:26:42.833Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9209,16 +9182,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagrody: • I nagroda – 2 000 zł • II nagroda – 1 000 zł • III nagroda – 500 zł Termin zgłaszania prac upływa 7 listopada 2026 r.",
+        "summary": "Nagrody: • I nagroda – 2 000 zł • II nagroda – 1 000 zł • III nagroda – 500 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.438Z",
+      "lastSeenAt": "2026-08-03T14:26:42.791Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9265,7 +9238,7 @@
         "detailVersion": 2,
         "mergedFrom": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:54.184Z",
+      "lastSeenAt": "2026-08-03T14:26:42.441Z",
       "alsoOn": [
         {
           "source": "aktualnekonkursy",
@@ -9274,7 +9247,7 @@
         }
       ],
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9302,21 +9275,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "wyślij na adres mailowy wydawnictwo@cea.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrodę finansową.",
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda finansowa w wysokości 4000 zł + możliwość odbycia praktyk w Wydziale Promocji, Marketingu i Wydawnictw CEA",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.442Z",
+      "lastSeenAt": "2026-08-03T14:26:24.184Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9353,9 +9326,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.454Z",
+      "lastSeenAt": "2026-08-03T14:26:42.850Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9385,16 +9358,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "nagrodę w wysokości 10 000 zł oraz możliwość wydania pracy w Wydawnictwie Naukowym Scholar.",
+        "summary": "nagrodę w wysokości 10 000 zł oraz możliwość wydania pracy w Wydawnic",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.445Z",
+      "lastSeenAt": "2026-08-03T14:26:42.815Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9430,16 +9403,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "nagroda: 1 700 zł • II nagroda: 1 400 zł • III nagroda: 1 200 zł • trzy wyróżnienia po 1 000 zł Termin nadsyłania prac upływa 30 listopada 2026 r.",
+        "summary": "nagrody pieniężne: • I nagroda: 1 700 zł • II nagroda: 1 400 zł • III nagroda: 1 200 zł • trzy wyróżnienia po 1 000 zł",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.445Z",
+      "lastSeenAt": "2026-08-03T14:26:42.819Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9472,16 +9445,16 @@
         "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
       },
       "prize": {
-        "summary": "Nagroda jest przyznawana żyjącym tłumaczom i tłumaczkom literatury obcej na język polski.",
+        "summary": "nagrody finansowe:• 30 000 zł w kategorii „Przekład jednego dzieła”• 50 000 zł w kategorii „Całokształt twórczości tra",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:54.449Z",
+      "lastSeenAt": "2026-08-03T14:26:42.830Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9516,21 +9489,21 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "prześlij przez formularz dostępny na stronie konkursowej.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "nagrody 🎁 • 1 x laptop Apple MacBook Air o wartości 3 899 zł (nagroda publiczności) • 1 x gogle Majesty The Force ATC, książka “Moje bieguny.",
+        "summary": "Wygraj nagrody 🎁 • 1 x laptop Apple MacBook Air o wartości 3 899 zł (nagroda publiczności) • 1 x gogle Majesty The Force ATC, książka “Moje bieguny.",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-08-03T12:42:38.476Z",
+      "lastSeenAt": "2026-08-03T14:26:24.262Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9579,9 +9552,9 @@
         "detailFetched": true,
         "detailVersion": 2
       },
-      "lastSeenAt": "2026-08-03T12:42:54.185Z",
+      "lastSeenAt": "2026-08-03T14:26:42.444Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9618,9 +9591,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.731Z",
+      "lastSeenAt": "2026-08-03T14:26:43.156Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9657,9 +9630,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.731Z",
+      "lastSeenAt": "2026-08-03T14:26:43.156Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9680,7 +9653,7 @@
       "status": "unknown",
       "tags": {},
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Opublikuj swoją prośbę o wymianę w sekcji komentarzy poniżej i znajdź użytkowników, którzy mają renifera, którego szukasz.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -9692,9 +9665,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.732Z",
+      "lastSeenAt": "2026-08-03T14:26:43.158Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9733,9 +9706,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.735Z",
+      "lastSeenAt": "2026-08-03T14:26:43.167Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9760,7 +9733,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: youtube — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -9772,9 +9745,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.736Z",
+      "lastSeenAt": "2026-08-03T14:26:43.168Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9802,7 +9775,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wystarczy wejść na mapę, znaleźć automat DPD w swojej okolicy i spróbować odebrać paczkę, zanim ktoś inny to zrobi.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -9814,9 +9787,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.736Z",
+      "lastSeenAt": "2026-08-03T14:26:43.169Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9853,9 +9826,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.736Z",
+      "lastSeenAt": "2026-08-03T14:26:43.169Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9876,7 +9849,7 @@
       "status": "unknown",
       "tags": {},
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "napisze żabsy.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -9888,9 +9861,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.736Z",
+      "lastSeenAt": "2026-08-03T14:26:43.170Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9927,9 +9900,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.737Z",
+      "lastSeenAt": "2026-08-03T14:26:43.170Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -9962,9 +9935,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.737Z",
+      "lastSeenAt": "2026-08-03T14:26:43.171Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -9985,7 +9958,7 @@
       "status": "unknown",
       "tags": {},
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Opublikuj swoją prośbę o wymianę w sekcji komentarzy poniżej i znajdź użytkowników, którzy mają renifera, którego szukasz.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -9997,9 +9970,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.738Z",
+      "lastSeenAt": "2026-08-03T14:26:43.172Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10036,9 +10009,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.741Z",
+      "lastSeenAt": "2026-08-03T14:26:43.182Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10063,7 +10036,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: komentarz — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -10075,9 +10048,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.741Z",
+      "lastSeenAt": "2026-08-03T14:26:43.182Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10105,7 +10078,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: losowanie — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -10117,9 +10090,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.741Z",
+      "lastSeenAt": "2026-08-03T14:26:43.183Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10152,9 +10125,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.742Z",
+      "lastSeenAt": "2026-08-03T14:26:43.183Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10191,9 +10164,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.742Z",
+      "lastSeenAt": "2026-08-03T14:26:43.184Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10226,9 +10199,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.742Z",
+      "lastSeenAt": "2026-08-03T14:26:43.184Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": true
       }
@@ -10265,9 +10238,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.742Z",
+      "lastSeenAt": "2026-08-03T14:26:43.184Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10295,7 +10268,7 @@
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "Wymagane: quiz — szczegóły i pełne zasady w źródle.",
         "noPurchase": "altFreeEntry",
         "noPurchaseNotes": "Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle."
       },
@@ -10307,9 +10280,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.743Z",
+      "lastSeenAt": "2026-08-03T14:26:43.186Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10342,9 +10315,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.740Z",
+      "lastSeenAt": "2026-08-03T14:26:43.179Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
@@ -10381,13 +10354,13 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-08-03T12:42:54.741Z",
+      "lastSeenAt": "2026-08-03T14:26:43.181Z",
       "verification": {
-        "checkedAt": "2026-08-03T12:42:54.934Z",
+        "checkedAt": "2026-08-03T14:27:11.918Z",
         "sourceOk": true,
         "organizerOk": null
       }
     }
   ],
-  "checkedAt": "2026-08-03T12:42:54.934Z"
+  "checkedAt": "2026-08-03T14:27:11.918Z"
 }
