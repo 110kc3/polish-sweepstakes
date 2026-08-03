@@ -2,9 +2,24 @@ const els = {
   list: document.getElementById('list'),
   updatedAt: document.getElementById('updatedAt'),
   source: document.getElementById('source'),
+  tag: document.getElementById('tag'),
   activeOnly: document.getElementById('activeOnly'),
   q: document.getElementById('q'),
 };
+
+// Tag legend from data/lotteries.json: slug -> label, and the kind order used
+// for chips. Falls back to the slug so a new tag still renders.
+let tagLabels = {};
+let tagKinds = ['nagroda', 'mechanika', 'temat', 'marka', 'odbiorca', 'zasieg'];
+
+function tagLabel(slug) {
+  return tagLabels[slug] || slug;
+}
+
+function itemTagSlugs(it) {
+  const tags = it.tags || {};
+  return tagKinds.flatMap((kind) => tags[kind] || []);
+}
 
 function escapeHtml(s) {
   return String(s ?? '')
@@ -46,6 +61,25 @@ function organizerWarning(it) {
   return `<p class="muted warn">⚠ Nasza weryfikacja: strona konkursu może już nie działać.</p>`;
 }
 
+// Chips are buttons so a tag can be clicked to filter by it; #list uses one
+// delegated listener, which also picks up the build-time pre-rendered markup.
+function tagChips(it) {
+  const tags = it.tags || {};
+  const chips = tagKinds.flatMap((kind) => (tags[kind] || []).map((slug) => (
+    `<button type="button" class="tag tag--${escapeHtml(kind)}" data-tag="${escapeHtml(slug)}" title="Filtruj: ${escapeHtml(tagLabel(slug))}">${escapeHtml(tagLabel(slug))}</button>`
+  )));
+  if (!chips.length) return '';
+  return `<div class="tags">${chips.join('')}</div>`;
+}
+
+function alsoOnNote(it) {
+  if (!it.alsoOn?.length) return '';
+  const links = it.alsoOn
+    .map((o) => `<a href="${escapeHtml(o.url)}" target="_blank" rel="noopener">${escapeHtml(o.source)}</a>`)
+    .join(', ');
+  return `<p class="muted also">Także w: ${links}</p>`;
+}
+
 function render(items) {
   els.list.innerHTML = items.map((it) => {
     return `
@@ -56,6 +90,7 @@ function render(items) {
           ${deadlineBadge(it.deadline)}
           <span class="badge">Status: ${escapeHtml(it.status || 'unknown')}</span>
         </div>
+        ${tagChips(it)}
 
         <div class="row">
           <div class="k">Nagroda</div>
@@ -72,6 +107,7 @@ function render(items) {
           ${contestLink(it)}
         </div>
         ${organizerWarning(it)}
+        ${alsoOnNote(it)}
       </article>
     `;
   }).join('');
@@ -79,12 +115,14 @@ function render(items) {
 
 function applyFilters(all) {
   const source = els.source.value;
+  const tag = els.tag ? els.tag.value : 'all';
   const activeOnly = els.activeOnly.checked;
   const q = (els.q.value || '').trim().toLowerCase();
 
   const now = new Date();
   return all.filter((it) => {
     if (source !== 'all' && it.source !== source) return false;
+    if (tag !== 'all' && !itemTagSlugs(it).includes(tag)) return false;
 
     if (activeOnly) {
       if (it.deadline) {
@@ -95,7 +133,8 @@ function applyFilters(all) {
     }
 
     if (q) {
-      const hay = `${it.title} ${it.prize?.summary || ''} ${it.entry?.summary || ''}`.toLowerCase();
+      const tagText = itemTagSlugs(it).map((slug) => `${slug} ${tagLabel(slug)}`).join(' ');
+      const hay = `${it.title} ${it.prize?.summary || ''} ${it.entry?.summary || ''} ${tagText}`.toLowerCase();
       if (!hay.includes(q)) return false;
     }
 
@@ -112,12 +151,42 @@ async function load() {
 
   const all = Array.isArray(data.items) ? data.items : [];
 
+  tagLabels = data.tagLabels || {};
+  if (Array.isArray(data.tagKinds) && data.tagKinds.length) tagKinds = data.tagKinds;
+
   // Populate the source filter from the data so new sources show up automatically.
   for (const src of [...new Set(all.map((it) => it.source))].sort()) {
     const opt = document.createElement('option');
     opt.value = src;
     opt.textContent = src;
     els.source.appendChild(opt);
+  }
+
+  // Tag filter, grouped by kind and ordered by how many contests use each tag,
+  // so the useful tags sit at the top of every group.
+  if (els.tag) {
+    const counts = data.tagCounts || {};
+    const kindLabels = data.tagKindLabels || {};
+    const byKind = new Map(tagKinds.map((k) => [k, new Set()]));
+    for (const it of all) {
+      for (const kind of tagKinds) {
+        for (const slug of it.tags?.[kind] || []) byKind.get(kind).add(slug);
+      }
+    }
+    for (const kind of tagKinds) {
+      const slugs = [...byKind.get(kind)]
+        .sort((a, b) => (counts[b] || 0) - (counts[a] || 0) || tagLabel(a).localeCompare(tagLabel(b), 'pl'));
+      if (!slugs.length) continue;
+      const group = document.createElement('optgroup');
+      group.label = kindLabels[kind] || kind;
+      for (const slug of slugs) {
+        const opt = document.createElement('option');
+        opt.value = slug;
+        opt.textContent = counts[slug] ? `${tagLabel(slug)} (${counts[slug]})` : tagLabel(slug);
+        group.appendChild(opt);
+      }
+      els.tag.appendChild(group);
+    }
   }
 
   function rerender() {
@@ -132,8 +201,19 @@ async function load() {
   }
 
   els.source.addEventListener('change', rerender);
+  if (els.tag) els.tag.addEventListener('change', rerender);
   els.activeOnly.addEventListener('change', rerender);
   els.q.addEventListener('input', rerender);
+
+  // Clicking a chip on a card filters by that tag (click it again to clear).
+  els.list.addEventListener('click', (ev) => {
+    const chip = ev.target.closest('[data-tag]');
+    if (!chip || !els.tag) return;
+    const slug = chip.getAttribute('data-tag');
+    els.tag.value = els.tag.value === slug ? 'all' : slug;
+    rerender();
+    els.tag.scrollIntoView({ block: 'nearest' });
+  });
 
   rerender();
 }

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const d=require\\('./data/lotteries.json'\\); console.log\\('items:', d.items.length\\); console.log\\('with deadline:', d.items.filter\\(i=>i.deadline\\).length\\); console.log\\('sample deadlines:', d.items.slice\\(0,10\\).map\\(i=>i.deadline\\)\\);\")"
+    ]
+  }
+}

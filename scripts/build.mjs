@@ -1,7 +1,20 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { TAG_KINDS } from './tags.mjs';
 
 const BASE = 'https://110kc3.github.io/polish-sweepstakes';
+
+// Tag legend from the dataset, so the pre-rendered chips read the same labels
+// the client-side render uses.
+let tagLabels = {};
+let tagKinds = TAG_KINDS;
+
+const tagLabel = (slug) => tagLabels[slug] || slug;
+
+function itemTagSlugs(it) {
+  const tags = it.tags || {};
+  return tagKinds.flatMap((kind) => tags[kind] || []);
+}
 
 function esc(s) {
   return String(s ?? '')
@@ -42,7 +55,7 @@ function card(it) {
           <span class="badge">Źródło: ${esc(it.source)}</span>
           ${deadlineBadge}
           <span class="badge">Status: ${esc(it.status || 'unknown')}</span>
-        </div>
+        </div>${tagChips(it)}
 
         <div class="row">
           <div class="k">Nagroda</div>
@@ -56,8 +69,27 @@ function card(it) {
 
         <div class="actions">
           <a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener">Zobacz szczegóły</a>${contestLink(it)}
-        </div>${organizerWarning(it)}
+        </div>${organizerWarning(it)}${alsoOnNote(it)}
       </article>`;
+}
+
+// Same markup as tagChips() in site/app.js: buttons, so the delegated click
+// handler works on the pre-rendered cards too (before any re-render).
+function tagChips(it) {
+  const tags = it.tags || {};
+  const chips = tagKinds.flatMap((kind) => (tags[kind] || []).map((slug) => (
+    `<button type="button" class="tag tag--${esc(kind)}" data-tag="${esc(slug)}" title="Filtruj: ${esc(tagLabel(slug))}">${esc(tagLabel(slug))}</button>`
+  )));
+  if (!chips.length) return '';
+  return `\n        <div class="tags">${chips.join('')}</div>`;
+}
+
+function alsoOnNote(it) {
+  if (!it.alsoOn?.length) return '';
+  const links = it.alsoOn
+    .map((o) => `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.source)}</a>`)
+    .join(', ');
+  return `\n        <p class="muted also">Także w: ${links}</p>`;
 }
 
 function contestLink(it) {
@@ -95,6 +127,7 @@ function buildJsonLd(items, generatedAt) {
         name: it.title,
         url: it.url,
         description: [it.prize?.summary, it.entry?.summary].filter(Boolean).join(' '),
+        ...(itemTagSlugs(it).length ? { keywords: itemTagSlugs(it).map(tagLabel).join(', ') } : {}),
         eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
         location: { '@type': 'VirtualLocation', url: it.url },
         ...(it.publishedAt ? { startDate: it.publishedAt.slice(0, 10) } : {}),
@@ -127,6 +160,9 @@ async function main() {
   }
 
   if (data) {
+    tagLabels = data.tagLabels || {};
+    if (Array.isArray(data.tagKinds) && data.tagKinds.length) tagKinds = data.tagKinds;
+
     // Pre-render the default view (non-ended items, soonest deadline first)
     // so content is present without JS and for crawlers/agents.
     const items = (Array.isArray(data.items) ? data.items : [])

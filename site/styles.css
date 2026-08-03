@@ -21,7 +21,7 @@ h1{margin:18px 0 6px;font-size:28px}
 .muted{color:var(--muted)}
 .controls{
   display:grid;
-  grid-template-columns: 180px 160px 1fr;
+  grid-template-columns: 180px 220px 160px 1fr;
   gap:12px;
   align-items:end;
   margin:16px 0 10px;
@@ -63,6 +63,27 @@ h1{margin:18px 0 6px;font-size:28px}
 .badge.deadline{color:var(--text)}
 .badge.deadline.soon{border-color:rgba(251,113,133,.4);color:var(--danger)}
 .badge.deadline.ok{border-color:rgba(134,239,172,.35);color:var(--ok)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font:inherit;
+  font-size:12px;
+  line-height:1.2;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.04);
+  color:var(--muted);
+  cursor:pointer;
+}
+.tag:hover{filter:brightness(1.25)}
+/* One hue per tag kind, so a card's prizes, entry mechanics and topics stay
+   visually distinct without a legend. */
+.tag--nagroda{border-color:rgba(134,239,172,.35);color:var(--ok)}
+.tag--mechanika{border-color:rgba(125,211,252,.3);color:var(--accent)}
+.tag--temat{border-color:rgba(196,181,253,.35);color:#c4b5fd}
+.tag--marka{border-color:rgba(251,191,36,.3);color:#fbbf24}
+.tag--odbiorca{border-color:rgba(244,114,182,.3);color:#f472b6}
+.tag--zasieg{border-color:var(--border);color:var(--muted)}
 .row{display:grid;gap:6px}
 .k{font-size:12px;color:var(--muted)}
 .v{font-size:14px;color:var(--text)}
@@ -79,6 +100,7 @@ h1{margin:18px 0 6px;font-size:28px}
 }
 .btn:hover{background:rgba(125,211,252,.18)}
 .warn{color:var(--danger);font-size:13px;margin:0}
+.also{font-size:12px;margin:0}
 .footer{margin:22px 0 40px}
 @media (max-width:820px){
   .controls{grid-template-columns:1fr;align-items:stretch}

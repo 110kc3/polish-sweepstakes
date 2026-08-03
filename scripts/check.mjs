@@ -12,7 +12,9 @@ import fs from 'node:fs/promises';
 
 const USER_AGENT = 'polish-sweepstakes/0.1 (+https://github.com/110kc3/polish-sweepstakes)';
 const TIMEOUT_MS = 10_000;
-const CONCURRENCY = 5;
+// Six sources mean a few hundred non-ended items per run, each costing up to
+// two requests; 5 at a time made the step the slowest part of the pipeline.
+const CONCURRENCY = 8;
 
 // true = alive, false = definitively dead, null = inconclusive
 async function checkUrl(url) {
