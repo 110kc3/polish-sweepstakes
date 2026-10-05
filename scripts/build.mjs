@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { TAG_KINDS } from './tags.mjs';
+import { statusFor } from './extract.mjs';
 
 const BASE = 'https://110kc3.github.io/polish-sweepstakes';
 
@@ -147,17 +148,17 @@ function buildJsonLd(items, generatedAt) {
 }
 
 async function main() {
+  // Validate before deleting the previous build or publishing an empty shell.
+  const data = JSON.parse(await fs.readFile('data/lotteries.json', 'utf8'));
+  if (!Array.isArray(data.items) || !data.items.length || !Number.isFinite(Date.parse(data.generatedAt))) {
+    throw new Error('Invalid or empty dataset; run "npm run scrape" first.');
+  }
+  for (const it of data.items) it.status = statusFor(it.deadline);
   await fs.rm('dist', { recursive: true, force: true });
   await copyDir('site', 'dist');
   await fs.mkdir('dist/data', { recursive: true });
 
-  let data = null;
-  try {
-    data = JSON.parse(await fs.readFile('data/lotteries.json', 'utf8'));
-    await fs.copyFile('data/lotteries.json', 'dist/data/lotteries.json');
-  } catch {
-    console.warn('data/lotteries.json not found; run "npm run scrape" first. Building without pre-rendered listings.');
-  }
+  await fs.writeFile('dist/data/lotteries.json', JSON.stringify(data, null, 2) + '\n', 'utf8');
 
   if (data) {
     tagLabels = data.tagLabels || {};

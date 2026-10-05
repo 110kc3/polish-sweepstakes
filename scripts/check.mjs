@@ -9,6 +9,7 @@
 // Conservative on purpose: 403/429/5xx/timeouts are inconclusive (bot
 // blocking, hiccups), only unambiguous signals count as "dead".
 import fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 import { todayInWarsaw } from './extract.mjs';
 import { collectTagLabels, collectTagCounts } from './tags.mjs';
 
@@ -38,7 +39,10 @@ async function checkUrl(url) {
         try {
           const requested = new URL(url);
           const landed = new URL(res.url);
-          if (requested.pathname !== '/' && landed.pathname === '/') return false;
+          if (requested.pathname !== '/' && landed.pathname === '/') {
+            if (method === 'HEAD') continue;
+            return false;
+          }
         } catch { /* keep the 200 verdict if URL parsing fails */ }
         return true;
       }
@@ -51,7 +55,7 @@ async function checkUrl(url) {
       return null; // 403/429/5xx and friends: inconclusive
     } catch (e) {
       const code = e?.cause?.code || e?.code || '';
-      if (code === 'ENOTFOUND' || code === 'ECONNREFUSED') return false;
+      if (code === 'ENOTFOUND') return false;
       if (method === 'HEAD') continue; // timeouts etc.: try GET once
       return null;
     }
@@ -79,8 +83,8 @@ async function mapWithConcurrency(items, limit, fn) {
   return results;
 }
 
-async function main() {
-  const data = JSON.parse(await fs.readFile(DATA_PATH, 'utf8'));
+export async function main(dataPath = DATA_PATH) {
+  const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
   const items = Array.isArray(data.items) ? data.items : [];
   const checkedAt = new Date().toISOString();
 
@@ -113,7 +117,7 @@ async function main() {
       console.log(`Promoting alternative source for ${it.id}: ${alt.id} ${alt.url}`);
       const previous = { source: it.source, url: it.url, id: it.id };
       it.alsoOn = [previous, ...(it.alsoOn || [])].filter((o) => o.id !== alt.id);
-      Object.assign(it, { id: alt.id, source: alt.source, url: alt.url });
+      Object.assign(it, { id: alt.id, sourceId: alt.id.slice(alt.source.length + 1), source: alt.source, url: alt.url });
       it.verification = { ...it.verification, sourceOk: true, promotedFrom: previous.id };
       promoted++;
       break;
@@ -143,12 +147,13 @@ async function main() {
     data.tagLabels = collectTagLabels(kept);
     data.tagCounts = collectTagCounts(kept);
   }
-  await fs.writeFile(DATA_PATH, JSON.stringify(data, null, 2) + '\n', 'utf8');
+  if (!kept.length) throw new Error('Verification removed every item; keeping the unverified dataset.');
+  await fs.writeFile(dataPath, JSON.stringify(data, null, 2) + '\n', 'utf8');
   console.log('Check summary:', JSON.stringify(summary));
-  console.log(`Wrote ${DATA_PATH} with ${kept.length} items`);
+  console.log(`Wrote ${dataPath} with ${kept.length} items`);
 }
 
-main().catch((e) => {
+if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((e) => {
   console.error('Fatal error in check:', e);
   process.exit(1);
 });

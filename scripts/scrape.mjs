@@ -1,5 +1,6 @@
 import { parse } from 'node-html-parser';
 import fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 import {
   MIN_MERGE_KEY_LENGTH,
   NUMERIC_DATE,
@@ -121,9 +122,11 @@ const SOURCE_PRIORITY = new Map(SOURCES.map((s, i) => [s.source, i]));
 // should reach entries the source hasn't touched: cached details from older runs
 // are then re-fetched instead of carrying a stale extraction forward.
 const DETAIL_VERSION = 2;
+const FETCH_TIMEOUT_MS = 15_000;
 
 async function fetchJson(url) {
   const res = await fetch(url, {
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
     headers: {
       'User-Agent': USER_AGENT,
       'Accept': 'application/json',
@@ -132,13 +135,17 @@ async function fetchJson(url) {
 
   if (!res.ok) {
     const body = await res.text().catch(() => '');
-    throw new Error(`HTTP ${res.status} for ${url}: ${body.slice(0, 200)}`);
+    throw Object.assign(new Error(`HTTP ${res.status} for ${url}: ${body.slice(0, 200)}`), {
+      status: res.status,
+      code: (() => { try { return JSON.parse(body).code; } catch { return null; } })(),
+    });
   }
   return res.json();
 }
 
 async function fetchText(url, accept = 'application/rss+xml, application/xml, text/xml') {
   const res = await fetch(url, {
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
     headers: {
       'User-Agent': USER_AGENT,
       'Accept': accept,
@@ -212,12 +219,12 @@ async function fetchWpPosts(sourceCfg) {
       batch = await fetchJson(url.toString());
       console.log(`Fetched ${batch.length} posts from page ${page} for ${sourceCfg.source}`);
     } catch (e) {
-      console.error(`Error fetching page ${page} for ${sourceCfg.source}:`, e.message);
-      // Stop on page-out-of-range or transient errors to be gentle.
-      break;
+      if (page > 1 && e.code === 'rest_post_invalid_page_number') break;
+      throw e;
     }
 
-    if (!Array.isArray(batch) || batch.length === 0) break;
+    if (!Array.isArray(batch)) throw new Error(`Invalid posts payload for ${sourceCfg.source}`);
+    if (batch.length === 0) break;
     items.push(...batch);
     if (batch.length < 50) break;
 
@@ -233,6 +240,7 @@ async function fetchWpPosts(sourceCfg) {
 async function fetchRssItems(sourceCfg) {
   console.log(`Fetching: ${sourceCfg.feedUrl}`);
   const xml = await fetchText(sourceCfg.feedUrl);
+  if (!/<rss[\s>]/i.test(xml)) throw new Error(`Invalid RSS payload for ${sourceCfg.source}`);
   let items = parseRssItems(xml).filter((it) => it.link && it.title);
   const total = items.length;
 
@@ -364,11 +372,12 @@ async function fetchCptItems(sourceCfg) {
       batch = await fetchJson(url.toString());
       console.log(`Fetched ${batch.length} entries from page ${page} for ${sourceCfg.source}`);
     } catch (e) {
-      console.error(`Error fetching page ${page} for ${sourceCfg.source}:`, e.message);
-      break;
+      if (page > 1 && e.code === 'rest_post_invalid_page_number') break;
+      throw e;
     }
 
-    if (!Array.isArray(batch) || batch.length === 0) break;
+    if (!Array.isArray(batch)) throw new Error(`Invalid posts payload for ${sourceCfg.source}`);
+    if (batch.length === 0) break;
     items.push(...batch);
     if (batch.length < 50) break;
 
@@ -462,10 +471,10 @@ function normalizeCptItem(source, item, detail) {
 
 // Reuse the previous run's detail extraction when the source hasn't touched the
 // entry, so a daily run costs a handful of article fetches instead of all of them.
-async function loadDetailCache() {
+async function loadDetailCache(dataPath) {
   const cache = new Map();
   try {
-    const prev = JSON.parse(await fs.readFile('data/lotteries.json', 'utf8'));
+    const prev = JSON.parse(await fs.readFile(dataPath, 'utf8'));
     for (const it of prev.items || []) {
       if (!it.extraction?.detailFetched) continue;
       if (it.extraction.detailVersion !== DETAIL_VERSION) continue;
@@ -535,12 +544,14 @@ export function mergeDuplicates(items, log = console.log) {
   return [...merged, ...singles];
 }
 
-async function main() {
+export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json' } = {}) {
   const now = new Date().toISOString();
-  const detailCache = await loadDetailCache();
+  const detailCache = await loadDetailCache(dataPath);
   const all = [];
+  const sourceHealth = [];
 
-  for (const source of SOURCES) {
+  for (const source of sources) {
+    const start = all.length;
     try {
       if (source.type === 'rss') {
         const items = await fetchRssItems(source);
@@ -572,9 +583,13 @@ async function main() {
         const posts = await fetchWpPosts(source);
         for (const p of posts) all.push(normalizePost(source, p, termMaps));
       }
+      sourceHealth.push({ source: source.source, status: 'ok', items: all.length - start });
     } catch (e) {
       // One broken source shouldn't take down the whole scrape.
+      all.splice(start);
       console.error(`Error scraping source ${source.source}:`, e);
+      sourceHealth.push({ source: source.source, status: 'error', items: 0, error: e.message });
+      if (process.env.GITHUB_ACTIONS) console.log(`::warning::Source ${source.source} failed`);
     }
   }
 
@@ -595,9 +610,12 @@ async function main() {
       return da.localeCompare(db);
     });
 
+  if (!items.length) throw new Error('Scrape produced no usable items; keeping the previous dataset.');
+
   const out = {
     version: 2,
     generatedAt: now,
+    sourceHealth,
     // Tag legend, so the site and any agent reading this file can render and
     // filter tags without knowing scripts/tags.mjs.
     tagKinds: TAG_KINDS,
@@ -608,7 +626,7 @@ async function main() {
   };
 
   await fs.mkdir('data', { recursive: true });
-  await fs.writeFile('data/lotteries.json', JSON.stringify(out, null, 2) + '\n', 'utf8');
+  await fs.writeFile(dataPath, JSON.stringify(out, null, 2) + '\n', 'utf8');
 
   const perSource = {};
   for (const it of items) perSource[it.source] = (perSource[it.source] || 0) + 1;
@@ -629,7 +647,7 @@ async function main() {
 }
 
 // Importable for tests; only the CLI invocation runs the scrape.
-if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith('scrape.mjs')) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   main().catch((e) => {
     console.error('Fatal error in scrape:', e);
     process.exit(1);

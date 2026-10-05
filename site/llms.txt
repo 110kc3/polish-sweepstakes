@@ -1,6 +1,6 @@
 # Konkursy i loterie w Polsce bez zakupu (Polish no-purchase sweepstakes)
 
-> A machine-readable directory of current sweepstakes, contests and lotteries in Poland that do not require a purchase (or offer a free alternative entry method). Data is re-scraped daily around 06:00 Europe/Warsaw.
+> A machine-readable directory of current sweepstakes, contests and lotteries in Poland that do not require a purchase (or offer a free alternative entry method). Data is re-scraped daily at 05:17 UTC (06:17 Warsaw in winter / 07:17 in summer), subject to GitHub scheduling delays.
 
 This file is the front door for AI agents. Base URL: https://110kc3.github.io/polish-sweepstakes
 
@@ -12,7 +12,10 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
 ## Dataset shape (data/lotteries.json)
 
 - Top level: { version (2), generatedAt (ISO 8601), checkedAt (ISO 8601),
-  tagKinds, tagKindLabels, tagLabels, tagCounts, items: [...] }
+  tagKinds, tagKindLabels, tagLabels, tagCounts, sourceHealth, items: [...] }
+- sourceHealth: [{ source, status (ok|error), items (before merging/stale filtering),
+  error (optional) }] — additive source fetch diagnostics. A broken source may be
+  omitted from the listings while other sources continue to update.
 - Each item: id, source (fajnekonkursy|ofree|wygrajta|konkursiada|aktualnekonkursy|pepper),
   title, url (source article with full rules),
   publishedAt, modifiedAt, deadline (YYYY-MM-DD or null), status (active|ended|unknown),

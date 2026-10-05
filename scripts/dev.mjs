@@ -29,8 +29,8 @@ function resolvePath(urlPath) {
 }
 
 const server = http.createServer(async (req, res) => {
-  const file = resolvePath(req.url || '/');
   try {
+    const file = resolvePath(req.url || '/');
     if (!file) throw new Error('outside root');
     const body = await fs.readFile(file);
     res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });

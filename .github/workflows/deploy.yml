@@ -4,30 +4,33 @@ on:
   push:
     branches:
       - main
+  pull_request:
   workflow_dispatch:
   schedule:
-    - cron: '0 5 * * *'  # 06:00 Europe/Warsaw ~ 05:00 UTC
+    - cron: '17 5 * * *'  # 06:17 winter / 07:17 summer in Europe/Warsaw
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages-deploy
+  group: pages-deploy-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '24'
           cache: npm
 
       - name: Install dependencies
@@ -37,9 +40,11 @@ jobs:
         run: npm test
 
       - name: Scrape
+        if: github.event_name != 'pull_request'
         run: npm run scrape
 
       - name: Check (own verification of scraped items)
+        if: github.event_name != 'pull_request'
         # Verification enhances the data but shouldn't block a deploy;
         # a crash here would leave the site stale.
         continue-on-error: true
@@ -49,16 +54,42 @@ jobs:
         run: npm run build
 
       - name: Configure Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
+      - name: Save refreshed dataset
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: refreshed-data
+          path: data/lotteries.json
+          retention-days: 8
+
+      - name: Record source health
+        if: github.event_name != 'pull_request'
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const data = JSON.parse(fs.readFileSync('data/lotteries.json', 'utf8'));
+          const rows = (data.sourceHealth || []).map(s => `| ${s.source} | ${s.status} | ${s.items} |`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,
+            `Dataset: ${data.generatedAt}; ${data.items.length} listings.\n\n| Source | Status | Items before merging |\n| --- | --- | --- |\n${rows.join('\n')}\n`);
+          JS
+
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -66,3 +97,44 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  snapshot:
+    # Preserve useful source data/cache weekly. These commits also prevent the
+    # 60-day inactivity shutdown; GITHUB_TOKEN pushes do not recurse into CI.
+    needs: [build, deploy]
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - name: Decide whether a snapshot is due
+        id: due
+        run: |
+          if [ "$(git rev-parse HEAD)" != "$GITHUB_SHA" ]; then
+            echo 'Newer main commit exists; leaving its data untouched.'
+            exit 0
+          fi
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const data = JSON.parse(fs.readFileSync('data/lotteries.json', 'utf8'));
+          const age = Date.now() - Date.parse(data.generatedAt);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `due=${!Number.isFinite(age) || age >= 7 * 86400000}\n`);
+          JS
+      - uses: actions/download-artifact@v4
+        if: steps.due.outputs.due == 'true'
+        with:
+          name: refreshed-data
+          path: data
+      - name: Commit refreshed data
+        if: steps.due.outputs.due == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/lotteries.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh weekly sweepstakes dataset'
+          git push origin HEAD:main
