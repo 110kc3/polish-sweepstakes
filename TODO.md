@@ -3,25 +3,40 @@
 This is the canonical project queue. README describes operation; this file owns
 accepted work, verification and the next session's handoff.
 
-## Current accepted batch — 2026-10-23 follow-up
+## Queue status — 2026-10-23
+
+**All accepted Markdown tasks are complete. No implementation work remains queued.**
+The final outstanding task, exact-commit CI verification for
+`be8215b1384a073e9c69f9a6c20443e9a1770a93`, is complete. Both its
+[push run](https://github.com/110kc3/polish-sweepstakes/actions/runs/39929020491)
+and subsequent [scheduled run](https://github.com/110kc3/polish-sweepstakes/actions/runs/39936370361)
+succeeded. The scheduled run's detailed step results confirm tests, scraping,
+checking, build, Chromium installation, browser smoke and Pages deployment passed;
+its weekly snapshot correctly skipped an early dataset write.
+
+This closeout updates documentation only. Automatic verification of its impending
+push is **pending** at [Actions](https://github.com/110kc3/polish-sweepstakes/actions?query=branch%3Amain)
+and is not awaited. The normal next-session exact-commit check applies; no new
+implementation or manual workflow dispatch is queued.
+
+## Completed batch — 2026-10-23 follow-up
 
 The owner selected these three follow-ups to complete in parallel and push together:
 
-1. **Completed locally:** apply purchase-required checks to standard WordPress feeds as well as RSS/CPT.
+1. **Completed and verified:** apply purchase-required checks to standard WordPress feeds as well as RSS/CPT.
    Accept when fixtures reject the purchase/receipt-required Coca-Cola Bolesławiec
    and Gourmet shapes from Ofree while preserving genuine free/alternative entry.
-2. **Completed locally:** fall back from a definitively dead rules PDF to a verified working organizer
+2. **Completed and verified:** fall back from a definitively dead rules PDF to a verified working organizer
    page. Accept when both pre-rendered and hydrated cards choose the verified
    alternate, retain the rules warning and never promote an inconclusive target.
-3. **Completed locally:** make browser smoke checks reproducible and required in CI. Accept when pull
+3. **Completed and verified:** make browser smoke checks reproducible and required in CI. Accept when pull
    requests and deployments run deadline, entry-instruction and fetch-failure
    checks before publishing, with no live scraping required for PRs.
 
 The three implementations were completed in parallel and verified together before
-one push. Post-push CI and Pages verification for this batch are **pending** and
-must not be awaited during closeout.
+one push. Post-push CI and Pages verification passed in the runs recorded above.
 
-### Current verification — 2026-10-23
+### Follow-up verification — 2026-10-23
 
 - Clean `npm ci` succeeded on Node 24.22.1; all **60 tests pass**. New fixtures cover
   the two Ofree purchase/receipt shapes, affirmative free alternatives, question
@@ -51,19 +66,19 @@ must not be awaited during closeout.
   passed actionlint 1.7.12; whitespace checks pass with existing CRLF files retained.
 - Remaining observation: four recent Wygrajta records still have no extractable
   deadline and stay outside the default active view. No further feature work is
-  accepted; the next action is the exact-commit CI check below.
+  accepted. The outstanding feature-commit CI check has now passed.
 
 ## Previous completed batch — 2026-10-23
 
 The owner selected all three recommendations from the project status review:
 
-1. **Completed locally:** clean up Pepper listings and unknown deadlines. Accept when fixture tests
+1. **Completed and verified:** clean up Pepper listings and unknown deadlines. Accept when fixture tests
    reject support threads, coupon swaps and stale undated entries while retaining
    genuine contests; unknown deadlines must not appear as known-active contests.
-2. **Completed locally:** improve entry instructions and organizer/rules links. Accept when retained
+2. **Completed and verified:** improve entry instructions and organizer/rules links. Accept when retained
    Konkursiada cards show actual entry steps and a fresh scrape demonstrates
    improved link coverage on matching records.
-3. **Completed locally:** refresh project status and establish this canonical queue. Accept when the
+3. **Completed and verified:** refresh project status and establish this canonical queue. Accept when the
    README records verified recovery and the handoff distinguishes completed work,
    pending verification and any further accepted scope.
 
@@ -102,16 +117,7 @@ At the previous batch's handoff, four recent Wygrajta records had no extractable
 deadline, two active Ofree records had no organizer/rules links, and one Stachuriada
 rules PDF was dead. Inspection during the next review established that both Ofree
 records require purchases/receipts despite their free-category placement; the
-current batch addresses those records and the dead-PDF button behavior.
-
-## Next session
-
-- After the current batch is pushed, check its exact commit once at
-  [Actions](https://github.com/110kc3/polish-sweepstakes/actions?query=branch%3Amain).
-  Match the full SHA from the commit titled `Enforce free entry and verify contest links in CI`;
-  inspect tests, scrape/check, build and deployment. Queued/running means pending.
-  Do not poll or dispatch another workflow merely to wait for verification.
-- No additional feature work beyond the current three follow-ups is accepted.
+completed follow-up addressed those records and the dead-PDF button behavior.
 
 ## Operational context
 
@@ -126,4 +132,4 @@ current batch addresses those records and the dead-PDF button behavior.
   a contest is open or eligible for free entry.
 - Preserve the stable version-2 JSON shape, Warsaw deadline boundaries, source outage
   tolerance, and manual personal entry. No automated contest submissions are queued.
-- No owner action currently blocks the selected batch.
+- No owner action or unfinished accepted implementation task remains.
