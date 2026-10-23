@@ -6,6 +6,7 @@ import path from 'node:path';
 import http from 'node:http';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import vm from 'node:vm';
 import { main as scrape } from './scrape.mjs';
 import { main as check } from './check.mjs';
 import { todayInWarsaw } from './extract.mjs';
@@ -50,7 +51,7 @@ test('an empty or malformed feed cannot replace the previous dataset', async t =
 test('one broken source still publishes a healthy source and records the outage', async t => {
   const { dir, base } = await fixture(t, (req, res) => {
     if (req.url === '/bad') return res.writeHead(503).end();
-    res.end(`<rss><channel><item><title>Konkurs fotograficzny z nagrodami</title><link>${base}/contest-123456</link><description>Wygraj książkę bez zakupu.</description></item></channel></rss>`);
+    res.end(`<rss><channel><item><title>Konkurs fotograficzny z nagrodami</title><link>${base}/contest-123456</link><description>Wygraj książkę bez zakupu.</description><pubDate>${new Date().toUTCString()}</pubDate></item></channel></rss>`);
   });
   const dataPath = path.join(dir, 'lotteries.json');
   await scrape({ dataPath, sources: [
@@ -123,6 +124,7 @@ test('build recomputes stale statuses for HTML and JSON even if checking was ski
     generatedAt: new Date().toISOString(), items: [
       item('https://example.com', '/expired', { title: 'Expired fixture', deadline: '2000-01-01', status: 'active' }),
       item('https://example.com', '/today', { title: 'Today fixture', deadline: todayInWarsaw(), status: 'ended' }),
+      item('https://example.com', '/unknown', { title: 'Unknown fixture', deadline: null, status: 'active' }),
     ],
   }));
   const result = spawnSync(process.execPath, [buildScript], { cwd: dir, encoding: 'utf8' });
@@ -130,6 +132,111 @@ test('build recomputes stale statuses for HTML and JSON even if checking was ski
   const html = await fs.readFile(path.join(dir, 'dist', 'index.html'), 'utf8');
   assert.ok(!html.includes('Expired fixture'));
   assert.ok(html.includes('Today fixture'));
+  assert.ok(!html.includes('Unknown fixture'));
   const data = JSON.parse(await fs.readFile(path.join(dir, 'dist', 'data', 'lotteries.json'), 'utf8'));
-  assert.deepEqual(data.items.map(i => i.status), ['ended', 'active']);
+  assert.deepEqual(data.items.map(i => i.status), ['ended', 'active', 'unknown']);
+});
+
+test('the browser active filter requires a known deadline and keeps today', async () => {
+  const controls = Object.fromEntries(['list', 'updatedAt', 'source', 'tag', 'activeOnly', 'q'].map(id => [id, { value: '', checked: true }]));
+  controls.source.value = controls.tag.value = 'all';
+  const context = vm.createContext({ document: { getElementById: id => controls[id] } });
+  const script = await fs.readFile(fileURLToPath(new URL('../site/app.js', import.meta.url)), 'utf8');
+  vm.runInContext(script.slice(0, script.lastIndexOf('load().catch')), context);
+  const records = [item('', '/today', { deadline: todayInWarsaw() }), item('', '/unknown'), item('', '/ended', { deadline: '2000-01-01' })];
+  assert.deepEqual(Array.from(context.applyFilters(records), i => i.url), ['/today']);
+  controls.activeOnly.checked = false;
+  assert.equal(context.applyFilters(records).length, 3);
+});
+
+test('RSS articles recover organizer links and cache extraction without repeating page requests', async t => {
+  let articleRequests = 0;
+  const { dir, base } = await fixture(t, (req, res) => {
+    if (req.url === '/feed') return res.end(`<rss><channel><item><title>Konkurs fotograficzny</title><link>${base}/article</link><description>Wygraj aparat.</description><pubDate>${new Date().toUTCString()}</pubDate></item></channel></rss>`);
+    articleRequests++;
+    res.end('<nav><a href="https://unrelated.example">Reklama</a></nav><div class="desc_content">'
+      + '<p>Pracę należy przesłać przez formularz.</p><p>Termin: do 31.12.2999</p>'
+      + '<p><a href="https://organizer.example/enter">Strona konkursu</a></p>'
+      + '<p>Regulamin: <a href="https://organizer.example/rules.pdf">tutaj</a></p></div>');
+  });
+  const dataPath = path.join(dir, 'lotteries.json');
+  const sources = [{ source: 'aktualnekonkursy', type: 'rss', feedUrl: base + '/feed', detailSelector: '.desc_content' }];
+  await scrape({ dataPath, sources });
+  const first = JSON.parse(await fs.readFile(dataPath, 'utf8')).items[0];
+  assert.deepEqual(first.links, { organizer: 'https://organizer.example/enter', regulamin: 'https://organizer.example/rules.pdf' });
+  assert.match(first.entry.summary, /Pracę należy przesłać/);
+  assert.equal(first.deadline, '2999-12-31');
+  assert.ok(first.extraction.detailFetchedAt);
+  await scrape({ dataPath, sources });
+  const second = JSON.parse(await fs.readFile(dataPath, 'utf8')).items[0];
+  assert.equal(articleRequests, 1);
+  assert.deepEqual(second.links, first.links);
+  assert.equal(second.entry.summary, first.entry.summary);
+  assert.deepEqual(second.tags, first.tags);
+  const stale = JSON.parse(await fs.readFile(dataPath, 'utf8'));
+  stale.items[0].extraction.detailFetchedAt = '2000-01-01T00:00:00Z';
+  await fs.writeFile(dataPath, JSON.stringify(stale));
+  await scrape({ dataPath, sources });
+  assert.equal(articleRequests, 2, 'expired details are refreshed');
+});
+
+test('a failed RSS detail page preserves the feed listing and retries next run', async t => {
+  let articleRequests = 0;
+  const { dir, base } = await fixture(t, (req, res) => {
+    if (req.url === '/feed') return res.end(`<rss><channel><item><title>Konkurs fotograficzny</title><link>${base}/article</link><description>Wygraj aparat do 31.12.2999.</description></item></channel></rss>`);
+    articleRequests++;
+    res.end('<html>Maintenance, no contest body</html>');
+  });
+  const dataPath = path.join(dir, 'lotteries.json');
+  const sources = [{ source: 'aktualnekonkursy', type: 'rss', feedUrl: base + '/feed', detailSelector: '.desc_content' }];
+  await scrape({ dataPath, sources });
+  assert.equal(JSON.parse(await fs.readFile(dataPath, 'utf8')).items.length, 1);
+  await scrape({ dataPath, sources });
+  assert.equal(articleRequests, 2);
+});
+
+test('Konkursiada extracts actual entry steps, invalidates old caches and excludes order-required contests', async t => {
+  let articleRequests = 0;
+  const { dir, base } = await fixture(t, (req, res) => {
+    if (req.url.startsWith('/posts')) return res.setHeader('Content-Type', 'application/json').end(JSON.stringify([
+      { id: 1, title: { rendered: 'Konkurs filmowy z nagrodami' }, link: base + '/free', modified: '2026-10-01', class_list: ['warunki-film'] },
+      { id: 2, title: { rendered: 'Konkurs wymagający zamówienia' }, link: base + '/paid', modified: '2026-10-01', class_list: [] },
+    ]));
+    articleRequests++;
+    res.end('<p class="dates">01.10.2026 – 31.12.2999</p><article class="konkurs-post"><div class="content">'
+      + '<h2>Jak wziąć udział w konkursie?</h2>'
+      + (req.url === '/paid' ? '<p>Wpisz numer zamówienia w formularzu.</p>' : '<p>1. Nagraj krótki film.</p><p>2. Opublikuj go na Instagramie.</p>')
+      + '<h2>Nagrody w konkursie</h2><p>Wygraj aparat!</p></div>'
+      + '<a href="https://organizer.example/enter">Strona konkursu</a></article>');
+  });
+  const dataPath = path.join(dir, 'lotteries.json');
+  const sources = [{ source: 'konkursiada', type: 'wp-cpt', baseUrl: base, wpPostsEndpoint: '/posts' }];
+  await scrape({ dataPath, sources });
+  const first = JSON.parse(await fs.readFile(dataPath, 'utf8'));
+  assert.equal(first.items.length, 1);
+  assert.equal(first.items[0].entry.summary, 'Nagraj krótki film. Opublikuj go na Instagramie.');
+  assert.equal(first.items[0].links.organizer, 'https://organizer.example/enter');
+  first.items[0].extraction.detailVersion--;
+  first.items[0].entry.summary = 'Jak wziąć udział w konkursie?';
+  await fs.writeFile(dataPath, JSON.stringify(first));
+  await scrape({ dataPath, sources });
+  assert.equal(articleRequests, 4);
+  assert.equal(JSON.parse(await fs.readFile(dataPath, 'utf8')).items[0].entry.summary, 'Nagraj krótki film. Opublikuj go na Instagramie.');
+});
+
+test('Pepper fixture drops support threads, swaps and stale unknowns while keeping genuine contests', async t => {
+  const { dir, base } = await fixture(t, (_, res) => {
+    const rows = [
+      ['Jak odebrać voucher od Peppera?', 'Dyskusja o konkursie i nagrodach.', new Date().toUTCString()],
+      ['Oddam kupon 10% do sklepu', 'Wygraj zniżkę.', new Date().toUTCString()],
+      ['Konkurs fotograficzny z nagrodami', 'Wygraj aparat. Napisz komentarz.', 'Mon, 01 Jan 2024 00:00:00 GMT'],
+      ['Konkurs filmowy z nagrodami', 'Wygraj aparat. Nagraj film do 31.12.2999.', 'Mon, 01 Jan 2024 00:00:00 GMT'],
+      ['Wygraj książkę!', 'Napisz komentarz.', new Date().toUTCString()],
+    ];
+    res.end('<rss><channel>' + rows.map(([title, description, date], n) => `<item><title>${title}</title><link>${base}/contest-${123450 + n}</link><description>${description}</description><pubDate>${date}</pubDate></item>`).join('') + '</channel></rss>');
+  });
+  const dataPath = path.join(dir, 'lotteries.json');
+  await scrape({ dataPath, sources: [{ source: 'pepper', type: 'rss', feedUrl: base, idPattern: /-(\d+)$/ }] });
+  const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
+  assert.deepEqual(data.items.map(i => i.title), ['Konkurs filmowy z nagrodami', 'Wygraj książkę!']);
 });

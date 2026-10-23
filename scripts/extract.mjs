@@ -9,6 +9,12 @@ export function stripText(html) {
   // .text would otherwise include inline <script>/<style> bodies, which then
   // show up in the prize/entry summaries ("(adsbygoogle = window...").
   for (const node of root.querySelectorAll('script,style,noscript')) node.remove();
+  // HTML textContent joins adjacent paragraphs/headings without a separator.
+  // Keep entry steps and section headings from becoming one word.
+  for (const node of root.querySelectorAll('p,div,h1,h2,h3,h4,li,br')) {
+    node.insertAdjacentHTML('beforebegin', ' ');
+    node.insertAdjacentHTML('afterend', ' ');
+  }
   return root.text.trim().replace(/\s+/g, ' ');
 }
 
@@ -33,14 +39,28 @@ export function isUsableLink(href) {
 // Extract the organizer/entry link and (if present) a direct regulamin link
 // from article HTML. These feed our own checker so we can verify contests
 // at the source instead of trusting the aggregator alone.
-export function extractLinks(html) {
+export function extractLinks(html, baseUrl) {
   const root = parse(html || '');
   const anchors = root.querySelectorAll('a')
-    .map((a) => ({ href: a.getAttribute('href') || '', text: a.text.trim() }))
-    .filter((a) => isUsableLink(a.href));
+    .map((a) => {
+      const raw = a.getAttribute('href') || '';
+      let href = raw;
+      try { if (baseUrl && raw && !raw.startsWith('#')) href = new URL(raw, baseUrl).href; } catch { /* rejected below */ }
+      const text = a.text.trim();
+      const context = a.closest('p')?.text || '';
+      const rules = /regulamin|zasady konkursu/i.test(`${text} ${raw}`)
+        || (/^(?:tutaj|pobierz|link)$/i.test(text) && /regulamin/i.test(context));
+      return { href, text, rules };
+    })
+    .filter((a) => {
+      // Official rules are frequently PDFs; other media still cannot be a venue.
+      const candidate = a.rules ? a.href.replace(/\.pdf(?=[?#]|$)/i, '') : a.href;
+      return isUsableLink(candidate);
+    });
 
-  const regulamin = anchors.find((a) => /regulamin/i.test(a.text) || /regulamin/i.test(a.href));
-  const organizer = anchors.find((a) => a !== regulamin);
+  const regulamin = anchors.find((a) => a.rules);
+  const organizer = anchors.find((a) => !a.rules && /strona konkursu|weź udział|formularz|zgłoś/i.test(a.text))
+    || anchors.find((a) => !a.rules);
 
   return {
     organizer: organizer?.href || null,
@@ -72,7 +92,7 @@ export function parsePolishDateToISO(dmy) {
   return iso;
 }
 
-export function extractDeadline(text) {
+export function extractDeadline(text, referenceDate = null) {
   const t = text || '';
 
   // Prefer a date explicitly marked as a deadline ("do dnia ...", "zgłoszenia do ...").
@@ -83,6 +103,18 @@ export function extractDeadline(text) {
   if (explicit?.[1]) {
     const iso = parsePolishDateToISO(explicit[1]);
     if (iso) return iso;
+  }
+
+  // Community posts often put a yearless run in the title. Anchor it to the
+  // publication date, never today's year (which would revive old contests).
+  const published = referenceDate ? new Date(referenceDate) : null;
+  if (published && Number.isFinite(published.getTime())) {
+    const range = t.match(/\b(\d{1,2})\.\s*(\d{1,2})\.?\s*[-–—]\s*(\d{1,2})\.\s*(\d{1,2})\.(?!\s*\d)/);
+    if (range) {
+      const year = published.getUTCFullYear() + (Number(range[4]) < Number(range[2]) ? 1 : 0);
+      const iso = parsePolishDateToISO(`${range[3]}.${range[4]}.${year}`);
+      if (iso) return iso;
+    }
   }
 
   // Fallback: posts often list the start date first and the end date later,
@@ -185,7 +217,9 @@ export function extractEntrySummary(text, mechanics = []) {
   const t = cleanArticleText(text);
 
   if (t) {
-    const explicit = t.match(/((?:Jak|Aby)\s+(?:wziąć\s+udział|dołączyć)[^.!?]{0,220}[.!?])/i)?.[1];
+    // A question heading describes no action; read the following instructions.
+    const withoutHeading = t.replace(/Jak\s+(?:wziąć\s+udział|dołączyć)[^.!?]{0,100}\?/gi, '');
+    const explicit = withoutHeading.match(/(Aby\s+(?:wziąć\s+udział|dołączyć)[^.!?]{0,220}[.!?])/i)?.[1];
     if (explicit) return explicit.trim();
 
     // "Do dnia 16.08.2026 wykonaj poniższe zadania: 🔹wymyśl … 🔹opublikuj …"
@@ -197,17 +231,47 @@ export function extractEntrySummary(text, mechanics = []) {
       if (steps) return steps;
     }
 
-    const verb = t.match(
-      /((?:Wystarczy|Napisz|Wymyśl|Opublikuj|Dodaj|Prześlij|Wyślij|Zgłoś|Wypełnij|Zarejestruj|Polub|Zaobserwuj|Skomentuj|Odpowiedz|Nagraj|Narysuj)[^.!?]{0,220}[.!?]?)/i
+    const verb = withoutHeading.match(
+      /((?:Wystarczy|Napisz|Wymyśl|Opublikuj|Dodaj|Prześlij|Wyślij|Zgłoś|Wypełnij|Zarejestruj|Polub|Zaobserwuj|Skomentuj|Odpowiedz|Nagraj|Narysuj|Zrób|Wejdź)[^.!?]{0,220}[.!?]?)/i
     )?.[1];
     if (verb) {
       const clipped = clip(verb, 240);
       if (clipped.length > 12) return clipped;
     }
+    const instruction = withoutHeading.match(/((?:Prac[ęey]|Zdjęcia|Fotografie|Zgłoszenia|Filmy)[^.!?]{0,80}(?:należy|trzeba)[^.!?]{0,160}[.!?]?)/i)?.[1];
+    if (instruction) return clip(instruction, 240);
   }
 
   if (mechanics.length) return synthesiseEntrySummary(mechanics);
   return ENTRY_PLACEHOLDER;
+}
+
+// Read the actual entry section before introductory marketing copy. Paragraph
+// and list boundaries are preserved so numbered steps can be summarized.
+export function extractEntrySection(html, mechanics = []) {
+  const root = parse(html || '');
+  const heading = root.querySelectorAll('h2,h3,h4').find((h) => /jak\s+(?:wziąć\s+udział|dołączyć)/i.test(h.text));
+  if (heading) {
+    const steps = [];
+    for (let node = heading.nextElementSibling; node; node = node.nextElementSibling) {
+      if (/^H[1-6]$/.test(node.tagName)) break;
+      const text = stripText(node.outerHTML).replace(/^\d+[.)]\s*/, '');
+      if (text) steps.push(text);
+    }
+    if (steps.length) return clip(steps.join(' '), 360);
+  }
+  return extractEntrySummary(stripText(html), mechanics);
+}
+
+// Pepper's group contains support threads, coupon swaps and other discussions.
+// Require a contest announcement rather than trusting group membership.
+export function isPepperContest(title, description = '') {
+  const name = stripText(title);
+  const key = titleKey(name);
+  if (/^(?:jak pepper\b|jak (?:dlugo|odebrac|otrzymac|dziala)\b|jakie\b|o co chodzi\b|oddam\b|rozdam\b|kody spod\b|renki\b)|wymiana\s+(?:renifer|kod|kupon)|hot drop|kupony?\s+.*dla pierwszych/.test(key)) return false;
+  const text = `${name} ${stripText(description)}`;
+  return /\bkonkurs\w*|\bloteri\w*|\bwygraj\b/iu.test(text)
+    && /\bwygraj\b|\bnagrod\w*|\bdo wygrania\b/iu.test(text);
 }
 
 // Last resort: the tags tell us what entering requires even when no sentence in
@@ -248,8 +312,10 @@ export function parseRssItems(xml) {
 // explicit "bez zakupu" wins.
 export function requiresPurchase(text) {
   const t = (text || '').toLowerCase();
+  // No purchase is still not free entry when a positive entry fee is stated.
+  if (/(?:wpisowe|opłata\s+(?:startowa|za udział))\s*(?::|wynosi|w wysokości)?\s*[1-9]\d*(?:[.,]\d+)?\s*(?:zł|pln|eur|€)/u.test(t)) return true;
   if (/bez\s+zakupu/.test(t)) return false;
-  return /paragon|dowód zakupu|dowod zakupu|kup\s+(?:produkt|dowoln|min|za|\d)|za\s+zakup|przy\s+zakupie|zeskanuj\s+paragon|skanuj\s+i\s+wygrywaj|wieczko\s+opakowania|etykiet[ęe]\s+promocyjn/.test(t);
+  return /paragon|dowód zakupu|dowod zakupu|numer\w*\s+zamówieni\w*|podpisz\s+umowę\s+(?:z operatorem|abonamentową)|kup\s+(?:produkt|dowoln|min|za|\d)|za\s+zakup|przy\s+zakupie|zeskanuj\s+paragon|skanuj\s+i\s+wygrywaj|wieczko\s+opakowania|etykiet[ęe]\s+promocyjn/.test(t);
 }
 
 // Every listed contest is Polish, so "today" has to be today in Warsaw. Using
@@ -274,11 +340,17 @@ export function monthsAgoISO(months) {
 // An entry with no stated deadline that was published long ago is over in all
 // but name: nothing on the page says when it ends, and it is far too old to
 // still be running. Keeping those would bury the current contests.
-export const STALE_UNDATED_MONTHS = 9;
+export const STALE_UNDATED_MONTHS = 3;
+export const PEPPER_UNDATED_DAYS = 30;
 
-export function isStaleUndated(item) {
-  if (item.deadline || !item.publishedAt) return false;
-  return item.publishedAt.slice(0, 19) < monthsAgoISO(STALE_UNDATED_MONTHS);
+export function isStaleUndated(item, now = new Date()) {
+  if (item.deadline) return false;
+  const published = Date.parse(item.publishedAt);
+  if (!Number.isFinite(published)) return item.source === 'pepper';
+  const cutoff = new Date(now);
+  if (item.source === 'pepper') cutoff.setUTCDate(cutoff.getUTCDate() - PEPPER_UNDATED_DAYS);
+  else cutoff.setUTCMonth(cutoff.getUTCMonth() - STALE_UNDATED_MONTHS);
+  return published < cutoff.getTime();
 }
 
 /**

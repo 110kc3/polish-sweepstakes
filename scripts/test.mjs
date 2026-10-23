@@ -10,9 +10,11 @@ import {
   cleanArticleText,
   extractDeadline,
   extractEntrySummary,
+  extractEntrySection,
   extractLinks,
   extractPrizeSummary,
   isStaleUndated,
+  isPepperContest,
   isUsableLink,
   monthsAgoISO,
   parsePolishDateToISO,
@@ -59,15 +61,18 @@ test('isUsableLink matches blocked domains on the hostname, not the query string
   assert.equal(isUsableLink('https://ofree.pl.example.com/x'), true);
 });
 
-test('extractLinks prefers a regulamin link and picks an organizer separately', () => {
+test('extractLinks accepts official PDF rules and picks an organizer separately', () => {
   const html = `
     <a href="https://example.com/konkurs">Strona konkursu</a>
     <a href="https://example.com/rules.pdf">Regulamin</a>
     <a href="https://example.com/regulamin">Zasady</a>`;
   const links = extractLinks(html);
-  // The .pdf is blocked, so the regulamin comes from the URL-matched anchor.
-  assert.equal(links.regulamin, 'https://example.com/regulamin');
+  assert.equal(links.regulamin, 'https://example.com/rules.pdf');
   assert.equal(links.organizer, 'https://example.com/konkurs');
+  assert.deepEqual(extractLinks('<p><a href="https://example.com/enter">Strona konkursu</a> '
+    + '<a href="https://example.com/rules.pdf">Regulamin</a></p>'), {
+    organizer: 'https://example.com/enter', regulamin: 'https://example.com/rules.pdf',
+  });
 });
 
 test('extractLinks returns nulls when there is nothing usable', () => {
@@ -121,7 +126,7 @@ test('extractPrizeSummary and extractEntrySummary fall back to a placeholder', (
   assert.equal(extractPrizeSummary('Wygraj laptopa Acer!'), 'Wygraj laptopa Acer!');
   assert.match(extractPrizeSummary('Nagrody: 5000 zł do podziału.'), /^Nagrod/);
   assert.equal(extractPrizeSummary(''), 'Sprawdź nagrody w źródle.');
-  assert.match(extractEntrySummary('Jak wziąć udział w konkursie?'), /^Jak wziąć udział/);
+  assert.equal(extractEntrySummary('Jak wziąć udział w konkursie?'), ENTRY_PLACEHOLDER);
   assert.equal(extractEntrySummary(''), ENTRY_PLACEHOLDER);
 });
 
@@ -158,9 +163,47 @@ test('extractEntrySummary synthesises from mechanics when the text says nothing'
   assert.equal(extractEntrySummary('Nagrody rzeczowe dla laureatów.', []), ENTRY_PLACEHOLDER);
 });
 
-test('extractEntrySummary prefers an explicit sentence over the task list', () => {
-  const text = 'Jak wziąć udział w konkursie? Kliknij i wypełnij formularz. Następnie wykonaj poniższe zadania: 🔹coś';
-  assert.match(extractEntrySummary(text), /^Jak wziąć udział w konkursie\?$/);
+test('extractEntrySummary skips question headings and reads the actual action', () => {
+  const text = 'Jak wziąć udział w konkursie? Kliknij i wypełnij formularz.';
+  assert.match(extractEntrySummary(text), /wypełnij formularz/i);
+  assert.equal(extractEntrySummary('Aby wziąć udział, napisz wiersz.'), 'Aby wziąć udział, napisz wiersz.');
+});
+
+test('entry sections preserve paragraph boundaries and stop before prizes', () => {
+  const html = '<p>Napisz do nas po szczegóły.</p><h2>Jak wziąć udział w konkursie?</h2>'
+    + '<p>1. Nagraj film o swojej pasji.</p><p>2. Opublikuj go na Instagramie.</p>'
+    + '<h2>Nagrody w konkursie</h2><p>Wygraj pianino.</p>';
+  assert.equal(extractEntrySection(html), 'Nagraj film o swojej pasji. Opublikuj go na Instagramie.');
+  assert.equal(stripText('<h2>Zasady</h2><p>Zrób zdjęcie.</p><p>Wyślij formularz.</p>'), 'Zasady Zrób zdjęcie. Wyślij formularz.');
+});
+
+test('extractLinks resolves article-relative rules and recognizes contextual rule labels', () => {
+  const links = extractLinks('<a href="//organizer.example/enter">Strona konkursu</a>'
+    + '<p>Regulamin można pobrać <a href="/files/rules.pdf">tutaj</a>.</p>'
+    + '<a href="/poster.jpg">Plakat</a><a href="javascript:alert(1)">Formularz</a>', 'https://source.example/article');
+  assert.deepEqual(links, { organizer: 'https://organizer.example/enter', regulamin: 'https://source.example/files/rules.pdf' });
+  assert.equal(extractEntrySummary('Zdjęcia należy przesyłać drogą elektroniczną.'), 'Zdjęcia należy przesyłać drogą elektroniczną.');
+});
+
+test('yearless contest ranges use the publication year and handle winter rollover', () => {
+  assert.equal(extractDeadline('Gra Dyniobranie 21. 09. - 11. 10.', '2026-09-21'), '2026-10-11');
+  assert.equal(extractDeadline('Konkurs 15.12. – 10.01.', '2025-12-01'), '2026-01-10');
+  assert.equal(extractDeadline('Konkurs 21.09. - 11.10.'), null);
+  assert.equal(extractDeadline('Konkurs 21.09. - 31.02.', '2026-09-21'), null);
+});
+
+test('Pepper rejects discussions and swaps while retaining contest announcements', () => {
+  for (const title of ['Jak Pepper robi w bambuko z nagrodami voucherami', 'Jak odebrać voucher od Peppera?',
+    'jak długo są ważne wouchery z wygranych ?', 'Oddam kupon 10% Ostrovit', 'Rozdam 400 żabsów za free',
+    'Wielkanocne Polowanie na Ogniste Renifery! Wymiana reniferów!', '3 kupony do Żabki dla pierwszych.',
+    'Kody spod nakrętek Coca-Cola', 'O co chodzi z tymi ognistymi reniferami?', 'jakie skarpety noszą pepperowicze']) {
+    assert.equal(isPepperContest(title, 'Dyskusja o konkursach i nagrodach.'), false, title);
+  }
+  assert.equal(isPepperContest('Konkurs fotograficzny', 'Wygraj aparat za najlepsze zdjęcie.'), true);
+  assert.equal(isPepperContest('Wygraj książkę!', 'Napisz w komentarzu o ulubionym bohaterze.'), true);
+  assert.equal(isPepperContest('Jak wygrać aparat? Konkurs fotograficzny', 'Wyślij zdjęcie i wygraj nagrody.'), true);
+  assert.equal(isPepperContest('Nowa gra', 'Nagraj film i zgłoś go do konkursu. Do wygrania nagrody.'), true);
+  assert.equal(isPepperContest('un.Box - kręciołki x-komowe', 'Wątek o aplikacji.'), false);
 });
 
 test('parseRssItems reads fields, unwraps CDATA and collects categories', () => {
@@ -189,6 +232,11 @@ test('requiresPurchase catches receipt promos but yields to an explicit "bez zak
   assert.equal(requiresPurchase('Zeskanuj paragon i wygraj'), true);
   assert.equal(requiresPurchase('Kup 2 lody i wygraj wakacje'), true);
   assert.equal(requiresPurchase('Nagroda przy zakupie produktu'), true);
+  assert.equal(requiresPurchase('Wpisz swój październikowy numer zamówienia.'), true);
+  assert.equal(requiresPurchase('Loteria bez zakupu (wpisowe 1 zł na charytatywność)'), true);
+  assert.equal(requiresPurchase('Opłata za udział wynosi 20 zł.'), true);
+  assert.equal(requiresPurchase('Wpisowe 0 zł, bez zakupu.'), false);
+  assert.equal(requiresPurchase('Podpisz umowę z operatorem.'), true);
   assert.equal(requiresPurchase('Konkurs bez zakupu — wystarczy komentarz'), false);
   assert.equal(requiresPurchase('Napisz wiersz i wyślij zgłoszenie'), false);
   assert.equal(requiresPurchase(''), false);
@@ -221,6 +269,16 @@ test('isStaleUndated only drops undated entries past the window', () => {
   // A stated deadline always wins, however old the post is.
   assert.equal(isStaleUndated({ deadline: '2026-12-01', publishedAt: '2020-01-01T00:00:00' }), false);
   assert.equal(isStaleUndated({ deadline: null, publishedAt: null }), false);
+});
+
+test('undated Pepper entries expire after 30 days, other sources after three months', () => {
+  const now = new Date('2026-10-23T12:00:00Z');
+  assert.equal(isStaleUndated({ source: 'pepper', publishedAt: '2026-09-21T12:00:00Z' }, now), true);
+  assert.equal(isStaleUndated({ source: 'pepper', publishedAt: '2026-10-20T12:00:00Z' }, now), false);
+  assert.equal(isStaleUndated({ source: 'pepper', publishedAt: null }, now), true);
+  assert.equal(isStaleUndated({ source: 'wygrajta', publishedAt: '2026-07-20T12:00:00Z' }, now), true);
+  assert.equal(isStaleUndated({ source: 'wygrajta', publishedAt: '2026-09-20T12:00:00Z' }, now), false);
+  assert.equal(isStaleUndated({ source: 'pepper', deadline: '2027-01-01', publishedAt: '2026-01-01' }, now), false);
 });
 
 test('titleKey normalises case, Polish diacritics and punctuation', () => {

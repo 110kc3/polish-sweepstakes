@@ -164,10 +164,10 @@ async function main() {
     tagLabels = data.tagLabels || {};
     if (Array.isArray(data.tagKinds) && data.tagKinds.length) tagKinds = data.tagKinds;
 
-    // Pre-render the default view (non-ended items, soonest deadline first)
+    // Pre-render the default view (known active deadlines, soonest first)
     // so content is present without JS and for crawlers/agents.
     const items = (Array.isArray(data.items) ? data.items : [])
-      .filter((it) => it.status !== 'ended')
+      .filter((it) => it.status === 'active')
       .sort((a, b) => (a.deadline || '9999-12-31').localeCompare(b.deadline || '9999-12-31'));
 
     // Replacer functions: with a plain string, replace() would interpret

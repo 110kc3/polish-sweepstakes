@@ -134,8 +134,8 @@ function applyFilters(all) {
 
     if (activeOnly) {
       // Deadline day counts as active for all of it (Warsaw date).
-      if (it.deadline && it.deadline < today) return false;
-      // If deadline missing: keep (unknown)
+      if (!it.deadline || it.deadline < today) return false;
+      // Unknown deadlines are available when active-only is unchecked.
     }
 
     if (q) {
@@ -177,7 +177,7 @@ async function load() {
     const today = todayInWarsaw();
     const counts = {};
     for (const it of all) {
-      if (it.deadline && it.deadline < today) continue;
+      if (!it.deadline || it.deadline < today) continue;
       for (const slug of itemTagSlugs(it)) counts[slug] = (counts[slug] || 0) + 1;
     }
     const kindLabels = data.tagKindLabels || {};

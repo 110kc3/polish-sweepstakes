@@ -2,15 +2,19 @@ import { parse } from 'node-html-parser';
 import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import {
+  ENTRY_PLACEHOLDER,
   MIN_MERGE_KEY_LENGTH,
   NUMERIC_DATE,
   STALE_UNDATED_MONTHS,
+  PEPPER_UNDATED_DAYS,
   bestSummary,
   extractDeadline,
   extractEntrySummary,
+  extractEntrySection,
   extractLinks,
   extractPrizeSummary,
   isStaleUndated,
+  isPepperContest,
   monthsAgoISO,
   parsePolishDateToISO,
   parseRssItems,
@@ -86,6 +90,7 @@ const SOURCES = [
       'warunki-paragon', 'warunki-zakup', 'warunki-transakcja', 'warunki-zdrapka',
       'warunki-etykieta-promocyjna', 'warunki-opakowanie-produktu-promocyjnego',
       'warunki-wieczko-opakowania', 'warunki-pieczatki',
+      'warunki-nr-zamowienia', 'warunki-podpisanie-umowy',
     ],
     endedSlug: 'statusy-zakonczone',
     noPurchaseNotes: 'Konkursiada opisuje warunki udziału; pozycje wymagające paragonu, zakupu lub opakowania są odfiltrowane.',
@@ -93,6 +98,7 @@ const SOURCES = [
   {
     source: 'aktualnekonkursy',
     type: 'rss',
+    detailSelector: '.desc_content',
     feedUrl: 'https://aktualnekonkursy.pl/?format=feed&type=rss',
     // Item URLs carry their category: /ad/<kategoria>,<id>/<slug>,<adId>
     urlCategoryPattern: /\/ad\/([^,/]+),\d+/,
@@ -118,10 +124,11 @@ const SOURCES = [
 // editorially curated no-purchase categories win over the looser ones.
 const SOURCE_PRIORITY = new Map(SOURCES.map((s, i) => [s.source, i]));
 
-// Bump when fetchCptDetail changes what it extracts, or when a tags.mjs change
+// Bump when fetchArticleDetail changes what it extracts, or when a tags.mjs change
 // should reach entries the source hasn't touched: cached details from older runs
 // are then re-fetched instead of carrying a stale extraction forward.
-const DETAIL_VERSION = 2;
+const DETAIL_VERSION = 5;
+const DETAIL_CACHE_DAYS = 7;
 const FETCH_TIMEOUT_MS = 15_000;
 
 async function fetchJson(url) {
@@ -253,18 +260,20 @@ async function fetchRssItems(sourceCfg) {
   }
   const afterCategory = items.length;
 
-  const kept = items.filter((it) => !requiresPurchase(`${it.title} ${stripText(it.description || '')}`));
+  const noPurchase = items.filter((it) => !requiresPurchase(`${it.title} ${stripText(it.description || '')}`));
+  const kept = noPurchase.filter((it) => sourceCfg.source !== 'pepper' || isPepperContest(it.title, it.description));
   console.log(
     `Fetched ${total} items from feed for ${sourceCfg.source} (kept ${kept.length}, ` +
-    `dropped ${total - afterCategory} by category, ${afterCategory - kept.length} purchase-required)`
+    `dropped ${total - afterCategory} by category, ${afterCategory - noPurchase.length} purchase-required, ` +
+    `${noPurchase.length - kept.length} discussions)`
   );
   return kept;
 }
 
 function normalizeRssItem(source, item) {
   const combined = stripText(item.description || '');
-  const links = extractLinks(item.description || '');
-  const deadline = extractDeadline(combined);
+  const links = extractLinks(item.description || '', item.link);
+  const deadline = extractDeadline(`${stripText(item.title)} ${combined}`, item.pubDate);
   const published = item.pubDate ? new Date(item.pubDate) : null;
   const sourceId = sourceIdFrom(item, source.idPattern);
 
@@ -308,7 +317,7 @@ function normalizeRssItem(source, item) {
 function normalizePost(source, post, termMaps) {
   const excerptText = stripText(post?.excerpt?.rendered || '');
   const contentText = stripText(post?.content?.rendered || '');
-  const links = extractLinks(post?.content?.rendered || '');
+  const links = extractLinks(post?.content?.rendered || '', post.link);
 
   const combined = `${excerptText} ${contentText}`.trim();
 
@@ -321,7 +330,7 @@ function normalizePost(source, post, termMaps) {
   ].filter(Boolean);
 
   const tags = buildTags({ nativeSlugs, text: combined });
-  const entrySummary = extractEntrySummary(combined, tags.mechanika);
+  const entrySummary = extractEntrySection(post?.content?.rendered || '', tags.mechanika);
 
   return {
     id: `${source.source}:${post.id}`,
@@ -412,16 +421,21 @@ function extractDatesFromArticle(root) {
   return dates.at(-1) || null;
 }
 
-async function fetchCptDetail(url) {
+async function fetchArticleDetail(url, selector) {
   const html = await fetchHtml(url);
   const root = parse(html);
-  const deadline = extractDatesFromArticle(root);
-  const article = root.querySelector('article.konkurs-post');
-  const articleHtml = article?.innerHTML || '';
+  const deadline = selector === 'article.konkurs-post' ? extractDatesFromArticle(root) : null;
+  const article = root.querySelector(selector);
+  if (!article) throw new Error(`Missing contest article (${selector}) at ${url}`);
+  const articleHtml = article.innerHTML;
+  const content = article.querySelector('.content')?.innerHTML || articleHtml;
   return {
     deadline: deadline || extractDeadline(stripText(articleHtml)),
-    links: extractLinks(articleHtml),
-    text: stripText(articleHtml),
+    links: extractLinks(articleHtml, url),
+    text: stripText(content),
+    entrySummary: extractEntrySection(content),
+    purchaseRequired: requiresPurchase(stripText(content)),
+    fetchedAt: new Date().toISOString(),
   };
 }
 
@@ -451,7 +465,7 @@ function normalizeCptItem(source, item, detail) {
     // time are merged back in rather than silently lost.
     tags,
     entry: {
-      summary: detail?.entrySummary || extractEntrySummary(text, tags.mechanika),
+      summary: (detail?.entrySummary !== ENTRY_PLACEHOLDER && detail?.entrySummary) || extractEntrySummary(text, tags.mechanika),
       noPurchase: 'altFreeEntry',
       noPurchaseNotes: source.noPurchaseNotes,
     },
@@ -464,6 +478,7 @@ function normalizeCptItem(source, item, detail) {
       deadlineFound: Boolean(deadline),
       detailFetched: Boolean(detail),
       ...(detail ? { detailVersion: DETAIL_VERSION } : {}),
+      ...(detail ? { detailFetchedAt: detail.fetchedAt } : {}),
     },
     lastSeenAt: new Date().toISOString(),
   };
@@ -478,6 +493,8 @@ async function loadDetailCache(dataPath) {
     for (const it of prev.items || []) {
       if (!it.extraction?.detailFetched) continue;
       if (it.extraction.detailVersion !== DETAIL_VERSION) continue;
+      const fetchedAt = Date.parse(it.extraction.detailFetchedAt);
+      if (!Number.isFinite(fetchedAt) || Date.now() - fetchedAt >= DETAIL_CACHE_DAYS * 86400000) continue;
       cache.set(`${it.id}|${it.modifiedAt || ''}`, {
         deadline: it.deadline,
         links: it.links,
@@ -487,6 +504,8 @@ async function loadDetailCache(dataPath) {
         // The article text isn't stored, so keep the tags derived from it too —
         // otherwise a cached entry would lose its text-derived tags.
         tags: it.tags,
+        fetchedAt: it.extraction.detailFetchedAt,
+        purchaseRequired: false,
       });
     }
   } catch {
@@ -555,7 +574,35 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
     try {
       if (source.type === 'rss') {
         const items = await fetchRssItems(source);
-        for (const it of items) all.push(normalizeRssItem(source, it));
+        for (const it of items) {
+          const normalized = normalizeRssItem(source, it);
+          if (source.detailSelector && normalized.status !== 'ended') {
+            const key = `${normalized.id}|`;
+            let detail = detailCache.get(key);
+            try {
+              if (!detail) {
+                detail = await fetchArticleDetail(it.link, source.detailSelector);
+                await sleep(200);
+              }
+              if (detail.purchaseRequired) continue;
+              normalized.links.organizer ||= detail.links.organizer;
+              normalized.links.regulamin ||= detail.links.regulamin;
+              normalized.deadline = detail.deadline || normalized.deadline;
+              normalized.status = statusFor(normalized.deadline);
+              normalized.tags = mergeTags(normalized.tags, detail.tags || buildTags({ text: detail.text }));
+              normalized.entry.summary = bestSummary(normalized.entry.summary, detail.entrySummary);
+              normalized.prize.summary = bestSummary(normalized.prize.summary, detail.prizeSummary || extractPrizeSummary(detail.text));
+              Object.assign(normalized.extraction, {
+                deadlineFound: Boolean(normalized.deadline), detailFetched: true,
+                detailVersion: DETAIL_VERSION, detailFetchedAt: detail.fetchedAt,
+              });
+            } catch (e) {
+              // A detail-page outage must not discard a usable feed listing.
+              console.error(`Could not enrich ${it.link}:`, e.message);
+            }
+          }
+          all.push(normalized);
+        }
       } else if (source.type === 'wp-cpt') {
         const entries = await fetchCptItems(source);
         let fetched = 0;
@@ -567,7 +614,7 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
             reused++;
           } else {
             try {
-              detail = await fetchCptDetail(entry.link);
+              detail = await fetchArticleDetail(entry.link, 'article.konkurs-post');
               fetched++;
               await sleep(400);
             } catch (e) {
@@ -575,7 +622,7 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
               detail = null;
             }
           }
-          all.push(normalizeCptItem(source, entry, detail));
+          if (!detail?.purchaseRequired) all.push(normalizeCptItem(source, entry, detail));
         }
         console.log(`${source.source}: fetched ${fetched} article pages, reused ${reused} from previous run`);
       } else {
@@ -597,7 +644,7 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
   if (stale.length) {
     const perSource = {};
     for (const it of stale) perSource[it.source] = (perSource[it.source] || 0) + 1;
-    console.log(`Dropping ${stale.length} undated entries older than ${STALE_UNDATED_MONTHS} months`, perSource);
+    console.log(`Dropping ${stale.length} undated entries older than ${STALE_UNDATED_MONTHS} months (${PEPPER_UNDATED_DAYS} days for Pepper)`, perSource);
   }
   const fresh = all.filter((it) => !isStaleUndated(it));
 

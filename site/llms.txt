@@ -38,21 +38,32 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
   promoted to be the item's id/source/url and verification.promotedFrom records the previous id.
 - status is computed against the current date in Europe/Warsaw; a contest whose deadline is
   today is still "active" for the whole of that day.
+- The default HTML view and its JSON-LD include only known active deadlines. Unknown deadlines
+  remain in the JSON as status "unknown" and are visible by unchecking the active-only filter;
+  they are not evidence that a contest is still open.
 - verification (our own first-party check, not from the aggregators; non-ended items only):
   { checkedAt, sourceOk, organizerOk } — true = reachable, false = definitively dead
   (404/410/DNS), null = inconclusive (bot-blocked or transient error) or not checked.
   Items whose source article is definitively dead are removed from the dataset.
 - deadline/status/summaries/tags are heuristic extractions from the source article text —
   always confirm against the linked regulamin (official rules) at item.url.
-- Entries with no stated deadline that were published more than 9 months ago are dropped:
-  nothing on the page says when they end and they are too old to still be running.
+- Undated entries are dropped after three months; Pepper's limit is 30 days and an undated
+  Pepper entry must have a valid publication date. Yearless numeric date ranges in RSS titles
+  are anchored to the publication year, never the year of the scrape.
+- Article details for konkursiada and aktualnekonkursy are cached for at most seven days,
+  invalidated by changed source modification dates where available or extraction versions.
+  extraction.detailFetchedAt records the original fetch time, not the cache reuse time.
+- links.regulamin may point to an official PDF. Relative article links are resolved against
+  the source article URL. Reachability checks do not prove eligibility or free entry.
 
 ## Notes
 
 - Sources: fajnekonkursy.pl and ofree.pl (categories restricted to no-purchase / free-entry contests),
   wygrajta.pl (creative/online-entry categories, recent window only; consumer and retailer promos excluded),
-  konkursiada.pl (entries whose own conditions require a receipt, purchase or promotional packaging are excluded),
-  aktualnekonkursy.pl (creative and open contests; the consumer category is excluded),
-  plus pepper.pl (community-posted contests from the Konkursy group; usually free entry, not editorially guaranteed).
+  konkursiada.pl (receipt, purchase, order-number, contract and promotional-packaging conditions excluded),
+  aktualnekonkursy.pl (creative/open contests, consumer category excluded; article pages recover links and entry steps),
+  plus pepper.pl (contest/prize announcements from the Konkursy group; support threads and coupon/renifer swaps excluded).
+- Uncurated feed/article text is filtered for purchase/order requirements and stated positive
+  entry fees. These are heuristic filters, not a guarantee; always confirm the official rules.
 - This site is informational only; it is not the organizer of any listed contest.
 - Content language: Polish (pl). Audience: people in Poland.

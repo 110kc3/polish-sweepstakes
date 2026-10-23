@@ -4,18 +4,23 @@ GitHub Pages site that **reports** current sweepstakes/lotteries in Poland that 
 
 Live: https://110kc3.github.io/polish-sweepstakes/
 
+Project status and accepted work: [`TODO.md`](TODO.md) is the canonical queue.
+
 - Sources (6):
   - `fajnekonkursy.pl` — WP REST, category `bez-zakupu`
   - `ofree.pl` — WP REST, category `darmowe-konkursy`
   - `wygrajta.pl` — WP REST, creative/online-entry categories from the last 24 months; `konsumenckie`, `promocyjne` and retailer categories excluded
-  - `konkursiada.pl` — WP REST custom post type `konkursy`; finished entries and those whose own conditions require a receipt/purchase/packaging are excluded. Deadlines come from the article page (`p.dates`), cached between runs by the entry's `modified` date
-  - `aktualnekonkursy.pl` — Joomla RSS; category `konkursy-konsumenckie` excluded
-  - `pepper.pl` — Konkursy group RSS, purchase-required items filtered out
+  - `konkursiada.pl` — WP REST custom post type `konkursy`; finished entries and those requiring a receipt, purchase, order number, contract or promotional packaging are excluded. Deadlines come from `p.dates`; entry steps come from the article's entry section rather than its heading
+  - `aktualnekonkursy.pl` — Joomla RSS; category `konkursy-konsumenckie` excluded. Current articles are fetched to recover organizer/rules links and entry instructions omitted by the feed. Purchase/order requirements and stated positive entry fees are filtered from feed and article text
+  - `pepper.pl` — Konkursy group RSS; requires a contest/prize announcement, excludes support threads and coupon/renifer swaps, purchase requirements and stated positive entry fees. Yearless numeric date ranges in titles use the publication year, including winter rollover
+- Article details for Konkursiada and AktualneKonkursy are cached in the checked-in dataset for up to seven days. A changed `modified` date (where supplied) or extraction version forces a refresh; a failed detail fetch preserves the feed listing and is retried next run
+- Organizer extraction resolves relative links and accepts PDF rules explicitly identified by their label, URL or nearby text. Navigation outside the contest article is excluded from article enrichment
 - Tags: every entry gets a `tags` object grouped by kind (`nagroda`, `mechanika`, `temat`, `marka`, `odbiorca`, `zasieg`), built from each source's native taxonomy plus keyword rules. The controlled vocabulary lives in [`scripts/tags.mjs`](scripts/tags.mjs); a scrape run logs the most frequent unmapped source slugs so it is easy to extend. The site renders them as colour-coded chips and offers a grouped tag filter
 - The same contest listed on several sources is merged into one card (exact normalised-title match), unioning the tags and recording the others in `alsoOn`
 - Pipeline (daily via GitHub Actions, 05:17 UTC; 06:17 Warsaw in winter / 07:17 in summer, subject to GitHub scheduling delays): `npm run scrape` → `npm run check` → `npm run build` → deploy `dist/` to Pages
 - `check` is our own verification pass: recomputes statuses from deadlines, verifies that source articles and organizer/contest pages are still reachable (incl. soft-404 detection), drops dead items, and records a per-item `verification` block. If a merged item's primary article is gone but a source in its `alsoOn` list is still live, that alternative is promoted instead of dropping the contest. Accepts an optional data path (`node scripts/check.mjs some/fixture.json`) so the pass can be run against a fixture
 - Active/ended boundaries are computed against the current date in **Europe/Warsaw**, in the scraper, the checker and the browser — a UTC date would move same-day deadlines by up to two hours
+- The default **Tylko aktywne (znany termin)** view requires a known, current deadline, including in the pre-rendered HTML and JSON-LD. Recent entries with unknown deadlines remain in JSON and can be viewed by unchecking the filter. Undated entries expire after three months, or 30 days for Pepper; undated Pepper records also require a valid publication date
 - Tests: `npm test` (node's built-in runner) covers extraction, tagging, merging and pipeline failure cases using local HTTP fixtures. Pull requests run tests and build the checked-in dataset without scraping or deploying
 - Output: static site (listings pre-rendered, schema.org JSON-LD) + `data/lotteries.json`
 - For AI agents: start at [`llms.txt`](https://110kc3.github.io/polish-sweepstakes/llms.txt)
@@ -35,7 +40,11 @@ gh workflow run deploy.yml --ref main
 
 Scraper requests have a 15-second timeout. A broken source is recorded in the additive `sourceHealth` metadata and the Actions summary; other sources can still publish. Empty scrapes fail before replacing the previous dataset. The checker remains optional, confirms HEAD soft-404s using GET, and treats refused connections as inconclusive. Builds reject missing/invalid/empty datasets and recompute statuses against today's Warsaw date even if checking failed. Failed builds leave the previously deployed Pages site available. Inspect the workflow summary and logs when data is stale or a source is missing.
 
-Health check, 2026-10-05: inactivity-disabled workflow re-enabled; Pages publishing source corrected to GitHub Actions. The last observed deployment succeeded ([October 3](https://github.com/110kc3/polish-sweepstakes/actions/runs/37115400294)). A fresh local run fetched all six feeds, wrote 215 contests, verified all 187 non-ended source pages, and built 187 pre-rendered cards. All 44 tests, dependency audit (zero reported vulnerabilities), actionlint, browser filters/search/mobile/fallback checks, and isolated snapshot commit/skip checks passed on Node 24. Verification of the next pushed commit is **pending** at [Actions](https://github.com/110kc3/polish-sweepstakes/actions/workflows/deploy.yml); the next session should check it once, including deployment and weekly snapshot behavior. No separate project queue exists in this repository.
+Recovery, 2026-10-05: inactivity-disabled workflow re-enabled; Pages publishing source corrected to GitHub Actions. The local recovery pass fetched all six feeds and passed 44 tests, dependency audit, actionlint and browser checks on Node 24.
+
+Recovery verified, 2026-10-23: the latest eight scheduled runs succeeded through the [October 22 run](https://github.com/110kc3/polish-sweepstakes/actions/runs/39761128784), including tests, checking, build and Pages deployment at commit `5965a8a`. Weekly dataset commits were created on October 12 and 20; the October 22 snapshot correctly skipped a premature write. Verification of the quality improvements in this change will be **pending after push** at [Actions](https://github.com/110kc3/polish-sweepstakes/actions?query=branch%3Amain); see [`TODO.md`](TODO.md) for local evidence and the next check.
+
+Quality pass, 2026-10-23: all 54 tests and Chromium desktop/mobile/fallback checks passed on Node 24. A fresh six-source scrape produced 168 known-active listings; 166 have organizer/rules links, with 66 gaps filled on matching records from the October 22 dataset. All four retained Konkursiada listings now show entry steps. Four unknown deadlines remain available outside the default active view. The live checker confirmed all 172 non-ended source articles; one dead rules PDF retains the existing warning. Full evidence and source limitations are in [`TODO.md`](TODO.md).
 
 ## Consuming the data
 
