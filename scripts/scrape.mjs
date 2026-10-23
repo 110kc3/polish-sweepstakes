@@ -127,7 +127,7 @@ const SOURCE_PRIORITY = new Map(SOURCES.map((s, i) => [s.source, i]));
 // Bump when fetchArticleDetail changes what it extracts, or when a tags.mjs change
 // should reach entries the source hasn't touched: cached details from older runs
 // are then re-fetched instead of carrying a stale extraction forward.
-const DETAIL_VERSION = 5;
+const DETAIL_VERSION = 6;
 const DETAIL_CACHE_DAYS = 7;
 const FETCH_TIMEOUT_MS = 15_000;
 
@@ -628,7 +628,11 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
       } else {
         const termMaps = await fetchWpTermMaps(source);
         const posts = await fetchWpPosts(source);
-        for (const p of posts) all.push(normalizePost(source, p, termMaps));
+        const kept = posts.filter((p) => !requiresPurchase(stripText(
+          `${p.title?.rendered || ''} ${p.excerpt?.rendered || ''} ${p.content?.rendered || ''}`
+        )));
+        console.log(`${source.source}: kept ${kept.length} posts (dropped ${posts.length - kept.length} purchase-required)`);
+        for (const p of kept) all.push(normalizePost(source, p, termMaps));
       }
       sourceHealth.push({ source: source.source, status: 'ok', items: all.length - start });
     } catch (e) {
@@ -640,7 +644,7 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
     }
   }
 
-  const stale = all.filter(isStaleUndated);
+  const stale = all.filter((it) => isStaleUndated(it));
   if (stale.length) {
     const perSource = {};
     for (const it of stale) perSource[it.source] = (perSource[it.source] || 0) + 1;

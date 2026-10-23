@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-23T07:20:12.569Z",
+  "generatedAt": "2026-10-23T08:58:35.425Z",
   "sourceHealth": [
     {
       "source": "fajnekonkursy",
       "status": "ok",
-      "items": 100
+      "items": 99
     },
     {
       "source": "ofree",
       "status": "ok",
-      "items": 12
+      "items": 6
     },
     {
       "source": "wygrajta",
@@ -51,14 +51,10 @@
   },
   "tagLabels": {
     "agd": "AGD",
-    "allegro": "Allegro",
     "aplikacja": "Aplikacja mobilna",
-    "apple": "Apple",
-    "apple-store": "App Store",
     "artystyczne": "Artystyczne",
     "bilety": "Bilety",
     "blik": "Blik",
-    "carrefour": "Carrefour",
     "cinkciarz-pl": "Cinkciarz.pl",
     "coca-cola": "Coca-Cola",
     "dla-dzieci": "Dla dzieci",
@@ -73,7 +69,6 @@
     "fotograficzne": "Fotograficzne",
     "gadzety": "Gadżety",
     "glosowanie": "Głosowanie",
-    "google-play": "Google Play",
     "gowork": "GoWork",
     "graficzne": "Graficzne",
     "handel": "Handel",
@@ -101,7 +96,6 @@
     "odpowiedz": "Odpowiedź na pytanie",
     "odziez": "Odzież",
     "ogolnopolskie": "Ogólnopolskie",
-    "paypo": "Paypo",
     "pieniadze": "Pieniądze",
     "plastyczne": "Plastyczne",
     "praca": "Praca",
@@ -112,10 +106,8 @@
     "rysunek": "Rysunek / praca plastyczna",
     "samochod": "Samochód",
     "smartfon": "Smartfon",
-    "sms": "SMS",
     "sprzet-sportowy": "Sprzęt sportowy",
     "subskrypcja": "Subskrypcja / streaming",
-    "technologia": "Technologia",
     "tekst-kreatywny": "Tekst kreatywny",
     "tiktok": "TikTok",
     "turystyka": "Turystyka",
@@ -128,67 +120,58 @@
     "zgloszenie": "Zgłoszenie pracy"
   },
   "tagCounts": {
-    "pieniadze": 62,
+    "pieniadze": 56,
     "literackie": 38,
     "dla-mlodziezy": 5,
     "ogolnopolskie": 32,
-    "losowanie": 12,
-    "finanse": 2,
-    "loteria": 11,
+    "losowanie": 7,
+    "finanse": 1,
+    "loteria": 5,
     "cinkciarz-pl": 1,
-    "gadzety": 28,
-    "konsola": 5,
-    "smartfon": 6,
-    "aplikacja": 8,
-    "technologia": 1,
-    "apple": 1,
-    "apple-store": 1,
-    "coca-cola": 3,
-    "google-play": 1,
-    "karta-podarunkowa": 30,
-    "voucher": 21,
+    "karta-podarunkowa": 26,
+    "voucher": 18,
     "film": 5,
     "praca": 1,
     "gowork": 1,
-    "ksiazka": 21,
+    "ksiazka": 20,
     "nagrody-rzeczowe": 20,
-    "formularz": 13,
-    "rejestracja": 4,
+    "formularz": 10,
+    "rejestracja": 3,
     "blik": 1,
     "legimi": 1,
-    "sms": 3,
-    "carrefour": 1,
     "artystyczne": 6,
     "filmowe": 8,
     "fotograficzne": 32,
     "graficzne": 6,
     "plastyczne": 38,
-    "rower": 2,
-    "subskrypcja": 2,
-    "allegro": 1,
-    "bilety": 5,
-    "kosmetyki": 11,
-    "wycieczka": 8,
-    "paypo": 1,
     "agd": 10,
-    "samochod": 2,
+    "rower": 1,
+    "samochod": 1,
+    "smartfon": 3,
+    "aplikacja": 4,
     "inpost": 1,
+    "konsola": 4,
     "facebook": 38,
     "instagram": 39,
     "komentarz": 51,
     "newsletter": 5,
     "dom": 2,
+    "wycieczka": 7,
+    "coca-cola": 1,
     "zabka": 1,
     "internetowe": 1,
     "zdrowie-i-uroda": 1,
-    "produkty-spozywcze": 9,
-    "odpowiedz": 37,
-    "latwe": 7,
     "obserwowanie": 10,
     "rysunek": 9,
+    "odpowiedz": 36,
+    "latwe": 6,
     "sprzet-sportowy": 1,
+    "produkty-spozywcze": 8,
     "elektronika": 17,
+    "gadzety": 26,
     "dla-dzieci": 23,
+    "bilety": 4,
+    "kosmetyki": 10,
     "odziez": 3,
     "kreatywne": 18,
     "tekst-kreatywny": 6,
@@ -203,7 +186,8 @@
     "handel": 1,
     "glosowanie": 3,
     "zgloszenie": 1,
-    "turystyka": 1
+    "turystyka": 1,
+    "subskrypcja": 1
   },
   "items": [
     {
@@ -247,7 +231,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.963Z"
+      "lastSeenAt": "2026-10-23T08:58:51.004Z"
     },
     {
       "id": "ofree:6992",
@@ -291,57 +275,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:21.984Z"
-    },
-    {
-      "id": "ofree:7144",
-      "source": "ofree",
-      "sourceId": 7144,
-      "title": "Coca Cola loteria – wygraj darmowe gadżety [Konkurs]",
-      "url": "https://www.ofree.pl/coca-cola-loteria-wygraj-darmowe-gadzety-konkurs/",
-      "publishedAt": "2022-02-06T10:55:51",
-      "modifiedAt": "2025-08-21T06:18:34",
-      "links": {
-        "organizer": null,
-        "regulamin": null
-      },
-      "deadline": "2022-06-14",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "gadzety",
-          "konsola",
-          "pieniadze",
-          "smartfon"
-        ],
-        "mechanika": [
-          "aplikacja"
-        ],
-        "temat": [
-          "loteria",
-          "technologia"
-        ],
-        "marka": [
-          "apple",
-          "apple-store",
-          "coca-cola",
-          "google-play"
-        ]
-      },
-      "entry": {
-        "summary": "Aby wziąć udział w zabawie, należy pobrać aplikację na swój smartfon, zarejestrować konto i zbierać punkty oraz monety.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "nagrody można wygrać w loterii „Skanuj i wygrywaj” oraz w konkursie „Przed Ekranem” ?",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T07:20:21.980Z"
+      "lastSeenAt": "2026-10-23T08:58:43.872Z"
     },
     {
       "id": "ofree:7540",
@@ -385,7 +319,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:21.975Z"
+      "lastSeenAt": "2026-10-23T08:58:43.866Z"
     },
     {
       "id": "ofree:8880",
@@ -433,54 +367,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:21.973Z"
-    },
-    {
-      "id": "ofree:9236",
-      "source": "ofree",
-      "sourceId": 9236,
-      "title": "Wielka loteria Carrefour: Wygraj karty podarunkowe i pieniądze na zakupy",
-      "url": "https://www.ofree.pl/wielka-loteria-carrefour-wygraj-karty-podarunkowe-i-pieniadze-na-zakupy/",
-      "publishedAt": "2023-10-15T15:24:16",
-      "modifiedAt": "2026-10-17T21:10:44",
-      "links": {
-        "organizer": null,
-        "regulamin": null
-      },
-      "deadline": "2023-10-31",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa",
-          "pieniadze",
-          "voucher"
-        ],
-        "mechanika": [
-          "formularz",
-          "losowanie",
-          "sms"
-        ],
-        "temat": [
-          "loteria"
-        ],
-        "marka": [
-          "carrefour"
-        ]
-      },
-      "entry": {
-        "summary": "Ta Wielka Loteria Carrefour to wyjątkowa szansa na zdobycie atrakcyjnych nagród. Jeśli chcesz wziąć udział, wystarczy spełnić kilka prostych kroków. Oto jak dołączyć i wziąć udział w Wielkiej Loterii Carrefour: Zrób zakupy za minimum 60 zł, następnie odbierz paragon i kupon loteryjny z kodem. Wypełnij formularz na stronie loteria.carrefour.pl i zachowaj…",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj atrakcyjne nagrody i spełnij swoje marzenia.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T07:20:21.970Z"
+      "lastSeenAt": "2026-10-23T08:58:43.862Z"
     },
     {
       "id": "wygrajta:11523",
@@ -524,7 +411,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.979Z"
+      "lastSeenAt": "2026-10-23T08:58:51.025Z"
     },
     {
       "id": "wygrajta:11389",
@@ -569,7 +456,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:29.011Z"
+      "lastSeenAt": "2026-10-23T08:58:51.066Z"
     },
     {
       "id": "wygrajta:11463",
@@ -606,7 +493,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.994Z"
+      "lastSeenAt": "2026-10-23T08:58:51.048Z"
     },
     {
       "id": "wygrajta:11482",
@@ -649,7 +536,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.990Z"
+      "lastSeenAt": "2026-10-23T08:58:51.041Z"
     },
     {
       "id": "wygrajta:11459",
@@ -688,7 +575,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.997Z"
+      "lastSeenAt": "2026-10-23T08:58:51.051Z"
     },
     {
       "id": "wygrajta:11548",
@@ -730,110 +617,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.974Z"
-    },
-    {
-      "id": "ofree:10054",
-      "source": "ofree",
-      "sourceId": 10054,
-      "title": "Loteria Allegro Smart 2025 – Wygraj 500 000 zł, rowery i smartfony!",
-      "url": "https://www.ofree.pl/loteria-allegro-smart-2025/",
-      "publishedAt": "2025-10-12T17:25:02",
-      "modifiedAt": "2026-10-17T21:06:42",
-      "links": {
-        "organizer": null,
-        "regulamin": null
-      },
-      "deadline": "2025-11-09",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa",
-          "pieniadze",
-          "rower",
-          "smartfon",
-          "subskrypcja"
-        ],
-        "mechanika": [
-          "aplikacja",
-          "losowanie"
-        ],
-        "temat": [
-          "loteria"
-        ],
-        "marka": [
-          "allegro"
-        ]
-      },
-      "entry": {
-        "summary": "Udział w Loterii Allegro Smart 2025 jest stosunkowo prosty, ale wymaga spełnienia określonych warunków i wykonania konkretnych kroków.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "nagrodę główną w wysokości 500 000 zł oraz tysiące innych atrakcyjnych nagród",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T07:20:21.960Z"
-    },
-    {
-      "id": "ofree:10060",
-      "source": "ofree",
-      "sourceId": 10060,
-      "title": "Loteria PayPo Granie – Wygraj 10 000 zł na wakacje!",
-      "url": "https://www.ofree.pl/loteria-paypo-granie/",
-      "publishedAt": "2025-10-19T13:32:31",
-      "modifiedAt": "2026-10-17T21:06:19",
-      "links": {
-        "organizer": "https://www.e-konkursy.info/konkurs/loteria-paypogranie-20251",
-        "regulamin": "https://www.smolar.pl/sites/default/files/regulamin_loterii_paypo.pdf"
-      },
-      "deadline": "2025-11-13",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "bilety",
-          "karta-podarunkowa",
-          "kosmetyki",
-          "ksiazka",
-          "pieniadze",
-          "smartfon",
-          "voucher",
-          "wycieczka"
-        ],
-        "mechanika": [
-          "aplikacja",
-          "formularz",
-          "losowanie",
-          "rejestracja",
-          "sms"
-        ],
-        "temat": [
-          "finanse",
-          "loteria"
-        ],
-        "marka": [
-          "paypo"
-        ]
-      },
-      "entry": {
-        "summary": "Proces uczestnictwa w loterii jest intuicyjny i nie wymaga skomplikowanych działań. Oto krok po kroku, jak dołączyć do zabawy i zacząć zbierać losy.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "nagrody o łącznej wartości 145 000 zł.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T07:20:21.949Z"
+      "lastSeenAt": "2026-10-23T08:58:51.020Z"
     },
     {
       "id": "wygrajta:11604",
@@ -871,7 +655,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.966Z"
+      "lastSeenAt": "2026-10-23T08:58:51.009Z"
     },
     {
       "id": "fajnekonkursy:56840",
@@ -905,7 +689,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.549Z"
+      "lastSeenAt": "2026-10-23T08:58:40.516Z"
     },
     {
       "id": "ofree:9929",
@@ -953,7 +737,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:21.966Z"
+      "lastSeenAt": "2026-10-23T08:58:43.858Z"
     },
     {
       "id": "pepper:1237753",
@@ -998,7 +782,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:58.591Z"
+      "lastSeenAt": "2026-10-23T08:59:21.390Z"
     },
     {
       "id": "fajnekonkursy:59817",
@@ -1045,7 +829,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.536Z"
+      "lastSeenAt": "2026-10-23T08:58:40.507Z"
     },
     {
       "id": "wygrajta:11492",
@@ -1085,7 +869,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.986Z"
+      "lastSeenAt": "2026-10-23T08:58:51.035Z"
     },
     {
       "id": "pepper:1297886",
@@ -1132,7 +916,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:58.586Z"
+      "lastSeenAt": "2026-10-23T08:59:21.382Z"
     },
     {
       "id": "pepper:1336628",
@@ -1170,7 +954,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:58.581Z"
+      "lastSeenAt": "2026-10-23T08:59:21.374Z"
     },
     {
       "id": "aktualnekonkursy:24702",
@@ -1204,10 +988,10 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:51.718Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:14.503Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:51.604Z"
+      "lastSeenAt": "2026-10-23T08:59:14.365Z"
     },
     {
       "id": "aktualnekonkursy:24778",
@@ -1244,51 +1028,10 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:43.769Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:06.512Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:43.647Z"
-    },
-    {
-      "id": "fajnekonkursy:67013",
-      "source": "fajnekonkursy",
-      "sourceId": 67013,
-      "title": "Konkurs „Radio VOX FM Robi robotę”",
-      "url": "https://fajnekonkursy.pl/latwe/vox-robi-robote/",
-      "publishedAt": "2026-10-13T10:56:01",
-      "modifiedAt": "2026-10-13T10:56:01",
-      "links": {
-        "organizer": "https://robirobote.voxfm.pl/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-22",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "pieniadze",
-          "produkty-spozywcze"
-        ],
-        "mechanika": [
-          "odpowiedz"
-        ],
-        "temat": [
-          "latwe"
-        ]
-      },
-      "entry": {
-        "summary": "prześlij przez formularz udostępniony na stronie konkursu.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 9 x nagroda finansowa o wartości 1 000 zł + zestaw produktów Actimel",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T07:20:18.230Z"
+      "lastSeenAt": "2026-10-23T08:59:06.395Z"
     },
     {
       "id": "fajnekonkursy:66430",
@@ -1330,7 +1073,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.447Z"
+      "lastSeenAt": "2026-10-23T08:58:40.439Z"
     },
     {
       "id": "fajnekonkursy:66386",
@@ -1370,7 +1113,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.461Z"
+      "lastSeenAt": "2026-10-23T08:58:40.449Z"
     },
     {
       "id": "fajnekonkursy:67124",
@@ -1412,11 +1155,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.088Z",
+      "lastSeenAt": "2026-10-23T08:58:40.186Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1458,11 +1203,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.114Z",
+      "lastSeenAt": "2026-10-23T08:58:40.206Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1503,11 +1250,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.281Z",
+      "lastSeenAt": "2026-10-23T08:58:40.312Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1549,11 +1298,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.370Z",
+      "lastSeenAt": "2026-10-23T08:58:40.383Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1594,14 +1345,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:42.465Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:05.235Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:42.349Z",
+      "lastSeenAt": "2026-10-23T08:59:05.087Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -1639,14 +1392,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:44.404Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:07.160Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:44.288Z",
+      "lastSeenAt": "2026-10-23T08:59:07.035Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -1681,14 +1436,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:56.853Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:19.600Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:56.741Z",
+      "lastSeenAt": "2026-10-23T08:59:19.486Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -1734,11 +1491,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.108Z",
+      "lastSeenAt": "2026-10-23T08:58:40.201Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1779,11 +1538,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.038Z",
+      "lastSeenAt": "2026-10-23T08:58:40.151Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1827,11 +1588,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.080Z",
+      "lastSeenAt": "2026-10-23T08:58:40.180Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1871,11 +1634,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.094Z",
+      "lastSeenAt": "2026-10-23T08:58:40.191Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1918,11 +1683,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.141Z",
+      "lastSeenAt": "2026-10-23T08:58:40.224Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -1965,11 +1732,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.149Z",
+      "lastSeenAt": "2026-10-23T08:58:40.228Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2008,11 +1777,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.242Z",
+      "lastSeenAt": "2026-10-23T08:58:40.284Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2056,11 +1827,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.287Z",
+      "lastSeenAt": "2026-10-23T08:58:40.317Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2104,11 +1877,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.359Z",
+      "lastSeenAt": "2026-10-23T08:58:40.373Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2148,11 +1923,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.434Z",
+      "lastSeenAt": "2026-10-23T08:58:40.428Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2187,14 +1964,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:43.445Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:06.194Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:43.324Z",
+      "lastSeenAt": "2026-10-23T08:59:06.073Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -2229,14 +2008,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:57.170Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:19.922Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:57.054Z",
+      "lastSeenAt": "2026-10-23T08:59:19.802Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2276,11 +2057,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.044Z",
+      "lastSeenAt": "2026-10-23T08:58:40.156Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2326,11 +2109,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.218Z",
+      "lastSeenAt": "2026-10-23T08:58:40.271Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2371,11 +2156,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.248Z",
+      "lastSeenAt": "2026-10-23T08:58:40.289Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2414,7 +2201,7 @@
         "deadlineFound": true,
         "mergedFrom": 2
       },
-      "lastSeenAt": "2026-10-23T07:20:18.420Z",
+      "lastSeenAt": "2026-10-23T08:58:40.420Z",
       "alsoOn": [
         {
           "source": "aktualnekonkursy",
@@ -2423,9 +2210,11 @@
         }
       ],
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -2466,14 +2255,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:49.463Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:12.266Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:49.347Z",
+      "lastSeenAt": "2026-10-23T08:59:12.151Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2514,11 +2305,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.918Z",
+      "lastSeenAt": "2026-10-23T08:58:40.074Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2560,11 +2353,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.316Z",
+      "lastSeenAt": "2026-10-23T08:58:40.339Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2604,11 +2399,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.910Z",
+      "lastSeenAt": "2026-10-23T08:58:40.070Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2650,11 +2447,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.983Z",
+      "lastSeenAt": "2026-10-23T08:58:40.114Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2695,11 +2494,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.120Z",
+      "lastSeenAt": "2026-10-23T08:58:40.210Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2740,11 +2541,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.135Z",
+      "lastSeenAt": "2026-10-23T08:58:40.219Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2785,11 +2588,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.017Z",
+      "lastSeenAt": "2026-10-23T08:58:40.138Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2834,11 +2639,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.990Z",
+      "lastSeenAt": "2026-10-23T08:58:40.119Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2878,11 +2685,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.051Z",
+      "lastSeenAt": "2026-10-23T08:58:40.161Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2922,11 +2731,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.072Z",
+      "lastSeenAt": "2026-10-23T08:58:40.176Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -2969,11 +2780,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.177Z",
+      "lastSeenAt": "2026-10-23T08:58:40.248Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3017,11 +2830,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.299Z",
+      "lastSeenAt": "2026-10-23T08:58:40.326Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3059,11 +2874,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.353Z",
+      "lastSeenAt": "2026-10-23T08:58:40.369Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3105,11 +2922,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.394Z",
+      "lastSeenAt": "2026-10-23T08:58:40.400Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3151,11 +2970,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.506Z",
+      "lastSeenAt": "2026-10-23T08:58:40.483Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3193,63 +3014,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.512Z",
+      "lastSeenAt": "2026-10-23T08:58:40.488Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
-      }
-    },
-    {
-      "id": "ofree:10216",
-      "source": "ofree",
-      "sourceId": 10216,
-      "title": "Coca Cola Bolesławiec 2026 – jak odebrać ceramikę? „Zbieraj i odbieraj” oraz loteria",
-      "url": "https://www.ofree.pl/coca-cola-boleslawiec/",
-      "publishedAt": "2026-09-29T22:40:31",
-      "modifiedAt": "2026-09-29T23:03:03",
-      "links": {
-        "organizer": null,
-        "regulamin": null
-      },
-      "deadline": "2026-10-30",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "gadzety",
-          "samochod",
-          "voucher"
-        ],
-        "mechanika": [
-          "aplikacja",
-          "formularz",
-          "losowanie"
-        ],
-        "temat": [
-          "loteria"
-        ],
-        "marka": [
-          "coca-cola"
-        ]
-      },
-      "entry": {
-        "summary": "Kup napój z kodem, wpisz go w aplikacji Coca Cola, wymień token na los i zgłoś ten los przyciskiem. Zachowaj paragon.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "nagrodę, czy szansę na zestaw wart 882 zł.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T07:20:21.935Z",
-      "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
-        "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3287,14 +3058,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:45.667Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:08.426Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:45.554Z",
+      "lastSeenAt": "2026-10-23T08:59:08.312Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3332,14 +3105,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:46.929Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:09.701Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:46.819Z",
+      "lastSeenAt": "2026-10-23T08:59:09.585Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -3383,14 +3158,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:53.672Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:16.415Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:53.539Z",
+      "lastSeenAt": "2026-10-23T08:59:16.297Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -3432,11 +3209,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.904Z",
+      "lastSeenAt": "2026-10-23T08:58:40.065Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": null,
+        "regulaminOk": null,
+        "organizerPageOk": null
       }
     },
     {
@@ -3477,11 +3256,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.977Z",
+      "lastSeenAt": "2026-10-23T08:58:40.110Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3520,11 +3301,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.997Z",
+      "lastSeenAt": "2026-10-23T08:58:40.124Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3565,11 +3348,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.010Z",
+      "lastSeenAt": "2026-10-23T08:58:40.133Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3608,11 +3393,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.066Z",
+      "lastSeenAt": "2026-10-23T08:58:40.171Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3654,11 +3441,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.102Z",
+      "lastSeenAt": "2026-10-23T08:58:40.196Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -3702,11 +3491,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.163Z",
+      "lastSeenAt": "2026-10-23T08:58:40.238Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3748,11 +3539,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.171Z",
+      "lastSeenAt": "2026-10-23T08:58:40.243Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -3792,11 +3585,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.203Z",
+      "lastSeenAt": "2026-10-23T08:58:40.266Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3840,11 +3635,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.262Z",
+      "lastSeenAt": "2026-10-23T08:58:40.299Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3886,11 +3683,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.268Z",
+      "lastSeenAt": "2026-10-23T08:58:40.304Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3931,11 +3730,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.275Z",
+      "lastSeenAt": "2026-10-23T08:58:40.308Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -3983,11 +3784,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.346Z",
+      "lastSeenAt": "2026-10-23T08:58:40.365Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4028,11 +3831,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.377Z",
+      "lastSeenAt": "2026-10-23T08:58:40.387Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4075,11 +3880,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.382Z",
+      "lastSeenAt": "2026-10-23T08:58:40.392Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": null,
+        "regulaminOk": null,
+        "organizerPageOk": null
       }
     },
     {
@@ -4117,11 +3924,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.388Z",
+      "lastSeenAt": "2026-10-23T08:58:40.396Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4166,11 +3975,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.413Z",
+      "lastSeenAt": "2026-10-23T08:58:40.414Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4215,11 +4026,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.427Z",
+      "lastSeenAt": "2026-10-23T08:58:40.424Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4260,11 +4073,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.524Z",
+      "lastSeenAt": "2026-10-23T08:58:40.497Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -4305,11 +4120,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.530Z",
+      "lastSeenAt": "2026-10-23T08:58:40.502Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4352,14 +4169,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:33.776Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:56.276Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:34.178Z",
+      "lastSeenAt": "2026-10-23T08:58:56.678Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4394,14 +4213,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:40.226Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:02.965Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:40.089Z",
+      "lastSeenAt": "2026-10-23T08:59:02.841Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -4436,14 +4257,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:45.981Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:08.749Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:45.868Z",
+      "lastSeenAt": "2026-10-23T08:59:08.628Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4481,14 +4304,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:48.511Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:11.297Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:48.395Z",
+      "lastSeenAt": "2026-10-23T08:59:11.166Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": null,
+        "regulaminOk": null,
+        "organizerPageOk": null
       }
     },
     {
@@ -4529,14 +4354,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:50.430Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:13.211Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:50.298Z",
+      "lastSeenAt": "2026-10-23T08:59:13.099Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4574,14 +4401,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:52.050Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:14.834Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:51.920Z",
+      "lastSeenAt": "2026-10-23T08:59:14.706Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -4619,14 +4448,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:53.016Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:15.779Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:52.898Z",
+      "lastSeenAt": "2026-10-23T08:59:15.665Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -4661,14 +4492,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:53.336Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:16.095Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:53.219Z",
+      "lastSeenAt": "2026-10-23T08:59:15.981Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -4709,14 +4542,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:55.254Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:18.014Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:55.138Z",
+      "lastSeenAt": "2026-10-23T08:59:17.895Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4754,14 +4589,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:57.802Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:20.562Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:57.687Z",
+      "lastSeenAt": "2026-10-23T08:59:20.443Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4796,14 +4633,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:58.118Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:20.878Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:58.002Z",
+      "lastSeenAt": "2026-10-23T08:59:20.763Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -4845,11 +4684,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.004Z",
+      "lastSeenAt": "2026-10-23T08:58:40.128Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4893,11 +4734,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.024Z",
+      "lastSeenAt": "2026-10-23T08:58:40.142Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4937,11 +4780,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.059Z",
+      "lastSeenAt": "2026-10-23T08:58:40.166Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4981,11 +4826,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.156Z",
+      "lastSeenAt": "2026-10-23T08:58:40.233Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5026,11 +4873,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.191Z",
+      "lastSeenAt": "2026-10-23T08:58:40.257Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5071,11 +4920,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.224Z",
+      "lastSeenAt": "2026-10-23T08:58:40.276Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5115,11 +4966,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.306Z",
+      "lastSeenAt": "2026-10-23T08:58:40.331Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": null,
+        "regulaminOk": null,
+        "organizerPageOk": null
       }
     },
     {
@@ -5158,11 +5011,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.311Z",
+      "lastSeenAt": "2026-10-23T08:58:40.335Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5203,14 +5058,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:41.185Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:03.914Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:41.069Z",
+      "lastSeenAt": "2026-10-23T08:59:03.800Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -5250,11 +5107,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.332Z",
+      "lastSeenAt": "2026-10-23T08:58:40.353Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5295,14 +5154,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:47.876Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:10.648Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:47.764Z",
+      "lastSeenAt": "2026-10-23T08:59:10.535Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -5340,14 +5201,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:49.777Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:12.582Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:49.664Z",
+      "lastSeenAt": "2026-10-23T08:59:12.468Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5385,14 +5248,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:56.540Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:19.285Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:56.427Z",
+      "lastSeenAt": "2026-10-23T08:59:19.166Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -5432,11 +5297,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.926Z",
+      "lastSeenAt": "2026-10-23T08:58:40.079Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5479,11 +5346,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.128Z",
+      "lastSeenAt": "2026-10-23T08:58:40.215Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5525,11 +5394,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.866Z",
+      "lastSeenAt": "2026-10-23T08:58:40.043Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5567,14 +5438,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:46.617Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:09.381Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:46.504Z",
+      "lastSeenAt": "2026-10-23T08:59:09.269Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -5616,11 +5489,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.969Z",
+      "lastSeenAt": "2026-10-23T08:58:40.105Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5658,11 +5533,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.455Z",
+      "lastSeenAt": "2026-10-23T08:58:40.444Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -5702,7 +5579,7 @@
         "deadlineFound": true,
         "mergedFrom": 2
       },
-      "lastSeenAt": "2026-10-23T07:20:18.485Z",
+      "lastSeenAt": "2026-10-23T08:58:40.469Z",
       "alsoOn": [
         {
           "source": "aktualnekonkursy",
@@ -5711,9 +5588,11 @@
         }
       ],
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -5757,11 +5636,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.500Z",
+      "lastSeenAt": "2026-10-23T08:58:40.479Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5805,14 +5686,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:42.146Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:04.884Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:42.024Z",
+      "lastSeenAt": "2026-10-23T08:59:04.766Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -5850,14 +5733,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:51.402Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:14.163Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:51.282Z",
+      "lastSeenAt": "2026-10-23T08:59:14.049Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": null,
+        "regulaminOk": null,
+        "organizerPageOk": null
       }
     },
     {
@@ -5888,14 +5773,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:43.122Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:05.871Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:42.993Z",
+      "lastSeenAt": "2026-10-23T08:59:05.755Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": false
+        "organizerOk": false,
+        "regulaminOk": false,
+        "organizerPageOk": true
       }
     },
     {
@@ -5926,14 +5813,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:45.351Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:08.111Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:45.235Z",
+      "lastSeenAt": "2026-10-23T08:59:07.991Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5971,14 +5860,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:54.300Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:17.051Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:54.187Z",
+      "lastSeenAt": "2026-10-23T08:59:16.935Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -6013,14 +5904,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:38.921Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:01.681Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:38.805Z",
+      "lastSeenAt": "2026-10-23T08:59:01.542Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -6063,11 +5956,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.236Z",
+      "lastSeenAt": "2026-10-23T08:58:40.280Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6106,11 +6001,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.474Z",
+      "lastSeenAt": "2026-10-23T08:58:40.460Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6152,14 +6049,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:52.372Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:15.150Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:52.251Z",
+      "lastSeenAt": "2026-10-23T08:59:15.034Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6201,14 +6100,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:57.485Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:20.242Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:57.371Z",
+      "lastSeenAt": "2026-10-23T08:59:20.124Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6252,11 +6153,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.894Z",
+      "lastSeenAt": "2026-10-23T08:58:40.059Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6298,11 +6201,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.183Z",
+      "lastSeenAt": "2026-10-23T08:58:40.253Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6345,11 +6250,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.327Z",
+      "lastSeenAt": "2026-10-23T08:58:40.348Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6394,11 +6301,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.492Z",
+      "lastSeenAt": "2026-10-23T08:58:40.474Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6439,14 +6348,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:34.483Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:57.104Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:34.884Z",
+      "lastSeenAt": "2026-10-23T08:58:57.507Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6487,14 +6398,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:41.822Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:04.564Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:41.708Z",
+      "lastSeenAt": "2026-10-23T08:59:04.447Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -6529,14 +6442,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:52.696Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:15.464Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:52.574Z",
+      "lastSeenAt": "2026-10-23T08:59:15.351Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6576,11 +6491,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.031Z",
+      "lastSeenAt": "2026-10-23T08:58:40.146Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6622,11 +6539,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.293Z",
+      "lastSeenAt": "2026-10-23T08:58:40.322Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6664,14 +6583,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:40.867Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:03.595Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:40.748Z",
+      "lastSeenAt": "2026-10-23T08:59:03.483Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -6706,14 +6627,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:37.318Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:00.053Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:37.200Z",
+      "lastSeenAt": "2026-10-23T08:58:59.915Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -6754,11 +6677,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.400Z",
+      "lastSeenAt": "2026-10-23T08:58:40.405Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6796,11 +6721,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.339Z",
+      "lastSeenAt": "2026-10-23T08:58:40.358Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6838,11 +6765,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.518Z",
+      "lastSeenAt": "2026-10-23T08:58:40.493Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6880,11 +6809,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.956Z",
+      "lastSeenAt": "2026-10-23T08:58:50.995Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6925,14 +6856,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:46.302Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:09.067Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:46.183Z",
+      "lastSeenAt": "2026-10-23T08:59:08.952Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -6972,11 +6905,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.255Z",
+      "lastSeenAt": "2026-10-23T08:58:40.294Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7017,58 +6952,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.479Z",
+      "lastSeenAt": "2026-10-23T08:58:40.464Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
-      }
-    },
-    {
-      "id": "ofree:10238",
-      "source": "ofree",
-      "sourceId": 10238,
-      "title": "Loteria Gourmet 2026 (Królewska Loteria): zasady, nagrody i jak się zgłosić",
-      "url": "https://www.ofree.pl/loteria-gourmet-purina-zasady-nagrody/",
-      "publishedAt": "2026-10-02T23:24:12",
-      "modifiedAt": "2026-10-02T23:24:13",
-      "links": {
-        "organizer": null,
-        "regulamin": null
-      },
-      "deadline": "2026-11-30",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa",
-          "pieniadze"
-        ],
-        "mechanika": [
-          "losowanie",
-          "sms"
-        ],
-        "temat": [
-          "loteria"
-        ]
-      },
-      "entry": {
-        "summary": "Wymagane: losowanie, sms — szczegóły i pełne zasady w źródle.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Nagrody: 1100 zestawów Gourmet, 150 kart Booksy o wartości 500 zł i jedna nagroda główna 50000 zł.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T07:20:21.915Z",
-      "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
-        "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -7111,14 +7001,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:33.021Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:55.425Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:33.424Z",
+      "lastSeenAt": "2026-10-23T08:58:55.828Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -7153,14 +7045,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:36.997Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:59.712Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:36.882Z",
+      "lastSeenAt": "2026-10-23T08:58:59.576Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7195,14 +7089,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:37.636Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:00.378Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:37.520Z",
+      "lastSeenAt": "2026-10-23T08:59:00.255Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7240,14 +7136,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:39.244Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:02.001Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:39.125Z",
+      "lastSeenAt": "2026-10-23T08:59:01.884Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -7282,14 +7180,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:41.504Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:04.245Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:41.387Z",
+      "lastSeenAt": "2026-10-23T08:59:04.116Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -7331,14 +7231,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:48.193Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:10.964Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:48.079Z",
+      "lastSeenAt": "2026-10-23T08:59:10.850Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7373,14 +7275,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:54.936Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:17.693Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:54.817Z",
+      "lastSeenAt": "2026-10-23T08:59:17.566Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7418,14 +7322,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:36.681Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:59.374Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:36.561Z",
+      "lastSeenAt": "2026-10-23T08:58:59.249Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7466,11 +7372,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.468Z",
+      "lastSeenAt": "2026-10-23T08:58:40.455Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -7514,14 +7422,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:47.562Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:10.333Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:47.447Z",
+      "lastSeenAt": "2026-10-23T08:59:10.220Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7562,14 +7472,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:50.752Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:13.528Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:50.633Z",
+      "lastSeenAt": "2026-10-23T08:59:13.413Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7610,14 +7522,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:53.986Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:16.733Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:53.874Z",
+      "lastSeenAt": "2026-10-23T08:59:16.617Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7658,11 +7572,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.322Z",
+      "lastSeenAt": "2026-10-23T08:58:40.343Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -7703,14 +7619,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:39.569Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:02.320Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:39.446Z",
+      "lastSeenAt": "2026-10-23T08:59:02.203Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7745,14 +7663,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:55.885Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:18.648Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:55.773Z",
+      "lastSeenAt": "2026-10-23T08:59:18.532Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7787,14 +7707,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:36.038Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:58.728Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:35.919Z",
+      "lastSeenAt": "2026-10-23T08:58:58.604Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7829,14 +7751,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:44.718Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:07.476Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:44.606Z",
+      "lastSeenAt": "2026-10-23T08:59:07.362Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7874,14 +7798,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:42.790Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:05.552Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:42.668Z",
+      "lastSeenAt": "2026-10-23T08:59:05.437Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7924,11 +7850,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.197Z",
+      "lastSeenAt": "2026-10-23T08:58:40.262Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -7972,11 +7900,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.406Z",
+      "lastSeenAt": "2026-10-23T08:58:40.409Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8014,11 +7944,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.441Z",
+      "lastSeenAt": "2026-10-23T08:58:40.434Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8063,11 +7995,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.542Z",
+      "lastSeenAt": "2026-10-23T08:58:40.511Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8112,14 +8046,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:35.258Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:57.909Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:35.660Z",
+      "lastSeenAt": "2026-10-23T08:58:58.311Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8157,14 +8093,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:36.358Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:58:59.046Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:36.241Z",
+      "lastSeenAt": "2026-10-23T08:58:58.930Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8199,14 +8137,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:39.886Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:02.638Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:39.772Z",
+      "lastSeenAt": "2026-10-23T08:59:02.521Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8247,14 +8187,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:48.828Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:11.628Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:48.712Z",
+      "lastSeenAt": "2026-10-23T08:59:11.500Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8292,14 +8234,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:54.616Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:17.365Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:54.502Z",
+      "lastSeenAt": "2026-10-23T08:59:17.253Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8337,14 +8281,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:37.958Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:00.699Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:37.839Z",
+      "lastSeenAt": "2026-10-23T08:59:00.581Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": null
+        "organizerOk": null,
+        "regulaminOk": null,
+        "organizerPageOk": null
       }
     },
     {
@@ -8389,11 +8335,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.954Z",
+      "lastSeenAt": "2026-10-23T08:58:40.095Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8429,14 +8377,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:49.144Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:11.948Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:49.030Z",
+      "lastSeenAt": "2026-10-23T08:59:11.830Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8478,11 +8428,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.933Z",
+      "lastSeenAt": "2026-10-23T08:58:40.084Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8520,11 +8472,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:18.364Z",
+      "lastSeenAt": "2026-10-23T08:58:40.378Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8562,14 +8516,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:50.096Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:12.897Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:49.979Z",
+      "lastSeenAt": "2026-10-23T08:59:12.785Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8611,14 +8567,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:51.080Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:13.847Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:50.955Z",
+      "lastSeenAt": "2026-10-23T08:59:13.730Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8664,11 +8622,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.963Z",
+      "lastSeenAt": "2026-10-23T08:58:40.100Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8709,11 +8669,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.884Z",
+      "lastSeenAt": "2026-10-23T08:58:40.054Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8755,14 +8717,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:40.546Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:03.283Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:40.430Z",
+      "lastSeenAt": "2026-10-23T08:59:03.168Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8800,14 +8764,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:38.594Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:01.339Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:38.478Z",
+      "lastSeenAt": "2026-10-23T08:59:01.221Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8848,11 +8814,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:17.941Z",
+      "lastSeenAt": "2026-10-23T08:58:40.090Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -8887,14 +8855,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:45.033Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:07.790Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:44.920Z",
+      "lastSeenAt": "2026-10-23T08:59:07.678Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8932,14 +8902,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:38.276Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:01.018Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:38.159Z",
+      "lastSeenAt": "2026-10-23T08:59:00.901Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8979,11 +8951,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T07:20:28.950Z",
+      "lastSeenAt": "2026-10-23T08:58:50.983Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -9022,14 +8996,16 @@
       "extraction": {
         "deadlineFound": true,
         "detailFetched": true,
-        "detailVersion": 5,
-        "detailFetchedAt": "2026-10-23T07:20:44.085Z"
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-23T08:59:06.833Z"
       },
-      "lastSeenAt": "2026-10-23T07:20:43.971Z",
+      "lastSeenAt": "2026-10-23T08:59:06.714Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -9067,11 +9043,13 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T07:20:28.952Z",
+      "lastSeenAt": "2026-10-23T08:58:50.985Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -9111,11 +9089,13 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T07:20:28.954Z",
+      "lastSeenAt": "2026-10-23T08:58:50.988Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -9161,11 +9141,13 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T07:20:28.958Z",
+      "lastSeenAt": "2026-10-23T08:58:50.999Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -9203,13 +9185,15 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T07:20:28.959Z",
+      "lastSeenAt": "2026-10-23T08:58:51.001Z",
       "verification": {
-        "checkedAt": "2026-10-23T07:21:57.771Z",
+        "checkedAt": "2026-10-23T08:59:33.854Z",
         "sourceOk": true,
-        "organizerOk": true
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     }
   ],
-  "checkedAt": "2026-10-23T07:21:57.771Z"
+  "checkedAt": "2026-10-23T08:59:33.854Z"
 }

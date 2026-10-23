@@ -58,13 +58,21 @@ function deadlineBadge(deadline) {
 }
 
 function contestLink(it) {
-  const target = it.links?.regulamin || it.links?.organizer;
+  const rules = it.links?.regulamin;
+  const rulesDead = (it.verification?.regulaminOk ?? it.verification?.organizerOk) === false;
+  // A fallback organizer must have independently passed verification.
+  const target = rules
+    ? (rulesDead ? (it.verification?.organizerPageOk === true ? it.links?.organizer : null) : rules)
+    : ((it.verification?.organizerPageOk ?? it.verification?.organizerOk) === false ? null : it.links?.organizer);
   if (!target) return '';
-  const label = it.links?.regulamin ? 'Regulamin' : 'Strona konkursu';
+  const label = target === rules ? 'Regulamin' : 'Strona konkursu';
   return `<a class="btn" href="${escapeHtml(target)}" target="_blank" rel="noopener nofollow">${label}</a>`;
 }
 
 function organizerWarning(it) {
+  if (it.links?.regulamin && (it.verification?.regulaminOk ?? it.verification?.organizerOk) === false) {
+    return `<p class="muted warn">⚠ Nasza weryfikacja: regulamin konkursu nie jest dostępny. Sprawdź zasady na stronie organizatora lub w źródle.</p>`;
+  }
   if (it.verification?.organizerOk !== false) return '';
   return `<p class="muted warn">⚠ Nasza weryfikacja: strona konkursu może już nie działać.</p>`;
 }

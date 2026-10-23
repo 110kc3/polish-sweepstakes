@@ -101,9 +101,20 @@ export async function main(dataPath = DATA_PATH) {
 
   await mapWithConcurrency(toCheck, CONCURRENCY, async (it) => {
     const sourceOk = await checkUrl(it.url);
-    const target = it.links?.regulamin || it.links?.organizer;
-    const organizerOk = target ? await checkUrl(target) : null;
-    it.verification = { checkedAt, sourceOk, organizerOk };
+    const rules = it.links?.regulamin;
+    const organizer = it.links?.organizer;
+    const regulaminOk = rules ? await checkUrl(rules) : null;
+    // A definitively dead rules page must not hide a working entry page. Probe
+    // that alternate independently before the UI can offer it as a fallback.
+    // Inconclusive rules checks keep the original preferred link.
+    let organizerPageOk = null;
+    if (organizer && (!rules || regulaminOk === false)) {
+      organizerPageOk = organizer === rules ? regulaminOk : await checkUrl(organizer);
+    }
+    // Keep the original contract: organizerOk describes the preferred target
+    // (rules if present), even when an independently checked alternate is live.
+    const organizerOk = rules ? regulaminOk : organizerPageOk;
+    it.verification = { checkedAt, sourceOk, organizerOk, regulaminOk, organizerPageOk };
   });
 
   // A merged item's card points at one source, but the same contest is listed
@@ -135,6 +146,7 @@ export async function main(dataPath = DATA_PATH) {
     sourceDeadDropped: stillDead.length,
     organizerAlive: toCheck.filter((i) => i.verification?.organizerOk === true).length,
     organizerDead: toCheck.filter((i) => i.verification?.organizerOk === false).length,
+    organizerFallbackAlive: toCheck.filter((i) => i.verification?.regulaminOk === false && i.verification?.organizerPageOk === true).length,
     inconclusive: toCheck.filter((i) => i.verification?.sourceOk === null).length,
     statusChanged,
   };

@@ -306,16 +306,27 @@ export function parseRssItems(xml) {
   });
 }
 
-// Community and general-purpose feeds are not curated for the no-purchase
-// premise, so drop items that clearly require buying something (receipt
-// lotteries etc.). Conservative on purpose: only unambiguous phrases, and an
-// explicit "bez zakupu" wins.
+// Category membership is not proof of free entry: even the curated WordPress
+// feeds can misfile receipt promotions. An affirmative free alternative wins,
+// but questions/negated "bez zakupu" claims do not establish one.
 export function requiresPurchase(text) {
-  const t = (text || '').toLowerCase();
+  const t = String(text || '').toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/\p{M}/gu, '');
   // No purchase is still not free entry when a positive entry fee is stated.
-  if (/(?:wpisowe|opłata\s+(?:startowa|za udział))\s*(?::|wynosi|w wysokości)?\s*[1-9]\d*(?:[.,]\d+)?\s*(?:zł|pln|eur|€)/u.test(t)) return true;
-  if (/bez\s+zakupu/.test(t)) return false;
-  return /paragon|dowód zakupu|dowod zakupu|numer\w*\s+zamówieni\w*|podpisz\s+umowę\s+(?:z operatorem|abonamentową)|kup\s+(?:produkt|dowoln|min|za|\d)|za\s+zakup|przy\s+zakupie|zeskanuj\s+paragon|skanuj\s+i\s+wygrywaj|wieczko\s+opakowania|etykiet[ęe]\s+promocyjn/.test(t);
+  const fees = t.matchAll(/(?:wpisowe|oplata\s+(?:startowa|za udzial))\s*(?::|wynosi|w wysokosci)?\s*(\d+(?:[.,]\d+)?)\s*(?:zl|pln|eur|€)/gu);
+  if ([...fees].some((m) => Number(m[1].replace(',', '.')) > 0)) return true;
+
+  const freeClaim = /\bbez\s+(?:koniecznosci\s+)?(?:dokonywania\s+)?zakupu\b|\bnie\s+wymaga(?:my)?\s+zakupu\b|\bzakup\s+nie\s+jest\s+wymagany\b|\bnie\s+(?:trzeba|musisz)\s+(?:nic\s+)?kupowac\b/;
+  const deniedFreeClaim = /\b(?:nie\s+(?:jest|sa|moze|mozna|ma|da sie|bedzie|przewidujemy|oferujemy)|brak|niemozliw\w*|niedostepn\w*)\b[^.!?]{0,100}\bbez\s+(?:koniecznosci\s+)?zakupu\b|\bnie\s+bez\s+zakupu\b|\bbez\s+(?:koniecznosci\s+)?zakupu\b[^.!?]{0,70}\b(?:niemozliw\w*|niedostepn\w*|nie\s+(?:mozna|da sie|wezmiesz|istnieje|jest\s+(?:mozliw\w*|dostepn\w*|dopuszczaln\w*)))\b/;
+  const statements = t.match(/[^.!?]+[.!?]?/g) || [];
+  if (statements.some((s) => freeClaim.test(s) && !s.trimEnd().endsWith('?')
+    && !/\bczy\b[^.!?]{0,100}\bbez\s+(?:koniecznosci\s+)?zakupu\b/.test(s)
+    && !deniedFreeClaim.test(s))) return false;
+
+  // A negated receipt condition is not a purchase requirement by itself.
+  const requirements = t
+    .replace(/\b(?:bez|nie potrzebujesz|nie wymagamy|nie wymaga|nie jest wymagany|nie trzeba(?: miec| zachowywac| zachowac)?|nie musisz(?: miec| zachowywac| zachowac)?)\s+(?:(?:zadnego|zadnych|okazywania|przedstawiania|przesylania|zachowania|skanowania|dolaczania)\s+)*(?:paragon\w*|dowod\w*\s+zakupu|numer\w*\s+zamowieni\w*)/g, '')
+    .replace(/\b(?:paragon\w*|dowod\w*\s+zakupu)\s+nie\s+(?:jest|sa)\s+wymagan\w*/g, '');
+  return /paragon|dowod zakupu|numer\w*\s+zamowieni\w*|podpisz\s+umowe\s+(?:z operatorem|abonamentowa)|kup\s+(?:produkt|dowoln|min|za|\d)|(?:musisz|nalezy|trzeba)\s+(?:kupic|dokonac zakupu)|(?:warunk\w*|wymag\w*|konieczn\w*)[^.!?]{0,30}\bzakup|za\s+zakup|przy\s+zakupie|zeskanuj\s+paragon|skanuj\s+i\s+wygrywaj|wieczko\s+opakowania|etykiet[ae]\s+promocyjn/.test(requirements);
 }
 
 // Every listed contest is Polish, so "today" has to be today in Warsaw. Using

@@ -3,7 +3,57 @@
 This is the canonical project queue. README describes operation; this file owns
 accepted work, verification and the next session's handoff.
 
-## Accepted batch — 2026-10-23
+## Current accepted batch — 2026-10-23 follow-up
+
+The owner selected these three follow-ups to complete in parallel and push together:
+
+1. **Completed locally:** apply purchase-required checks to standard WordPress feeds as well as RSS/CPT.
+   Accept when fixtures reject the purchase/receipt-required Coca-Cola Bolesławiec
+   and Gourmet shapes from Ofree while preserving genuine free/alternative entry.
+2. **Completed locally:** fall back from a definitively dead rules PDF to a verified working organizer
+   page. Accept when both pre-rendered and hydrated cards choose the verified
+   alternate, retain the rules warning and never promote an inconclusive target.
+3. **Completed locally:** make browser smoke checks reproducible and required in CI. Accept when pull
+   requests and deployments run deadline, entry-instruction and fetch-failure
+   checks before publishing, with no live scraping required for PRs.
+
+The three implementations were completed in parallel and verified together before
+one push. Post-push CI and Pages verification for this batch are **pending** and
+must not be awaited during closeout.
+
+### Current verification — 2026-10-23
+
+- Clean `npm ci` succeeded on Node 24.22.1; all **60 tests pass**. New fixtures cover
+  the two Ofree purchase/receipt shapes, affirmative free alternatives, question
+  and negated free-entry claims, positive fractional entry fees, empty-dataset
+  preservation, and verified/inconclusive/dead organizer fallbacks.
+- Fresh scrape: all six sources healthy, **192 records**, **166 known-active
+  listings with organizer/rules URLs**, four unknown deadlines and 22 ended
+  records. Generated `2026-10-23T08:58:35.425Z`; checked `08:59:33.854Z`.
+  Both `ofree:10216` and `ofree:10238` are absent; the filter also excluded four
+  older Ofree purchase-required promotions. Source-detail caches were invalidated
+  at extraction version 6 so shared eligibility changes reach cached RSS/CPT data.
+- Live checker: **170/170 non-ended source articles reachable**; 163 preferred
+  organizer/rules targets reachable, one dead rules PDF and six inconclusive
+  preferred targets. The Stachuriada organizer independently passed verification:
+  `regulaminOk: false`, `organizerPageOk: true`, while the existing `organizerOk`
+  remains false for the preferred PDF. Its pre-rendered card offers the organizer
+  URL and retains the rules warning; uncertain alternates never gain that CTA.
+- Build: **166 pre-rendered cards**. `npm run test:browser` passed **10 checks**
+  using the pinned Playwright Chromium with no executable override: deterministic
+  production-built fixtures plus the actual refreshed `dist/`. Coverage includes
+  Warsaw-midnight boundaries, entry instructions, filters/search/tags, unknowns,
+  mobile overflow, no-JS/JSON-LD, fetch-failure fallback and dead-rules CTA behavior.
+- The workflow installs matching Chromium/Linux dependencies and requires browser
+  smoke success after build, before Pages upload/deploy, including PR builds of
+  checked-in data. PRs still do not scrape or publish.
+- Full dependency audit: **zero reported vulnerabilities**. Workflow validation
+  passed actionlint 1.7.12; whitespace checks pass with existing CRLF files retained.
+- Remaining observation: four recent Wygrajta records still have no extractable
+  deadline and stay outside the default active view. No further feature work is
+  accepted; the next action is the exact-commit CI check below.
+
+## Previous completed batch — 2026-10-23
 
 The owner selected all three recommendations from the project status review:
 
@@ -17,7 +67,7 @@ The owner selected all three recommendations from the project status review:
    README records verified recovery and the handoff distinguishes completed work,
    pending verification and any further accepted scope.
 
-## Local verification — 2026-10-23
+## Previous batch verification — 2026-10-23
 
 - Node 24.22.1: all **54 tests pass**, including source-outage preservation,
   Pepper false-positive/retention fixtures, entry-section extraction, official PDF
@@ -44,20 +94,24 @@ The owner selected all three recommendations from the project status review:
   layout, no-JavaScript rendering and fetch-failure fallback, with no page errors.
 - Production dependency audit: **zero reported vulnerabilities**. Git whitespace
   check passes with the existing CRLF browser script recognized as such.
-- Post-push CI and Pages deployment for this change are **pending**, not awaited.
+- Post-push tests, scrape, checker, build and Pages deployment for `addfad3` passed
+  in [run 39917645182](https://github.com/110kc3/polish-sweepstakes/actions/runs/39917645182).
+  The snapshot job was correctly skipped for a push event.
 
-Known source limitations: four recent Wygrajta records still have no extractable
-deadline; two active Ofree records have no extractable organizer/rules links; one
-Stachuriada rules PDF is dead. These are observations, not additional accepted work.
+At the previous batch's handoff, four recent Wygrajta records had no extractable
+deadline, two active Ofree records had no organizer/rules links, and one Stachuriada
+rules PDF was dead. Inspection during the next review established that both Ofree
+records require purchases/receipts despite their free-category placement; the
+current batch addresses those records and the dead-PDF button behavior.
 
 ## Next session
 
-- After this batch is pushed, check its exact commit once at
+- After the current batch is pushed, check its exact commit once at
   [Actions](https://github.com/110kc3/polish-sweepstakes/actions?query=branch%3Amain).
-  Match the full SHA from the commit titled `Improve contest quality and entry details`;
+  Match the full SHA from the commit titled `Enforce free entry and verify contest links in CI`;
   inspect tests, scrape/check, build and deployment. Queued/running means pending.
   Do not poll or dispatch another workflow merely to wait for verification.
-- No additional feature work is accepted. A future improvement requires selection.
+- No additional feature work beyond the current three follow-ups is accepted.
 
 ## Operational context
 
@@ -66,7 +120,9 @@ Stachuriada rules PDF is dead. These are observations, not additional accepted w
   [run 39761128784](https://github.com/110kc3/polish-sweepstakes/actions/runs/39761128784).
   Weekly snapshots committed October 12 and 20; October 22 correctly skipped a write.
 - Runtime: Node 24 LTS; `npm ci`, `npm test`, `npm run scrape`, `npm run check`,
-  `npm run build`. The checker is optional in CI; source reachability does not prove
+  `npm run build`, `npm run test:browser`. Install Chromium once with
+  `npx playwright install --with-deps chromium`. The checker is optional in CI;
+  browser smoke is required. Source reachability does not prove
   a contest is open or eligible for free entry.
 - Preserve the stable version-2 JSON shape, Warsaw deadline boundaries, source outage
   tolerance, and manual personal entry. No automated contest submissions are queued.

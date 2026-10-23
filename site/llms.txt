@@ -42,9 +42,17 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
   remain in the JSON as status "unknown" and are visible by unchecking the active-only filter;
   they are not evidence that a contest is still open.
 - verification (our own first-party check, not from the aggregators; non-ended items only):
-  { checkedAt, sourceOk, organizerOk } — true = reachable, false = definitively dead
+  { checkedAt, sourceOk, organizerOk, regulaminOk, organizerPageOk } — true = reachable, false = definitively dead
   (404/410/DNS), null = inconclusive (bot-blocked or transient error) or not checked.
   Items whose source article is definitively dead are removed from the dataset.
+- organizerOk retains its original meaning: the result for the preferred target
+  (links.regulamin when present, otherwise links.organizer). regulaminOk records the
+  rules result separately; organizerPageOk records an independent organizer-page
+  check when there are no rules or the rules are definitively dead. Unchecked values
+  are null. Older snapshots may omit these additive fields.
+- When rules are definitively dead, cards use links.organizer only if
+  organizerPageOk is true. The rules warning remains; absent, dead or inconclusive
+  alternates leave the source-article button available without a dead rules CTA.
 - deadline/status/summaries/tags are heuristic extractions from the source article text —
   always confirm against the linked regulamin (official rules) at item.url.
 - Undated entries are dropped after three months; Pepper's limit is 30 days and an undated
@@ -63,7 +71,9 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
   konkursiada.pl (receipt, purchase, order-number, contract and promotional-packaging conditions excluded),
   aktualnekonkursy.pl (creative/open contests, consumer category excluded; article pages recover links and entry steps),
   plus pepper.pl (contest/prize announcements from the Konkursy group; support threads and coupon/renifer swaps excluded).
-- Uncurated feed/article text is filtered for purchase/order requirements and stated positive
-  entry fees. These are heuristic filters, not a guarantee; always confirm the official rules.
+- Purchase/order and stated positive entry-fee checks also apply to standard WordPress
+  article text, even in a nominally free category. Questions/negations about “bez zakupu”
+  do not establish free entry. These are heuristic filters, not a guarantee; always
+  confirm the official rules.
 - This site is informational only; it is not the organizer of any listed contest.
 - Content language: Polish (pl). Audience: people in Poland.

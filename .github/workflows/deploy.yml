@@ -53,6 +53,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Install Chromium for browser checks
+        run: npx playwright install --with-deps chromium
+
+      - name: Browser smoke checks (fixtures and built site)
+        run: npm run test:browser
+
       - name: Configure Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
