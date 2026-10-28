@@ -27,7 +27,7 @@ function activeItems(data) {
 }
 
 async function serve(roots) {
-  const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.txt': 'text/plain', '.xml': 'application/xml', '.md': 'text/markdown' };
+  const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.txt': 'text/plain', '.xml': 'application/xml', '.md': 'text/markdown', '.csv': 'text/csv', '.webmanifest': 'application/manifest+json' };
   const instance = http.createServer(async (req, res) => {
     try {
       const url = new URL(req.url, 'http://localhost');
@@ -141,8 +141,10 @@ try {
 
   // URL search parameter synchronization
   await page.fill('#q', 'Atlas');
+  await page.waitForURL(url => url.searchParams.get('q') === 'Atlas');
   assert.ok(page.url().includes('q=Atlas'));
   await page.fill('#q', '');
+  await page.waitForURL(url => !url.searchParams.has('q'));
   checks++;
   await page.uncheck('#activeOnly');
   assert.equal(await page.locator('article.card').count(), fixtureData.items.length);
@@ -197,6 +199,16 @@ try {
 
   const schemaRes = await fetch(`${base}/built/data/schema.json`);
   assert.equal(schemaRes.status, 200);
+
+  const csvRes = await fetch(`${base}/built/data/lotteries.csv`);
+  assert.equal(csvRes.status, 200);
+  const csvText = await csvRes.text();
+  assert.ok(csvText.startsWith('id,title,deadline'));
+
+  const manifestRes = await fetch(`${base}/built/manifest.webmanifest`);
+  assert.equal(manifestRes.status, 200);
+  const manifestJson = await manifestRes.json();
+  assert.equal(manifestJson.name, 'Konkursy i loterie bez zakupu');
   checks++;
   assert.deepEqual(failures, [], 'Browser page errors');
   console.log(`Browser smoke passed: ${checks} checks; fixtures plus ${activeItems(actualData).length} active built listings.`);

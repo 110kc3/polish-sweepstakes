@@ -8,30 +8,34 @@ accepted work, verification and the next session's handoff.
 **All accepted Markdown tasks, feature updates (Phases 1 & 2), and verifications are complete.**
 All 67 unit and pipeline tests and 15 Playwright Chromium browser smoke checks pass cleanly.
 The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
-and compact AI agent digest (`data/active.md`).
+flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
+Post-push CI and Pages deployment for commit `b33e16e` verified in run 40783866469.
 
 ## Current completed batch — 2026-10-28 (Feature updates 1 & 2)
 
 The owner selected Phase 1 and Phase 2 from the feature research roadmap to complete and push:
 
-1. **Completed and verified (Phase 1 Quick Wins):**
+1. **Completed and verified (Phase 1 Quick Wins & Syndication):**
    - **Static RSS 2.0 Feed (`feed.xml`):** Generated during build with active contests, categories, and deadlines.
    - **Calendar Export:** Direct Google Calendar links and `.ics` event downloads with 24h reminders.
    - **Personal Contest Tracking:** LocalStorage bookmarks ("⭐ Zapisane") and participation tracking ("✅ Wzięte") with real-time UI filter.
    - **Sorting & Deep Linking:** Dropdown for deadline-asc, published-desc, prize-desc, deadline-desc, and title-asc, with two-way URL search synchronization and direct card anchor scrolling.
    - **Alternative Free Entry Callout:** Dedicated badge and tooltip for contests with confirmed free alternative methods of entry.
+   - **PWA Web App Manifest (`manifest.webmanifest`):** Standalone install support with SVG branding and mobile theme-color.
 
-2. **Completed and verified (Phase 2 Data Intelligence):**
+2. **Completed and verified (Phase 2 Data Intelligence & Exports):**
    - **Numeric Prize Value Extraction:** Extracted monetary values in PLN into `prize.value` across 57% of current records, with visual prize badge and sorting support.
    - **JSON Schema Contract (`data/schema.json`):** Formal Draft-07 specification validated in test suite.
+   - **Flat CSV Export (`data/lotteries.csv`):** RFC 4180 CSV generation of all records for tabular and spreadsheet analysis.
    - **Compact AI Agent Digest (`data/active.md`) & `llms-full.txt`:** Plain-text markdown listing active contests for single-prompt agent consumption.
 
 ### Feature verification — 2026-10-28
 
 - Clean `npm test`: all **67 tests pass** (unit, pipeline, prize parsing, schema validation, fallback, purchase filter).
-- Clean `npm run test:browser`: all **15 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, no-JS fallback, failed-fetch fallback, bookmarking, calendar export links, sorting, and URL synchronization.
-- Build: 166 pre-rendered listings, `dist/feed.xml`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/llms-full.txt`.
+- Clean `npm run test:browser`: all **15 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, no-JS fallback, failed-fetch fallback, bookmarking, calendar export links, sorting, manifest, CSV, and URL synchronization.
+- Build: pre-rendered active listings, `dist/feed.xml`, `dist/data/lotteries.csv`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/llms-full.txt`.
 - Dependency audit: 0 reported vulnerabilities. Whitespace checks clean with CRLF files retained.
+- Deployment verified: commit `b33e16e` passed its [push run 40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469) (build in 2m50s, Pages deploy in 12s). Live Pages site confirmed serving HTTP 200 on all feed and schema endpoints.
 
 ## Completed batch — 2026-10-23 follow-up
 

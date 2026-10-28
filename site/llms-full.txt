@@ -7,6 +7,7 @@ Base URL: https://110kc3.github.io/polish-sweepstakes/
 ## Available Endpoints & Feeds
 
 - **Full Dataset (JSON):** `https://110kc3.github.io/polish-sweepstakes/data/lotteries.json`
+- **Flat CSV Export:** `https://110kc3.github.io/polish-sweepstakes/data/lotteries.csv`
 - **JSON Schema (Draft-07):** `https://110kc3.github.io/polish-sweepstakes/data/schema.json`
 - **Active Contests Summary (Markdown):** `https://110kc3.github.io/polish-sweepstakes/data/active.md`
 - **RSS 2.0 Feed:** `https://110kc3.github.io/polish-sweepstakes/feed.xml`

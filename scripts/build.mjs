@@ -246,6 +246,54 @@ ${rows}
 `;
 }
 
+function toCsvField(val) {
+  if (val === null || val === undefined) return '';
+  const str = String(val);
+  if (str.includes(',') || str.includes('"') || str.includes('\n') || str.includes('\r')) {
+    return `"${str.replaceAll('"', '""')}"`;
+  }
+  return str;
+}
+
+function buildCsv(items) {
+  const headers = [
+    'id',
+    'title',
+    'deadline',
+    'status',
+    'source',
+    'prize_summary',
+    'prize_value_pln',
+    'entry_summary',
+    'no_purchase',
+    'url',
+    'regulamin_url',
+    'organizer_url',
+    'tags'
+  ];
+  const rows = [headers.join(',')];
+  for (const it of items) {
+    const tags = itemTagSlugs(it).join(';');
+    const row = [
+      it.id || '',
+      it.title || '',
+      it.deadline || '',
+      it.status || '',
+      it.source || '',
+      it.prize?.summary || '',
+      it.prize?.value !== undefined && it.prize?.value !== null ? it.prize.value : '',
+      it.entry?.summary || '',
+      it.entry?.noPurchase || '',
+      it.url || '',
+      it.links?.regulamin || '',
+      it.links?.organizer || '',
+      tags
+    ];
+    rows.push(row.map(toCsvField).join(','));
+  }
+  return rows.join('\r\n') + '\r\n';
+}
+
 async function main() {
   // Validate before deleting the previous build or publishing an empty shell.
   const data = JSON.parse(await fs.readFile('data/lotteries.json', 'utf8'));
@@ -302,6 +350,10 @@ async function main() {
     // Generate active markdown digest
     const activeMd = buildActiveMarkdown(items, data.generatedAt);
     await fs.writeFile('dist/data/active.md', activeMd, 'utf8');
+
+    // Generate flat CSV dataset
+    const csvContent = buildCsv(data.items);
+    await fs.writeFile('dist/data/lotteries.csv', csvContent, 'utf8');
   }
 
   console.log('Built dist/ from site/');

@@ -1,0 +1,17 @@
+{
+  "name": "Konkursy i loterie bez zakupu",
+  "short_name": "Konkursy bez zakupu",
+  "description": "Aktualne konkursy i loterie w Polsce bez wymogu zakupu lub z darmową metodą alternatywną.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
