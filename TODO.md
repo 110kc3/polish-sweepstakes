@@ -9,7 +9,7 @@ accepted work, verification and the next session's handoff.
 All 67 unit and pipeline tests and 15 Playwright Chromium browser smoke checks pass cleanly.
 The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
-Post-push CI and Pages deployment for commit `b33e16e` verified in run 40783866469.
+Post-push CI and Pages deployment for commits `b33e16e` and `70a9f58` verified in runs 40783866469 and 40785185466.
 
 ## Current completed batch — 2026-10-28 (Feature updates 1 & 2)
 
@@ -35,7 +35,7 @@ The owner selected Phase 1 and Phase 2 from the feature research roadmap to comp
 - Clean `npm run test:browser`: all **15 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, no-JS fallback, failed-fetch fallback, bookmarking, calendar export links, sorting, manifest, CSV, and URL synchronization.
 - Build: pre-rendered active listings, `dist/feed.xml`, `dist/data/lotteries.csv`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/llms-full.txt`.
 - Dependency audit: 0 reported vulnerabilities. Whitespace checks clean with CRLF files retained.
-- Deployment verified: commit `b33e16e` passed its [push run 40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469) (build in 2m50s, Pages deploy in 12s). Live Pages site confirmed serving HTTP 200 on all feed and schema endpoints.
+- Deployment verified: commits `b33e16e` and `70a9f58` passed push runs [40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469) and [40785185466](https://github.com/110kc3/polish-sweepstakes/actions/runs/40785185466) (build and Pages deploy). Live Pages site confirmed serving HTTP 200 on all feed, schema, CSV, and manifest endpoints.
 
 ## Completed batch — 2026-10-23 follow-up
 
