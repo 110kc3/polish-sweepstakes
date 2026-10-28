@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-23T08:58:35.425Z",
+  "generatedAt": "2026-10-28T21:34:05.640Z",
   "sourceHealth": [
     {
       "source": "fajnekonkursy",
       "status": "ok",
-      "items": 99
+      "items": 94
     },
     {
       "source": "ofree",
@@ -20,12 +20,12 @@
     {
       "source": "konkursiada",
       "status": "ok",
-      "items": 4
+      "items": 6
     },
     {
       "source": "aktualnekonkursy",
       "status": "ok",
-      "items": 69
+      "items": 68
     },
     {
       "source": "pepper",
@@ -57,9 +57,11 @@
     "blik": "Blik",
     "cinkciarz-pl": "Cinkciarz.pl",
     "coca-cola": "Coca-Cola",
+    "diamant": "Diamant",
     "dla-dzieci": "Dla dzieci",
     "dla-mlodziezy": "Dla młodzieży",
     "dom": "Dom i wnętrza",
+    "dom-i-akcesoria": "Dom i akcesoria",
     "elektronika": "Elektronika",
     "facebook": "Facebook",
     "film": "Film",
@@ -99,13 +101,15 @@
     "pieniadze": "Pieniądze",
     "plastyczne": "Plastyczne",
     "praca": "Praca",
+    "predator": "Predator",
     "produkty-spozywcze": "Produkty spożywcze",
     "quiz": "Quiz",
     "rejestracja": "Rejestracja",
-    "rower": "Rower",
     "rysunek": "Rysunek / praca plastyczna",
     "samochod": "Samochód",
     "smartfon": "Smartfon",
+    "sms": "SMS",
+    "sprzet-audio": "Sprzęt audio",
     "sprzet-sportowy": "Sprzęt sportowy",
     "subskrypcja": "Subskrypcja / streaming",
     "tekst-kreatywny": "Tekst kreatywny",
@@ -113,6 +117,7 @@
     "turystyka": "Turystyka",
     "voucher": "Voucher",
     "wycieczka": "Wycieczka",
+    "youtube": "YouTube",
     "zabawki": "Zabawki",
     "zabka": "Żabka",
     "zdjecie": "Zdjęcie",
@@ -120,74 +125,79 @@
     "zgloszenie": "Zgłoszenie pracy"
   },
   "tagCounts": {
-    "pieniadze": 56,
+    "pieniadze": 57,
     "literackie": 38,
     "dla-mlodziezy": 5,
-    "ogolnopolskie": 32,
+    "ogolnopolskie": 33,
     "losowanie": 7,
     "finanse": 1,
     "loteria": 5,
     "cinkciarz-pl": 1,
-    "karta-podarunkowa": 26,
+    "karta-podarunkowa": 23,
     "voucher": 18,
-    "film": 5,
+    "film": 4,
     "praca": 1,
     "gowork": 1,
-    "ksiazka": 20,
-    "nagrody-rzeczowe": 20,
-    "formularz": 10,
-    "rejestracja": 3,
+    "ksiazka": 21,
+    "nagrody-rzeczowe": 24,
+    "formularz": 12,
+    "rejestracja": 5,
     "blik": 1,
     "legimi": 1,
     "artystyczne": 6,
-    "filmowe": 8,
-    "fotograficzne": 32,
+    "filmowe": 10,
+    "fotograficzne": 27,
     "graficzne": 6,
-    "plastyczne": 38,
-    "agd": 10,
-    "rower": 1,
-    "samochod": 1,
-    "smartfon": 3,
+    "plastyczne": 35,
+    "konsola": 5,
     "aplikacja": 4,
-    "inpost": 1,
-    "konsola": 4,
-    "facebook": 38,
-    "instagram": 39,
-    "komentarz": 51,
+    "facebook": 36,
+    "instagram": 36,
+    "komentarz": 45,
     "newsletter": 5,
     "dom": 2,
-    "wycieczka": 7,
+    "wycieczka": 6,
     "coca-cola": 1,
     "zabka": 1,
     "internetowe": 1,
     "zdrowie-i-uroda": 1,
-    "obserwowanie": 10,
-    "rysunek": 9,
-    "odpowiedz": 36,
-    "latwe": 6,
-    "sprzet-sportowy": 1,
-    "produkty-spozywcze": 8,
-    "elektronika": 17,
-    "gadzety": 26,
-    "dla-dzieci": 23,
+    "kosmetyki": 6,
+    "odpowiedz": 38,
+    "gadzety": 22,
+    "produkty-spozywcze": 11,
+    "obserwowanie": 6,
+    "latwe": 10,
+    "elektronika": 16,
+    "zabawki": 9,
+    "kreatywne": 15,
     "bilety": 4,
-    "kosmetyki": 10,
-    "odziez": 3,
-    "kreatywne": 18,
     "tekst-kreatywny": 6,
-    "zabawki": 5,
+    "agd": 11,
+    "dla-dzieci": 23,
+    "rysunek": 8,
     "quiz": 1,
-    "tiktok": 4,
+    "smartfon": 2,
+    "tiktok": 5,
+    "sprzet-audio": 1,
     "muzyczne": 1,
     "musicmate": 1,
+    "odziez": 3,
     "laptop": 3,
-    "zdjecie": 2,
+    "sprzet-sportowy": 1,
+    "dom-i-akcesoria": 1,
+    "zdjecie": 3,
+    "diamant": 1,
+    "predator": 1,
     "kultura": 1,
+    "youtube": 2,
     "handel": 1,
     "glosowanie": 3,
     "zgloszenie": 1,
     "turystyka": 1,
-    "subskrypcja": 1
+    "samochod": 1,
+    "subskrypcja": 2,
+    "sms": 1,
+    "inpost": 1
   },
   "items": [
     {
@@ -231,7 +241,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.004Z"
+      "lastSeenAt": "2026-10-28T21:34:23.815Z"
     },
     {
       "id": "ofree:6992",
@@ -275,7 +285,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:43.872Z"
+      "lastSeenAt": "2026-10-28T21:34:13.628Z"
     },
     {
       "id": "ofree:7540",
@@ -319,7 +329,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:43.866Z"
+      "lastSeenAt": "2026-10-28T21:34:13.622Z"
     },
     {
       "id": "ofree:8880",
@@ -367,7 +377,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:43.862Z"
+      "lastSeenAt": "2026-10-28T21:34:13.620Z"
     },
     {
       "id": "wygrajta:11523",
@@ -411,7 +421,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.025Z"
+      "lastSeenAt": "2026-10-28T21:34:23.840Z"
     },
     {
       "id": "wygrajta:11389",
@@ -456,7 +466,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.066Z"
+      "lastSeenAt": "2026-10-28T21:34:23.894Z"
     },
     {
       "id": "wygrajta:11463",
@@ -493,7 +503,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.048Z"
+      "lastSeenAt": "2026-10-28T21:34:23.869Z"
     },
     {
       "id": "wygrajta:11482",
@@ -536,7 +546,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.041Z"
+      "lastSeenAt": "2026-10-28T21:34:23.859Z"
     },
     {
       "id": "wygrajta:11459",
@@ -575,7 +585,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.051Z"
+      "lastSeenAt": "2026-10-28T21:34:23.872Z"
     },
     {
       "id": "wygrajta:11548",
@@ -617,7 +627,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.020Z"
+      "lastSeenAt": "2026-10-28T21:34:23.835Z"
     },
     {
       "id": "wygrajta:11604",
@@ -655,7 +665,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.009Z"
+      "lastSeenAt": "2026-10-28T21:34:23.823Z"
     },
     {
       "id": "fajnekonkursy:56840",
@@ -689,55 +699,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.516Z"
-    },
-    {
-      "id": "ofree:9929",
-      "source": "ofree",
-      "sourceId": 9929,
-      "title": "Loteria InPost 2025: Otwórz InBoxa i wygraj mieszkanie lub Porsche!",
-      "url": "https://www.ofree.pl/loteria-inpost-2025/",
-      "publishedAt": "2025-09-20T20:47:38",
-      "modifiedAt": "2025-09-20T20:47:38",
-      "links": {
-        "organizer": null,
-        "regulamin": "https://uniqueone.pl/wp-content/uploads/2025/03/Regulamin-loterii-promocyjnej-INPOST-2025-13.0-final.pdf"
-      },
-      "deadline": "2026-02-28",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "agd",
-          "rower",
-          "samochod",
-          "smartfon",
-          "voucher"
-        ],
-        "mechanika": [
-          "aplikacja",
-          "losowanie"
-        ],
-        "temat": [
-          "loteria"
-        ],
-        "marka": [
-          "inpost"
-        ]
-      },
-      "entry": {
-        "summary": "Aby przystąpić do loterii, należy być pełnoletnim uczestnikiem Programu InPost w aplikacji InPost Mobile i posiadać aktywne konto w tym serwisie. Podstawą udziału jest nabycie InBoxa w katalogu nagród programu, co wymaga posiadania co najmniej 70 InCoinów na koncie w aplikacji. Pierwsze zgłoszenie wymaga podania numeru telefonu, adresu email oraz akceptacji…",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "nagrody główne: Porsche Cayenne (Nagroda główna I) – wartość całkowita 514 000 zł (z dopłatą podatkową).",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:43.858Z"
+      "lastSeenAt": "2026-10-28T21:34:10.308Z"
     },
     {
       "id": "pepper:1237753",
@@ -782,7 +744,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:59:21.390Z"
+      "lastSeenAt": "2026-10-28T21:34:29.447Z"
     },
     {
       "id": "fajnekonkursy:59817",
@@ -829,7 +791,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.507Z"
+      "lastSeenAt": "2026-10-28T21:34:10.297Z"
     },
     {
       "id": "wygrajta:11492",
@@ -869,7 +831,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:51.035Z"
+      "lastSeenAt": "2026-10-28T21:34:23.851Z"
     },
     {
       "id": "pepper:1297886",
@@ -916,7 +878,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:59:21.382Z"
+      "lastSeenAt": "2026-10-28T21:34:29.437Z"
     },
     {
       "id": "pepper:1336628",
@@ -954,7 +916,7 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:59:21.374Z"
+      "lastSeenAt": "2026-10-28T21:34:29.426Z"
     },
     {
       "id": "aktualnekonkursy:24702",
@@ -991,7 +953,7 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:14.503Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:14.365Z"
+      "lastSeenAt": "2026-10-28T21:34:28.510Z"
     },
     {
       "id": "aktualnekonkursy:24778",
@@ -1031,1336 +993,7 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:06.512Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:06.395Z"
-    },
-    {
-      "id": "fajnekonkursy:66430",
-      "source": "fajnekonkursy",
-      "sourceId": 66430,
-      "title": "Konkurs „Co z HalfPrice uratowałoby Twoją podróż?”",
-      "url": "https://fajnekonkursy.pl/na-instagramie/halfprice-podroz/",
-      "publishedAt": "2026-09-23T14:14:23",
-      "modifiedAt": "2026-09-23T14:14:23",
-      "links": {
-        "organizer": "https://www.instagram.com/p/DdlypquogiZ/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-22",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa"
-        ],
-        "mechanika": [
-          "instagram",
-          "komentarz",
-          "obserwowanie"
-        ],
-        "temat": [
-          "fotograficzne"
-        ]
-      },
-      "entry": {
-        "summary": "zrób zdjęcie, które będzie odpowiedzią na pytanie: „Pokaż nam, jak lubi spędzać czas Twoja ukochana czerwona torba HalfPrice! Co robi w wolnej chwili, kiedy…; fotografię opublikuj w komentarzu pod postem konkursowym na Instagramie; polub post konkursowy.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x karta podarunkowa do Modivo o wartości 300 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.439Z"
-    },
-    {
-      "id": "fajnekonkursy:66386",
-      "source": "fajnekonkursy",
-      "sourceId": 66386,
-      "title": "XXXII Konkurs plastyczny im. Pawła Wróbla",
-      "url": "https://fajnekonkursy.pl/plastyczne/xxxii-im-pawla-wrobla/",
-      "publishedAt": "2026-09-21T16:16:31",
-      "modifiedAt": "2026-09-21T16:16:31",
-      "links": {
-        "organizer": "https://mdk.katowice.pl/xxxii-ogolnopolski-konkurs-plastyczny-dla-tworcow-nieprofesjonalnych-im-pawla-wrobla-2",
-        "regulamin": null
-      },
-      "deadline": "2026-10-22",
-      "status": "ended",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa"
-        ],
-        "mechanika": [
-          "rysunek"
-        ],
-        "temat": [
-          "plastyczne"
-        ]
-      },
-      "entry": {
-        "summary": "zgłoś na konkurs pracę plastyczną o dowolnym temacie, rozmiarze i technice wykonania.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • bony upominkowe oraz udział w wystawie pokonkursowej wg uznania jury Zasady XXXII konkursu plastycznego im.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.449Z"
-    },
-    {
-      "id": "fajnekonkursy:67124",
-      "source": "fajnekonkursy",
-      "sourceId": 67124,
-      "title": "Konkurs Radia Eska „Dzień Kundelka”",
-      "url": "https://fajnekonkursy.pl/latwe/eska-dzien-kundelka/",
-      "publishedAt": "2026-10-16T17:08:59",
-      "modifiedAt": "2026-10-16T17:08:59",
-      "links": {
-        "organizer": "https://dzienkundelka.eska.pl/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-23",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa",
-          "voucher"
-        ],
-        "mechanika": [
-          "formularz",
-          "odpowiedz"
-        ],
-        "temat": [
-          "latwe"
-        ]
-      },
-      "entry": {
-        "summary": "wypełnij formularz zgłoszeniowy na stronie konkursu i w oryginalny sposób odpowiedz na pytanie „Jak zaczęła się historia waszej psijaźni?",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 5 x voucher do sklepu internetowego Dolina Noteci o wartości 1 000 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.186Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67086",
-      "source": "fajnekonkursy",
-      "sourceId": 67086,
-      "title": "Konkurs Sportano na Facebooku „Plecak Salewa”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/sportano-plecak-salewa/",
-      "publishedAt": "2026-10-15T11:00:33",
-      "modifiedAt": "2026-10-15T11:00:33",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1146883877856997&set=a.177066438172084",
-        "regulamin": null
-      },
-      "deadline": "2026-10-23",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "sprzet-sportowy"
-        ],
-        "mechanika": [
-          "facebook",
-          "instagram",
-          "komentarz",
-          "obserwowanie",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Wyobraź sobie, że jutro ruszasz na wymarzoną górską wyprawę. Jaki szlak wybierasz i co koniecznie pakujesz…; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 1 x plecak wspinaczkowy Salewa Ortles Wall 2 35 l o wartości 669,99 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.206Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:66950",
-      "source": "fajnekonkursy",
-      "sourceId": 66950,
-      "title": "Konkurs Vifon na Instagramie „Zostań testerem smaku”",
-      "url": "https://fajnekonkursy.pl/na-instagramie/vifon-zostan-testerem/",
-      "publishedAt": "2026-10-10T11:26:45",
-      "modifiedAt": "2026-10-10T11:30:04",
-      "links": {
-        "organizer": "https://www.instagram.com/p/DeSGljADU0_/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-23",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "produkty-spozywcze"
-        ],
-        "mechanika": [
-          "instagram",
-          "komentarz",
-          "obserwowanie",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Dlaczego to właśnie TY powinieneś zostać testerem smaku Vifon?”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie; zaobserwuj intagramowy profil @vifonpolska.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 50 x zestaw zup błyskawicznych marki Vifon o wartości 71,95 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.312Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:66770",
-      "source": "fajnekonkursy",
-      "sourceId": 66770,
-      "title": "Konkurs Rolmlecz „Zabierz serek z krówką w nieznane”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/rolmlecz-zabierz-serek/",
-      "publishedAt": "2026-10-03T11:06:44",
-      "modifiedAt": "2026-10-03T11:06:44",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1641538911319765&set=a.593702932770040",
-        "regulamin": null
-      },
-      "deadline": "2026-10-23",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "elektronika",
-          "gadzety",
-          "wycieczka"
-        ],
-        "mechanika": [
-          "facebook",
-          "instagram",
-          "komentarz"
-        ]
-      },
-      "entry": {
-        "summary": "Aby dołączyć do zabawy, do dnia 23.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 1 x zestaw: aparat natychmiastowy instax mini 13 oraz gra „Chińczyk” o wartości 595 zł • 1 x zestaw: głośnik JBL GO 4 oraz gra „Chińczyk” o wartości 515,48 zł • 1 x gra „Chińczyk”…",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.383Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "aktualnekonkursy:24787",
-      "source": "aktualnekonkursy",
-      "sourceId": "24787",
-      "title": "Ogólnopolski Konkurs Fotograficzny „O Złotą Rotundę Cieszyńską 2026”",
-      "url": "https://aktualnekonkursy.pl/ad/konkursy-fotograficzne,8/ogolnopolski-konkurs-fotograficzny-o-zlota-rotunde-cieszynska-2026,24787",
-      "publishedAt": "2026-10-06T18:25:05.000Z",
-      "modifiedAt": null,
-      "links": {
-        "organizer": null,
-        "regulamin": "https://znp.cieszyn.pl/"
-      },
-      "deadline": "2026-10-23",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "nagrody-rzeczowe"
-        ],
-        "temat": [
-          "fotograficzne"
-        ],
-        "zasieg": [
-          "ogolnopolskie"
-        ]
-      },
-      "entry": {
-        "summary": "Pracę należy przesłać mailem.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
-      },
-      "prize": {
-        "summary": "Nagrody Laureaci otrzymają nagrody rzeczowe o łącznej wartości 2 500 zł.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:05.235Z"
-      },
-      "lastSeenAt": "2026-10-23T08:59:05.087Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": true,
-        "organizerPageOk": null
-      }
-    },
-    {
-      "id": "aktualnekonkursy:24772",
-      "source": "aktualnekonkursy",
-      "sourceId": "24772",
-      "title": "Narwiański Festiwal Przyrodniczy 2026",
-      "url": "https://aktualnekonkursy.pl/ad/konkursy-fotograficzne,8/narwianski-festiwal-przyrodniczy-2026,24772",
-      "publishedAt": "2026-10-04T18:42:51.000Z",
-      "modifiedAt": null,
-      "links": {
-        "organizer": "https://miastolomza.pl/v-narwianski-festiwal-przyrodniczy/",
-        "regulamin": "https://lomza.bip.net.pl/kategorie/677-wrzesien-2026-zarzadzenia/artykuly/4973-zarzadzenie-nr-30126-z-dnia-28-wrzesnia-w-sprawie-ogloszenia-konkursow-fotograficznego-oraz-pokazow-multimedialnych-w-ramach-narwianskiego-festiwalu-przyrodniczego?lang=PL"
-      },
-      "deadline": "2026-10-23",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "pieniadze"
-        ],
-        "temat": [
-          "fotograficzne"
-        ]
-      },
-      "entry": {
-        "summary": "Zdjęcia i prezentacje multimedialne należy przesyłać drogą elektroniczną.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
-      },
-      "prize": {
-        "summary": "Nagrody Konkurs fotograficzny: - I miejsce – 3 000 zł - II miejsce – 2 000 zł - III miejsce – 1 500 zł Konkurs pokazów multimedialnych: - Grand Prix – 4 000 zł - I miejsce – 2 000 zł - II miejsce – 1…",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:07.160Z"
-      },
-      "lastSeenAt": "2026-10-23T08:59:07.035Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": true,
-        "organizerPageOk": null
-      }
-    },
-    {
-      "id": "aktualnekonkursy:24648",
-      "source": "aktualnekonkursy",
-      "sourceId": "24648",
-      "title": "Ogólnopolski Konkurs Twórców i Wykonawców „Piosenkarnia 2026”",
-      "url": "https://aktualnekonkursy.pl/ad/inne-konkursy,6/ogolnopolski-konkurs-tworcow-i-wykonawcow-piosenkarnia-2026,24648",
-      "publishedAt": "2026-08-30T22:32:15.000Z",
-      "modifiedAt": null,
-      "links": {
-        "organizer": "https://piosenkarnia.pl/6259-2/",
-        "regulamin": "https://piosenkarnia.pl/wp-content/uploads/2026/08/REGULAMIN-KONKURSU-2026.pdf"
-      },
-      "deadline": "2026-10-23",
-      "status": "active",
-      "tags": {
-        "zasieg": [
-          "ogolnopolskie"
-        ]
-      },
-      "entry": {
-        "summary": "Aby wziąć udział w konkursie, należy wykonać piosenkę w języku polskim.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
-      },
-      "prize": {
-        "summary": "Nagrody Pula nagród wynosi 10 000 zł Strona konkursu",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:19.600Z"
-      },
-      "lastSeenAt": "2026-10-23T08:59:19.486Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": true,
-        "organizerPageOk": null
-      }
-    },
-    {
-      "id": "fajnekonkursy:67095",
-      "source": "fajnekonkursy",
-      "sourceId": 67095,
-      "title": "Konkurs Tantis „100 lat Kubusia Puchatka”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/tantis-100-lat-kubusia/",
-      "publishedAt": "2026-10-15T12:19:19",
-      "modifiedAt": "2026-10-15T12:19:19",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1607649668071469&set=a.626006469569132",
-        "regulamin": null
-      },
-      "deadline": "2026-10-24",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "ksiazka"
-        ],
-        "mechanika": [
-          "facebook",
-          "komentarz",
-          "odpowiedz"
-        ],
-        "temat": [
-          "plastyczne"
-        ],
-        "odbiorca": [
-          "dla-dzieci"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Który bohater Stumilowego Lasu skradł Twoje serce? Przedstaw go w dowolnej technice plastycznej.”.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 5 x zestaw 2 książek: „Zima w Stumilowym Lesie” oraz „Przygoda w Stumilowym Lesie”",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.201Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67153",
-      "source": "fajnekonkursy",
-      "sourceId": 67153,
-      "title": "Konkurs Vichy „Światowy Dzień Menopauzy”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/vichy-dzien-menopauzy/",
-      "publishedAt": "2026-10-18T17:14:09",
-      "modifiedAt": "2026-10-18T17:14:37",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1623175746505434&set=a.736671811822503",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "bilety",
-          "kosmetyki"
-        ],
-        "mechanika": [
-          "facebook",
-          "komentarz",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Gdybyś mogła napisać list do młodszej siebie, to jakie byłyby najważniejsze 3 rzeczy, które chciałabyś sobie….",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x zestaw kosmetyków marki Vichy + podwójny bilet na spektakl w teatrze Garnizon Sztuki o łącznej wartości 648,98 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.151Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67132",
-      "source": "fajnekonkursy",
-      "sourceId": 67132,
-      "title": "Konkurs „Crispy Natural x Many Mornings”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/crispy-x-mornings/",
-      "publishedAt": "2026-10-16T21:08:28",
-      "modifiedAt": "2026-10-16T21:08:28",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1566613265505500&set=a.637153905118112",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "gadzety",
-          "odziez",
-          "produkty-spozywcze"
-        ],
-        "mechanika": [
-          "facebook",
-          "instagram",
-          "komentarz",
-          "obserwowanie",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "Aby dołączyć do konkursu, do dnia 25.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 5 x tematyczny zestaw Crispy Natural i Many Mornings: Buraczany, Matchowy, Jabłkowy, Tropikalny lub Jabłkowy Twist",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.180Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67121",
-      "source": "fajnekonkursy",
-      "sourceId": 67121,
-      "title": "Konkurs Bonito na Facebooku „Muminki”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/bonito-muminki/",
-      "publishedAt": "2026-10-16T16:35:23",
-      "modifiedAt": "2026-10-16T16:35:23",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1535761728585609&set=a.622189246609533",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "ksiazka"
-        ],
-        "mechanika": [
-          "facebook",
-          "komentarz",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Z kim z Doliny Muminków najchętniej przeżyłbyś książkową przygodę i dlaczego?”.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 1 x zestaw książek: „Muminki zebrane.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.191Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67068",
-      "source": "fajnekonkursy",
-      "sourceId": 67068,
-      "title": "Konkurs „Urodziny AVA Laboratorium”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/urodziny-ava/",
-      "publishedAt": "2026-10-15T09:50:02",
-      "modifiedAt": "2026-10-15T09:50:02",
-      "links": {
-        "organizer": "https://www.facebook.com/LaboratoriumKosmetyczneAVA/posts/1533357182155005?ref=embed_post",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa",
-          "kosmetyki"
-        ],
-        "mechanika": [
-          "facebook",
-          "instagram",
-          "komentarz",
-          "obserwowanie",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "Aby dołączyć do konkursu, do dnia 25.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 2 x box „Odkryjcie świat” z Prezent Marzeń • 10 x zestaw 6 kosmetyków AVA Laboratorium: 2 kosmetyki z linii Aktywatory Młodości + 4 kosmetyki z linii Aqua Boost Collagen",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.224Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67065",
-      "source": "fajnekonkursy",
-      "sourceId": 67065,
-      "title": "Konkurs na Facebooku „Urodziny myKotty”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/urodziny-mykotty/",
-      "publishedAt": "2026-10-15T09:31:06",
-      "modifiedAt": "2026-10-15T09:31:06",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1557164833118586&set=a.479085974259816",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "karta-podarunkowa",
-          "voucher"
-        ],
-        "mechanika": [
-          "facebook",
-          "komentarz"
-        ],
-        "temat": [
-          "fotograficzne"
-        ]
-      },
-      "entry": {
-        "summary": "zrób zdjęcie swojego kota w jego najbardziej odjechanym wydaniu; gotową fotkę opublikuj jako komentarz pod postem konkursowym na Facebooku Do konkursu możesz przesłać dowolną liczbę zgłoszeń. Najzabawniejsze i najbardziej….",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 1 x voucher na zakupy w sklepie myKotty o wartości 500 zł • 1 x voucher na zakupy w sklepie myKotty o wartości 300 zł • 1 x voucher na zakupy w sklepie myKotty o wartości 300 zł…",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.228Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67009",
-      "source": "fajnekonkursy",
-      "sourceId": 67009,
-      "title": "Konkurs Melisa na Instagramie „Medity+”",
-      "url": "https://fajnekonkursy.pl/na-instagramie/melisa-medity/",
-      "publishedAt": "2026-10-12T17:55:02",
-      "modifiedAt": "2026-10-12T18:11:42",
-      "links": {
-        "organizer": "https://www.instagram.com/p/DeYl-t2iiep/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "kosmetyki"
-        ],
-        "mechanika": [
-          "instagram",
-          "komentarz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl krótką wiadomość wsparcia, którą chciałabyś/chciałbyś przekazać osobie uczącej się słuchać potrzeb swojej skóry; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie Nagrody otrzymają autorzy 3 najciekawszych odpowiedzi.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x zestaw kosmetyków Medity+ z Laboratorium Kosmetyczne Ava o wartości 190 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.284Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:66938",
-      "source": "fajnekonkursy",
-      "sourceId": 66938,
-      "title": "Konkurs 4Fun Kids „Zdrowie i bezpieczeństwo”",
-      "url": "https://fajnekonkursy.pl/dla-dzieci/zdrowie-i-bezpieczenstwo/",
-      "publishedAt": "2026-10-09T22:49:04",
-      "modifiedAt": "2026-10-09T22:49:04",
-      "links": {
-        "organizer": "https://4funkids.pl/konkursy/konkurs-o-bezpieczenstwie-dzieci/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "gadzety"
-        ],
-        "mechanika": [
-          "film"
-        ],
-        "temat": [
-          "kreatywne"
-        ],
-        "odbiorca": [
-          "dla-dzieci"
-        ]
-      },
-      "entry": {
-        "summary": "nagraj filmik wspólnie z dzieckiem lub samego malucha wg następującego scenariusza: 🔹przedstawcie się 🔹podzielcie się swoją złotą radą o zdrowiu lub bezpieczeństwie dzieci 🔹na końcu pozdrówcie widzów 4FUN KIDS!",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 1 x fotelik Cybex Anoris T2 i-Size o wartości 1 950 zł • 4 x fotelik Cybex Solution T i-Fix o wartości 600 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.317Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:66815",
-      "source": "fajnekonkursy",
-      "sourceId": 66815,
-      "title": "Konkurs na Facebooku „Jak smakuje Twoja jesień?”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/jak-smakuje-twoja-jesien/",
-      "publishedAt": "2026-10-05T11:28:09",
-      "modifiedAt": "2026-10-05T11:28:09",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1570063815162266&set=a.568490561986268",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "agd",
-          "gadzety",
-          "produkty-spozywcze"
-        ],
-        "mechanika": [
-          "facebook",
-          "komentarz"
-        ],
-        "temat": [
-          "kreatywne"
-        ]
-      },
-      "entry": {
-        "summary": "podaj swój jesienny przepis wraz z listą składników i opisem przygotowania; w przepisie musi się znaleźć min. 1 produkt spośdrów wymienionych marek: Helcom, Helcom Naturalnie, Helcom Premium, Orient Taste, Athina, Que Rico lub 4te.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x Air Fryer Dreame Tasti PT60 o wartości 399 zł • 2 x zestaw produktów oraz gadżetów Helcom o wartości 70 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.373Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:66490",
-      "source": "fajnekonkursy",
-      "sourceId": 66490,
-      "title": "Konkurs x-kom „Podejmij wyzwanie z Intel”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/wyzwanie-z-intel/",
-      "publishedAt": "2026-09-24T22:27:13",
-      "modifiedAt": "2026-09-24T22:27:13",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1533155235503227&set=a.547485940736833",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "elektronika"
-        ],
-        "mechanika": [
-          "facebook",
-          "komentarz",
-          "tekst-kreatywny"
-        ]
-      },
-      "entry": {
-        "summary": "w kreatywny sposób dokończ zdanie „Mój komputer potrzebuje nowego procesora Intel, bo…”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku Autorzy 3 najciekawszych odpowiedzi wygrają procesory Intel Core.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 1 x procesor Intel Core Ultra 7 270K Plus • 1 x procesor Intel Core i7-14700KF • 1 x procesor Intel Core i5-14400F",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.428Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "aktualnekonkursy:24779",
-      "source": "aktualnekonkursy",
-      "sourceId": "24779",
-      "title": "7. Konkurs na Esej Filozoficzny",
-      "url": "https://aktualnekonkursy.pl/ad/konkursy-literackie,3/7-konkurs-na-esej-filozoficzny,24779",
-      "publishedAt": "2026-10-05T20:59:46.000Z",
-      "modifiedAt": null,
-      "links": {
-        "organizer": "https://gbpkozy.pl/recepta-na-dobre-zycie/",
-        "regulamin": "https://gbpkozy.pl/wp-content/uploads/2026/10/Regulamin-konkursu-Recepta-na-proste-zycie.pdf"
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "temat": [
-          "literackie"
-        ]
-      },
-      "entry": {
-        "summary": "Prace należy przesyłać mailem.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
-      },
-      "prize": {
-        "summary": "Nagroda Zwycięzca konkursu otrzyma nagrodę rzeczową o wartości 1 000 zł.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:06.194Z"
-      },
-      "lastSeenAt": "2026-10-23T08:59:06.073Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": true,
-        "organizerPageOk": null
-      }
-    },
-    {
-      "id": "aktualnekonkursy:24645",
-      "source": "aktualnekonkursy",
-      "sourceId": "24645",
-      "title": "„Podkarpacka Ikonosfera” konkurs fotograficzny 2026",
-      "url": "https://aktualnekonkursy.pl/ad/konkursy-fotograficzne,8/podkarpacka-ikonosfera-konkurs-fotograficzny-2026,24645",
-      "publishedAt": "2026-08-28T12:32:12.000Z",
-      "modifiedAt": null,
-      "links": {
-        "organizer": "https://podkarpackie.pl/index.php/kultura/nagrody/konkurs-fotograficzny-podkarpacka-ikonosfera-2026",
-        "regulamin": null
-      },
-      "deadline": "2026-10-25",
-      "status": "active",
-      "tags": {
-        "temat": [
-          "fotograficzne"
-        ]
-      },
-      "entry": {
-        "summary": "Zgłoszenia należy przesyłać mailem.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
-      },
-      "prize": {
-        "summary": "Nagrody • Nagroda główna: 8 000 zł • 3 wyróżnienia po 4 000 zł Strona konkursu",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:19.922Z"
-      },
-      "lastSeenAt": "2026-10-23T08:59:19.802Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67149",
-      "source": "fajnekonkursy",
-      "sourceId": 67149,
-      "title": "Konkurs na Instagramie „21 lat Dr. Max”",
-      "url": "https://fajnekonkursy.pl/na-instagramie/21-lat-dr-max/",
-      "publishedAt": "2026-10-17T22:15:46",
-      "modifiedAt": "2026-10-17T22:15:46",
-      "links": {
-        "organizer": "https://www.instagram.com/p/Dej8sutio3q/?img_index=1",
-        "regulamin": null
-      },
-      "deadline": "2026-10-26",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "kosmetyki"
-        ],
-        "mechanika": [
-          "instagram",
-          "komentarz",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Wyobraź sobie, że możesz napisać wiadomość do siebie, którą przeczytasz za 21 lat. Jakich zdrowych nawyków życzysz sobie….",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 10 x urodzinowy box Dr.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.156Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67019",
-      "source": "fajnekonkursy",
-      "sourceId": 67019,
-      "title": "Konkurs plastyczny Colorino „Herb Supermocy”",
-      "url": "https://fajnekonkursy.pl/dla-dzieci/colorino-herb-supermocy/",
-      "publishedAt": "2026-10-13T11:17:54",
-      "modifiedAt": "2026-10-13T11:17:54",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1844610490723182&set=a.849780166872891",
-        "regulamin": null
-      },
-      "deadline": "2026-10-26",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "gadzety"
-        ],
-        "mechanika": [
-          "facebook",
-          "instagram",
-          "komentarz"
-        ],
-        "temat": [
-          "plastyczne"
-        ],
-        "odbiorca": [
-          "dla-dzieci"
-        ]
-      },
-      "entry": {
-        "summary": "Aby dołączyć do konkursu, do dnia 26.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x paczka z kreatywnymi produktami dla dzieci marki Colorino",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.271Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67000",
-      "source": "fajnekonkursy",
-      "sourceId": 67000,
-      "title": "Konkurs „Jesień z Bankiem Pocztowym – edycja 2”",
-      "url": "https://fajnekonkursy.pl/na-facebooku/jesien-z-pocztowym/",
-      "publishedAt": "2026-10-12T16:49:36",
-      "modifiedAt": "2026-10-12T16:49:36",
-      "links": {
-        "organizer": "https://www.facebook.com/photo/?fbid=1822031552772601&set=a.610890257220076",
-        "regulamin": null
-      },
-      "deadline": "2026-10-26",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "elektronika",
-          "gadzety"
-        ],
-        "mechanika": [
-          "facebook",
-          "komentarz",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl oryginalną odpowiedź na pytanie konkursowe: „Na czym nigdy nie oszczędzasz, a co kupujesz wyłącznie w promocji i w jednym zdaniu uzasadnij swoje….",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 10 x zestaw gadżetów Banku Pocztowego: Powerbank 10 000 mah, słuchawki bezprzewodowe douszne, parasol o łącznej wartości 141,44 zł",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.289Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:66641",
-      "source": "fajnekonkursy",
-      "sourceId": 66641,
-      "title": "XI Konkurs fotograficzny „Karpackie Oblicza”",
-      "url": "https://fajnekonkursy.pl/fotograficzne/xi-karpackie-oblicza/",
-      "publishedAt": "2026-09-30T13:31:24",
-      "modifiedAt": "2026-09-30T13:31:24",
-      "links": {
-        "organizer": null,
-        "regulamin": "https://www.ck.przemysl.pl/1689-regulamin-xi-konkursu-fotograficznego-karpackie-oblicza"
-      },
-      "deadline": "2026-10-26",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "pieniadze"
-        ],
-        "temat": [
-          "fotograficzne"
-        ]
-      },
-      "entry": {
-        "summary": "zgłoś do konkursu fotografie ukazujące piękno regionu, zabytków, architektury, terenów naturalnych, ludzi i wydarzeń Karpat.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x nagrody finansowe o łącznej wartości 6 000 zł podzielone wg uznania jury konkursu Zasady XI konkursu fotograficznego „Karpackie Oblicza” Konkurs adresowany jest do pełnoletnich…",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true,
-        "mergedFrom": 2
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.420Z",
-      "alsoOn": [
-        {
-          "source": "aktualnekonkursy",
-          "url": "https://aktualnekonkursy.pl/ad/konkursy-fotograficzne,8/xi-konkurs-fotograficzny-karpackie-oblicza,24744",
-          "id": "aktualnekonkursy:24744"
-        }
-      ],
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": true,
-        "organizerPageOk": null
-      }
-    },
-    {
-      "id": "aktualnekonkursy:24727",
-      "source": "aktualnekonkursy",
-      "sourceId": "24727",
-      "title": "XVI Ogólnopolski Konkurs Poetycki im. Elżbiety Guśpiel",
-      "url": "https://aktualnekonkursy.pl/ad/konkursy-literackie,3/xvi-ogolnopolski-konkurs-poetycki-im-elzbiety-guspiel,24727",
-      "publishedAt": "2026-09-21T16:59:41.000Z",
-      "modifiedAt": null,
-      "links": {
-        "organizer": "https://kultura.gminapcim.pl/news/xvi-ogolnopolski-konkurs-poetycki-im-elzbiety-guspiel/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-26",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "nagrody-rzeczowe"
-        ],
-        "temat": [
-          "literackie"
-        ],
-        "zasieg": [
-          "ogolnopolskie"
-        ]
-      },
-      "entry": {
-        "summary": "Prace wydrukowane w trzech egzemplarzach należy przesyłać pocztą.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
-      },
-      "prize": {
-        "summary": "Nagrody Laureaci konkursu otrzymają nagrody rzeczowe.",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:12.266Z"
-      },
-      "lastSeenAt": "2026-10-23T08:59:12.151Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:67268",
-      "source": "fajnekonkursy",
-      "sourceId": 67268,
-      "title": "Konkurs Pik-Nik na Instagramie „Wspólne przerwy”",
-      "url": "https://fajnekonkursy.pl/na-instagramie/pik-nik-wspolne-przerwy/",
-      "publishedAt": "2026-10-21T17:17:59",
-      "modifiedAt": "2026-10-21T17:17:59",
-      "links": {
-        "organizer": "https://www.instagram.com/p/DetbW-3CZyX/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-27",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "gadzety"
-        ],
-        "mechanika": [
-          "instagram",
-          "komentarz",
-          "obserwowanie",
-          "odpowiedz"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl ciekawą odpowiedź na pytanie: „Za co ją cenisz i jak wyglądają wasze wspólne przerwy?”; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie; oznacz w komentarzu min. 1 osobę.",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x podwójny zestaw na drugie śniadanie: lunchbox Pik-Nik, worek Pik-Nik i zapas paluszków serowych ze 100% mozzarelli",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.074Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
-    },
-    {
-      "id": "fajnekonkursy:66907",
-      "source": "fajnekonkursy",
-      "sourceId": 66907,
-      "title": "Konkurs Marba na Instagramie „Nazwij maskotki”",
-      "url": "https://fajnekonkursy.pl/na-instagramie/marba-nazwij-maskotki/",
-      "publishedAt": "2026-10-08T11:29:16",
-      "modifiedAt": "2026-10-08T11:29:16",
-      "links": {
-        "organizer": "https://www.instagram.com/p/DeLybqisWZE/",
-        "regulamin": null
-      },
-      "deadline": "2026-10-27",
-      "status": "active",
-      "tags": {
-        "nagroda": [
-          "gadzety"
-        ],
-        "mechanika": [
-          "instagram",
-          "komentarz"
-        ],
-        "temat": [
-          "kreatywne"
-        ]
-      },
-      "entry": {
-        "summary": "wymyśl imiona dla dwóch maskotek wskazanych na grafice konkursowej; swoją propozycje imion opublikuj w komentarzu pod postem konkursowym na Instagramie Do konkursu możesz wysłać dowolną liczbę zgłoszeń. W konkursie zostanie….",
-        "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
-      },
-      "prize": {
-        "summary": "Wygraj nagrody 🎁 • 3 x zestaw produktów ze sklepu Emarba (2 nagrody za najciekawsze imiona + 1 za aktywność)",
-        "value": null,
-        "currency": "PLN"
-      },
-      "extraction": {
-        "deadlineFound": true
-      },
-      "lastSeenAt": "2026-10-23T08:58:40.339Z",
-      "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
-        "sourceOk": true,
-        "organizerOk": true,
-        "regulaminOk": null,
-        "organizerPageOk": true
-      }
+      "lastSeenAt": "2026-10-28T21:34:28.484Z"
     },
     {
       "id": "fajnekonkursy:67274",
@@ -2399,9 +1032,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.070Z",
+      "lastSeenAt": "2026-10-28T21:34:09.948Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2447,9 +1080,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.114Z",
+      "lastSeenAt": "2026-10-28T21:34:09.987Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2494,9 +1127,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.210Z",
+      "lastSeenAt": "2026-10-28T21:34:10.056Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2541,9 +1174,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.219Z",
+      "lastSeenAt": "2026-10-28T21:34:10.066Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2588,9 +1221,56 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.138Z",
+      "lastSeenAt": "2026-10-28T21:34:10.010Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67353",
+      "source": "fajnekonkursy",
+      "sourceId": 67353,
+      "title": "Konkurs „Urodzinowe stówki od Radia Złote Przeboje”",
+      "url": "https://fajnekonkursy.pl/latwe/urodzinowe-stowki/",
+      "publishedAt": "2026-10-23T17:08:34",
+      "modifiedAt": "2026-10-23T17:08:34",
+      "links": {
+        "organizer": "https://radio.zloteprzeboje.pl/urodzinowe-stowki-od-radia-zlote-przeboje-konkurs-2",
+        "regulamin": null
+      },
+      "deadline": "2026-10-30",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "pieniadze"
+        ],
+        "mechanika": [
+          "odpowiedz"
+        ],
+        "temat": [
+          "latwe"
+        ]
+      },
+      "entry": {
+        "summary": "odpowiedzi to 800 znaków ze spacjami.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 5 x nagroda pieniężna w wysokości 2 400 zł • 20 x nagroda pieniężna w wysokości 100 zł • 5 x zestaw gadżetów z logotypem Radia Złote Przeboje",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.917Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2639,9 +1319,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.119Z",
+      "lastSeenAt": "2026-10-28T21:34:09.991Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2685,9 +1365,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.161Z",
+      "lastSeenAt": "2026-10-28T21:34:10.028Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2731,9 +1411,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.176Z",
+      "lastSeenAt": "2026-10-28T21:34:10.046Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2780,9 +1460,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.248Z",
+      "lastSeenAt": "2026-10-28T21:34:10.087Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2830,9 +1510,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.326Z",
+      "lastSeenAt": "2026-10-28T21:34:10.147Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2874,9 +1554,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.369Z",
+      "lastSeenAt": "2026-10-28T21:34:10.184Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2922,9 +1602,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.400Z",
+      "lastSeenAt": "2026-10-28T21:34:10.207Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -2970,9 +1650,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.483Z",
+      "lastSeenAt": "2026-10-28T21:34:10.272Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3014,9 +1694,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.488Z",
+      "lastSeenAt": "2026-10-28T21:34:10.277Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3061,13 +1741,13 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:08.426Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:08.312Z",
+      "lastSeenAt": "2026-10-28T21:34:28.489Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
-        "organizerOk": true,
+        "organizerOk": null,
         "regulaminOk": null,
-        "organizerPageOk": true
+        "organizerPageOk": null
       }
     },
     {
@@ -3108,9 +1788,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:09.701Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:09.585Z",
+      "lastSeenAt": "2026-10-28T21:34:28.493Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -3161,9 +1841,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:16.415Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:16.297Z",
+      "lastSeenAt": "2026-10-28T21:34:28.523Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -3209,13 +1889,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.065Z",
+      "lastSeenAt": "2026-10-28T21:34:09.943Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
-        "organizerOk": null,
+        "organizerOk": true,
         "regulaminOk": null,
-        "organizerPageOk": null
+        "organizerPageOk": true
       }
     },
     {
@@ -3256,9 +1936,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.110Z",
+      "lastSeenAt": "2026-10-28T21:34:09.982Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3301,9 +1981,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.124Z",
+      "lastSeenAt": "2026-10-28T21:34:09.996Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3348,9 +2028,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.133Z",
+      "lastSeenAt": "2026-10-28T21:34:10.005Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3393,9 +2073,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.171Z",
+      "lastSeenAt": "2026-10-28T21:34:10.041Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3441,9 +2121,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.196Z",
+      "lastSeenAt": "2026-10-28T21:34:10.051Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -3491,9 +2171,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.238Z",
+      "lastSeenAt": "2026-10-28T21:34:10.076Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3539,9 +2219,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.243Z",
+      "lastSeenAt": "2026-10-28T21:34:10.082Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -3585,9 +2265,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.266Z",
+      "lastSeenAt": "2026-10-28T21:34:10.105Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3635,9 +2315,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.299Z",
+      "lastSeenAt": "2026-10-28T21:34:10.125Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3683,9 +2363,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.304Z",
+      "lastSeenAt": "2026-10-28T21:34:10.131Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3730,9 +2410,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.308Z",
+      "lastSeenAt": "2026-10-28T21:34:10.135Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3784,9 +2464,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.365Z",
+      "lastSeenAt": "2026-10-28T21:34:10.180Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3831,9 +2511,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.387Z",
+      "lastSeenAt": "2026-10-28T21:34:10.193Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3880,13 +2560,13 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.392Z",
+      "lastSeenAt": "2026-10-28T21:34:10.198Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
-        "organizerOk": null,
+        "organizerOk": true,
         "regulaminOk": null,
-        "organizerPageOk": null
+        "organizerPageOk": true
       }
     },
     {
@@ -3924,9 +2604,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.396Z",
+      "lastSeenAt": "2026-10-28T21:34:10.203Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -3975,9 +2655,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.414Z",
+      "lastSeenAt": "2026-10-28T21:34:10.221Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4026,9 +2706,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.424Z",
+      "lastSeenAt": "2026-10-28T21:34:10.226Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4073,9 +2753,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.497Z",
+      "lastSeenAt": "2026-10-28T21:34:10.287Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -4120,9 +2800,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.502Z",
+      "lastSeenAt": "2026-10-28T21:34:10.292Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4144,6 +2824,9 @@
       "deadline": "2026-10-31",
       "status": "active",
       "tags": {
+        "nagroda": [
+          "sprzet-audio"
+        ],
         "mechanika": [
           "film",
           "instagram",
@@ -4172,9 +2855,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:56.276Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:56.678Z",
+      "lastSeenAt": "2026-10-28T21:34:27.889Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4216,9 +2899,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:02.965Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:02.841Z",
+      "lastSeenAt": "2026-10-28T21:34:28.475Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -4260,9 +2943,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:08.749Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:08.628Z",
+      "lastSeenAt": "2026-10-28T21:34:28.490Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4307,9 +2990,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:11.297Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:11.166Z",
+      "lastSeenAt": "2026-10-28T21:34:28.498Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": null,
         "regulaminOk": null,
@@ -4357,9 +3040,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:13.211Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:13.099Z",
+      "lastSeenAt": "2026-10-28T21:34:28.503Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4404,9 +3087,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:14.834Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:14.706Z",
+      "lastSeenAt": "2026-10-28T21:34:28.514Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -4451,9 +3134,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:15.779Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:15.665Z",
+      "lastSeenAt": "2026-10-28T21:34:28.519Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -4495,9 +3178,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:16.095Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:15.981Z",
+      "lastSeenAt": "2026-10-28T21:34:28.521Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -4545,9 +3228,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:18.014Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:17.895Z",
+      "lastSeenAt": "2026-10-28T21:34:28.529Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4555,46 +3238,48 @@
       }
     },
     {
-      "id": "aktualnekonkursy:24636",
-      "source": "aktualnekonkursy",
-      "sourceId": "24636",
-      "title": "XIII Konkurs Fotograficzny „Tradycja w obiektywie”",
-      "url": "https://aktualnekonkursy.pl/ad/konkursy-fotograficzne,8/xiii-konkurs-fotograficzny-tradycja-w-obiektywie,24636",
-      "publishedAt": "2026-08-26T12:23:41.000Z",
-      "modifiedAt": null,
+      "id": "fajnekonkursy:67528",
+      "source": "fajnekonkursy",
+      "sourceId": 67528,
+      "title": "Konkurs VIVO! Piła na Facebooku „Psi Patrol”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/vivo-psi-patrol/",
+      "publishedAt": "2026-10-26T16:56:15",
+      "modifiedAt": "2026-10-26T16:56:15",
       "links": {
-        "organizer": "https://mikolajki.folk.pl/tradycja-w-obiektywie-2026/",
+        "organizer": "https://www.facebook.com/photo/?fbid=1117532477543534&set=a.118030854160373",
         "regulamin": null
       },
-      "deadline": "2026-10-31",
+      "deadline": "2026-11-01",
       "status": "active",
       "tags": {
         "nagroda": [
-          "pieniadze"
+          "zabawki"
         ],
-        "temat": [
-          "fotograficzne"
+        "mechanika": [
+          "facebook",
+          "komentarz",
+          "odpowiedz"
+        ],
+        "odbiorca": [
+          "dla-dzieci"
         ]
       },
       "entry": {
-        "summary": "Prace należy przesyłać mailem.",
+        "summary": "wymyśl ciekawą odpowiedź na pytanie konkursowe: „Który bohater Psiego Patrolu jest ulubieńcem Waszych pociech i dlaczego?”.",
         "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagrody Laureaci otrzymają nagrody pieniężne.",
+        "summary": "Wygraj nagrody 🎁 • 1 x zestaw „Figurki Psi Patrol i Dinozaury Skye ze Spinozaurem” o wartości 125,99 zł • 1 x zestaw „Psi Patrol i Dinozaury: Rex z pojazdem + figurki dinozaurów 4 szt.",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:20.562Z"
+        "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:59:20.443Z",
+      "lastSeenAt": "2026-10-28T21:34:09.880Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4602,47 +3287,48 @@
       }
     },
     {
-      "id": "aktualnekonkursy:24627",
-      "source": "aktualnekonkursy",
-      "sourceId": "24627",
-      "title": "Konkurs na plakat jubileuszowy Satyrykon 2027",
-      "url": "https://aktualnekonkursy.pl/ad/konkursy-plastyczne,4/konkurs-na-plakat-jubileuszowy-satyrykon-2027,24627",
-      "publishedAt": "2026-08-25T20:33:28.000Z",
-      "modifiedAt": null,
+      "id": "fajnekonkursy:67344",
+      "source": "fajnekonkursy",
+      "sourceId": 67344,
+      "title": "Konkurs Piątnica „Skomponuj swoje menu twarogowe”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/piatnica-menu-twarogowe/",
+      "publishedAt": "2026-10-23T11:41:33",
+      "modifiedAt": "2026-10-23T11:41:33",
       "links": {
-        "organizer": "https://satyrykon.pl/50-lat-satyrykonu-czas-narysowac-kolejne/",
-        "regulamin": "https://satyrykon.pl/wp-content/uploads/2026/08/Konkurs-na-plakat-jubileuszowy-Satyrykon-2027.pdf"
+        "organizer": "https://www.instagram.com/p/DewFEzzBRch/",
+        "regulamin": null
       },
-      "deadline": "2026-10-31",
+      "deadline": "2026-11-01",
       "status": "active",
       "tags": {
-        "temat": [
-          "plastyczne"
+        "nagroda": [
+          "produkty-spozywcze"
+        ],
+        "mechanika": [
+          "instagram",
+          "komentarz"
         ]
       },
       "entry": {
-        "summary": "Sprawdź zasady udziału w źródle.",
+        "summary": "skomponuj swoje menu dań na bazie twarogu; gotowe menu opublikuj w komentarzu pod postem konkursowym na Instagramie Nagrody otrzymają autorzy 10 najciekawszych odpowiedzi.",
         "noPurchase": "altFreeEntry",
-        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
       },
       "prize": {
-        "summary": "Nagroda Zwycięzca otrzyma nagrodę w wysokości 7 500 zł.",
+        "summary": "Wygraj nagrody 🎁 • 10 x torba wypełniona produktami spożywczymi marki Piątnica",
         "value": null,
         "currency": "PLN"
       },
       "extraction": {
-        "deadlineFound": true,
-        "detailFetched": true,
-        "detailVersion": 6,
-        "detailFetchedAt": "2026-10-23T08:59:20.878Z"
+        "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:59:20.763Z",
+      "lastSeenAt": "2026-10-28T21:34:09.921Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
-        "regulaminOk": true,
-        "organizerPageOk": null
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -4684,9 +3370,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.128Z",
+      "lastSeenAt": "2026-10-28T21:34:10.001Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4734,9 +3420,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.142Z",
+      "lastSeenAt": "2026-10-28T21:34:10.018Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4780,9 +3466,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.166Z",
+      "lastSeenAt": "2026-10-28T21:34:10.035Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4826,9 +3512,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.233Z",
+      "lastSeenAt": "2026-10-28T21:34:10.072Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4873,9 +3559,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.257Z",
+      "lastSeenAt": "2026-10-28T21:34:10.096Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4920,9 +3606,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.276Z",
+      "lastSeenAt": "2026-10-28T21:34:10.109Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -4966,9 +3652,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.331Z",
+      "lastSeenAt": "2026-10-28T21:34:10.151Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": null,
         "regulaminOk": null,
@@ -5011,9 +3697,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.335Z",
+      "lastSeenAt": "2026-10-28T21:34:10.155Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5061,13 +3747,59 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:03.914Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:03.800Z",
+      "lastSeenAt": "2026-10-28T21:34:28.478Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
         "organizerPageOk": null
+      }
+    },
+    {
+      "id": "fajnekonkursy:67522",
+      "source": "fajnekonkursy",
+      "sourceId": 67522,
+      "title": "Konkurs na Instagramie „Jesień Niuqi 2026”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/jesien-niuqi-2026/",
+      "publishedAt": "2026-10-26T13:57:06",
+      "modifiedAt": "2026-10-26T13:57:06",
+      "links": {
+        "organizer": "https://www.instagram.com/p/De9BJmrlzhJ/",
+        "regulamin": null
+      },
+      "deadline": "2026-11-02",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "produkty-spozywcze"
+        ],
+        "mechanika": [
+          "instagram",
+          "komentarz",
+          "tekst-kreatywny"
+        ]
+      },
+      "entry": {
+        "summary": "w kreatywny sposób dokończ zdanie:⁠ „Idealna jesień pachnie dla mnie…”⁠; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie Nagrody otrzymają autorzy 5 najciekawszych odpowiedzi.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 5 x zestaw produktowy złożony z miksu produktów kosmetycznych Niuqi Cinnamon Roll",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.900Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5107,9 +3839,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.353Z",
+      "lastSeenAt": "2026-10-28T21:34:10.169Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5157,9 +3889,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:10.648Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:10.535Z",
+      "lastSeenAt": "2026-10-28T21:34:28.495Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -5204,9 +3936,151 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:12.582Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:12.468Z",
+      "lastSeenAt": "2026-10-28T21:34:28.501Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67553",
+      "source": "fajnekonkursy",
+      "sourceId": 67553,
+      "title": "Konkurs Sportano na Facebooku „Wygraj buty Salomon”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/sportano-salomon/",
+      "publishedAt": "2026-10-27T15:26:31",
+      "modifiedAt": "2026-10-27T15:26:31",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1160348229843895&set=a.177066438172084",
+        "regulamin": null
+      },
+      "deadline": "2026-11-03",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "odziez",
+          "sprzet-sportowy"
+        ],
+        "mechanika": [
+          "facebook",
+          "komentarz",
+          "obserwowanie",
+          "odpowiedz"
+        ]
+      },
+      "entry": {
+        "summary": "wymyśl ciekawą odpowiedź na pytanie konkursowe: „Opisz swoją wymarzoną trasę gravelową: gdzie zaczyna się Twój bieg, dokąd Cię prowadzi i co sprawia, że właśnie…; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x buty do biegania męskie Salomon Aero Blaze 4 GRVL • 1 x buty do biegania damskie Salomon Aero Blaze 4 GRVL",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.859Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67550",
+      "source": "fajnekonkursy",
+      "sourceId": 67550,
+      "title": "Konkurs Bonito „Simple Modern”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/bonito-simple-modern/",
+      "publishedAt": "2026-10-27T15:16:22",
+      "modifiedAt": "2026-10-27T15:16:22",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1546543787507403&set=a.622189246609533",
+        "regulamin": null
+      },
+      "deadline": "2026-11-03",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "gadzety"
+        ],
+        "mechanika": [
+          "facebook",
+          "komentarz",
+          "odpowiedz"
+        ]
+      },
+      "entry": {
+        "summary": "wymyśl ciekawą odpowiedź na pytanie konkursowe: „Gdzie zabierzesz bidon termiczny Simple Modern?”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku Do konkursu możesz przesłać dowolną liczbę zgłoszeń. Autorzy 2 najciekawszych….",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 2 x zestaw: kubek termiczny Simple Modern Trek Tumbler 1.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.863Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67541",
+      "source": "fajnekonkursy",
+      "sourceId": 67541,
+      "title": "Konkurs Eska „Jesień w kinie”",
+      "url": "https://fajnekonkursy.pl/latwe/eska-jesien-w-kinie/",
+      "publishedAt": "2026-10-27T12:24:35",
+      "modifiedAt": "2026-10-27T12:24:35",
+      "links": {
+        "organizer": "https://musical.eska.pl/",
+        "regulamin": null
+      },
+      "deadline": "2026-11-03",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "bilety"
+        ],
+        "mechanika": [
+          "formularz",
+          "odpowiedz"
+        ],
+        "temat": [
+          "latwe"
+        ]
+      },
+      "entry": {
+        "summary": "wypełnij formularz zgłoszeniowy na stronie konkursu i w oryginalny sposób odpowiedz na pytanie „Jaki jest sprawdzony sposób Twoich dzieciaków na nawiązywanie nowych przyjaźni?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 10 x podwójne zaproszenie na przedpremierowy pokaz filmu „LEGO® Friends: Heartlake The Musical” w warszawskim kinie Helios w dn.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.869Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5251,13 +4125,106 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:19.285Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:19.166Z",
+      "lastSeenAt": "2026-10-28T21:34:29.170Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
         "organizerPageOk": null
+      }
+    },
+    {
+      "id": "fajnekonkursy:67563",
+      "source": "fajnekonkursy",
+      "sourceId": 67563,
+      "title": "Konkurs Ameet „100 lat Kubusia i Przyjaciół”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/ameet-100-lat-kubusia/",
+      "publishedAt": "2026-10-28T15:40:58",
+      "modifiedAt": "2026-10-28T15:42:27",
+      "links": {
+        "organizer": "https://www.instagram.com/p/DfB9Cn0IPJu/",
+        "regulamin": null
+      },
+      "deadline": "2026-11-04",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "ksiazka",
+          "zabawki"
+        ],
+        "mechanika": [
+          "instagram",
+          "komentarz"
+        ]
+      },
+      "entry": {
+        "summary": "wymyśl życzenia dla Kubusia z okazji 100. rocznicy; odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie Nagrody otrzymają autorzy 4 najciekawszych odpowiedzi.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x zestaw LEGO z Kubusiem Puchatkiem • 3 x zestaw 3 książek Ameet: „Kubuś i Przyjaciele.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.843Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67525",
+      "source": "fajnekonkursy",
+      "sourceId": 67525,
+      "title": "Konkurs JemyJemy „Które danie polecasz?”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/jemyjemy-danie/",
+      "publishedAt": "2026-10-26T16:44:58",
+      "modifiedAt": "2026-10-26T16:44:58",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1139309375282083&set=a.175124251700605",
+        "regulamin": null
+      },
+      "deadline": "2026-11-04",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "gadzety",
+          "produkty-spozywcze"
+        ],
+        "mechanika": [
+          "facebook",
+          "komentarz",
+          "odpowiedz"
+        ]
+      },
+      "entry": {
+        "summary": "wymyśl ciekawą odpowiedź na pytanie konkursowe: „Którą zupę lub danie gotowe JemyJemy polecił(a)byś znajomemu i dlaczego?”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw: lunchbox N’Oveen, bawełniana torba na zakupy oraz zupy i dania JemyJemy • 5 x zestaw: 4 kamionkowe bulionówki, bawełniana torba na zakupy oraz zupy i dania JemyJemy…",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.894Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5297,9 +4264,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.079Z",
+      "lastSeenAt": "2026-10-28T21:34:09.952Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5346,9 +4313,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.215Z",
+      "lastSeenAt": "2026-10-28T21:34:10.061Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5394,9 +4361,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.043Z",
+      "lastSeenAt": "2026-10-28T21:34:09.926Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5441,13 +4408,151 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:09.381Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:09.269Z",
+      "lastSeenAt": "2026-10-28T21:34:28.492Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
         "organizerPageOk": null
+      }
+    },
+    {
+      "id": "fajnekonkursy:67559",
+      "source": "fajnekonkursy",
+      "sourceId": 67559,
+      "title": "Konkurs ETI Podróże „Walizka Wittchen”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/eti-walizka/",
+      "publishedAt": "2026-10-27T19:08:15",
+      "modifiedAt": "2026-10-27T19:08:15",
+      "links": {
+        "organizer": "https://www.facebook.com/etipodroze/posts/1572308181603602?ref=embed_post",
+        "regulamin": null
+      },
+      "deadline": "2026-11-06",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "gadzety"
+        ],
+        "mechanika": [
+          "facebook",
+          "instagram",
+          "komentarz",
+          "odpowiedz"
+        ]
+      },
+      "entry": {
+        "summary": "Aby dołączyć do konkursu, do dnia 06.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x czarna walizka podróżna marki Wittchen o wartości 44,99 €",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.849Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67531",
+      "source": "fajnekonkursy",
+      "sourceId": 67531,
+      "title": "Konkurs Midea na Facebooku „Twój Midealny dzień”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/midealny-dzien/",
+      "publishedAt": "2026-10-26T16:52:39",
+      "modifiedAt": "2026-10-26T17:08:59",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1104502589028304&set=a.126199046858668",
+        "regulamin": null
+      },
+      "deadline": "2026-11-06",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "agd"
+        ],
+        "mechanika": [
+          "facebook",
+          "komentarz",
+          "obserwowanie"
+        ]
+      },
+      "entry": {
+        "summary": "wymyśl ciekawą odpowiedź na temat: „Opisz swój codzienny rytuał, w którym kubek kawy jest nieodłącznym elementem.”; swoje zgłoszenie opublikuj jako komentarz pod postem konkursowym na Facebooku.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x ekspres przelewowy do kawy Midea MA-D1502W2ME o wartości 150 zł",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.886Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67513",
+      "source": "fajnekonkursy",
+      "sourceId": 67513,
+      "title": "Konkurs na Instagramie „Amarena – Ikona włoskiego smaku”",
+      "url": "https://fajnekonkursy.pl/na-instagramie/amarena-ikona/",
+      "publishedAt": "2026-10-25T17:48:52",
+      "modifiedAt": "2026-10-25T17:48:52",
+      "links": {
+        "organizer": "https://www.instagram.com/p/De1bFy_IJjT/",
+        "regulamin": null
+      },
+      "deadline": "2026-11-06",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "produkty-spozywcze"
+        ],
+        "mechanika": [
+          "instagram",
+          "komentarz"
+        ]
+      },
+      "entry": {
+        "summary": "wymyśl swój autorski deser na bazie Amarena Fabbri (drylowane wiśnie w gęstym syropie); odpowiedź opublikuj w komentarzu pod postem konkursowym na Instagramie Do konkursu możesz wysłać dowolną liczbę zgłoszeń. Nagrody otrzymają autorzy 5….",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 5 x zestaw produktów marki Fabbri o wartości 200 zł",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.905Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5489,9 +4594,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.105Z",
+      "lastSeenAt": "2026-10-28T21:34:09.977Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5533,9 +4638,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.444Z",
+      "lastSeenAt": "2026-10-28T21:34:10.236Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -5579,7 +4684,7 @@
         "deadlineFound": true,
         "mergedFrom": 2
       },
-      "lastSeenAt": "2026-10-23T08:58:40.469Z",
+      "lastSeenAt": "2026-10-28T21:34:10.257Z",
       "alsoOn": [
         {
           "source": "aktualnekonkursy",
@@ -5588,7 +4693,7 @@
         }
       ],
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -5636,9 +4741,66 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.479Z",
+      "lastSeenAt": "2026-10-28T21:34:10.268Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "konkursiada:2219",
+      "source": "konkursiada",
+      "sourceId": 2219,
+      "title": "Złota Słodka Jesień",
+      "url": "https://konkursiada.pl/konkursy/zlota-slodka-jesien/",
+      "publishedAt": "2026-10-23T11:56:51",
+      "modifiedAt": "2026-10-23T11:56:51",
+      "links": {
+        "organizer": "https://www.diamant.pl/slodkie-laczy/zlota-slodka-jesien?utm_source=konkursiada.pl&utm_medium=wpis&utm_campaign=konkursiada-free-promo",
+        "regulamin": null
+      },
+      "deadline": "2026-11-06",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "agd",
+          "dom-i-akcesoria",
+          "nagrody-rzeczowe",
+          "produkty-spozywcze"
+        ],
+        "mechanika": [
+          "facebook",
+          "instagram",
+          "odpowiedz",
+          "tiktok",
+          "zdjecie"
+        ],
+        "marka": [
+          "diamant"
+        ]
+      },
+      "entry": {
+        "summary": "Opisz lub pokaż, jak słodko spędzasz jesień z cukrem trzcinowym Diamant. Zgłoszenie wyślij pod postem konkursowym na Facebooku, Instagramie lub TikToku Diamant.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursiada opisuje warunki udziału; pozycje wymagające paragonu, zakupu lub opakowania są odfiltrowane."
+      },
+      "prize": {
+        "summary": "Nagrodami są: - spieniacz do mleka SMEG, - 3 formy do pieczenia Bolesławiec, - 3 zestawy produktów i gadżetów Diamant.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:31:58.480Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:27.888Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5689,9 +4851,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:04.884Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:04.766Z",
+      "lastSeenAt": "2026-10-28T21:34:28.480Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -5736,9 +4898,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:14.163Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:14.049Z",
+      "lastSeenAt": "2026-10-28T21:34:28.508Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": null,
         "regulaminOk": null,
@@ -5776,9 +4938,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:05.871Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:05.755Z",
+      "lastSeenAt": "2026-10-28T21:34:28.483Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": false,
         "regulaminOk": false,
@@ -5816,9 +4978,58 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:08.111Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:07.991Z",
+      "lastSeenAt": "2026-10-28T21:34:28.488Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67556",
+      "source": "fajnekonkursy",
+      "sourceId": 67556,
+      "title": "Konkurs „Jedna aktywność z kartą MultiSport”",
+      "url": "https://fajnekonkursy.pl/na-facebooku/aktywnosc-multisport/",
+      "publishedAt": "2026-10-27T15:36:26",
+      "modifiedAt": "2026-10-27T15:36:26",
+      "links": {
+        "organizer": "https://www.facebook.com/photo/?fbid=1454616730195075&set=a.593841192939304",
+        "regulamin": null
+      },
+      "deadline": "2026-11-09",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "elektronika",
+          "gadzety",
+          "ksiazka"
+        ],
+        "mechanika": [
+          "facebook",
+          "instagram",
+          "komentarz",
+          "odpowiedz"
+        ]
+      },
+      "entry": {
+        "summary": "Aby dołączyć do konkursu, do dnia 09.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw składający się z słuchawek bezprzewodowych HUAWEI FreeBuds Neo, ręcznika MultiSport, komina merino MultiSport, klapek Kubota MultiSport i breloczka MultiSport • 10 x…",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.854Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -5863,13 +5074,111 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:17.051Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:16.935Z",
+      "lastSeenAt": "2026-10-28T21:34:28.526Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
         "organizerPageOk": null
+      }
+    },
+    {
+      "id": "fajnekonkursy:67570",
+      "source": "fajnekonkursy",
+      "sourceId": 67570,
+      "title": "Konkurs Filmweb „Pucio. Samolot z figurkami”",
+      "url": "https://fajnekonkursy.pl/latwe/filmweb-pucio/",
+      "publishedAt": "2026-10-28T16:14:23",
+      "modifiedAt": "2026-10-28T16:14:23",
+      "links": {
+        "organizer": "https://www.filmweb.pl/contest/5903",
+        "regulamin": null
+      },
+      "deadline": "2026-11-10",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "zabawki"
+        ],
+        "mechanika": [
+          "formularz",
+          "odpowiedz",
+          "rejestracja"
+        ],
+        "temat": [
+          "latwe"
+        ]
+      },
+      "entry": {
+        "summary": "odpowiedzi na pytanie: „Gdybyś mógł/mogła udać się z Puciem i jego rodziną w podróż ich samolotem, dokąd byście się udali?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 3 x zestaw „Pucio.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.826Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67567",
+      "source": "fajnekonkursy",
+      "sourceId": 67567,
+      "title": "Konkurs Filmweb „Gramatyka w komiksie”",
+      "url": "https://fajnekonkursy.pl/latwe/filmweb-gramatyka/",
+      "publishedAt": "2026-10-28T15:50:33",
+      "modifiedAt": "2026-10-28T15:50:33",
+      "links": {
+        "organizer": "https://www.filmweb.pl/contest/5902",
+        "regulamin": null
+      },
+      "deadline": "2026-11-10",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "ksiazka"
+        ],
+        "mechanika": [
+          "formularz",
+          "odpowiedz",
+          "rejestracja"
+        ],
+        "temat": [
+          "latwe"
+        ]
+      },
+      "entry": {
+        "summary": "odpowiedzi na pytanie: „Która postać znana z książek lub komiksów byłaby Twoim zdaniem najlepszym nauczycielem?",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 5 x komiks „Gramatyka w komiksie.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.837Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
       }
     },
     {
@@ -5907,9 +5216,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:01.681Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:01.542Z",
+      "lastSeenAt": "2026-10-28T21:34:28.471Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -5956,9 +5265,63 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.280Z",
+      "lastSeenAt": "2026-10-28T21:34:10.115Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "konkursiada:2239",
+      "source": "konkursiada",
+      "sourceId": 2239,
+      "title": "Wygraj jedną z konsoli handheld Atlas 8 w konkursie Predatora",
+      "url": "https://konkursiada.pl/konkursy/wygraj-jedna-z-konsoli-handheld-atlas-8-w-konkursie-predatora/",
+      "publishedAt": "2026-10-26T12:14:50",
+      "modifiedAt": "2026-10-26T12:14:50",
+      "links": {
+        "organizer": "https://www.facebook.com/photo?fbid=1528710499292457&set=a.636155228547993?utm_source=konkursiada.pl&utm_medium=wpis&utm_campaign=konkursiada-free-promo",
+        "regulamin": null
+      },
+      "deadline": "2026-11-12",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "elektronika",
+          "konsola"
+        ],
+        "mechanika": [
+          "facebook",
+          "instagram",
+          "komentarz",
+          "odpowiedz"
+        ],
+        "marka": [
+          "predator"
+        ]
+      },
+      "entry": {
+        "summary": "Wymyśl oryginalną odpowiedź na pytanie: „Wyobraź sobie, że czeka Cię długa podróż, a jedyne, co masz pod ręką, to Predator Atlas 8. Jak wykorzystasz go w trasie, by umilić sobie czas? Wskaż też, co najbardziej podoba Ci się w tej konsoli i dlaczego”. Zgłoszenie opublikuj w komentarzu pod postem konkursowym na Facebooku lub Instagramie. Do konkursu możesz…",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursiada opisuje warunki udziału; pozycje wymagające paragonu, zakupu lub opakowania są odfiltrowane."
+      },
+      "prize": {
+        "summary": "Wygraj jedną z aż 3 konsoli Predator Atlas 8 o wartości 6 599 zł każda!",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:31:57.772Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:27.887Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6001,9 +5364,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.460Z",
+      "lastSeenAt": "2026-10-28T21:34:10.247Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6052,9 +5415,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:15.150Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:15.034Z",
+      "lastSeenAt": "2026-10-28T21:34:28.516Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6103,13 +5466,60 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:20.242Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:20.124Z",
+      "lastSeenAt": "2026-10-28T21:34:29.171Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
         "organizerPageOk": true
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24845",
+      "source": "aktualnekonkursy",
+      "sourceId": "24845",
+      "title": "Festiwal Filmowy 9 MINUT 2026",
+      "url": "https://aktualnekonkursy.pl/ad/konkursy-filmowe,5/festiwal-filmowy-9-minut-2026,24845",
+      "publishedAt": "2026-10-28T19:32:26.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": "https://9minut.hoffmanowa.pl/",
+        "regulamin": "https://9minut.hoffmanowa.pl/regulamin/"
+      },
+      "deadline": "2026-11-14",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "nagrody-rzeczowe"
+        ],
+        "temat": [
+          "filmowe"
+        ]
+      },
+      "entry": {
+        "summary": "Filmy należy zgłaszać za pośrednictwem formularza na stronie festiwalu.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "Nagrody Laureaci konkursu otrzymają nagrody rzeczowe.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:31:59.608Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.130Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -6153,9 +5563,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.059Z",
+      "lastSeenAt": "2026-10-28T21:34:09.936Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6201,9 +5611,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.253Z",
+      "lastSeenAt": "2026-10-28T21:34:10.092Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6250,9 +5660,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.348Z",
+      "lastSeenAt": "2026-10-28T21:34:10.165Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6301,9 +5711,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.474Z",
+      "lastSeenAt": "2026-10-28T21:34:10.262Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6351,13 +5761,63 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:57.104Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:57.507Z",
+      "lastSeenAt": "2026-10-28T21:34:27.890Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
         "organizerPageOk": true
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24840",
+      "source": "aktualnekonkursy",
+      "sourceId": "24840",
+      "title": "„PL Music Video Awards 2026” konkurs wideoklipów",
+      "url": "https://aktualnekonkursy.pl/ad/konkursy-filmowe,5/pl-music-video-awards-2026-konkurs-wideoklipow,24840",
+      "publishedAt": "2026-10-27T19:27:00.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": "https://plmva.com/",
+        "regulamin": "https://plmva.com/wp-content/uploads/2026/10/Regulamin_PL-MVA-2026_V1.pdf"
+      },
+      "deadline": "2026-11-15",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "nagrody-rzeczowe"
+        ],
+        "mechanika": [
+          "youtube"
+        ],
+        "temat": [
+          "filmowe"
+        ]
+      },
+      "entry": {
+        "summary": "Wymagane: youtube — szczegóły i pełne zasady w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "Nagrody Laureaci otrzymają statuetki oraz nagrody rzeczowe ufundowane przez partnerów i sponsorów festiwalu.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:32:00.578Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.135Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -6401,9 +5861,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:04.564Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:04.447Z",
+      "lastSeenAt": "2026-10-28T21:34:28.479Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -6445,9 +5905,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:15.464Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:15.351Z",
+      "lastSeenAt": "2026-10-28T21:34:28.517Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6491,9 +5951,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.146Z",
+      "lastSeenAt": "2026-10-28T21:34:10.023Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6539,9 +5999,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.322Z",
+      "lastSeenAt": "2026-10-28T21:34:10.141Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6586,9 +6046,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:03.595Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:03.483Z",
+      "lastSeenAt": "2026-10-28T21:34:28.477Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -6630,9 +6090,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:00.053Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:59.915Z",
+      "lastSeenAt": "2026-10-28T21:34:28.465Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -6677,9 +6137,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.405Z",
+      "lastSeenAt": "2026-10-28T21:34:10.211Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6721,9 +6181,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.358Z",
+      "lastSeenAt": "2026-10-28T21:34:10.173Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6765,9 +6225,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.493Z",
+      "lastSeenAt": "2026-10-28T21:34:10.282Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6809,9 +6269,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:50.995Z",
+      "lastSeenAt": "2026-10-28T21:34:23.807Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6859,9 +6319,106 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:09.067Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:08.952Z",
+      "lastSeenAt": "2026-10-28T21:34:28.491Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67538",
+      "source": "fajnekonkursy",
+      "sourceId": 67538,
+      "title": "Konkurs E.Wedel „Czas Razem”",
+      "url": "https://fajnekonkursy.pl/latwe/wedel-czas-razem/",
+      "publishedAt": "2026-10-27T12:09:43",
+      "modifiedAt": "2026-10-27T12:10:00",
+      "links": {
+        "organizer": "https://czas-razem.wedel.pl/#konkurs",
+        "regulamin": null
+      },
+      "deadline": "2026-11-30",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "karta-podarunkowa",
+          "produkty-spozywcze",
+          "voucher"
+        ],
+        "mechanika": [
+          "odpowiedz"
+        ],
+        "temat": [
+          "latwe"
+        ]
+      },
+      "entry": {
+        "summary": "prześlij przez formularz dostępny na stronie konkursu.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 50 x zestaw: gra „rozmawiajMY” edycja E.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.874Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "fajnekonkursy:67505",
+      "source": "fajnekonkursy",
+      "sourceId": 67505,
+      "title": "Konkurs „Mała rzecz, wielka radość”",
+      "url": "https://fajnekonkursy.pl/plastyczne/mala-rzecz-wielka-radosc/",
+      "publishedAt": "2026-10-25T08:21:09",
+      "modifiedAt": "2026-10-25T08:21:09",
+      "links": {
+        "organizer": "https://manufakturapapieruczerpanego.pl/mala-rzecz-wielka-radosc-papierowa-zabawka-na-choinke-konkurs-z-cyklu-sztuka-papieru/",
+        "regulamin": null
+      },
+      "deadline": "2026-11-30",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "pieniadze",
+          "zabawki"
+        ],
+        "temat": [
+          "plastyczne"
+        ],
+        "odbiorca": [
+          "dla-dzieci"
+        ]
+      },
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 700 zł • 1 x nagroda pieniężna 500 zł",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:09.912Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -6905,9 +6462,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.294Z",
+      "lastSeenAt": "2026-10-28T21:34:10.120Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -6952,9 +6509,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.464Z",
+      "lastSeenAt": "2026-10-28T21:34:10.252Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7004,13 +6561,66 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:55.425Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:55.828Z",
+      "lastSeenAt": "2026-10-28T21:34:27.889Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
         "organizerPageOk": true
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24847",
+      "source": "aktualnekonkursy",
+      "sourceId": "24847",
+      "title": "XXVIII Ogólnopolski Konkurs Poetycki Młodych „Nadchodzące pokolenie”",
+      "url": "https://aktualnekonkursy.pl/ad/konkursy-literackie,3/xxviii-ogolnopolski-konkurs-poetycki-mlodych-nadchodzace-pokolenie,24847",
+      "publishedAt": "2026-10-28T20:47:10.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": null,
+        "regulamin": "https://www.facebook.com/IloBytom/posts/pfbid02QLs6GRjqy1JhxxG9R7jRuD1PggLeNYuy5o1PcsoYYV6S18gdbNEvcS6YrqqdSzZrl"
+      },
+      "deadline": "2026-11-30",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "pieniadze"
+        ],
+        "mechanika": [
+          "facebook"
+        ],
+        "temat": [
+          "literackie"
+        ],
+        "zasieg": [
+          "ogolnopolskie"
+        ]
+      },
+      "entry": {
+        "summary": "Prace należy przesłać mailem.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "nagrody pieniężne o łącznej wartości 2 300 zł.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:31:59.280Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.128Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -7048,9 +6658,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:59.712Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:59.576Z",
+      "lastSeenAt": "2026-10-28T21:34:28.465Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7092,9 +6702,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:00.378Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:00.255Z",
+      "lastSeenAt": "2026-10-28T21:34:28.466Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7139,9 +6749,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:02.001Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:01.884Z",
+      "lastSeenAt": "2026-10-28T21:34:28.472Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7183,9 +6793,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:04.245Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:04.116Z",
+      "lastSeenAt": "2026-10-28T21:34:28.478Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7234,9 +6844,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:10.964Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:10.850Z",
+      "lastSeenAt": "2026-10-28T21:34:28.497Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7278,9 +6888,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:17.693Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:17.566Z",
+      "lastSeenAt": "2026-10-28T21:34:28.528Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7325,9 +6935,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:59.374Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:59.249Z",
+      "lastSeenAt": "2026-10-28T21:34:28.464Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7372,9 +6982,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.455Z",
+      "lastSeenAt": "2026-10-28T21:34:10.242Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7425,9 +7035,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:10.333Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:10.220Z",
+      "lastSeenAt": "2026-10-28T21:34:28.494Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7475,9 +7085,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:13.528Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:13.413Z",
+      "lastSeenAt": "2026-10-28T21:34:28.504Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7525,9 +7135,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:16.733Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:16.617Z",
+      "lastSeenAt": "2026-10-28T21:34:28.525Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7572,9 +7182,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.343Z",
+      "lastSeenAt": "2026-10-28T21:34:10.160Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7622,9 +7232,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:02.320Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:02.203Z",
+      "lastSeenAt": "2026-10-28T21:34:28.473Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7666,9 +7276,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:18.648Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:18.532Z",
+      "lastSeenAt": "2026-10-28T21:34:28.852Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7710,9 +7320,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:58.728Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:58.604Z",
+      "lastSeenAt": "2026-10-28T21:34:28.461Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7754,9 +7364,59 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:07.476Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:07.362Z",
+      "lastSeenAt": "2026-10-28T21:34:28.486Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24833",
+      "source": "aktualnekonkursy",
+      "sourceId": "24833",
+      "title": "Ogólnopolski Festiwal Piosenki Studenckiej „Nowe Pogłosy”",
+      "url": "https://aktualnekonkursy.pl/ad/inne-konkursy,6/ogolnopolski-festiwal-piosenki-studenckiej-nowe-poglosy,24833",
+      "publishedAt": "2026-10-26T19:31:59.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": "https://nowepoglosy.pl/",
+        "regulamin": "https://nowepoglosy.pl/regulamin/"
+      },
+      "deadline": "2026-12-30",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "pieniadze"
+        ],
+        "mechanika": [
+          "youtube"
+        ],
+        "zasieg": [
+          "ogolnopolskie"
+        ]
+      },
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "Nagrody: • I nagroda – 15 000 zł • II nagroda – 10 000 zł • III nagroda – 5 000 zł Zgłoszenia będą przyjmowane do 30 grudn",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:32:01.905Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.460Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7801,9 +7461,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:05.552Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:05.437Z",
+      "lastSeenAt": "2026-10-28T21:34:28.481Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -7850,9 +7510,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.262Z",
+      "lastSeenAt": "2026-10-28T21:34:10.101Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7900,9 +7560,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.409Z",
+      "lastSeenAt": "2026-10-28T21:34:10.216Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7944,9 +7604,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.434Z",
+      "lastSeenAt": "2026-10-28T21:34:10.231Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -7995,9 +7655,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.511Z",
+      "lastSeenAt": "2026-10-28T21:34:10.302Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8049,9 +7709,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:57.909Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:58.311Z",
+      "lastSeenAt": "2026-10-28T21:34:27.890Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8096,9 +7756,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:58:59.046Z"
       },
-      "lastSeenAt": "2026-10-23T08:58:58.930Z",
+      "lastSeenAt": "2026-10-28T21:34:28.463Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8140,9 +7800,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:02.638Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:02.521Z",
+      "lastSeenAt": "2026-10-28T21:34:28.474Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8190,9 +7850,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:11.628Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:11.500Z",
+      "lastSeenAt": "2026-10-28T21:34:28.499Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8237,9 +7897,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:17.365Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:17.253Z",
+      "lastSeenAt": "2026-10-28T21:34:28.527Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8284,13 +7944,13 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:00.699Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:00.581Z",
+      "lastSeenAt": "2026-10-28T21:34:28.467Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
-        "organizerOk": null,
-        "regulaminOk": null,
-        "organizerPageOk": null
+        "organizerOk": false,
+        "regulaminOk": false,
+        "organizerPageOk": false
       }
     },
     {
@@ -8335,9 +7995,165 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.095Z",
+      "lastSeenAt": "2026-10-28T21:34:09.968Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": null,
+        "organizerPageOk": true
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24844",
+      "source": "aktualnekonkursy",
+      "sourceId": "24844",
+      "title": "„Cztery kąty” ogólnopolski konkurs plastyczny dla dzieci i młodzieży",
+      "url": "https://aktualnekonkursy.pl/ad/konkursy-dla-dzieci,12/cztery-katy-ogolnopolski-konkurs-plastyczny-dla-dzieci-i-mlodziezy,24844",
+      "publishedAt": "2026-10-28T18:24:57.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": "https://ckagora.pl/cztery-katy-konkurs/",
+        "regulamin": "https://ckagora.pl/wp-content/uploads/2026/10/Regulamin-i-karta-zgloszenia-CZTERY-KATY.pdf"
+      },
+      "deadline": "2027-01-25",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "nagrody-rzeczowe"
+        ],
+        "odbiorca": [
+          "dla-dzieci"
+        ],
+        "zasieg": [
+          "ogolnopolskie"
+        ]
+      },
+      "entry": {
+        "summary": "Prace konkursowe należy przesyłać lub dostarczyć osobiście do Centrum Kultury AGORA we Wrocławiu.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "Nagrody Laureaci konkursu otrzymają nagrody rzeczowe.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:31:59.934Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.132Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
+      }
+    },
+    {
+      "id": "ofree:9929",
+      "source": "ofree",
+      "sourceId": 9929,
+      "title": "Loteria InPost 2026/2027 – jak zagrać o MINI Coopera i nagrody z InBoxów?",
+      "url": "https://www.ofree.pl/loteria-inpost/",
+      "publishedAt": "2026-10-28T11:12:17",
+      "modifiedAt": "2026-10-28T11:12:18",
+      "links": {
+        "organizer": null,
+        "regulamin": null
+      },
+      "deadline": "2027-01-28",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "agd",
+          "nagrody-rzeczowe",
+          "samochod",
+          "subskrypcja",
+          "voucher"
+        ],
+        "mechanika": [
+          "aplikacja",
+          "losowanie",
+          "sms"
+        ],
+        "temat": [
+          "loteria"
+        ],
+        "marka": [
+          "inpost"
+        ]
+      },
+      "entry": {
+        "summary": "Do loterii zgłaszasz się raz i zajmuje to minutę. Potem wystarczy otwierać InBoxy albo robić zakupy. Zaktualizuj aplikację InPost Mobile i dołącz do programu lojalnościowego, jeśli jeszcze w nim nie jesteś. Wejdź w zakładkę „Nagrody” i kliknij baner loterii. Zaakceptuj",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną)."
+      },
+      "prize": {
+        "summary": "nagrodyPrzykładyInCoinypakiety od 50 do 2500 InCoinówUsługi InPostprzedłużenie odbioru paczki, darmowe nadanie, 10 zł zniżki na nadanie, 10 zł w InPost Pay, 30 zł na zakupy z Von HalskimVouchery50 zł…",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true
+      },
+      "lastSeenAt": "2026-10-28T21:34:13.615Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": null,
+        "regulaminOk": null,
+        "organizerPageOk": null
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24837",
+      "source": "aktualnekonkursy",
+      "sourceId": "24837",
+      "title": "XII Ogólnopolski Konkurs Poetycki „O Złoty Karton III LO”",
+      "url": "https://aktualnekonkursy.pl/ad/konkursy-literackie,3/xii-ogolnopolski-konkurs-poetycki-o-zloty-karton-iii-lo,24837",
+      "publishedAt": "2026-10-27T15:47:04.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": "https://lo3.wroc.pl/2026/10/xii-edycja-ogolnopolskiego-konkursu-poetyckiego-o-zloty-karton-iii-lo/",
+        "regulamin": null
+      },
+      "deadline": "2027-01-31",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "nagrody-rzeczowe"
+        ],
+        "temat": [
+          "literackie"
+        ],
+        "zasieg": [
+          "ogolnopolskie"
+        ]
+      },
+      "entry": {
+        "summary": "Sprawdź zasady udziału w źródle.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "Nagrody Laureaci konkursu otrzymają nagrody rzeczowe.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:32:00.907Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.136Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8380,9 +8196,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:11.948Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:11.830Z",
+      "lastSeenAt": "2026-10-28T21:34:28.500Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8428,9 +8244,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.084Z",
+      "lastSeenAt": "2026-10-28T21:34:09.957Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8472,9 +8288,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.378Z",
+      "lastSeenAt": "2026-10-28T21:34:10.189Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8519,9 +8335,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:12.897Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:12.785Z",
+      "lastSeenAt": "2026-10-28T21:34:28.502Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8570,9 +8386,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:13.847Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:13.730Z",
+      "lastSeenAt": "2026-10-28T21:34:28.506Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8622,13 +8438,60 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.100Z",
+      "lastSeenAt": "2026-10-28T21:34:09.973Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
         "organizerPageOk": true
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24835",
+      "source": "aktualnekonkursy",
+      "sourceId": "24835",
+      "title": "V edycja konkursu fotograficznego „(Nie)zapomniane zabytki”",
+      "url": "https://aktualnekonkursy.pl/ad/konkursy-fotograficzne,8/v-edycja-konkursu-fotograficznego-nie-zapomniane-zabytki,24835",
+      "publishedAt": "2026-10-26T20:27:13.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": "https://stowarzyszenie.arche.pl/Podstrony/Konkurs-Niezapomniane-zabytki---konkurs-fotograficzny,582",
+        "regulamin": "https://archeksiegarnia.pl/file/File_6a47851402073.pdf"
+      },
+      "deadline": "2027-03-07",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "voucher"
+        ],
+        "temat": [
+          "fotograficzne"
+        ]
+      },
+      "entry": {
+        "summary": "Prace należy przesyłać mailem.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "Nagroda Główną nagrodą jest voucher na 3-dniowy pobyt dla dwóch osób w wybranym hotelu Arche.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:32:01.233Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.137Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8669,13 +8532,60 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.054Z",
+      "lastSeenAt": "2026-10-28T21:34:09.932Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
         "organizerPageOk": true
+      }
+    },
+    {
+      "id": "aktualnekonkursy:24841",
+      "source": "aktualnekonkursy",
+      "sourceId": "24841",
+      "title": "„Warszawa. Naturalnie” konkurs fotograficzny",
+      "url": "https://aktualnekonkursy.pl/ad/konkursy-fotograficzne,8/warszawa-naturalnie-konkurs-fotograficzny,24841",
+      "publishedAt": "2026-10-27T20:32:18.000Z",
+      "modifiedAt": null,
+      "links": {
+        "organizer": "https://konkursmhn.pan.pl/",
+        "regulamin": "https://konkursmhn.pan.pl/dokumenty/Regulamin%20Konkursu%20Warszawa%20Naturalnie.pdf"
+      },
+      "deadline": "2027-03-21",
+      "status": "active",
+      "tags": {
+        "nagroda": [
+          "karta-podarunkowa"
+        ],
+        "temat": [
+          "fotograficzne"
+        ]
+      },
+      "entry": {
+        "summary": "Prace należy przesyłać mailem.",
+        "noPurchase": "altFreeEntry",
+        "noPurchaseNotes": "Konkursy twórcze i otwarte (kategoria konsumencka odfiltrowana) — potwierdź w regulaminie."
+      },
+      "prize": {
+        "summary": "Nagrody Nagrodami są karty podarunkowe Empiku o łącznej wartości 30 000 zł.",
+        "value": null,
+        "currency": "PLN"
+      },
+      "extraction": {
+        "deadlineFound": true,
+        "detailFetched": true,
+        "detailVersion": 6,
+        "detailFetchedAt": "2026-10-28T21:32:00.256Z"
+      },
+      "lastSeenAt": "2026-10-28T21:34:28.134Z",
+      "verification": {
+        "checkedAt": "2026-10-28T21:34:37.282Z",
+        "sourceOk": true,
+        "organizerOk": true,
+        "regulaminOk": true,
+        "organizerPageOk": null
       }
     },
     {
@@ -8720,9 +8630,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:03.283Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:03.168Z",
+      "lastSeenAt": "2026-10-28T21:34:28.476Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8767,9 +8677,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:01.339Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:01.221Z",
+      "lastSeenAt": "2026-10-28T21:34:28.470Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8814,9 +8724,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:40.090Z",
+      "lastSeenAt": "2026-10-28T21:34:09.963Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8858,9 +8768,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:07.790Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:07.678Z",
+      "lastSeenAt": "2026-10-28T21:34:28.487Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8905,9 +8815,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:01.018Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:00.901Z",
+      "lastSeenAt": "2026-10-28T21:34:28.469Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -8951,9 +8861,9 @@
       "extraction": {
         "deadlineFound": true
       },
-      "lastSeenAt": "2026-10-23T08:58:50.983Z",
+      "lastSeenAt": "2026-10-28T21:34:23.797Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -8999,9 +8909,9 @@
         "detailVersion": 6,
         "detailFetchedAt": "2026-10-23T08:59:06.833Z"
       },
-      "lastSeenAt": "2026-10-23T08:59:06.714Z",
+      "lastSeenAt": "2026-10-28T21:34:28.485Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": true,
@@ -9043,9 +8953,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T08:58:50.985Z",
+      "lastSeenAt": "2026-10-28T21:34:23.800Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -9089,9 +8999,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T08:58:50.988Z",
+      "lastSeenAt": "2026-10-28T21:34:23.803Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -9141,9 +9051,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T08:58:50.999Z",
+      "lastSeenAt": "2026-10-28T21:34:23.809Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -9185,9 +9095,9 @@
       "extraction": {
         "deadlineFound": false
       },
-      "lastSeenAt": "2026-10-23T08:58:51.001Z",
+      "lastSeenAt": "2026-10-28T21:34:23.811Z",
       "verification": {
-        "checkedAt": "2026-10-23T08:59:33.854Z",
+        "checkedAt": "2026-10-28T21:34:37.282Z",
         "sourceOk": true,
         "organizerOk": true,
         "regulaminOk": null,
@@ -9195,5 +9105,5 @@
       }
     }
   ],
-  "checkedAt": "2026-10-23T08:59:33.854Z"
+  "checkedAt": "2026-10-28T21:34:37.282Z"
 }

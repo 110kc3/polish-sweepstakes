@@ -4,7 +4,7 @@ GitHub Pages site that **reports** current sweepstakes/lotteries in Poland that 
 
 Live: https://110kc3.github.io/polish-sweepstakes/
 
-Project status and accepted work: [`TODO.md`](TODO.md) is the canonical queue. All accepted implementation tasks are complete; the latest feature commit passed CI and Pages deployment on 2026-10-23.
+Project status and accepted work: [`TODO.md`](TODO.md) is the canonical queue. All accepted implementation tasks and closeout verifications are complete; CI and Pages deployments verified through 2026-10-28.
 
 - Sources (6):
   - `fajnekonkursy.pl` — WP REST, category `bez-zakupu`
@@ -49,7 +49,9 @@ Recovery verified, 2026-10-23: the latest eight scheduled runs succeeded through
 
 Quality pass, 2026-10-23: all 54 tests and Chromium desktop/mobile/fallback checks passed on Node 24. A fresh six-source scrape produced 168 known-active listings; 166 have organizer/rules links, with 66 gaps filled on matching records from the October 22 dataset. All four retained Konkursiada listings now show entry steps. Four unknown deadlines remain available outside the default active view. The live checker confirmed all 172 non-ended source articles; one dead rules PDF retains the existing warning. Full evidence and source limitations are in [`TODO.md`](TODO.md).
 
-Follow-up, 2026-10-23: all 60 tests and 10 reproducible browser checks passed against fixtures and the refreshed build. Applying purchase checks to WordPress content removed the two active Ofree receipt promotions and four older paid promotions. The local verification snapshot had 166 known-active listings, all with organizer/rules URLs; the Stachuriada card used its verified organizer page while warning about the dead rules PDF. All six sources and 170 non-ended source articles passed that live check. Browser smoke is now a required PR/deployment gate. All accepted work and feature-commit verification are complete; automatic verification of the documentation-only closeout push remains pending at [Actions](https://github.com/110kc3/polish-sweepstakes/actions?query=branch%3Amain), without waiting for it.
+Follow-up, 2026-10-23: all 60 tests and 10 reproducible browser checks passed against fixtures and the refreshed build. Applying purchase checks to WordPress content removed the two active Ofree receipt promotions and four older paid promotions. The local verification snapshot had 166 known-active listings, all with organizer/rules URLs; the Stachuriada card used its verified organizer page while warning about the dead rules PDF. All six sources and 170 non-ended source articles passed that live check. Browser smoke is now a required PR/deployment gate. All accepted work and feature-commit verification are complete.
+
+Closeout verified, 2026-10-28: the documentation closeout at commit `4cad13c` passed its [push run](https://github.com/110kc3/polish-sweepstakes/actions/runs/39968012124), followed by five consecutive successful daily scheduled runs through the [October 28 run](https://github.com/110kc3/polish-sweepstakes/actions/runs/40679196498), including tests, checking, build, Playwright browser smoke and Pages deployment. A fresh six-source scrape and check confirmed 166 active listings, 170/170 reachable source articles, extended tag mappings for console and music taxonomy with zero unmapped candidates, 60 passing tests, and 10 passing Chromium browser smoke checks.
 
 ## Consuming the data
 

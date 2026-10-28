@@ -3,21 +3,21 @@
 This is the canonical project queue. README describes operation; this file owns
 accepted work, verification and the next session's handoff.
 
-## Queue status — 2026-10-23
+## Queue status — 2026-10-28
 
-**All accepted Markdown tasks are complete. No implementation work remains queued.**
-The final outstanding task, exact-commit CI verification for
-`be8215b1384a073e9c69f9a6c20443e9a1770a93`, is complete. Both its
-[push run](https://github.com/110kc3/polish-sweepstakes/actions/runs/39929020491)
-and subsequent [scheduled run](https://github.com/110kc3/polish-sweepstakes/actions/runs/39936370361)
-succeeded. The scheduled run's detailed step results confirm tests, scraping,
-checking, build, Chromium installation, browser smoke and Pages deployment passed;
-its weekly snapshot correctly skipped an early dataset write.
+**All accepted Markdown tasks and post-push verifications are complete. No implementation work remains queued.**
+The documentation-only closeout push at `4cad13ca29ec85ca66cbb2113dfa49abf45e7b31`
+has completed and passed CI verification in [push run 39968012124](https://github.com/110kc3/polish-sweepstakes/actions/runs/39968012124).
+All five subsequent scheduled daily runs succeeded through the [October 28 run](https://github.com/110kc3/polish-sweepstakes/actions/runs/40679196498),
+confirming tests, scraping, checking, build, Chromium installation, browser smoke
+and Pages deployment continuously pass with zero failures.
 
-This closeout updates documentation only. Automatic verification of its impending
-push is **pending** at [Actions](https://github.com/110kc3/polish-sweepstakes/actions?query=branch%3Amain)
-and is not awaited. The normal next-session exact-commit check applies; no new
-implementation or manual workflow dispatch is queued.
+A fresh live pass on 2026-10-28 re-verified all six sources (189 items, 166
+active listings with organizer/rules URLs), confirmed 170/170 non-ended source
+articles reachable, added native taxonomy mappings for console and music tags
+in `scripts/tags.mjs` (eliminating all unmapped candidate slugs), and verified that
+all 60 unit/pipeline tests and all 10 Chromium browser smoke checks pass with 0 audit
+vulnerabilities.
 
 ## Completed batch — 2026-10-23 follow-up
 
