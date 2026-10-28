@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PolishSweepstakesDataset",
+  "description": "Standard schema for polish-sweepstakes lottery and contest dataset.",
+  "type": "object",
+  "required": ["version", "generatedAt", "tagKinds", "tagKindLabels", "tagLabels", "tagCounts", "items"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "enum": [2]
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "checkedAt": {
+      "type": ["string", "null"]
+    },
+    "sourceHealth": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "status", "items"],
+        "properties": {
+          "source": { "type": "string" },
+          "status": { "type": "string", "enum": ["ok", "error"] },
+          "items": { "type": "integer", "minimum": 0 },
+          "error": { "type": "string" }
+        }
+      }
+    },
+    "tagKinds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tagKindLabels": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "tagLabels": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "tagCounts": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "sourceId", "title", "url", "deadline", "status", "links", "tags", "entry", "prize", "lastSeenAt"],
+        "properties": {
+          "id": { "type": "string" },
+          "source": { "type": "string" },
+          "sourceId": { "type": ["string", "integer"] },
+          "title": { "type": "string" },
+          "url": { "type": "string" },
+          "publishedAt": { "type": ["string", "null"] },
+          "modifiedAt": { "type": ["string", "null"] },
+          "deadline": { "type": ["string", "null"] },
+          "status": { "type": "string", "enum": ["active", "ended", "unknown"] },
+          "links": {
+            "type": "object",
+            "required": ["organizer", "regulamin"],
+            "properties": {
+              "organizer": { "type": ["string", "null"] },
+              "regulamin": { "type": ["string", "null"] }
+            }
+          },
+          "tags": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "entry": {
+            "type": "object",
+            "required": ["summary"],
+            "properties": {
+              "summary": { "type": "string" },
+              "noPurchase": { "type": "string" },
+              "noPurchaseNotes": { "type": "string" }
+            }
+          },
+          "prize": {
+            "type": "object",
+            "required": ["summary", "currency"],
+            "properties": {
+              "summary": { "type": "string" },
+              "value": { "type": ["integer", "number", "null"] },
+              "currency": { "type": "string" }
+            }
+          },
+          "extraction": { "type": "object" },
+          "lastSeenAt": { "type": "string" },
+          "verification": {
+            "type": "object",
+            "properties": {
+              "checkedAt": { "type": "string" },
+              "sourceOk": { "type": ["boolean", "null"] },
+              "organizerOk": { "type": ["boolean", "null"] },
+              "regulaminOk": { "type": ["boolean", "null"] },
+              "organizerPageOk": { "type": ["boolean", "null"] }
+            }
+          },
+          "alsoOn": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source", "url", "id"],
+              "properties": {
+                "source": { "type": "string" },
+                "url": { "type": "string" },
+                "id": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

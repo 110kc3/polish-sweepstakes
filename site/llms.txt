@@ -7,6 +7,10 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
 ## Read the data
 
 - Full dataset (JSON): https://110kc3.github.io/polish-sweepstakes/data/lotteries.json
+- JSON Schema: https://110kc3.github.io/polish-sweepstakes/data/schema.json
+- Compact active digest (Markdown): https://110kc3.github.io/polish-sweepstakes/data/active.md
+- RSS 2.0 Feed: https://110kc3.github.io/polish-sweepstakes/feed.xml
+- Full LLM Specification: https://110kc3.github.io/polish-sweepstakes/llms-full.txt
 - Same content as HTML with schema.org JSON-LD (ItemList of Event): https://110kc3.github.io/polish-sweepstakes/
 
 ## Dataset shape (data/lotteries.json)

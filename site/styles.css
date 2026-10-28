@@ -21,7 +21,7 @@ h1{margin:18px 0 6px;font-size:28px}
 .muted{color:var(--muted)}
 .controls{
   display:grid;
-  grid-template-columns: 180px 220px 160px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap:12px;
   align-items:end;
   margin:16px 0 10px;
@@ -101,6 +101,14 @@ h1{margin:18px 0 6px;font-size:28px}
 .btn:hover{background:rgba(125,211,252,.18)}
 .warn{color:var(--danger);font-size:13px;margin:0}
 .also{font-size:12px;margin:0}
+.badge.badge--amoe{border-color:rgba(251,191,36,.4);color:#fbbf24;background:rgba(251,191,36,.08)}
+.badge.badge--prize{border-color:rgba(134,239,172,.4);color:var(--ok);background:rgba(134,239,172,.08);font-weight:500}
+.tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:2px;padding-top:8px;border-top:1px solid var(--border)}
+.btn-tool{display:inline-flex;align-items:center;gap:4px;padding:5px 9px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--muted);font-size:12px;line-height:1;text-decoration:none;cursor:pointer;font-family:inherit}
+.btn-tool:hover{background:rgba(255,255,255,.1);color:var(--text)}
+.btn-tool.is-active{border-color:rgba(251,191,36,.5);color:#fbbf24;background:rgba(251,191,36,.12)}
+.btn-tool.is-entered{border-color:rgba(134,239,172,.45);color:var(--ok);background:rgba(134,239,172,.12)}
+.card--highlight{outline:2px solid var(--accent);box-shadow:0 0 16px rgba(125,211,252,.35);transition:all .3s ease}
 .footer{margin:22px 0 40px}
 @media (max-width:820px){
   .controls{grid-template-columns:1fr;align-items:stretch}

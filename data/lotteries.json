@@ -371,7 +371,7 @@
       },
       "prize": {
         "summary": "Nagrodami głównymi w Blikomanii 2023 są 63 sztabki złota oraz 9450 czeków po 100 i 200 zł.",
-        "value": null,
+        "value": 200,
         "currency": "PLN"
       },
       "extraction": {
@@ -415,7 +415,7 @@
       },
       "prize": {
         "summary": "Nagrody • pula nagród wynosi 6000 złotych STRONA KONKURSU",
-        "value": null,
+        "value": 6000,
         "currency": "PLN"
       },
       "extraction": {
@@ -540,7 +540,7 @@
       },
       "prize": {
         "summary": "Nagrody • Pula nagród wynosi 9.000 zł.",
-        "value": null,
+        "value": 9000,
         "currency": "PLN"
       },
       "extraction": {
@@ -579,7 +579,7 @@
       },
       "prize": {
         "summary": "Nagrody I miejsce: tytuł najlepszego projektanta offowego, statuetka oraz 15.000 zł • II miejsce: 10.",
-        "value": null,
+        "value": 15000,
         "currency": "PLN"
       },
       "extraction": {
@@ -621,7 +621,7 @@
       },
       "prize": {
         "summary": "Nagrody • nagroda rzeczowa o wartości do 2000 zł w postaci materiałów plastycznych.",
-        "value": null,
+        "value": 2000,
         "currency": "PLN"
       },
       "extraction": {
@@ -785,7 +785,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x bon na zakup wycieczki do Tokio o wartości 60 000 zł • 1 x bon na zakup wycieczki do Marakeszu o wartości 25 000 zł • 1 x bon na zakup wycieczki do Porto o wartości 20 000 zł •…",
-        "value": null,
+        "value": 60000,
         "currency": "PLN"
       },
       "extraction": {
@@ -825,7 +825,7 @@
       },
       "prize": {
         "summary": "Nagrody • nagroda główna w wysokości 10 000 zł prawo do publikacji utworu w formie ksi",
-        "value": null,
+        "value": 10000,
         "currency": "PLN"
       },
       "extraction": {
@@ -872,7 +872,7 @@
       },
       "prize": {
         "summary": "Nagrody natychmiastowe: 150 x voucher Allegro 20 zł 50 x voucher Allegro 50 zł 50 x voucher Amazon 50 zł (dla posiadaczy Złotego lub Platynowego",
-        "value": null,
+        "value": 50,
         "currency": "PLN"
       },
       "extraction": {
@@ -944,7 +944,7 @@
       },
       "prize": {
         "summary": "Nagrody W każdej kategorii wiekowej zostaną przyznane następujące nagrody: • I nagroda – 12 000 zł • II nagroda – 9 000 zł • III nagroda – 7 000 zł • nagroda publiczności – 6 000 zł • cztery…",
-        "value": null,
+        "value": 12000,
         "currency": "PLN"
       },
       "extraction": {
@@ -984,7 +984,7 @@
       },
       "prize": {
         "summary": "Nagrody • I nagroda – 5 000 zł oraz wystawa w Galerii Sztuki Wozownia • II nagroda – 2 500 zł • III nagroda – 1 000 zł Wyróżnione prace będą prezentowane na w",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -1026,7 +1026,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 5 x woda perfumowana Nightology Suede Breze 100 ml o wartości 599 zł",
-        "value": null,
+        "value": 599,
         "currency": "PLN"
       },
       "extraction": {
@@ -1074,7 +1074,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 5 x bon podarunkowy do sklepu Ochnik o wartości 300 zł",
-        "value": null,
+        "value": 300,
         "currency": "PLN"
       },
       "extraction": {
@@ -1121,7 +1121,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x bon do Decathlonu o wartości 300 zł + gadżety Vaillant",
-        "value": null,
+        "value": 300,
         "currency": "PLN"
       },
       "extraction": {
@@ -1215,7 +1215,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x zestaw kosmetyków do twarzy Janda o wartości 194,99 zł",
-        "value": null,
+        "value": 194,
         "currency": "PLN"
       },
       "extraction": {
@@ -1262,7 +1262,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 5 x nagroda pieniężna w wysokości 2 400 zł • 20 x nagroda pieniężna w wysokości 100 zł • 5 x zestaw gadżetów z logotypem Radia Złote Przeboje",
-        "value": null,
+        "value": 2400,
         "currency": "PLN"
       },
       "extraction": {
@@ -1359,7 +1359,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 15 x podwójny bilet do kina Multikino o wartości 52 zł • 15 x podwójny bilet do kina Helios o wartości 49,80 zł Zasady Jesiennego Konkursu Filmowego Orlen Konkurs prowadzony jest…",
-        "value": null,
+        "value": 52,
         "currency": "PLN"
       },
       "extraction": {
@@ -1405,7 +1405,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x zestaw: kubek „Taki jest świat” + paczka aromatycznej herbaty o łącznej wartości 34,12 zł",
-        "value": null,
+        "value": 34,
         "currency": "PLN"
       },
       "extraction": {
@@ -1454,7 +1454,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x mobilny router ZTE U30 Pro 5G o wartości 599 zł • 1 x kontroler RedMagic Shadow Blade o wartości 219 zł • 3 x zestaw gadżetów o wartości 89 zł",
-        "value": null,
+        "value": 599,
         "currency": "PLN"
       },
       "extraction": {
@@ -1504,7 +1504,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x voucher wakacyjny Itaka o wartości 4 000 zł • 1 x zestaw: voucher wakacyjny Itaka o wartości 2 000 zł + walizka podróżna z ABS-u + identyfikator z logo • 1 x zestaw: plecak…",
-        "value": null,
+        "value": 4000,
         "currency": "PLN"
       },
       "extraction": {
@@ -1548,7 +1548,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x robot kuchenny Thermomix TM7 o wartości 6 669 zł",
-        "value": null,
+        "value": 6669,
         "currency": "PLN"
       },
       "extraction": {
@@ -1644,7 +1644,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 8 x bon podarunkowy o wartości od 150 do 400 zł + pamiątkowy dyplom",
-        "value": null,
+        "value": 400,
         "currency": "PLN"
       },
       "extraction": {
@@ -1732,7 +1732,7 @@
       },
       "prize": {
         "summary": "nagroda – 200 zł II nagroda – 100 zł III nagroda – 50 zł Strona konkursu",
-        "value": null,
+        "value": 200,
         "currency": "PLN"
       },
       "extraction": {
@@ -1779,7 +1779,7 @@
       },
       "prize": {
         "summary": "Nagrody: • I nagroda – 10 000 zł • II nagroda – 6 000 zł • III nagroda – 3 000 zł Zgłoszenia będą przyjmowane do 30 paźdz",
-        "value": null,
+        "value": 10000,
         "currency": "PLN"
       },
       "extraction": {
@@ -1930,7 +1930,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x jeden sprzęt marki Haier do wyboru spośród: Pralka X7 o wartości 3 200 zł lub Suszarka X7 o wartości 3 800 zł",
-        "value": null,
+        "value": 3800,
         "currency": "PLN"
       },
       "extraction": {
@@ -1975,7 +1975,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 15 x bon zakupowy do sklepów KiK o wartości 200 zł",
-        "value": null,
+        "value": 200,
         "currency": "PLN"
       },
       "extraction": {
@@ -2022,7 +2022,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 30 x zestaw pielęgnacyjny złożony z 4 produktów z linii Atoderm o wartości 389,17 zł",
-        "value": null,
+        "value": 389,
         "currency": "PLN"
       },
       "extraction": {
@@ -2259,7 +2259,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x pralka Electrolux EW6F2492P SensiCare 600 o wartości 2 399 zł",
-        "value": null,
+        "value": 2399,
         "currency": "PLN"
       },
       "extraction": {
@@ -2309,7 +2309,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 5 x zestaw Lego Duplo Las Odkrywców z dzikimi zwierzętami o wartości 340 zł • 5 x zestaw Lego Disney Barka Kakamorów o wartości 420 zł • 5 x zestaw Lego Creator 3 w 1 Dzikie…",
-        "value": null,
+        "value": 420,
         "currency": "PLN"
       },
       "extraction": {
@@ -2505,7 +2505,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 10 x voucher na przejazdy Traficar o wartości 1 000 zł + pakiet gadżetów",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -2554,7 +2554,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x smartfon Samsung Galaxy A56 128GB 5G Dual SIM grafitowy o wartości 1 499 zł • 1 x smartfon Motorola G77 5G 12/256GB Black Olive o wartości 1 499 zł • 1 x smartfon Samsung…",
-        "value": null,
+        "value": 1499,
         "currency": "PLN"
       },
       "extraction": {
@@ -2598,7 +2598,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 700 zł • 1 x nagroda pieniężna 500 zł • 1 x nagroda pieniężna 300 zł • 3 x nagroda pieniężna 150 zł",
-        "value": null,
+        "value": 700,
         "currency": "PLN"
       },
       "extraction": {
@@ -2700,7 +2700,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x karta podarunkowa Leroy Merlin o wartości 5 000 zł • 5 x karta podarunkowa Leroy Merlin o wartości 500 zł • 10 x karta podarunkowa Leroy Merlin o wartości 200 zł",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -2747,7 +2747,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 500 zł • 1 x nagroda pieniężna 250 zł • 1 x pakiet darczyńcy Muzeum Gdańska",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -2890,7 +2890,7 @@
       },
       "prize": {
         "summary": "Nagrody Zwycięzca otrzyma nagrodę w wysokości 7 000 zł.",
-        "value": null,
+        "value": 7000,
         "currency": "PLN"
       },
       "extraction": {
@@ -2981,7 +2981,7 @@
       },
       "prize": {
         "summary": "Nagrody - Młodzież (13-18 lat) I nagroda – 1 200 zł II nagroda – 700 zł III nagroda – 500 zł - Dorośli I nagroda – 1 500 zł II nagroda – 1 200 zł III nagroda – 800 zł Strona konkursu",
-        "value": null,
+        "value": 1500,
         "currency": "PLN"
       },
       "extraction": {
@@ -3125,7 +3125,7 @@
       },
       "prize": {
         "summary": "Nagrody Pula nagród wynosi 4 000 zł.",
-        "value": null,
+        "value": 4000,
         "currency": "PLN"
       },
       "extraction": {
@@ -3169,7 +3169,7 @@
       },
       "prize": {
         "summary": "Nagrody • aparat FUJIFILM X-E5 z obiektywem 23 mm i 5 000 zł • aparat FUJIFILM X-E5 z obiektywem 23 mm i 3 000 zł • aparat FUJIFILM X-E5 z obiektywem 23 mm i 2 000 zł Strona konkursu",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -3271,7 +3271,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x zestaw „Figurki Psi Patrol i Dinozaury Skye ze Spinozaurem” o wartości 125,99 zł • 1 x zestaw „Psi Patrol i Dinozaury: Rex z pojazdem + figurki dinozaurów 4 szt.",
-        "value": null,
+        "value": 125,
         "currency": "PLN"
       },
       "extraction": {
@@ -3364,7 +3364,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x voucher wakacyjny o wartości 2 000 zł + zestaw kosmetyków Vital mini i normal • 5 x zestaw: plecak Cabin Zero + zestaw kosmetyków Vital mini i normal o łącznej wartości 340,87…",
-        "value": null,
+        "value": 2000,
         "currency": "PLN"
       },
       "extraction": {
@@ -3414,7 +3414,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x voucher do sklepu Westwing o wartości 500 zł",
-        "value": null,
+        "value": 500,
         "currency": "PLN"
       },
       "extraction": {
@@ -3506,7 +3506,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x zestaw gadżetów „Przyjaciele”: bluza, notes, butelka Comedy Central i gra karciana Uno o wartości 180 zł • 7 x zestaw gadżetów „Przyjaciele”: t-shirt, poduszka, butelka Comedy…",
-        "value": null,
+        "value": 180,
         "currency": "PLN"
       },
       "extraction": {
@@ -3553,7 +3553,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x zestaw niespodzianka składający się z książek dla dzieci o wartości 200 zł",
-        "value": null,
+        "value": 200,
         "currency": "PLN"
       },
       "extraction": {
@@ -3600,7 +3600,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 10 x zestaw kosmetyków Weleda Skin Food o wartości 424,30 zł",
-        "value": null,
+        "value": 424,
         "currency": "PLN"
       },
       "extraction": {
@@ -3691,7 +3691,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x laptop HP OmniBook X Flip o wartości 5 499 zł + Microsoft 365 Personal",
-        "value": null,
+        "value": 5499,
         "currency": "PLN"
       },
       "extraction": {
@@ -3833,7 +3833,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 20 x box upominkowy zawierający około 750 cukierków Dumle o wartości 300 zł",
-        "value": null,
+        "value": 300,
         "currency": "PLN"
       },
       "extraction": {
@@ -3880,7 +3880,7 @@
       },
       "prize": {
         "summary": "Nagrody - I nagroda – 2 000 zł - II nagroda – 1 400 zł - III nagroda – 1 000 zł Strona konkursu",
-        "value": null,
+        "value": 2000,
         "currency": "PLN"
       },
       "extraction": {
@@ -3927,7 +3927,7 @@
       },
       "prize": {
         "summary": "Nagrody • I miejsce – 1 000 zł • II miejsce – 500 zł • III miejsce – 300 zł Strona konkursu",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -4258,7 +4258,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 5 x zestaw electro Magnat: blender kielichowy, gofrownica i czajnik elektryczny o wartości łącznej 647 zł • 10 x blender ręczny Magnat o wartości 149 zł",
-        "value": null,
+        "value": 647,
         "currency": "PLN"
       },
       "extraction": {
@@ -4307,7 +4307,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x spieniacz do mleka SMEG o wartości 426 zł • 3 x forma do pieczenia Bolesławiec o wartości 268 zł • 3 x zestaw produktów i gadżetów Diamant o wartości 70zł",
-        "value": null,
+        "value": 426,
         "currency": "PLN"
       },
       "extraction": {
@@ -4355,7 +4355,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 10 x patelnia do jajek o wartości do 40 zł",
-        "value": null,
+        "value": 40,
         "currency": "PLN"
       },
       "extraction": {
@@ -4495,7 +4495,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x ekspres przelewowy do kawy Midea MA-D1502W2ME o wartości 150 zł",
-        "value": null,
+        "value": 150,
         "currency": "PLN"
       },
       "extraction": {
@@ -4540,7 +4540,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 5 x zestaw produktów marki Fabbri o wartości 200 zł",
-        "value": null,
+        "value": 200,
         "currency": "PLN"
       },
       "extraction": {
@@ -4588,7 +4588,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 5 x zestaw: książek „Jeżyk i Przyjaciele” oraz pufa Puls Kids o wartości 317,74 zł",
-        "value": null,
+        "value": 317,
         "currency": "PLN"
       },
       "extraction": {
@@ -4677,7 +4677,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 2 x nagroda rzeczowa o wartości 1 000 zł • 2 x nagroda rzeczowa o wartości 600 zł • 2 x nagroda rzeczowa o wartości 400 zł • wyróżnienia Zasady XIII konkursu literackiego „Racibórz…",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -4889,7 +4889,7 @@
       },
       "prize": {
         "summary": "Nagrody Pula nagród wynosi 10 000 zł.",
-        "value": null,
+        "value": 10000,
         "currency": "PLN"
       },
       "extraction": {
@@ -4929,7 +4929,7 @@
       },
       "prize": {
         "summary": "Nagrody Pula nagród wynosi 5 000 zł.",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5065,7 +5065,7 @@
       },
       "prize": {
         "summary": "Nagrody Kategoria PROMOCJA • I miejsce: 1 500 zł • II miejsce: 1 000 zł • III miejsce: 500 zł Kategoria WZORNICTWO • I miejsce: 1 500 zł • II miejsce: 1 000 zł • III miejsce: 500 zł Strona konkursu",
-        "value": null,
+        "value": 1500,
         "currency": "PLN"
       },
       "extraction": {
@@ -5310,7 +5310,7 @@
       },
       "prize": {
         "summary": "Wygraj jedną z aż 3 konsoli Predator Atlas 8 o wartości 6 599 zł każda!",
-        "value": null,
+        "value": 6599,
         "currency": "PLN"
       },
       "extraction": {
@@ -5358,7 +5358,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 700 zł • 1 x nagroda pieniężna 500 zł • nagrody książkowe oraz dyplomy",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5406,7 +5406,7 @@
       },
       "prize": {
         "summary": "Nagrody Laureaci konkursu otrzymają nagrody książkowe, dyplomy oraz nagrody pieniężne: • I nagroda – 1 000 zł • II nagroda – 700 zł • III nagroda – 500 zł Strona konkursu",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5557,7 +5557,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 2 x nagroda pieniężna w wysokości 1 000 zł • 2 x nagroda pieniężna w wysokości 800 zł • 2 x nagroda pieniężna w wysokości 700 zł Zasady XI konkursu plastycznego „Święty Mikołaj…",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5654,7 +5654,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 6 x słuchawki Apple AirPods Max II (w wybranym kolorze) o wartości 2 700 zł • 6 x zestaw: podwójny bilet na festiwal muzyczny SnowFest + powerbank VARTA Energy 5000",
-        "value": null,
+        "value": 2700,
         "currency": "PLN"
       },
       "extraction": {
@@ -5705,7 +5705,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 10 x roczne zakupy we Frisco o wartości 13 000 zł • 10 x voucher wakacyjny Rainbow dla 2 osób o wartości 10 000 zł • 30 x półroczne zakupy we Frisco o wartości 6 500 zł • 70 x…",
-        "value": null,
+        "value": 13000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5752,7 +5752,7 @@
       },
       "prize": {
         "summary": "Nagrody w konkursie Do wygrania nagrody finansowe, których pula to aż 6000 złotych!",
-        "value": null,
+        "value": 6000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5852,7 +5852,7 @@
       },
       "prize": {
         "summary": "Nagrody Laureaci otrzymają nagrody finansowe o łącznej wartości 5 000 zł.",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5896,7 +5896,7 @@
       },
       "prize": {
         "summary": "Nagrody • Grand Prix – 6 000 zł • nagroda za najlepszy montaż – 3 000 zł • nagroda za najlepsze zdjęcia – 3 000 zł Strona konkursu",
-        "value": null,
+        "value": 6000,
         "currency": "PLN"
       },
       "extraction": {
@@ -5945,7 +5945,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x komputer stacjonarny Level Up [R02] Ryzen 7 o wartości 10 990 zł",
-        "value": null,
+        "value": 10990,
         "currency": "PLN"
       },
       "extraction": {
@@ -5993,7 +5993,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 12 000 zł + trzy egzemplarze plakatu wydrukowanego w formacie 120 x 180 cm • 1 x nagroda pieniężna 5 000 zł • 5 x trzy egzemplarze plakatu wydrukowanego w…",
-        "value": null,
+        "value": 12000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6037,7 +6037,7 @@
       },
       "prize": {
         "summary": "Nagroda Zwycięzca otrzyma nagrodę w wysokości 12 000 zł.",
-        "value": null,
+        "value": 12000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6081,7 +6081,7 @@
       },
       "prize": {
         "summary": "Nagrody Pula nagród wynosi 1 200 zł.",
-        "value": null,
+        "value": 1200,
         "currency": "PLN"
       },
       "extraction": {
@@ -6131,7 +6131,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x matowa płyta indukcyjna Whirlpool MattProtect o wartości 1 999 zł • 3 x zestaw garnków Tefal Ingenio Excellence+ P0079002 Indukcja Aluminium 4 elementy o wartości 369,99 zł…",
-        "value": null,
+        "value": 1999,
         "currency": "PLN"
       },
       "extraction": {
@@ -6219,7 +6219,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x nagroda finansowa w wysokości 4000 zł + możliwość odbycia praktyk w Wydziale Promocji, Marketingu i Wydawnictw CEA",
-        "value": null,
+        "value": 4000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6410,7 +6410,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 1 000 zł • 1 x nagroda pieniężna 700 zł • 1 x nagroda pieniężna 500 zł",
-        "value": null,
+        "value": 1000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6456,7 +6456,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x voucher do sklepu ze sprzętem elektronicznym o wartości 500 zł • 1 x voucher do sklepu ze sprzętem elektronicznym o wartości 300 zł • 1 x voucher do sklepu ze sprzętem…",
-        "value": null,
+        "value": 500,
         "currency": "PLN"
       },
       "extraction": {
@@ -6552,7 +6552,7 @@
       },
       "prize": {
         "summary": "Nagrody w konkursie 1 karta podarunkowa Lumond o wartości 250 € (około 1 060 zł), do wykorzystania na lumond.",
-        "value": null,
+        "value": 1060,
         "currency": "PLN"
       },
       "extraction": {
@@ -6605,7 +6605,7 @@
       },
       "prize": {
         "summary": "nagrody pieniężne o łącznej wartości 2 300 zł.",
-        "value": null,
+        "value": 2300,
         "currency": "PLN"
       },
       "extraction": {
@@ -6649,7 +6649,7 @@
       },
       "prize": {
         "summary": "Nagrody Zwycięzca otrzyma nagrodę w wysokości 5 000 zł.",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6693,7 +6693,7 @@
       },
       "prize": {
         "summary": "Nagrody Zwycięzca otrzyma nagrodę w wysokości 3 000 zł.",
-        "value": null,
+        "value": 3000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6835,7 +6835,7 @@
       },
       "prize": {
         "summary": "Nagrody W każdej z trzech kategorii zostaną przyznane następujące nagrody: • I nagroda ─ 15 000 zł • II nagroda ─ 10 000 zł • III nagroda ─ 5 000 zł • wyróżnienie ─ 1 000 zł Nagrodzone prace zostaną…",
-        "value": null,
+        "value": 15000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6879,7 +6879,7 @@
       },
       "prize": {
         "summary": "Nagrody Pula nagród wynosi 40 000 zł.",
-        "value": null,
+        "value": 40000,
         "currency": "PLN"
       },
       "extraction": {
@@ -6976,7 +6976,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x nagroda pieniężna 700 zł • 1 x nagroda pieniężna 400 zł • 1 x nagroda pieniężna 300 zł • 1 x nagroda pieniężna 200 zł • komisja konkursowa dopuszcza możliwość przyznania…",
-        "value": null,
+        "value": 700,
         "currency": "PLN"
       },
       "extraction": {
@@ -7076,7 +7076,7 @@
       },
       "prize": {
         "summary": "Nagrody • Grand Prix – 700 zł • Nagrody w każdej kategorii wiekowej: I nagroda – 400 zł II nagroda – 300 zł III nagroda – 200 zł Strona konkursu",
-        "value": null,
+        "value": 700,
         "currency": "PLN"
       },
       "extraction": {
@@ -7126,7 +7126,7 @@
       },
       "prize": {
         "summary": "Nagrody • I miejsce: 600 zł • II miejsce: 400 zł • III miejsce: 300 zł Strona konkursu",
-        "value": null,
+        "value": 600,
         "currency": "PLN"
       },
       "extraction": {
@@ -7223,7 +7223,7 @@
       },
       "prize": {
         "summary": "Nagrody Odkrywamy Ponidzie – zwycięzca otrzyma 2 000 zł Portret w czerni i bieli – zwycięzca otrzyma 3 000 zł Strona konkursu",
-        "value": null,
+        "value": 3000,
         "currency": "PLN"
       },
       "extraction": {
@@ -7311,7 +7311,7 @@
       },
       "prize": {
         "summary": "Nagrody • Grand Prix MTG 2027: 30 000 zł oraz wystawa indywidualna w Międzynarodowym Centrum Sztuk Graficznych w Krakowie • Europejska Nagroda Graficzna MTG 2027: 20 000 zł • Nagroda im.",
-        "value": null,
+        "value": 30000,
         "currency": "PLN"
       },
       "extraction": {
@@ -7405,7 +7405,7 @@
       },
       "prize": {
         "summary": "Nagrody: • I nagroda – 15 000 zł • II nagroda – 10 000 zł • III nagroda – 5 000 zł Zgłoszenia będą przyjmowane do 30 grudn",
-        "value": null,
+        "value": 15000,
         "currency": "PLN"
       },
       "extraction": {
@@ -7504,7 +7504,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x ekspres do kawy De’Longhi o wartości 3 700 zł • 7 x odkurzacz Kärcher o wartości 280 zł • 12 x voucher do sklepu Clinex o wartości 200 zł (nagroda tygodniowa)",
-        "value": null,
+        "value": 3700,
         "currency": "PLN"
       },
       "extraction": {
@@ -7554,7 +7554,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 3 x smartfon Samsung Galaxy S26 Ultra o wartości 6 299 zł • 60 x zestaw produktów Sensodyne o wartości 200 zł",
-        "value": null,
+        "value": 6299,
         "currency": "PLN"
       },
       "extraction": {
@@ -7598,7 +7598,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 2 x nagroda pieniężna 5 000 zł • 2 x nagroda pieniężna 3 000 zł • 2 x nagroda pieniężna 2 000 zł",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -7649,7 +7649,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 1 x laptop Apple MacBook Air o wartości 3 899 zł (nagroda publiczności) • 1 x gogle Majesty The Force ATC, książka “Moje bieguny.",
-        "value": null,
+        "value": 3899,
         "currency": "PLN"
       },
       "extraction": {
@@ -7747,7 +7747,7 @@
       },
       "prize": {
         "summary": "Nagrody Autorka/autor najlepszego reportażu otrzyma nagrodę w wysokości 120 000 zł.",
-        "value": null,
+        "value": 120000,
         "currency": "PLN"
       },
       "extraction": {
@@ -7791,7 +7791,7 @@
       },
       "prize": {
         "summary": "Nagroda Zwycięzca konkursu otrzyma nagrodę w wysokości 20 000 zł.",
-        "value": null,
+        "value": 20000,
         "currency": "PLN"
       },
       "extraction": {
@@ -7841,7 +7841,7 @@
       },
       "prize": {
         "summary": "Nagrody W każdej kategorii zostaną przyznane następujące nagrody: - I miejsce – 5 000 zł - II miejsce – 3 000 zł - III miejsce – 2 000 zł Strona konkursu",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -7935,7 +7935,7 @@
       },
       "prize": {
         "summary": "Nagrody - Grand Prix – 20 000 zł oraz 1 kg srebra - II nagroda – 15 000 zł oraz 1 kg srebra - Nagroda Prezydenta Miasta Legnicy – 5 000 zł oraz 1 kg srebra - Nagroda Galerii Sztu",
-        "value": null,
+        "value": 20000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8095,7 +8095,7 @@
       },
       "prize": {
         "summary": "nagrodyPrzykładyInCoinypakiety od 50 do 2500 InCoinówUsługi InPostprzedłużenie odbioru paczki, darmowe nadanie, 10 zł zniżki na nadanie, 10 zł w InPost Pay, 30 zł na zakupy z Von HalskimVouchery50 zł…",
-        "value": null,
+        "value": 50,
         "currency": "PLN"
       },
       "extraction": {
@@ -8187,7 +8187,7 @@
       },
       "prize": {
         "summary": "nagrodą jest 5 000 zł.",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8282,7 +8282,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • nagrody finansowe o łącznej wartości 15 000 zł podzielone wśród laureatów wg uznania jury",
-        "value": null,
+        "value": 15000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8326,7 +8326,7 @@
       },
       "prize": {
         "summary": "Nagrody Pula nagród wynosi 15 000 zł.",
-        "value": null,
+        "value": 15000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8377,7 +8377,7 @@
       },
       "prize": {
         "summary": "Nagrody Zwycięzca otrzyma nagrodę pieniężną w wysokości 200 zł oraz zestaw książek.",
-        "value": null,
+        "value": 200,
         "currency": "PLN"
       },
       "extraction": {
@@ -8432,7 +8432,7 @@
       },
       "prize": {
         "summary": "Wygraj nagrody 🎁 • 50 x fizyczny Płatko-Pluszak według własnego projektu o wartości 220 zł • 50 x maskotka płatko-pluszaka z rodziny Lubelli o wartości 175 zł",
-        "value": null,
+        "value": 220,
         "currency": "PLN"
       },
       "extraction": {
@@ -8570,7 +8570,7 @@
       },
       "prize": {
         "summary": "Nagrody Nagrodami są karty podarunkowe Empiku o łącznej wartości 30 000 zł.",
-        "value": null,
+        "value": 30000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8621,7 +8621,7 @@
       },
       "prize": {
         "summary": "Nagrody Zwycięzca konkursu otrzyma medal pamiątkowy oraz nagrodę pieniężną w wysokości 2 500 zł.",
-        "value": null,
+        "value": 2500,
         "currency": "PLN"
       },
       "extraction": {
@@ -8668,7 +8668,7 @@
       },
       "prize": {
         "summary": "Nagrody Kategoria I • I nagroda – 10 000 zł • II nagroda – 7 000 zł • III nagroda – 4 000 zł • 4 wyróżnienia po 1 000 zł Kategoria II Zwycięzca otrzyma statuetkę oraz 5 000 zł Strona konkursu",
-        "value": null,
+        "value": 10000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8759,7 +8759,7 @@
       },
       "prize": {
         "summary": "Nagrody Zwycięzca otrzyma nagrodę w wysokości 30 000 zł.",
-        "value": null,
+        "value": 30000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8947,7 +8947,7 @@
       },
       "prize": {
         "summary": "Nagrody • I miejsce – 5 000 zł • II miejsce – 2 000 zł • III miejsce – 1 000 zł • Nagroda specjalna Przewodniczącej Sejmiku Województwa Kujawsko-Pomorskiego – 1 500 zł STRONA KONKURSU",
-        "value": null,
+        "value": 5000,
         "currency": "PLN"
       },
       "extraction": {
@@ -8993,7 +8993,7 @@
       },
       "prize": {
         "summary": "Nagrody • I miejsce – 1 300 zł • II miejsce – 950 zł • III miejsce – 650 zł • 3 wyróżnienia po 350 zł STRONA KONKURSU",
-        "value": null,
+        "value": 1300,
         "currency": "PLN"
       },
       "extraction": {
@@ -9045,7 +9045,7 @@
       },
       "prize": {
         "summary": "Nagrody • I miejsce: 3 000 zł • II miejsce: 2 000 zł • III miejsce: 1 000 zł STRONA KONKURSU",
-        "value": null,
+        "value": 3000,
         "currency": "PLN"
       },
       "extraction": {

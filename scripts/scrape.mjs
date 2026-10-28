@@ -13,6 +13,7 @@ import {
   extractEntrySection,
   extractLinks,
   extractPrizeSummary,
+  extractPrizeValue,
   isStaleUndated,
   isPepperContest,
   monthsAgoISO,
@@ -304,7 +305,7 @@ function normalizeRssItem(source, item) {
     },
     prize: {
       summary: extractPrizeSummary(combined),
-      value: null,
+      value: extractPrizeValue(extractPrizeSummary(combined), item.title),
       currency: 'PLN',
     },
     extraction: {
@@ -351,7 +352,7 @@ function normalizePost(source, post, termMaps) {
     },
     prize: {
       summary: prizeSummary || 'Sprawdź nagrody w źródle.',
-      value: null,
+      value: extractPrizeValue(prizeSummary || excerptText, post.title?.rendered),
       currency: 'PLN',
     },
     extraction: {
@@ -471,7 +472,7 @@ function normalizeCptItem(source, item, detail) {
     },
     prize: {
       summary: detail?.prizeSummary || extractPrizeSummary(text) || excerptText,
-      value: null,
+      value: extractPrizeValue(detail?.prizeSummary || extractPrizeSummary(text) || excerptText, item.title?.rendered),
       currency: 'PLN',
     },
     extraction: {
@@ -549,6 +550,7 @@ export function mergeDuplicates(items, log = console.log) {
       out.links.regulamin ||= other.links?.regulamin || null;
       out.entry.summary = bestSummary(out.entry.summary, other.entry?.summary);
       out.prize.summary = bestSummary(out.prize.summary, other.prize?.summary);
+      out.prize.value = Math.max(out.prize.value || 0, other.prize?.value || 0) || null;
     }
     out.status = statusFor(out.deadline);
     out.extraction = { ...out.extraction, deadlineFound: Boolean(out.deadline), mergedFrom: group.length };

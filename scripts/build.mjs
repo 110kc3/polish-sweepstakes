@@ -43,19 +43,40 @@ async function copyDir(src, dest) {
   }
 }
 
+function googleCalendarUrl(it) {
+  if (!it.deadline) return '';
+  const dStart = it.deadline.replace(/-/g, '');
+  const endObj = new Date(it.deadline + 'T00:00:00Z');
+  endObj.setUTCDate(endObj.getUTCDate() + 1);
+  const dEnd = endObj.toISOString().slice(0, 10).replace(/-/g, '');
+  const text = encodeURIComponent(`Konkurs: ${it.title}`);
+  const details = encodeURIComponent(`Nagroda: ${it.prize?.summary || ''}\nJak wziąć udział: ${it.entry?.summary || ''}\nŹródło: ${it.url}`);
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${dStart}/${dEnd}&details=${details}`;
+}
+
 // Mirrors render() in site/app.js so the no-JS markup matches what the
 // client re-renders after hydration.
 function card(it) {
   const deadlineBadge = it.deadline
     ? `<span class="badge deadline">Do: ${esc(it.deadline)}</span>`
     : `<span class="badge deadline">Brak daty</span>`;
+  const amoeBadge = it.entry?.noPurchase === 'altFreeEntry'
+    ? `\n          <span class="badge badge--amoe" title="${esc(it.entry?.noPurchaseNotes || 'Darmowa metoda alternatywna')}">✨ Metoda alternatywna</span>`
+    : '';
+  const prizeBadge = it.prize?.value
+    ? `\n          <span class="badge badge--prize">💰 do ${it.prize.value.toLocaleString('pl-PL')} zł</span>`
+    : '';
+  const cal = it.deadline
+    ? `\n          <a class="btn-tool btn--cal" href="${esc(googleCalendarUrl(it))}" target="_blank" rel="noopener" data-deadline="${esc(it.deadline)}" data-title="${esc(it.title)}" data-url="${esc(it.url)}" title="Dodaj termin do kalendarza Google (Shift+klik aby pobrać .ics)">📅 Kalendarz</a>`
+    : '';
+
   return `
-      <article class="card">
+      <article class="card" id="${esc(it.id)}">
         <h2>${esc(it.title)}</h2>
         <div class="badges">
           <span class="badge">Źródło: ${esc(it.source)}</span>
           ${deadlineBadge}
-          <span class="badge">Status: ${esc(it.status || 'unknown')}</span>
+          <span class="badge">Status: ${esc(it.status || 'unknown')}</span>${amoeBadge}${prizeBadge}
         </div>${tagChips(it)}
 
         <div class="row">
@@ -70,6 +91,11 @@ function card(it) {
 
         <div class="actions">
           <a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener">Zobacz szczegóły</a>${contestLink(it)}
+        </div>
+        <div class="tools">${cal}
+          <button type="button" class="btn-tool btn--copy" data-copy-id="${esc(it.id)}" title="Skopiuj bezpośredni link">🔗 Link</button>
+          <button type="button" class="btn-tool btn--save" data-save="${esc(it.id)}" title="Zapisz w moich konkursach">☆ Zapisz</button>
+          <button type="button" class="btn-tool btn--entered" data-entered="${esc(it.id)}" title="Oznacz, że wziąłeś udział">☑ Wezmę udział</button>
         </div>${organizerWarning(it)}${alsoOnNote(it)}
       </article>`;
 }
@@ -156,6 +182,70 @@ function buildJsonLd(items, generatedAt) {
   return `<script type="application/ld+json">\n${jsonLd(website)}\n</script>\n  <script type="application/ld+json">\n${jsonLd(itemList)}\n</script>`;
 }
 
+function buildRssFeed(items, generatedAt) {
+  const escXml = (s) => String(s ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&apos;');
+
+  const pubDate = generatedAt ? new Date(generatedAt).toUTCString() : new Date().toUTCString();
+
+  const feedItems = items.map((it) => {
+    const itemPubDate = it.publishedAt ? new Date(it.publishedAt).toUTCString() : pubDate;
+    const tags = itemTagSlugs(it).map((slug) => `<category>${escXml(tagLabel(slug))}</category>`).join('\n      ');
+    const prizeValText = it.prize?.value ? ` (szacunkowa wartość: ${it.prize.value} PLN)` : '';
+    const desc = `Termin: ${it.deadline || 'Brak daty'}\nNagroda: ${it.prize?.summary || 'Sprawdź w źródle.'}${prizeValText}\nJak wziąć udział: ${it.entry?.summary || 'Sprawdź w źródle.'}\nŹródło: ${it.source}`;
+
+    return `    <item>
+      <title><![CDATA[${it.title}]]></title>
+      <link>${escXml(it.url)}</link>
+      <guid isPermaLink="false">${escXml(it.id)}</guid>
+      <pubDate>${itemPubDate}</pubDate>
+      <description><![CDATA[${desc}]]></description>
+      ${tags}
+    </item>`;
+  }).join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Konkursy i loterie bez zakupu (PL)</title>
+    <link>${BASE}/</link>
+    <description>Aktualne konkursy i loterie w Polsce bez wymogu zakupu (lub z darmową metodą alternatywną). Aktualizowane codziennie.</description>
+    <language>pl</language>
+    <lastBuildDate>${pubDate}</lastBuildDate>
+    <atom:link href="${BASE}/feed.xml" rel="self" type="application/rss+xml" />
+${feedItems}
+  </channel>
+</rss>
+`;
+}
+
+function buildActiveMarkdown(items, generatedAt) {
+  const updated = generatedAt ? new Date(generatedAt).toISOString() : new Date().toISOString();
+  const rows = items.map((it, idx) => {
+    const prizeVal = it.prize?.value ? ` (~${it.prize.value.toLocaleString('pl-PL')} PLN)` : '';
+    const tags = itemTagSlugs(it).map(tagLabel).join(', ');
+    const rules = it.links?.regulamin ? ` | [Regulamin](${it.links.regulamin})` : '';
+    const org = it.links?.organizer ? ` | [Organizator](${it.links.organizer})` : '';
+    return `### ${idx + 1}. [${it.title}](${it.url})
+- **Termin:** ${it.deadline || 'Brak'}
+- **Nagroda:** ${it.prize?.summary || 'Brak opisu'}${prizeVal}
+- **Jak wziąć udział:** ${it.entry?.summary || 'Sprawdź źródło'}
+- **Źródło:** ${it.source}${tags ? ` | **Tagi:** ${tags}` : ''}${rules}${org}
+`;
+  }).join('\n');
+
+  return `# Aktywne konkursy i loterie w Polsce bez zakupu
+Ostatnia aktualizacja: ${updated}
+Liczba aktywnych konkursów z potwierdzonym terminem: ${items.length}
+
+${rows}
+`;
+}
+
 async function main() {
   // Validate before deleting the previous build or publishing an empty shell.
   const data = JSON.parse(await fs.readFile('data/lotteries.json', 'utf8'));
@@ -199,6 +289,19 @@ async function main() {
       const lastmod = `<lastmod>${esc(data.generatedAt.slice(0, 10))}</lastmod>`;
       await fs.writeFile('dist/sitemap.xml', sitemap.replace('<!-- LASTMOD -->', () => lastmod), 'utf8');
     }
+
+    // Copy data/schema.json to dist/data/schema.json
+    try {
+      await fs.copyFile('data/schema.json', 'dist/data/schema.json');
+    } catch {}
+
+    // Generate RSS 2.0 feed
+    const rssXml = buildRssFeed(items, data.generatedAt);
+    await fs.writeFile('dist/feed.xml', rssXml, 'utf8');
+
+    // Generate active markdown digest
+    const activeMd = buildActiveMarkdown(items, data.generatedAt);
+    await fs.writeFile('dist/data/active.md', activeMd, 'utf8');
   }
 
   console.log('Built dist/ from site/');

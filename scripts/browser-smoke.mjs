@@ -27,7 +27,7 @@ function activeItems(data) {
 }
 
 async function serve(roots) {
-  const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.txt': 'text/plain', '.xml': 'application/xml' };
+  const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.txt': 'text/plain', '.xml': 'application/xml', '.md': 'text/markdown' };
   const instance = http.createServer(async (req, res) => {
     try {
       const url = new URL(req.url, 'http://localhost');
@@ -117,6 +117,33 @@ try {
   await page.selectOption('#tag', 'film');
   assert.deepEqual(await cardTitles(page), ['Konkurs filmowy Latarnia']);
   await page.selectOption('#tag', 'all');
+  // Bookmarking and personal tracker checks
+  const firstSave = page.locator('article.card [data-save]').first();
+  const firstTitle = (await cardTitles(page))[0];
+  await firstSave.click();
+  await page.selectOption('#userView', 'saved');
+  assert.deepEqual(await cardTitles(page), [firstTitle]);
+  await page.selectOption('#userView', 'all');
+  assert.deepEqual((await cardTitles(page)).sort(), expected);
+  checks++;
+
+  // Calendar export action
+  const calLink = page.locator('article.card .btn--cal').first();
+  assert.ok(await calLink.isVisible());
+  assert.match(await calLink.getAttribute('href'), /calendar\.google\.com\/calendar\/render/);
+  checks++;
+
+  // Sorting
+  await page.selectOption('#sort', 'title-asc');
+  assert.deepEqual(await cardTitles(page), [...expected].sort((a, b) => a.localeCompare(b, 'pl')));
+  await page.selectOption('#sort', 'deadline-asc');
+  checks++;
+
+  // URL search parameter synchronization
+  await page.fill('#q', 'Atlas');
+  assert.ok(page.url().includes('q=Atlas'));
+  await page.fill('#q', '');
+  checks++;
   await page.uncheck('#activeOnly');
   assert.equal(await page.locator('article.card').count(), fixtureData.items.length);
   assert.equal(await page.locator('article.card').filter({ hasText: 'Status: unknown' }).count(), 1);
@@ -154,6 +181,22 @@ try {
   assert.deepEqual(builtJsonld.itemListElement.map(item => item.item.name).sort(), activeItems(actualData).map(item => item.title).sort());
   await built.uncheck('#activeOnly');
   assert.equal(await built.locator('article.card').count(), actualData.items.length);
+  checks++;
+
+  // Feed, active digest, and schema verification in built site
+  const feedRes = await fetch(`${base}/built/feed.xml`);
+  assert.equal(feedRes.status, 200);
+  const feedText = await feedRes.text();
+  assert.ok(feedText.includes('<rss version="2.0"'));
+  assert.ok(feedText.includes('<channel>'));
+
+  const activeMdRes = await fetch(`${base}/built/data/active.md`);
+  assert.equal(activeMdRes.status, 200);
+  const activeMdText = await activeMdRes.text();
+  assert.ok(activeMdText.includes('# Aktywne konkursy'));
+
+  const schemaRes = await fetch(`${base}/built/data/schema.json`);
+  assert.equal(schemaRes.status, 200);
   checks++;
   assert.deepEqual(failures, [], 'Browser page errors');
   console.log(`Browser smoke passed: ${checks} checks; fixtures plus ${activeItems(actualData).length} active built listings.`);

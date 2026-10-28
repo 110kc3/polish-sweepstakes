@@ -5,20 +5,33 @@ accepted work, verification and the next session's handoff.
 
 ## Queue status — 2026-10-28
 
-**All accepted Markdown tasks and post-push verifications are complete. No implementation work remains queued.**
-The documentation-only closeout push at `4cad13ca29ec85ca66cbb2113dfa49abf45e7b31`
-has completed and passed CI verification in [push run 39968012124](https://github.com/110kc3/polish-sweepstakes/actions/runs/39968012124).
-All five subsequent scheduled daily runs succeeded through the [October 28 run](https://github.com/110kc3/polish-sweepstakes/actions/runs/40679196498),
-confirming tests, scraping, checking, build, Chromium installation, browser smoke
-and Pages deployment continuously pass with zero failures.
+**All accepted Markdown tasks, feature updates (Phases 1 & 2), and verifications are complete.**
+All 67 unit and pipeline tests and 15 Playwright Chromium browser smoke checks pass cleanly.
+The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
+and compact AI agent digest (`data/active.md`).
 
-A fresh live pass on 2026-10-28 re-verified all six sources (189 items, 166
-active listings with organizer/rules URLs), confirmed 170/170 non-ended source
-articles reachable, added native taxonomy mappings for console and music tags
-in `scripts/tags.mjs` (eliminating all unmapped candidate slugs), and verified that
-all 60 unit/pipeline tests and all 10 Chromium browser smoke checks pass with 0 audit
-vulnerabilities. Commit `6de907b8b20980d216fcb377ee1308aeb9dc2d53` passed tests,
-scraping, checking, build, browser smoke, and Pages deployment in [push run 40773452554](https://github.com/110kc3/polish-sweepstakes/actions/runs/40773452554).
+## Current completed batch — 2026-10-28 (Feature updates 1 & 2)
+
+The owner selected Phase 1 and Phase 2 from the feature research roadmap to complete and push:
+
+1. **Completed and verified (Phase 1 Quick Wins):**
+   - **Static RSS 2.0 Feed (`feed.xml`):** Generated during build with active contests, categories, and deadlines.
+   - **Calendar Export:** Direct Google Calendar links and `.ics` event downloads with 24h reminders.
+   - **Personal Contest Tracking:** LocalStorage bookmarks ("⭐ Zapisane") and participation tracking ("✅ Wzięte") with real-time UI filter.
+   - **Sorting & Deep Linking:** Dropdown for deadline-asc, published-desc, prize-desc, deadline-desc, and title-asc, with two-way URL search synchronization and direct card anchor scrolling.
+   - **Alternative Free Entry Callout:** Dedicated badge and tooltip for contests with confirmed free alternative methods of entry.
+
+2. **Completed and verified (Phase 2 Data Intelligence):**
+   - **Numeric Prize Value Extraction:** Extracted monetary values in PLN into `prize.value` across 57% of current records, with visual prize badge and sorting support.
+   - **JSON Schema Contract (`data/schema.json`):** Formal Draft-07 specification validated in test suite.
+   - **Compact AI Agent Digest (`data/active.md`) & `llms-full.txt`:** Plain-text markdown listing active contests for single-prompt agent consumption.
+
+### Feature verification — 2026-10-28
+
+- Clean `npm test`: all **67 tests pass** (unit, pipeline, prize parsing, schema validation, fallback, purchase filter).
+- Clean `npm run test:browser`: all **15 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, no-JS fallback, failed-fetch fallback, bookmarking, calendar export links, sorting, and URL synchronization.
+- Build: 166 pre-rendered listings, `dist/feed.xml`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/llms-full.txt`.
+- Dependency audit: 0 reported vulnerabilities. Whitespace checks clean with CRLF files retained.
 
 ## Completed batch — 2026-10-23 follow-up
 

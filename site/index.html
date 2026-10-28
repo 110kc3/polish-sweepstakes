@@ -8,6 +8,7 @@
   <link rel="canonical" href="https://110kc3.github.io/polish-sweepstakes/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="alternate" type="application/json" href="data/lotteries.json" title="Dane konkursów (JSON)" />
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="Aktualne konkursy bez zakupu (RSS)" />
   <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt (agent-readable index)" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Konkursy i loterie w Polsce bez zakupu" />
@@ -47,9 +48,29 @@
         </select>
       </label>
 
+      <label>
+        Sortuj:
+        <select id="sort">
+          <option value="deadline-asc">Najbliższy termin</option>
+          <option value="published-desc">Najnowsze wpisy</option>
+          <option value="prize-desc">Najwyższa nagroda</option>
+          <option value="deadline-desc">Najdalszy termin</option>
+          <option value="title-asc">Tytuł (A-Z)</option>
+        </select>
+      </label>
+
+      <label>
+        Moje:
+        <select id="userView">
+          <option value="all">Wszystkie</option>
+          <option value="saved">⭐ Zapisane</option>
+          <option value="entered">✅ Wzięte</option>
+        </select>
+      </label>
+
       <label class="checkbox">
         <input id="activeOnly" type="checkbox" checked />
-        Tylko aktywne (znany termin)
+        Tylko aktywne
       </label>
 
       <label>
@@ -71,6 +92,14 @@
         <a href="https://konkursiada.pl/aktualne-konkursy/" target="_blank" rel="noopener">konkursiada.pl</a>,
         <a href="https://aktualnekonkursy.pl" target="_blank" rel="noopener">aktualnekonkursy.pl</a>,
         <a href="https://www.pepper.pl/grupa/konkursy" target="_blank" rel="noopener">pepper.pl</a>
+      </p>
+      <p class="muted">
+        Kanały i API:
+        <a href="feed.xml" target="_blank">Kanał RSS 2.0</a> •
+        <a href="data/lotteries.json" target="_blank">Baza JSON</a> •
+        <a href="data/schema.json" target="_blank">JSON Schema</a> •
+        <a href="data/active.md" target="_blank">Zestawienie Markdown</a> •
+        <a href="llms.txt" target="_blank">llms.txt</a>
       </p>
     </footer>
   </main>

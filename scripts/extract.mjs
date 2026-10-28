@@ -169,6 +169,23 @@ export function extractPrizeSummary(text) {
   return clipped.length > 8 ? clipped : PRIZE_PLACEHOLDER;
 }
 
+export function extractPrizeValue(prizeText, title = '') {
+  const combined = `${title} ${prizeText || ''}`.replace(/\u00a0/g, ' ');
+  const matches = [...combined.matchAll(/(?:^|[^\d.,])(\d{1,3}(?:[.\s]\d{3})*(?:,\d{2})?|\d+)\s*(?:zł(?:otych|ote|oty)?|pln)(?!\p{L})/giu)];
+  if (!matches.length) return null;
+
+  const values = [];
+  for (const m of matches) {
+    const rawNum = m[1].replace(/[.\s]/g, '').replace(/,\d{2}$/, '');
+    const num = parseInt(rawNum, 10);
+    if (Number.isFinite(num) && num > 0 && num <= 10_000_000) {
+      values.push(num);
+    }
+  }
+
+  return values.length ? Math.max(...values) : null;
+}
+
 export const ENTRY_PLACEHOLDER = 'Sprawdź zasady udziału w źródle.';
 
 // Site furniture that would otherwise be mistaken for content: fajnekonkursy

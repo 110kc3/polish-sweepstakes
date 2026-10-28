@@ -1,0 +1,70 @@
+# Konkursy i loterie w Polsce bez zakupu (Polish No-Purchase Sweepstakes) — Full Technical Specification
+
+> Canonical dataset, API schemas, heuristic extraction rules, AMoE verification policies, and agent consumption guidelines.
+
+Base URL: https://110kc3.github.io/polish-sweepstakes/
+
+## Available Endpoints & Feeds
+
+- **Full Dataset (JSON):** `https://110kc3.github.io/polish-sweepstakes/data/lotteries.json`
+- **JSON Schema (Draft-07):** `https://110kc3.github.io/polish-sweepstakes/data/schema.json`
+- **Active Contests Summary (Markdown):** `https://110kc3.github.io/polish-sweepstakes/data/active.md`
+- **RSS 2.0 Feed:** `https://110kc3.github.io/polish-sweepstakes/feed.xml`
+- **HTML + JSON-LD (ItemList of Event):** `https://110kc3.github.io/polish-sweepstakes/`
+- **Short LLM Entrypoint:** `https://110kc3.github.io/polish-sweepstakes/llms.txt`
+
+## Dataset Contract (Version 2)
+
+### Top-Level Object
+```json
+{
+  "version": 2,
+  "generatedAt": "ISO-8601 UTC timestamp",
+  "checkedAt": "ISO-8601 UTC timestamp",
+  "sourceHealth": [
+    { "source": "fajnekonkursy", "status": "ok", "items": 94 }
+  ],
+  "tagKinds": ["nagroda", "mechanika", "temat", "marka", "odbiorca", "zasieg"],
+  "tagKindLabels": { "nagroda": "Nagroda", ... },
+  "tagLabels": { "pieniadze": "Pieniądze", ... },
+  "tagCounts": { "pieniadze": 54, ... },
+  "items": [ ... ]
+}
+```
+
+### Item Properties
+- `id` (string): Unique identifier prefixed with source name (e.g., `fajnekonkursy:59817`, `wygrajta:11646`).
+- `source` (string): One of `fajnekonkursy`, `ofree`, `wygrajta`, `konkursiada`, `aktualnekonkursy`, `pepper`.
+- `sourceId` (string|number): Source's internal post or thread identifier.
+- `title` (string): Cleaned and normalized contest title.
+- `url` (string): Canonical URL of the source article covering the contest.
+- `publishedAt` (string|null): ISO timestamp when the post was first published.
+- `modifiedAt` (string|null): ISO timestamp when the source post was last modified.
+- `deadline` (string|null): Ending deadline in `YYYY-MM-DD` (Europe/Warsaw date boundary) or `null` if unknown.
+- `status` (string): `active` (deadline is today or future in Europe/Warsaw), `ended` (deadline passed), or `unknown` (no deadline extracted).
+- `links`:
+  - `organizer` (string|null): Direct link to the contest landing page or entry form.
+  - `regulamin` (string|null): Official PDF or webpage containing the formal rules ("regulamin").
+- `tags` (object): Grouped by kind (`nagroda`, `mechanika`, `temat`, `marka`, `odbiorca`, `zasieg`) containing stable lowercase slugs.
+- `entry`:
+  - `summary` (string): Concise summary in Polish of how to enter.
+  - `noPurchase` (string): Usually `altFreeEntry` for confirmed free/alternative entry.
+  - `noPurchaseNotes` (string): Context notes regarding free eligibility verification.
+- `prize`:
+  - `summary` (string): Human-readable Polish summary of the prizes.
+  - `value` (number|null): Extracted maximum prize value in PLN (integer), or `null` if no monetary amount is stated.
+  - `currency` (string): `PLN`.
+- `verification`: First-party reachability verification results:
+  - `checkedAt`: ISO timestamp of the reachability check.
+  - `sourceOk`: `true` if source article URL is reachable, `false` if dead (404/410/DNS).
+  - `organizerOk`: Reachability of the preferred target (`regulamin` if present, else `organizer`).
+  - `regulaminOk`: Independent reachability of `links.regulamin`.
+  - `organizerPageOk`: Independent reachability of `links.organizer` when rules are dead.
+- `alsoOn` (array, optional): Present when an identical contest was found across multiple aggregator sources and merged.
+
+## Rules for AI Agents
+
+1. **Verify Official Rules ("Regulamin"):** Summaries and dates are heuristic extractions. Prioritize `links.regulamin` or `links.organizer` to confirm terms before advising human users.
+2. **Europe/Warsaw Timezone:** Deadlines expire at 23:59:59 Europe/Warsaw time on the specified date.
+3. **No-Purchase Guarantee:** All listings are filtered against mandatory purchases, receipts, order numbers, and entry fees. Contests with Alternative Method of Entry (AMoE) remain eligible.
+4. **Personal Entry:** The majority of contests require personal creative submission (photos, poems, social media comments, recipes) or identity verification. Automated script submission is generally forbidden by organizer terms.
