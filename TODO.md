@@ -17,7 +17,8 @@ active listings with organizer/rules URLs), confirmed 170/170 non-ended source
 articles reachable, added native taxonomy mappings for console and music tags
 in `scripts/tags.mjs` (eliminating all unmapped candidate slugs), and verified that
 all 60 unit/pipeline tests and all 10 Chromium browser smoke checks pass with 0 audit
-vulnerabilities.
+vulnerabilities. Commit `6de907b8b20980d216fcb377ee1308aeb9dc2d53` passed tests,
+scraping, checking, build, browser smoke, and Pages deployment in [push run 40773452554](https://github.com/110kc3/polish-sweepstakes/actions/runs/40773452554).
 
 ## Completed batch — 2026-10-23 follow-up
 
