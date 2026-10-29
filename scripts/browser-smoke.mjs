@@ -145,6 +145,7 @@ try {
     mimeType: 'application/json',
     buffer: Buffer.from(importPayload, 'utf8')
   });
+  await page.locator('#trackerStatus').filter({ hasText: /Wczytano/ }).waitFor({ timeout: 5000 });
   assert.match(await page.locator('#trackerStatus').textContent(), /Wczytano/);
   await page.selectOption('#userView', 'entered');
   assert.deepEqual(await cardTitles(page), [fixtureData.items[0].title]);
