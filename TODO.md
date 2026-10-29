@@ -6,7 +6,7 @@ accepted work, verification and the next session's handoff.
 ## Queue status — 2026-10-29
 
 **All accepted Markdown tasks, feature updates (Phases 1-4: Tracker Backup/Import & Social Badges), and verifications are complete.**
-All 74 unit and pipeline tests and 17 Playwright Chromium browser smoke checks pass cleanly.
+All 74 unit and pipeline tests and 18 Playwright Chromium browser smoke checks pass cleanly.
 The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
 The future strategic backlog is maintained in [`ROADMAP.md`](ROADMAP.md).
@@ -14,7 +14,7 @@ Post-push CI and Pages deployment for commits `b33e16e`, `70a9f58`, and `b4fdd86
 
 ## Current completed batch — 2026-10-29 (Feature updates 3 & 4)
 
-The owner selected Option 3 (Tracker JSON Export/Import) and Option 4 (Social Platform Direct Badges) to implement, and queued the remaining roadmap candidates in [`ROADMAP.md`](ROADMAP.md):
+The owner selected Option 3 (Tracker JSON Export/Import), Option 4 (Social Platform Direct Badges), and dark dropdown filter styling to implement, and queued the remaining roadmap candidates in [`ROADMAP.md`](ROADMAP.md):
 
 1. **Completed and verified (Personal Tracker JSON Export & Import):**
    - **JSON Backup:** Client-side export of tracked contests (`saved` and `entered`) to a timestamped JSON file with metadata.
@@ -26,13 +26,17 @@ The owner selected Option 3 (Tracker JSON Export/Import) and Option 4 (Social Pl
    - **Visual Badging:** Pre-rendered and hydrated badges with brand-accent styles (`badge--instagram`, `badge--facebook`, `badge--tiktok`, `badge--youtube`).
    - **Preserved Invariants:** Positioned badges cleanly inside `.badges`, preserving existing `.actions` button counts and link roles for zero test regressions.
 
-3. **Completed and verified (Remaining Feature Roadmap in `ROADMAP.md`):**
+3. **Completed and verified (Dark-aware Filter Select & Dropdown Option Styling):**
+   - **Fixed White-on-White Text:** Native select dropdown popups rendered white options against light system theme backgrounds. Enforced `color-scheme: dark` at document root and `<head>` metadata, and applied opaque `var(--card)` background (`#121a33`) with `#e9ecf1` text to `.controls select`, `option`, and `optgroup`.
+   - **Form Polish:** Added distinct styles for `option:checked`, optgroups (`#0b1020`), focus outlines (`var(--accent)`), checkbox accent color, and `::selection` highlighting.
+
+4. **Completed and verified (Remaining Feature Roadmap in `ROADMAP.md`):**
    - Created canonical [`ROADMAP.md`](ROADMAP.md) with comprehensive technical specifications for queued candidates: Notification Webhooks (`scripts/notify.mjs` for Discord/Telegram), Quick-Filter Preset Chips, Offline Service Worker (`site/sw.js`), and Weekly Newsletter Digest.
 
 ### Feature verification — 2026-10-29
 
-- Clean `npm test`: all **74 tests pass** (including new `scripts/social.test.mjs` test suite covering Instagram, Facebook, TikTok, and YouTube URL/tag detection).
-- Clean `npm run test:browser`: all **17 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, bookmarking, tracker JSON export, tracker JSON import with union deduplication, calendar links, sorting, URL synchronization, and social badge presence.
+- Clean `npm test`: all **74 tests pass** (including `scripts/social.test.mjs` test suite covering Instagram, Facebook, TikTok, and YouTube URL/tag detection).
+- Clean `npm run test:browser`: all **18 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, bookmarking, tracker JSON export, tracker JSON import with union deduplication, calendar links, sorting, URL synchronization, social badge presence, and non-transparent dark select/option filter backgrounds.
 - Build: pre-rendered active listings with social badges, `dist/feed.xml`, `dist/data/lotteries.csv`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/manifest.webmanifest`.
 - Dependency audit: 0 reported vulnerabilities. Whitespace checks clean with CRLF files retained.
 - Deployment verified: commits `b33e16e`, `70a9f58`, and `b4fdd86` passed push runs [40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469), [40785185466](https://github.com/110kc3/polish-sweepstakes/actions/runs/40785185466), and [40844471540](https://github.com/110kc3/polish-sweepstakes/actions/runs/40844471540) (build and Pages deploy). Live Pages site confirmed serving HTTP 200 on all feed, schema, CSV, manifest, and tracker export/import endpoints with direct social platform badging.

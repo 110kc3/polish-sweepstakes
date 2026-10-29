@@ -180,6 +180,15 @@ try {
   assert.equal(await page.locator('article.card').count(), 0);
   await page.selectOption('#source', 'all');
   checks++;
+
+  // Filter select dropdown styling: ensure dark background on select and options
+  const selectBg = await page.locator('#source').evaluate(el => window.getComputedStyle(el).backgroundColor);
+  assert.equal(selectBg, 'rgb(18, 26, 51)', 'Filter select must have dark card background');
+  const optionBg = await page.locator('#source option').first().evaluate(el => window.getComputedStyle(el).backgroundColor);
+  assert.notEqual(optionBg, 'rgba(0, 0, 0, 0)', 'Filter option background must not be transparent');
+  assert.notEqual(optionBg, 'rgb(255, 255, 255)', 'Filter option background must not be white');
+  checks++;
+
   await checkRulesFallback(page);
   await page.setViewportSize({ width: 390, height: 844 });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), 'Mobile page overflows horizontally');
