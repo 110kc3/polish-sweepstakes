@@ -19,18 +19,20 @@ export function stripText(html) {
 }
 
 // Links we never treat as the contest venue: share intents and media files.
-const LINK_BLOCKLIST = /sharer|\/intent\/|\/share\?|wa\.me|mailto:|\.(?:jpg|jpeg|png|gif|webp|svg|pdf)(?:[?#]|$)/i;
+const LINK_BLOCKLIST = /sharer|\/intent\/|\/share\?|wa\.me|mailto:|\/cdn-cgi\/|\.(?:jpg|jpeg|png|gif|webp|svg|pdf)(?:[?#]|$)/i;
 
 // The aggregators themselves, plus asset hosts. Matched against the hostname
 // only: these domains also turn up inside query strings (organizer links carry
 // `?utm_source=konkursiada.pl`), and blocking on those would discard the very
 // link we are looking for.
-const BLOCKED_HOSTS = /(?:^|\.)(?:fajnekonkursy\.pl|ofree\.pl|pepper\.pl|wygrajta\.pl|konkursiada\.pl|aktualnekonkursy\.pl|gstatic\.com|googleapis\.com|googletagmanager\.com|doubleclick\.net)$/i;
+const BLOCKED_HOSTS = /(?:^|\.)(?:fajnekonkursy\.pl|ofree\.pl|pepper\.pl|wygrajta\.pl|konkursiada\.pl|aktualnekonkursy\.pl|konkursyblisko\.pl|e-konkursy\.info|ekonkursy\.info|gstatic\.com|googleapis\.com|googletagmanager\.com|doubleclick\.net)$/i;
 
 export function isUsableLink(href) {
   if (!/^https?:\/\//i.test(href) || LINK_BLOCKLIST.test(href)) return false;
   try {
-    return !BLOCKED_HOSTS.test(new URL(href).hostname);
+    const u = new URL(href);
+    if (u.searchParams.has('kb_join')) return true;
+    return !BLOCKED_HOSTS.test(u.hostname);
   } catch {
     return false;
   }
@@ -59,7 +61,7 @@ export function extractLinks(html, baseUrl) {
     });
 
   const regulamin = anchors.find((a) => a.rules);
-  const organizer = anchors.find((a) => !a.rules && /strona konkursu|weź udział|formularz|zgłoś/i.test(a.text))
+  const organizer = anchors.find((a) => !a.rules && /strona konkursu|przejdź do strony|weź udział|formularz|zgłoś/i.test(a.text))
     || anchors.find((a) => !a.rules);
 
   return {
@@ -74,11 +76,18 @@ const PL_MONTHS = {
   września: '09', października: '10', listopada: '11', grudnia: '12',
 };
 
-export const NUMERIC_DATE = String.raw`\d{1,2}[.\-]\d{1,2}[.\-]\d{4}`;
+export const NUMERIC_DATE = String.raw`\d{4}-\d{2}-\d{2}|\d{1,2}[.\-]\d{1,2}[.\-]\d{4}`;
 const TEXT_DATE = String.raw`\d{1,2}\s+(?:${Object.keys(PL_MONTHS).join('|')})\s+\d{4}`;
 
 export function parsePolishDateToISO(dmy) {
-  // accepts DD.MM.YYYY, DD-MM-YYYY or "DD <miesiąca> YYYY"
+  // accepts YYYY-MM-DD, DD.MM.YYYY, DD-MM-YYYY or "DD <miesiąca> YYYY"
+  const isoMatch = dmy.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (isoMatch) {
+    const [, yyyy, mm, dd] = isoMatch;
+    const iso = `${yyyy}-${mm}-${dd}`;
+    if (new Date(`${iso}T00:00:00Z`).toISOString().slice(0, 10) !== iso) return null;
+    return iso;
+  }
   const num = dmy.match(/^(\d{1,2})[.\-](\d{1,2})[.\-](\d{4})$/);
   const txt = num ? null : dmy.match(/^(\d{1,2})\s+(\p{L}+)\s+(\d{4})$/u);
   if (!num && !txt) return null;
@@ -309,10 +318,11 @@ export function parseRssItems(xml) {
       const mm = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`));
       return mm ? unwrap(mm[1].trim()) : '';
     };
+    const desc = tag('content:encoded') || tag('content\\:encoded') || tag('description');
     return {
       title: tag('title'),
       link: tag('link'),
-      description: tag('description'),
+      description: desc,
       pubDate: tag('pubDate'),
       guid: tag('guid'),
       // Feeds may carry several <category> elements; all of them become tags.
@@ -387,9 +397,10 @@ export function isStaleUndated(item, now = new Date()) {
  * in a year ("...-konkurs-2026") into id "2026" and collide across items.
  */
 export function sourceIdFrom(item, idPattern) {
-  const link = item.link || '';
+  const link = (item.link || '').replaceAll('&amp;', '&');
+  const guid = (item.guid || '').replaceAll('&amp;', '&');
   if (idPattern) {
-    const hit = link.match(idPattern)?.[1];
+    const hit = link.match(idPattern)?.[1] || guid.match(idPattern)?.[1];
     if (hit) return hit;
   }
   return item.guid || link;

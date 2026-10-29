@@ -6,15 +6,17 @@ Live: https://110kc3.github.io/polish-sweepstakes/
 
 Project status and accepted work: [`TODO.md`](TODO.md) is the canonical queue. Strategic roadmap and future candidates: [`ROADMAP.md`](ROADMAP.md). All accepted implementation tasks and closeout verifications are complete; CI and Pages deployments verified through 2026-10-29.
 
-- Sources (6):
+- Sources (8):
   - `fajnekonkursy.pl` — WP REST, category `bez-zakupu`
+  - `konkursyblisko.pl` — RSS feed, curated category `bez-zakupu`; direct contest links recovered from join actions and social profiles
   - `ofree.pl` — WP REST, category `darmowe-konkursy`
-  - `wygrajta.pl` — WP REST, creative/online-entry categories from the last 24 months; `konsumenckie`, `promocyjne` and retailer categories excluded
+  - `wygrajta.pl` — WP REST, creative/online/social contest categories (`artystyczne`, `literackie`, `fotograficzne`, `plastyczne`, `graficzne`, `filmowe`, `ksiazkowe`, `internetowe`, `muzyczne`, `radiowe`, `dla-dzieci`, `dla-mlodziezy`, `na-facebooku`) from the last 24 months; `konsumenckie`, `promocyjne` and retailer categories excluded
   - `konkursiada.pl` — WP REST custom post type `konkursy`; finished entries and those requiring a receipt, purchase, order number, contract or promotional packaging are excluded. Deadlines come from `p.dates`; entry steps come from the article's entry section rather than its heading
+  - `e-konkursy.info` — RSS feed; entries requiring purchase, receipts, or product registration are filtered out. Article pages are fetched to extract deadlines, direct organizer links, and official rules
   - `aktualnekonkursy.pl` — Joomla RSS; category `konkursy-konsumenckie` excluded. Current articles are fetched to recover organizer/rules links and entry instructions omitted by the feed. Purchase/order requirements and stated positive entry fees are filtered from feed and article text
   - `pepper.pl` — Konkursy group RSS; requires a contest/prize announcement, excludes support threads and coupon/renifer swaps, purchase requirements and stated positive entry fees. Yearless numeric date ranges in titles use the publication year, including winter rollover
 - Purchase-required content checks also apply to the standard WordPress feeds, even when a source places an article in its free-entry category. Receipt/purchase requirements cannot be accepted solely because an article asks about or negates entry “bez zakupu”; genuine free/alternative-entry descriptions remain eligible
-- Article details for Konkursiada and AktualneKonkursy are cached in the checked-in dataset for up to seven days. A changed `modified` date (where supplied) or extraction version forces a refresh; a failed detail fetch preserves the feed listing and is retried next run
+- Article details for Konkursiada, AktualneKonkursy, e-Konkursy, and KonkursyBlisko are cached in the checked-in dataset for up to seven days. A changed `modified` date (where supplied) or extraction version forces a refresh; a failed detail fetch preserves the feed listing and is retried next run
 - Organizer extraction resolves relative links and accepts PDF rules explicitly identified by their label, URL or nearby text. Navigation outside the contest article is excluded from article enrichment
 - Tags: every entry gets a `tags` object grouped by kind (`nagroda`, `mechanika`, `temat`, `marka`, `odbiorca`, `zasieg`), built from each source's native taxonomy plus keyword rules. The controlled vocabulary lives in [`scripts/tags.mjs`](scripts/tags.mjs); a scrape run logs the most frequent unmapped source slugs so it is easy to extend. The site renders them as colour-coded chips and offers a grouped tag filter
 - The same contest listed on several sources is merged into one card (exact normalised-title match), unioning the tags and recording the others in `alsoOn`

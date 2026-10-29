@@ -21,7 +21,7 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
 - sourceHealth: [{ source, status (ok|error), items (before merging/stale filtering),
   error (optional) }] — additive source fetch diagnostics. A broken source may be
   omitted from the listings while other sources continue to update.
-- Each item: id, source (fajnekonkursy|ofree|wygrajta|konkursiada|aktualnekonkursy|pepper),
+- Each item: id, source (fajnekonkursy|konkursyblisko|ofree|wygrajta|konkursiada|ekonkursy|aktualnekonkursy|pepper),
   title, url (source article with full rules),
   publishedAt, modifiedAt, deadline (YYYY-MM-DD or null), status (active|ended|unknown),
   links.organizer (contest entry page, may be null), links.regulamin (official rules, may be null),
@@ -71,9 +71,10 @@ This file is the front door for AI agents. Base URL: https://110kc3.github.io/po
 
 ## Notes
 
-- Sources: fajnekonkursy.pl and ofree.pl (categories restricted to no-purchase / free-entry contests),
-  wygrajta.pl (creative/online-entry categories, recent window only; consumer and retailer promos excluded),
+- Sources: fajnekonkursy.pl, ofree.pl, and konkursyblisko.pl (categories restricted to no-purchase / free-entry contests),
+  wygrajta.pl (creative/online/social categories, recent window only; consumer and retailer promos excluded),
   konkursiada.pl (receipt, purchase, order-number, contract and promotional-packaging conditions excluded),
+  e-konkursy.info (general contest feed with purchase-required entries and promotional lotteries filtered out),
   aktualnekonkursy.pl (creative/open contests, consumer category excluded; article pages recover links and entry steps),
   plus pepper.pl (contest/prize announcements from the Konkursy group; support threads and coupon/renifer swaps excluded).
 - Purchase/order and stated positive entry-fee checks also apply to standard WordPress

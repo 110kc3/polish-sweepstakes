@@ -240,3 +240,93 @@ test('Pepper fixture drops support threads, swaps and stale unknowns while keepi
   const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
   assert.deepEqual(data.items.map(i => i.title), ['Konkurs filmowy z nagrodami', 'Wygraj książkę!']);
 });
+
+test('KonkursyBlisko fixture extracts content:encoded details and resolves kb_join redirect', async t => {
+  const { dir, base } = await fixture(t, (req, res) => {
+    if (req.url === '/feed') {
+      return res.end(`<rss><channel><item>
+        <title>Snuffy Jako Film</title>
+        <link>${base}/konkurs/snuffy/</link>
+        <guid>${base}/?post_type=kb_konkurs&amp;p=242</guid>
+        <description>Snuffy Jako Film</description>
+        <content:encoded><![CDATA[<p>Wygraj nagrody. Konkurs trwa do dnia 31 grudnia 2999.</p>]]></content:encoded>
+      </item></channel></rss>`);
+    }
+    if (req.url === '/konkurs/snuffy/') {
+      return res.end(`<article class="kb-single-details">
+        <h1>Snuffy Jako Film</h1>
+        <p class="kb-organizer">Organizator Test Sp. z o.o.</p>
+        <a href="${base}/?kb_join=242" class="kb-join-button">Weź udział!</a>
+      </article>`);
+    }
+    if (req.url === '/?kb_join=242') {
+      res.writeHead(302, { Location: 'https://instagram.com/p/test-contest' });
+      return res.end();
+    }
+    res.writeHead(404).end();
+  });
+  const dataPath = path.join(dir, 'lotteries.json');
+  await scrape({
+    dataPath,
+    sources: [{
+      source: 'konkursyblisko',
+      type: 'rss',
+      feedUrl: base + '/feed',
+      detailSelector: '.kb-single-details',
+      idPattern: /[?&]p=(\d+)/,
+    }],
+  });
+  const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
+  assert.equal(data.items.length, 1);
+  assert.equal(data.items[0].id, 'konkursyblisko:242');
+  assert.equal(data.items[0].deadline, '2999-12-31');
+  assert.equal(data.items[0].status, 'active');
+  assert.equal(data.items[0].links.organizer, 'https://instagram.com/p/test-contest');
+});
+
+test('e-Konkursy fixture filters purchase-required items and enriches free entries with rules and deadline', async t => {
+  const { dir, base } = await fixture(t, (req, res) => {
+    if (req.url === '/feed') {
+      return res.end(`<rss><channel>
+        <item>
+          <title>Konkurs z zakupem i paragonem</title>
+          <link>${base}/konkurs/paid</link>
+          <description>Kup 2 napoje i zachowaj paragon.</description>
+        </item>
+        <item>
+          <title>Konkurs kreatywny bez zakupu</title>
+          <link>${base}/konkurs/free</link>
+          <description>Wymyśl wiersz. Nagrodą jest aparat fotograficzny.</description>
+        </item>
+      </channel></rss>`);
+    }
+    if (req.url === '/konkurs/free') {
+      return res.end(`<div class="post-item">
+        <a href="${base}/cdn-cgi/l/email-protection#123">Email</a>
+        <p>Opublikowano 29.10.2026. Konkurs trwa do 2999-12-31.</p>
+        <p>Napisz wiersz w komentarzu.</p>
+        <a href="https://organizer.example/contest" class="btn btn-success">Przejdź do strony z konkursem</a>
+        <a href="https://organizer.example/regulamin.pdf" class="btn btn-info">Zobacz regulamin</a>
+      </div>`);
+    }
+    res.writeHead(404).end();
+  });
+  const dataPath = path.join(dir, 'lotteries.json');
+  await scrape({
+    dataPath,
+    sources: [{
+      source: 'ekonkursy',
+      type: 'rss',
+      feedUrl: base + '/feed',
+      detailSelector: '.post-item',
+      idPattern: /\/konkurs\/([a-z0-9-]+)/,
+    }],
+  });
+  const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
+  assert.equal(data.items.length, 1);
+  assert.equal(data.items[0].id, 'ekonkursy:free');
+  assert.equal(data.items[0].deadline, '2999-12-31');
+  assert.equal(data.items[0].status, 'active');
+  assert.equal(data.items[0].links.organizer, 'https://organizer.example/contest');
+  assert.equal(data.items[0].links.regulamin, 'https://organizer.example/regulamin.pdf');
+});

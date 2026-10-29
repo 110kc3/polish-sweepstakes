@@ -52,6 +52,14 @@ const SOURCES = [
     noPurchaseNotes: 'Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną).',
   },
   {
+    source: 'konkursyblisko',
+    type: 'rss',
+    detailSelector: '.kb-single-details',
+    feedUrl: 'https://konkursyblisko.pl/kategoria-konkursu/bez-zakupu/feed/',
+    idPattern: /[?&]p=(\d+)|[/-]([a-z0-9-]+)\/?$/i,
+    noPurchaseNotes: 'Źródło w kategorii bez zakupu serwisu Konkursy Blisko — potwierdź w regulaminie.',
+  },
+  {
     source: 'ofree',
     type: 'wp',
     baseUrl: 'https://ofree.pl',
@@ -68,8 +76,8 @@ const SOURCES = [
     wpPostsEndpoint: '/wp-json/wp/v2/posts',
     // Creative / online-entry contest categories: artystyczne, literackie,
     // fotograficzne, plastyczne, graficzne, filmowe, książkowe, internetowe,
-    // muzyczne, radiowe, dla dzieci, dla młodzieży.
-    categories: [32, 26, 34, 27, 35, 33, 38, 36, 39, 28, 71, 70],
+    // muzyczne, radiowe, dla dzieci, dla młodzieży, na facebooku.
+    categories: [32, 26, 34, 27, 35, 33, 38, 36, 39, 28, 71, 70, 40],
     // "konsumenckie"/"promocyjne" and the retailer/brand categories are
     // receipt-based promotions — exactly what this site must not list.
     excludeCategories: [37, 25, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 98, 99],
@@ -95,6 +103,14 @@ const SOURCES = [
     ],
     endedSlug: 'statusy-zakonczone',
     noPurchaseNotes: 'Konkursiada opisuje warunki udziału; pozycje wymagające paragonu, zakupu lub opakowania są odfiltrowane.',
+  },
+  {
+    source: 'ekonkursy',
+    type: 'rss',
+    detailSelector: '.post-item',
+    feedUrl: 'https://www.e-konkursy.info/rss/articles',
+    idPattern: /\/konkurs\/([a-z0-9-]+)/i,
+    noPurchaseNotes: 'Wpisy serwisu e-Konkursy.info (kategorie promocyjne i z zakupem odfiltrowane) — potwierdź w regulaminie.',
   },
   {
     source: 'aktualnekonkursy',
@@ -128,7 +144,7 @@ const SOURCE_PRIORITY = new Map(SOURCES.map((s, i) => [s.source, i]));
 // Bump when fetchArticleDetail changes what it extracts, or when a tags.mjs change
 // should reach entries the source hasn't touched: cached details from older runs
 // are then re-fetched instead of carrying a stale extraction forward.
-const DETAIL_VERSION = 6;
+const DETAIL_VERSION = 7;
 const DETAIL_CACHE_DAYS = 7;
 const FETCH_TIMEOUT_MS = 15_000;
 
@@ -430,12 +446,42 @@ async function fetchArticleDetail(url, selector) {
   if (!article) throw new Error(`Missing contest article (${selector}) at ${url}`);
   const articleHtml = article.innerHTML;
   const content = article.querySelector('.content')?.innerHTML || articleHtml;
+  const links = extractLinks(articleHtml, url);
+
+  // If source uses a join redirect button (e.g. konkursyblisko ?kb_join=123)
+  const kbJoin = article.querySelector('a.kb-join-button, a[href*="kb_join="]')?.getAttribute('href');
+  if (kbJoin) {
+    try {
+      const fullJoin = new URL(kbJoin, url).href;
+      const res = await fetch(fullJoin, {
+        method: 'HEAD',
+        redirect: 'manual',
+        headers: { 'User-Agent': USER_AGENT },
+        signal: AbortSignal.timeout(5000),
+      });
+      const loc = res.headers.get('location');
+      if (loc) links.organizer = loc;
+      else if (!links.organizer) links.organizer = fullJoin;
+    } catch {
+      if (!links.organizer) links.organizer = new URL(kbJoin, url).href;
+    }
+  }
+
+  // Collect native taxonomy slugs from breadcrumbs and tag links (e.g. e-konkursy, blogs)
+  const nativeSlugs = [
+    ...article.querySelectorAll('a[href*="/tagi/"]').map((a) => a.getAttribute('href')?.split('/').filter(Boolean).pop()),
+    ...root.querySelectorAll('.breadcrumb a').map((a) => a.getAttribute('href')?.split('/').filter(Boolean).pop()),
+  ].filter(Boolean);
+
+  const tags = buildTags({ nativeSlugs, text: stripText(content) });
+
   return {
     deadline: deadline || extractDeadline(stripText(articleHtml)),
-    links: extractLinks(articleHtml, url),
+    links,
     text: stripText(content),
     entrySummary: extractEntrySection(content),
     purchaseRequired: requiresPurchase(stripText(content)),
+    tags,
     fetchedAt: new Date().toISOString(),
   };
 }

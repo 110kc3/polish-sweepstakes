@@ -35,7 +35,7 @@ Base URL: https://110kc3.github.io/polish-sweepstakes/
 
 ### Item Properties
 - `id` (string): Unique identifier prefixed with source name (e.g., `fajnekonkursy:59817`, `wygrajta:11646`).
-- `source` (string): One of `fajnekonkursy`, `ofree`, `wygrajta`, `konkursiada`, `aktualnekonkursy`, `pepper`.
+- `source` (string): One of `fajnekonkursy`, `konkursyblisko`, `ofree`, `wygrajta`, `konkursiada`, `ekonkursy`, `aktualnekonkursy`, `pepper`.
 - `sourceId` (string|number): Source's internal post or thread identifier.
 - `title` (string): Cleaned and normalized contest title.
 - `url` (string): Canonical URL of the source article covering the contest.

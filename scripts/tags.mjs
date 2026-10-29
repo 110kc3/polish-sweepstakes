@@ -345,7 +345,7 @@ const NATIVE_MAP = {
   nieruchomosci: 'mieszkanie',
   'produkty-spozywcze': 'produkty-spozywcze',
 
-  // --- aktualnekonkursy URL categories ---
+  // --- aktualnekonkursy and e-konkursy URL categories ---
   'konkursy-literackie': 'literackie',
   'konkursy-fotograficzne': 'fotograficzne',
   'konkursy-plastyczne': 'plastyczne',
@@ -353,8 +353,27 @@ const NATIVE_MAP = {
   'konkursy-muzyczne': 'muzyczne',
   'konkursy-graficzne': 'graficzne',
   'konkursy-dla-dzieci': 'dla-dzieci',
+  'konkursy-na-facebooku': 'facebook',
+  'konkursy-na-instagramie': 'instagram',
+  'konkursy-social-media': null,
   'konkursy-konsumenckie': null,
   'inne-konkursy': null,
+
+  // --- konkursyblisko and portal taxonomy categories ---
+  gaming: 'konsola',
+  fotografia: 'fotograficzne',
+  facebook: 'facebook',
+  instagram: 'instagram',
+  'sport-i-podroze': 'sportowe',
+  spozywcze: 'produkty-spozywcze',
+  zwierzeta: 'zwierzeta',
+  'www-e-konkursy-info': null,
+  'konkursy-lokalne': 'lokalne',
+  'konkursy-aktualne': null,
+  koncert: 'bilety',
+  wejsciowki: 'bilety',
+  kino: 'bilety',
+  halloween: 'swiateczne',
 
   // --- pepper RSS <category> (display names, slugified) ---
   'zdrowie-i-uroda': 'zdrowie-i-uroda',
@@ -398,6 +417,7 @@ const BRAND_SLUGS = new Set([
   'schauma', 'gliss', 'syoss', 'taft', 'palette', 'fa', 'bic', 'duck', 'domestos', 'cif',
   'somat', 'jan-niezbedny', 'marxam', 'hartmann', 'aquaphor', 'wd-40', 'weber', 'porta',
   'ariete', 'epson', 'gopro', 'olympus', 'apple', 'samsung', 'lenovo', 'acer', 'realme',
+  'filmweb',
   'freshn-rebel', 'im2be', 'imad', 'aha', 'dare', 'fantasia', 'fuze', 'energy-blast',
   'naviexpert', 't-mobile', 'blik', 'visa', 'kruk', 'bankier-pl', 'player-pl', 'cinema-city',
   'polskie-radio', 'politechnika-morska', 'adidas', 'panetti',

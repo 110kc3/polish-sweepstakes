@@ -5,14 +5,34 @@ accepted work, verification and the next session's handoff.
 
 ## Queue status — 2026-10-29
 
-**All accepted Markdown tasks, feature updates (Phases 1-4: Tracker Backup/Import & Social Badges), and verifications are complete.**
-All 74 unit and pipeline tests and 18 Playwright Chromium browser smoke checks pass cleanly.
+**All accepted Markdown tasks, feature updates, and source expansion (8 sources total) are complete.**
+All 77 unit and pipeline tests and 18 Playwright Chromium browser smoke checks pass cleanly.
 The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
 The future strategic backlog is maintained in [`ROADMAP.md`](ROADMAP.md).
 Post-push CI and Pages deployment for commits `b33e16e`, `70a9f58`, `b4fdd86`, and `3cca474` verified in runs 40783866469, 40785185466, 40844471540, and 40865731149.
 
-## Current completed batch — 2026-10-29 (Feature updates 3 & 4)
+## Current completed batch — 2026-10-29 (Source Expansion: 8 Sources End-to-End)
+
+The owner requested expanding sources and ensuring new sources enter the tool automatically:
+
+1. **Integrated New High-Quality Sources:**
+   - **`konkursyblisko.pl` (`konkursyblisko`):** RSS feed for `kategoria-konkursu/bez-zakupu/feed/` (no-purchase contests). Parses `<content:encoded>` full descriptions and resolves `?kb_join=\d+` redirect targets to direct organizer URLs (Facebook, Instagram, organizer sites).
+   - **`e-konkursy.info` (`ekonkursy`):** RSS feed (`/rss/articles`), enriched via article page extraction (`.post-item`) for exact ISO deadlines (`YYYY-MM-DD`), organizer CTA links (`Przejdź do strony z konkursem`), and official rules PDFs (`Zobacz regulamin`). Receipt/purchase lotteries filtered out via `requiresPurchase()`.
+   - **`wygrajta.pl` expansion:** Added category `40` (`na-facebooku`) to capture free social media contests.
+
+2. **Automatic Pipeline & UI Integration:**
+   - **Dynamic UI Filter:** `#source` `<select>` in `site/app.js` automatically enumerates all unique `item.source` values from `data/lotteries.json`, enabling immediate dropdown filtering and URL query parameter binding (`?source=konkursyblisko`, `?source=ekonkursy`) with zero client-side code edits.
+   - **Taxonomy & Tags:** Mapped native taxonomy slugs across new sources in `scripts/tags.mjs` (`gaming`, `fotografia`, `sport-i-podroze`, `spozywcze`, `zwierzeta`, `konkursy-na-facebooku`, `konkursy-na-instagramie`, `konkursy-lokalne`, `koncert`, `wejsciowki`, `kino`, `swiateczne`, `filmweb`).
+   - **Social Platform Badges:** Automatic platform detection (`detectSocialPlatforms`) automatically labels Instagram, Facebook, TikTok, and YouTube entries originating from new sources.
+   - **Static Build & Feeds:** Build pipeline (`scripts/build.mjs`) automatically pre-renders listings, populates RSS/Atom feeds, CSV exports, schema, and `dist/` artifacts.
+
+3. **Verification & Quality Assurance:**
+   - **Unit & Fixture Tests:** 77 tests pass in `scripts/test.mjs` and `scripts/pipeline.test.mjs` (including ISO date parsing, RSS `<content:encoded>` precedence, blocklists, and pipeline fixtures for both `konkursyblisko` and `ekonkursy`).
+   - **Live Scrape & Integrity Check:** Live dataset of 213 items across 8 sources (`fajnekonkursy: 93, konkursyblisko: 10, ofree: 4, wygrajta: 15, konkursiada: 6, ekonkursy: 15, aktualnekonkursy: 67, pepper: 3`). `scripts/check.mjs` verified 186 non-ended items with 186/186 sources alive.
+   - **Browser Smoke Suite:** 18 Playwright headless Chromium checks pass across viewport, filters, tracker export/import, and UI states.
+
+## Previous completed batch — 2026-10-29 (Feature updates 3 & 4)
 
 The owner selected Option 3 (Tracker JSON Export/Import), Option 4 (Social Platform Direct Badges), and dark dropdown filter styling to implement, and queued the remaining roadmap candidates in [`ROADMAP.md`](ROADMAP.md):
 

@@ -47,6 +47,10 @@ test('isUsableLink rejects share intents, media and the aggregators themselves',
   assert.equal(isUsableLink('https://example.com/icons.svg#external-link'), false);
   assert.equal(isUsableLink('https://fajnekonkursy.pl/na-facebooku/x/'), false);
   assert.equal(isUsableLink('https://www.pepper.pl/dyskusji/x-123456'), false);
+  assert.equal(isUsableLink('https://www.e-konkursy.info/konkurs/x'), false);
+  assert.equal(isUsableLink('https://konkursyblisko.pl/konkurs/x'), false);
+  assert.equal(isUsableLink('https://konkursyblisko.pl/?kb_join=242'), true);
+  assert.equal(isUsableLink('https://example.com/cdn-cgi/l/email-protection#123'), false);
   assert.equal(isUsableLink('/relative/path'), false);
   assert.equal(isUsableLink('not a url'), false);
 });
@@ -83,6 +87,7 @@ test('extractLinks returns nulls when there is nothing usable', () => {
 test('parsePolishDateToISO handles numeric and Polish month names', () => {
   assert.equal(parsePolishDateToISO('25.08.2026'), '2026-08-25');
   assert.equal(parsePolishDateToISO('1-9-2026'), '2026-09-01');
+  assert.equal(parsePolishDateToISO('2026-11-01'), '2026-11-01');
   assert.equal(parsePolishDateToISO('11 sierpnia 2026'), '2026-08-11');
   assert.equal(parsePolishDateToISO('7 listopada 2026'), '2026-11-07');
 });
@@ -101,6 +106,7 @@ test('extractDeadline prefers an explicitly marked deadline over a later date', 
     '2026-08-11'
   );
   assert.equal(extractDeadline('Termin zgłaszania prac upływa do dnia 7 listopada 2026 r.'), '2026-11-07');
+  assert.equal(extractDeadline('Konkurs trwa od 2026-10-29 Konkurs trwa do 2026-11-01'), '2026-11-01');
 });
 
 test('extractDeadline falls back to the latest date when nothing is marked', () => {
@@ -228,6 +234,17 @@ test('parseRssItems reads fields, unwraps CDATA and collects categories', () => 
   assert.deepEqual(parseRssItems(''), []);
 });
 
+test('parseRssItems prefers content:encoded when available', () => {
+  const xml = `<rss><channel><item>
+    <title>Snuffy</title>
+    <link>https://example.com/snuffy</link>
+    <description>Short</description>
+    <content:encoded><![CDATA[<p>Full content with details</p>]]></content:encoded>
+  </item></channel></rss>`;
+  const items = parseRssItems(xml);
+  assert.equal(items[0].description, '<p>Full content with details</p>');
+});
+
 test('requiresPurchase catches receipt promos but yields to an explicit "bez zakupu"', () => {
   assert.equal(requiresPurchase('Zeskanuj paragon i wygraj'), true);
   assert.equal(requiresPurchase('Kup 2 lody i wygraj wakacje'), true);
@@ -252,6 +269,7 @@ test('sourceIdFrom uses the per-source pattern and never mistakes a year for an 
   const yearOnly = { link: 'https://www.pepper.pl/dyskusji/konkurs-swiateczny-2025', guid: 'guid-1' };
   assert.equal(sourceIdFrom(yearOnly, pepper), 'guid-1');
   assert.equal(sourceIdFrom({ link: 'https://example.com/no-id' }, pepper), 'https://example.com/no-id');
+  assert.equal(sourceIdFrom({ link: 'https://example.com/contest/', guid: 'https://example.com/?post_type=kb_konkurs&p=242' }, /[?&]p=(\d+)/), '242');
 });
 
 test('statusFor uses the Warsaw date, and today still counts as active', () => {
