@@ -104,6 +104,39 @@ function prizeBadge(it) {
   return `<span class="badge badge--prize">💰 do ${it.prize.value.toLocaleString('pl-PL')} zł</span>`;
 }
 
+function detectSocialPlatforms(item) {
+  if (!item) return [];
+  const platforms = [];
+  const urls = [item.links?.organizer, item.links?.regulamin].filter(Boolean).join(' ');
+  const tags = [
+    ...(item.tags?.mechanika || []),
+    ...(item.tags?.temat || []),
+    ...(item.tags?.marka || [])
+  ];
+
+  if (/instagram\.com|instagr\.am/i.test(urls) || tags.includes('instagram')) {
+    platforms.push({ key: 'instagram', label: '📷 Instagram', className: 'badge--instagram' });
+  }
+  if (/facebook\.com|fb\.com|fb\.watch/i.test(urls) || tags.includes('facebook')) {
+    platforms.push({ key: 'facebook', label: '📘 Facebook', className: 'badge--facebook' });
+  }
+  if (/tiktok\.com/i.test(urls) || tags.includes('tiktok')) {
+    platforms.push({ key: 'tiktok', label: '🎵 TikTok', className: 'badge--tiktok' });
+  }
+  if (/youtube\.com|youtu\.be/i.test(urls) || tags.includes('youtube')) {
+    platforms.push({ key: 'youtube', label: '▶ YouTube', className: 'badge--youtube' });
+  }
+  return platforms;
+}
+
+function socialBadges(it) {
+  const platforms = detectSocialPlatforms(it);
+  if (!platforms.length) return '';
+  return platforms
+    .map((p) => `<span class="badge badge--social ${p.className}">${escapeHtml(p.label)}</span>`)
+    .join(' ');
+}
+
 function googleCalendarUrl(it) {
   if (!it.deadline) return '';
   const dStart = it.deadline.replace(/-/g, '');
@@ -171,6 +204,68 @@ function downloadIcs(title, deadline, url, summary) {
   URL.revokeObjectURL(a.href);
 }
 
+function exportTrackerJson() {
+  const payload = {
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    savedCount: tracker.saved.length,
+    enteredCount: tracker.entered.length,
+    saved: tracker.saved,
+    entered: tracker.entered
+  };
+  const json = JSON.stringify(payload, null, 2);
+  const blob = new Blob([json], { type: 'application/json;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  const dateStr = todayInWarsaw();
+  a.download = `polish-sweepstakes-tracker-${dateStr}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+}
+
+function importTrackerJson(file, onDone) {
+  const statusEl = document.getElementById('trackerStatus');
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (!data || typeof data !== 'object') throw new Error('Nieprawidłowy format JSON');
+      const importedSaved = Array.isArray(data.saved) ? data.saved.map(String) : [];
+      const importedEntered = Array.isArray(data.entered) ? data.entered.map(String) : [];
+      if (!importedSaved.length && !importedEntered.length) {
+        throw new Error('Plik nie zawiera zapisanych konkursów');
+      }
+
+      const prevSaved = tracker.saved.length;
+      const prevEntered = tracker.entered.length;
+
+      tracker.saved = [...new Set([...tracker.saved, ...importedSaved])];
+      tracker.entered = [...new Set([...tracker.entered, ...importedEntered])];
+      saveTracker(tracker);
+
+      const addedSaved = tracker.saved.length - prevSaved;
+      const addedEntered = tracker.entered.length - prevEntered;
+
+      if (statusEl) {
+        statusEl.className = 'tracker-status muted';
+        statusEl.textContent = `✔ Wczytano (${tracker.saved.length} zapisanych, ${tracker.entered.length} wziętych; +${addedSaved}/+${addedEntered} nowych).`;
+        setTimeout(() => { if (statusEl) statusEl.textContent = ''; }, 6000);
+      }
+      if (typeof onDone === 'function') onDone(tracker);
+    } catch (err) {
+      if (statusEl) {
+        statusEl.className = 'tracker-status tracker-error';
+        statusEl.textContent = `Błąd importu: ${err.message}`;
+        setTimeout(() => { if (statusEl) { statusEl.textContent = ''; statusEl.className = 'tracker-status muted'; } }, 6000);
+      }
+    }
+  };
+  reader.readAsText(file);
+}
+
 function cardTools(it) {
   const cal = it.deadline
     ? `<a class="btn-tool btn--cal" href="${escapeHtml(googleCalendarUrl(it))}" target="_blank" rel="noopener" data-deadline="${escapeHtml(it.deadline)}" data-title="${escapeHtml(it.title)}" data-url="${escapeHtml(it.url)}" title="Dodaj termin do kalendarza Google (Shift+klik aby pobrać .ics)">📅 Kalendarz</a>`
@@ -201,6 +296,7 @@ function render(items) {
           <span class="badge">Status: ${escapeHtml(it.status || 'unknown')}</span>
           ${amoeBadge(it)}
           ${prizeBadge(it)}
+          ${socialBadges(it)}
         </div>
         ${tagChips(it)}
 
@@ -443,6 +539,24 @@ async function load() {
       );
     }
   });
+
+  const exportBtn = document.getElementById('exportTracker');
+  const importBtn = document.getElementById('importTracker');
+  const fileInput = document.getElementById('trackerFileInput');
+
+  if (exportBtn) {
+    exportBtn.addEventListener('click', exportTrackerJson);
+  }
+  if (importBtn && fileInput) {
+    importBtn.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', (ev) => {
+      const file = ev.target.files?.[0];
+      if (file) {
+        importTrackerJson(file, rerender);
+        fileInput.value = '';
+      }
+    });
+  }
 
   rerender();
 

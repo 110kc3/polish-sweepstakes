@@ -416,3 +416,32 @@ export function bestSummary(a, b) {
   if (aOk && bOk) return a.length >= b.length ? a : b;
   return aOk ? a : (bOk ? b : (a || b));
 }
+
+/**
+ * Detect social platforms (Instagram, Facebook, TikTok, YouTube) associated
+ * with a contest from organizer/rules links and taxonomy tags.
+ */
+export function detectSocialPlatforms(item) {
+  if (!item) return [];
+  const platforms = [];
+  const urls = [item.links?.organizer, item.links?.regulamin].filter(Boolean).join(' ');
+  const tags = [
+    ...(item.tags?.mechanika || []),
+    ...(item.tags?.temat || []),
+    ...(item.tags?.marka || [])
+  ];
+
+  if (/instagram\.com|instagr\.am/i.test(urls) || tags.includes('instagram')) {
+    platforms.push({ key: 'instagram', label: '📷 Instagram', className: 'badge--instagram' });
+  }
+  if (/facebook\.com|fb\.com|fb\.watch/i.test(urls) || tags.includes('facebook')) {
+    platforms.push({ key: 'facebook', label: '📘 Facebook', className: 'badge--facebook' });
+  }
+  if (/tiktok\.com/i.test(urls) || tags.includes('tiktok')) {
+    platforms.push({ key: 'tiktok', label: '🎵 TikTok', className: 'badge--tiktok' });
+  }
+  if (/youtube\.com|youtu\.be/i.test(urls) || tags.includes('youtube')) {
+    platforms.push({ key: 'youtube', label: '▶ YouTube', className: 'badge--youtube' });
+  }
+  return platforms;
+}

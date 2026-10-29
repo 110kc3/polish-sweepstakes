@@ -81,6 +81,14 @@
       </label>
     </section>
 
+    <div class="user-tracker-bar">
+      <span class="muted tracker-label">Moje zapisane:</span>
+      <button type="button" id="exportTracker" class="btn-sub" title="Pobierz kopię zapisaną w pliku JSON">📥 Eksportuj moje (JSON)</button>
+      <button type="button" id="importTracker" class="btn-sub" title="Wczytaj zapisane konkursy z pliku JSON">📤 Importuj (JSON)</button>
+      <input type="file" id="trackerFileInput" accept=".json,application/json" style="display:none;" />
+      <span id="trackerStatus" class="tracker-status muted" aria-live="polite"></span>
+    </div>
+
     <p class="muted">Aktualizacja: <span id="updatedAt">-</span></p>
     <p class="muted">Konkursy bez ustalonego terminu zobaczysz po odznaczeniu „Tylko aktywne”. Sprawdź ich aktualność w źródle.</p>
 

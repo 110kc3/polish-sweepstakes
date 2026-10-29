@@ -127,6 +127,30 @@ try {
   assert.deepEqual((await cardTitles(page)).sort(), expected);
   checks++;
 
+  // Tracker JSON export test
+  const [download] = await Promise.all([
+    page.waitForEvent('download'),
+    page.click('#exportTracker')
+  ]);
+  assert.match(download.suggestedFilename(), /^polish-sweepstakes-tracker-\d{4}-\d{2}-\d{2}\.json$/);
+
+  // Tracker JSON import test
+  const importPayload = JSON.stringify({
+    version: 1,
+    saved: [fixtureData.items[1].id],
+    entered: [fixtureData.items[0].id]
+  });
+  await page.setInputFiles('#trackerFileInput', {
+    name: 'test-tracker.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(importPayload, 'utf8')
+  });
+  assert.match(await page.locator('#trackerStatus').textContent(), /Wczytano/);
+  await page.selectOption('#userView', 'entered');
+  assert.deepEqual(await cardTitles(page), [fixtureData.items[0].title]);
+  await page.selectOption('#userView', 'all');
+  checks++;
+
   // Calendar export action
   const calLink = page.locator('article.card .btn--cal').first();
   assert.ok(await calLink.isVisible());
@@ -209,6 +233,15 @@ try {
   assert.equal(manifestRes.status, 200);
   const manifestJson = await manifestRes.json();
   assert.equal(manifestJson.name, 'Konkursy i loterie bez zakupu');
+  checks++;
+
+  // Social platform direct badges check on built site
+  const socialBadgeCount = await built.locator('.badge--social').count();
+  assert.ok(socialBadgeCount > 0, 'Expected social badges on built site');
+  const instagramBadges = await built.locator('.badge--instagram').count();
+  assert.ok(instagramBadges > 0, 'Expected at least one Instagram badge');
+  const facebookBadges = await built.locator('.badge--facebook').count();
+  assert.ok(facebookBadges > 0, 'Expected at least one Facebook badge');
   checks++;
   assert.deepEqual(failures, [], 'Browser page errors');
   console.log(`Browser smoke passed: ${checks} checks; fixtures plus ${activeItems(actualData).length} active built listings.`);

@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { TAG_KINDS } from './tags.mjs';
-import { statusFor } from './extract.mjs';
+import { statusFor, detectSocialPlatforms } from './extract.mjs';
 
 const BASE = 'https://110kc3.github.io/polish-sweepstakes';
 
@@ -66,6 +66,9 @@ function card(it) {
   const prizeBadge = it.prize?.value
     ? `\n          <span class="badge badge--prize">💰 do ${it.prize.value.toLocaleString('pl-PL')} zł</span>`
     : '';
+  const social = detectSocialPlatforms(it)
+    .map((p) => `\n          <span class="badge badge--social ${p.className}">${esc(p.label)}</span>`)
+    .join('');
   const cal = it.deadline
     ? `\n          <a class="btn-tool btn--cal" href="${esc(googleCalendarUrl(it))}" target="_blank" rel="noopener" data-deadline="${esc(it.deadline)}" data-title="${esc(it.title)}" data-url="${esc(it.url)}" title="Dodaj termin do kalendarza Google (Shift+klik aby pobrać .ics)">📅 Kalendarz</a>`
     : '';
@@ -76,7 +79,7 @@ function card(it) {
         <div class="badges">
           <span class="badge">Źródło: ${esc(it.source)}</span>
           ${deadlineBadge}
-          <span class="badge">Status: ${esc(it.status || 'unknown')}</span>${amoeBadge}${prizeBadge}
+          <span class="badge">Status: ${esc(it.status || 'unknown')}</span>${amoeBadge}${prizeBadge}${social}
         </div>${tagChips(it)}
 
         <div class="row">

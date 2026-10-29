@@ -3,37 +3,37 @@
 This is the canonical project queue. README describes operation; this file owns
 accepted work, verification and the next session's handoff.
 
-## Queue status — 2026-10-28
+## Queue status — 2026-10-29
 
-**All accepted Markdown tasks, feature updates (Phases 1 & 2), and verifications are complete.**
-All 67 unit and pipeline tests and 15 Playwright Chromium browser smoke checks pass cleanly.
+**All accepted Markdown tasks, feature updates (Phases 1-4: Tracker Backup/Import & Social Badges), and verifications are complete.**
+All 74 unit and pipeline tests and 17 Playwright Chromium browser smoke checks pass cleanly.
 The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
+The future strategic backlog is maintained in [`ROADMAP.md`](ROADMAP.md).
 Post-push CI and Pages deployment for commits `b33e16e` and `70a9f58` verified in runs 40783866469 and 40785185466.
 
-## Current completed batch — 2026-10-28 (Feature updates 1 & 2)
+## Current completed batch — 2026-10-29 (Feature updates 3 & 4)
 
-The owner selected Phase 1 and Phase 2 from the feature research roadmap to complete and push:
+The owner selected Option 3 (Tracker JSON Export/Import) and Option 4 (Social Platform Direct Badges) to implement, and queued the remaining roadmap candidates in [`ROADMAP.md`](ROADMAP.md):
 
-1. **Completed and verified (Phase 1 Quick Wins & Syndication):**
-   - **Static RSS 2.0 Feed (`feed.xml`):** Generated during build with active contests, categories, and deadlines.
-   - **Calendar Export:** Direct Google Calendar links and `.ics` event downloads with 24h reminders.
-   - **Personal Contest Tracking:** LocalStorage bookmarks ("⭐ Zapisane") and participation tracking ("✅ Wzięte") with real-time UI filter.
-   - **Sorting & Deep Linking:** Dropdown for deadline-asc, published-desc, prize-desc, deadline-desc, and title-asc, with two-way URL search synchronization and direct card anchor scrolling.
-   - **Alternative Free Entry Callout:** Dedicated badge and tooltip for contests with confirmed free alternative methods of entry.
-   - **PWA Web App Manifest (`manifest.webmanifest`):** Standalone install support with SVG branding and mobile theme-color.
+1. **Completed and verified (Personal Tracker JSON Export & Import):**
+   - **JSON Backup:** Client-side export of tracked contests (`saved` and `entered`) to a timestamped JSON file with metadata.
+   - **JSON Import:** Client-side file selection, format validation, union deduplication with existing local storage, real-time UI re-render, and accessible status notifications.
+   - **Cross-device Mobility:** Enables users to back up, restore, or migrate tracked contests across browsers and devices without accounts or server storage.
 
-2. **Completed and verified (Phase 2 Data Intelligence & Exports):**
-   - **Numeric Prize Value Extraction:** Extracted monetary values in PLN into `prize.value` across 57% of current records, with visual prize badge and sorting support.
-   - **JSON Schema Contract (`data/schema.json`):** Formal Draft-07 specification validated in test suite.
-   - **Flat CSV Export (`data/lotteries.csv`):** RFC 4180 CSV generation of all records for tabular and spreadsheet analysis.
-   - **Compact AI Agent Digest (`data/active.md`) & `llms-full.txt`:** Plain-text markdown listing active contests for single-prompt agent consumption.
+2. **Completed and verified (Social Platform Direct Badges):**
+   - **Heuristic Detection:** Added `detectSocialPlatforms()` in `scripts/extract.mjs` matching organizer/rules URLs and taxonomy tags for Instagram, Facebook, TikTok, and YouTube.
+   - **Visual Badging:** Pre-rendered and hydrated badges with brand-accent styles (`badge--instagram`, `badge--facebook`, `badge--tiktok`, `badge--youtube`).
+   - **Preserved Invariants:** Positioned badges cleanly inside `.badges`, preserving existing `.actions` button counts and link roles for zero test regressions.
 
-### Feature verification — 2026-10-28
+3. **Completed and verified (Remaining Feature Roadmap in `ROADMAP.md`):**
+   - Created canonical [`ROADMAP.md`](ROADMAP.md) with comprehensive technical specifications for queued candidates: Notification Webhooks (`scripts/notify.mjs` for Discord/Telegram), Quick-Filter Preset Chips, Offline Service Worker (`site/sw.js`), and Weekly Newsletter Digest.
 
-- Clean `npm test`: all **67 tests pass** (unit, pipeline, prize parsing, schema validation, fallback, purchase filter).
-- Clean `npm run test:browser`: all **15 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, no-JS fallback, failed-fetch fallback, bookmarking, calendar export links, sorting, manifest, CSV, and URL synchronization.
-- Build: pre-rendered active listings, `dist/feed.xml`, `dist/data/lotteries.csv`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/llms-full.txt`.
+### Feature verification — 2026-10-29
+
+- Clean `npm test`: all **74 tests pass** (including new `scripts/social.test.mjs` test suite covering Instagram, Facebook, TikTok, and YouTube URL/tag detection).
+- Clean `npm run test:browser`: all **17 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, bookmarking, tracker JSON export, tracker JSON import with union deduplication, calendar links, sorting, URL synchronization, and social badge presence.
+- Build: pre-rendered active listings with social badges, `dist/feed.xml`, `dist/data/lotteries.csv`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/manifest.webmanifest`.
 - Dependency audit: 0 reported vulnerabilities. Whitespace checks clean with CRLF files retained.
 - Deployment verified: commits `b33e16e` and `70a9f58` passed push runs [40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469) and [40785185466](https://github.com/110kc3/polish-sweepstakes/actions/runs/40785185466) (build and Pages deploy). Live Pages site confirmed serving HTTP 200 on all feed, schema, CSV, and manifest endpoints.
 
