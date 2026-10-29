@@ -10,7 +10,7 @@ All 74 unit and pipeline tests and 18 Playwright Chromium browser smoke checks p
 The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
 The future strategic backlog is maintained in [`ROADMAP.md`](ROADMAP.md).
-Post-push CI and Pages deployment for commits `b33e16e`, `70a9f58`, and `b4fdd86` verified in runs 40783866469, 40785185466, and 40844471540.
+Post-push CI and Pages deployment for commits `b33e16e`, `70a9f58`, `b4fdd86`, and `3cca474` verified in runs 40783866469, 40785185466, 40844471540, and 40865731149.
 
 ## Current completed batch — 2026-10-29 (Feature updates 3 & 4)
 
@@ -39,7 +39,7 @@ The owner selected Option 3 (Tracker JSON Export/Import), Option 4 (Social Platf
 - Clean `npm run test:browser`: all **18 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, bookmarking, tracker JSON export, tracker JSON import with union deduplication, calendar links, sorting, URL synchronization, social badge presence, and non-transparent dark select/option filter backgrounds.
 - Build: pre-rendered active listings with social badges, `dist/feed.xml`, `dist/data/lotteries.csv`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/manifest.webmanifest`.
 - Dependency audit: 0 reported vulnerabilities. Whitespace checks clean with CRLF files retained.
-- Deployment verified: commits `b33e16e`, `70a9f58`, and `b4fdd86` passed push runs [40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469), [40785185466](https://github.com/110kc3/polish-sweepstakes/actions/runs/40785185466), and [40844471540](https://github.com/110kc3/polish-sweepstakes/actions/runs/40844471540) (build and Pages deploy). Live Pages site confirmed serving HTTP 200 on all feed, schema, CSV, manifest, and tracker export/import endpoints with direct social platform badging.
+- Deployment verified: commits `b33e16e`, `70a9f58`, `b4fdd86`, and `3cca474` passed push runs [40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469), [40785185466](https://github.com/110kc3/polish-sweepstakes/actions/runs/40785185466), [40844471540](https://github.com/110kc3/polish-sweepstakes/actions/runs/40844471540), and [40865731149](https://github.com/110kc3/polish-sweepstakes/actions/runs/40865731149) (build, test, scrape, browser smoke, and Pages deploy). Live Pages site confirmed serving HTTP 200 with dark select/option filter menus, direct social platform badging, tracker JSON backup/import, and all data syndication feeds.
 
 ## Completed batch — 2026-10-23 follow-up
 
