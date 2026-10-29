@@ -10,7 +10,7 @@ All 74 unit and pipeline tests and 17 Playwright Chromium browser smoke checks p
 The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
 The future strategic backlog is maintained in [`ROADMAP.md`](ROADMAP.md).
-Post-push CI and Pages deployment for commits `b33e16e` and `70a9f58` verified in runs 40783866469 and 40785185466.
+Post-push CI and Pages deployment for commits `b33e16e`, `70a9f58`, and `b4fdd86` verified in runs 40783866469, 40785185466, and 40844471540.
 
 ## Current completed batch — 2026-10-29 (Feature updates 3 & 4)
 
@@ -35,7 +35,7 @@ The owner selected Option 3 (Tracker JSON Export/Import) and Option 4 (Social Pl
 - Clean `npm run test:browser`: all **17 checks pass** in headless Chromium, verifying fixtures, pre-rendering, mobile 390px viewport, bookmarking, tracker JSON export, tracker JSON import with union deduplication, calendar links, sorting, URL synchronization, and social badge presence.
 - Build: pre-rendered active listings with social badges, `dist/feed.xml`, `dist/data/lotteries.csv`, `dist/data/active.md`, `dist/data/schema.json`, and `dist/manifest.webmanifest`.
 - Dependency audit: 0 reported vulnerabilities. Whitespace checks clean with CRLF files retained.
-- Deployment verified: commits `b33e16e` and `70a9f58` passed push runs [40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469) and [40785185466](https://github.com/110kc3/polish-sweepstakes/actions/runs/40785185466) (build and Pages deploy). Live Pages site confirmed serving HTTP 200 on all feed, schema, CSV, and manifest endpoints.
+- Deployment verified: commits `b33e16e`, `70a9f58`, and `b4fdd86` passed push runs [40783866469](https://github.com/110kc3/polish-sweepstakes/actions/runs/40783866469), [40785185466](https://github.com/110kc3/polish-sweepstakes/actions/runs/40785185466), and [40844471540](https://github.com/110kc3/polish-sweepstakes/actions/runs/40844471540) (build and Pages deploy). Live Pages site confirmed serving HTTP 200 on all feed, schema, CSV, manifest, and tracker export/import endpoints with direct social platform badging.
 
 ## Completed batch — 2026-10-23 follow-up
 
