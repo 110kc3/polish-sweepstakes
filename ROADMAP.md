@@ -45,7 +45,7 @@ flowchart TD
 ```
 
 ### Feature 1: Notification Webhook Dispatcher (`scripts/notify.mjs`)
-- **Status:** Queued (Priority P1)
+- **Status:** Shipped (2026-11-01)
 - **Problem Statement:** Power users and community administrators want automated push alerts in Discord servers or Telegram channels whenever fresh no-purchase contests are discovered.
 - **Technical Specification:**
   - **Script:** Create `scripts/notify.mjs` executed in GitHub Actions immediately following `npm run scrape`.

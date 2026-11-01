@@ -5,12 +5,21 @@ accepted work, verification and the next session's handoff.
 
 ## Queue status — 2026-11-01
 
-**PWA offline mode (`site/sw.js`) implemented and verified.**
-All 78 unit, pipeline, and service worker tests pass cleanly.
+**Notification Webhook Dispatcher (`scripts/notify.mjs`) and PWA offline mode (`site/sw.js`) implemented and verified.**
+All 84 unit, pipeline, notification, and service worker tests pass cleanly.
 The build produces the static site, offline service worker, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
 
-## Current completed batch — 2026-11-01 (PWA Offline Service Worker)
+## Current completed batch — 2026-11-01 (Notification Webhook Dispatcher)
+
+Implemented Feature 1 from `ROADMAP.md`:
+- [x] Created `scripts/notify.mjs` for Discord webhook and Telegram bot notification dispatching upon new contest discoveries.
+- [x] Built snapshot difference detection, embed formatting, and MarkdownV2 escaping.
+- [x] Graceful degradation when webhook credentials are not configured.
+- [x] Added unit test suite `scripts/notify.test.mjs` (84 tests total pass).
+- [x] Added `npm run notify` script in `package.json`.
+
+## Previous completed batch — 2026-11-01 (PWA Offline Service Worker)
 
 Implemented Feature 3 from `ROADMAP.md`:
 - [x] Created `site/sw.js` precaching core static assets (`index.html`, `styles.css`, `app.js`, `manifest.webmanifest`, `favicon.svg`, `og-image.svg`).
