@@ -86,14 +86,15 @@ flowchart TD
 ---
 
 ### Feature 3: Progressive Web App Offline Mode (`site/sw.js`)
-- **Status:** Queued (Priority P2)
+- **Status:** Shipped (2026-11-01)
 - **Problem Statement:** Enable offline access so users can review bookmarked contests, rules links, and participation notes without an active network connection (e.g., in transit or on mobile).
 - **Technical Specification:**
-  - **Service Worker:** Register `site/sw.js` with scope `./`.
+  - **Service Worker:** Registered `site/sw.js` with scope `./`.
   - **Caching Strategies:**
     - **Stale-While-Revalidate:** HTML (`index.html`), CSS (`styles.css`), JS (`app.js`), SVG icons (`favicon.svg`, `og-image.svg`), manifest (`manifest.webmanifest`).
-    - **Network-First with Cache Fallback:** `data/lotteries.json`. When online, fetches the fresh daily dataset; when offline, transparently serves the cached snapshot.
-  - **Cache Versioning:** Cache name keyed to dataset generation or application version (`polish-sweepstakes-cache-v1`) with automatic pruning of outdated cache entries on activate.
+    - **Stale-While-Revalidate with Cache Fallback:** `data/lotteries.json`.
+  - **Cache Versioning:** Cache name keyed to application version (`sweepstakes-v1`) with automatic pruning of outdated cache entries on activate.
+  - **Verification:** Tested in `scripts/sw.test.mjs`.
 
 ---
 

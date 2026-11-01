@@ -3,16 +3,22 @@
 This is the canonical project queue. README describes operation; this file owns
 accepted work, verification and the next session's handoff.
 
-## Queue status — 2026-10-29
+## Queue status — 2026-11-01
 
-**All accepted Markdown tasks, feature updates, and source expansion (8 sources total) are complete.**
-All 77 unit and pipeline tests and 18 Playwright Chromium browser smoke checks pass cleanly.
-The build produces the static site, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
+**PWA offline mode (`site/sw.js`) implemented and verified.**
+All 78 unit, pipeline, and service worker tests pass cleanly.
+The build produces the static site, offline service worker, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
-The future strategic backlog is maintained in [`ROADMAP.md`](ROADMAP.md).
-Post-push CI and Pages deployment for commits `b33e16e`, `70a9f58`, `b4fdd86`, and `3cca474` verified in runs 40783866469, 40785185466, 40844471540, and 40865731149.
 
-## Current completed batch — 2026-10-29 (Source Expansion: 8 Sources End-to-End)
+## Current completed batch — 2026-11-01 (PWA Offline Service Worker)
+
+Implemented Feature 3 from `ROADMAP.md`:
+- [x] Created `site/sw.js` precaching core static assets (`index.html`, `styles.css`, `app.js`, `manifest.webmanifest`, `favicon.svg`, `og-image.svg`).
+- [x] Stale-while-revalidate caching strategy for `data/lotteries.json` ensuring seamless offline contest browsing.
+- [x] Registered service worker in `site/index.html`.
+- [x] Automated test suite added in `scripts/sw.test.mjs` (78 tests total pass).
+
+## Previous completed batch — 2026-10-29 (Source Expansion: 8 Sources End-to-End)
 
 The owner requested expanding sources and ensuring new sources enter the tool automatically:
 
