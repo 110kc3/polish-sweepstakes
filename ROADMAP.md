@@ -99,15 +99,16 @@ flowchart TD
 ---
 
 ### Feature 4: Weekly Newsletter & Community Markdown Digest (`dist/data/weekly-digest.md`)
-- **Status:** Queued (Priority P3)
+- **Status:** Shipped (2026-11-04)
 - **Problem Statement:** Community managers and bloggers want a ready-to-publish Markdown digest of the week's best contests for sharing on Wykop, Reddit (r/Polska), Discord, or Substack newsletters.
 - **Technical Specification:**
-  - **Output:** Generated during `npm run build` into `dist/data/weekly-digest.md`.
+  - **Output:** Generated during `npm run build` into `dist/data/weekly-digest.md` and `data/weekly-digest.md`.
   - **Contents:**
     - Top 5 expiring contests (urgency).
     - Top 5 highest monetary prizes (value).
     - 3 featured creative contests (photography/writing).
     - Direct rules and organizer links formatted cleanly with Markdown anchors.
+  - **Verification:** Unit tests in `scripts/digest.test.mjs`.
 
 ---
 

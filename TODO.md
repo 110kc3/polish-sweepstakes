@@ -3,14 +3,23 @@
 This is the canonical project queue. README describes operation; this file owns
 accepted work, verification and the next session's handoff.
 
-## Queue status — 2026-11-01
+## Queue status — 2026-11-04
 
-**Notification Webhook Dispatcher (`scripts/notify.mjs`) and PWA offline mode (`site/sw.js`) implemented and verified.**
-All 84 unit, pipeline, notification, and service worker tests pass cleanly.
+**Weekly Newsletter & Community Markdown Digest (`scripts/digest.mjs`, `dist/data/weekly-digest.md`) implemented and verified.**
+All 86 unit, pipeline, notification, service worker, and digest tests pass cleanly; 18 browser smoke checks pass.
 The build produces the static site, offline service worker, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
-flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), and compact AI agent digest (`data/active.md`).
+flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), compact AI agent digest (`data/active.md`),
+and weekly community digest (`data/weekly-digest.md`).
 
-## Current completed batch — 2026-11-01 (Notification Webhook Dispatcher)
+## Current completed batch — 2026-11-04 (Weekly Newsletter & Community Markdown Digest)
+
+Implemented Feature 4 from `ROADMAP.md`:
+- [x] Created `scripts/digest.mjs` exporting `buildWeeklyDigest()` to curate top expiring contests, highest-value prize pools, and featured creative tasks.
+- [x] Integrated weekly digest generation into `scripts/build.mjs` writing to `dist/data/weekly-digest.md` and `data/weekly-digest.md`.
+- [x] Added automated unit test suite `scripts/digest.test.mjs` verifying rankings, section boundaries, and empty list handling.
+- [x] All 86 tests and 18 browser smoke checks pass.
+
+## Previous completed batch — 2026-11-01 (Notification Webhook Dispatcher)
 
 Implemented Feature 1 from `ROADMAP.md`:
 - [x] Created `scripts/notify.mjs` for Discord webhook and Telegram bot notification dispatching upon new contest discoveries.

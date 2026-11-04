@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { TAG_KINDS } from './tags.mjs';
 import { statusFor, detectSocialPlatforms } from './extract.mjs';
+import { buildWeeklyDigest } from './digest.mjs';
 
 const BASE = 'https://110kc3.github.io/polish-sweepstakes';
 
@@ -353,6 +354,11 @@ async function main() {
     // Generate active markdown digest
     const activeMd = buildActiveMarkdown(items, data.generatedAt);
     await fs.writeFile('dist/data/active.md', activeMd, 'utf8');
+
+    // Generate weekly markdown digest (Feature 4: newsletter & community digest)
+    const weeklyMd = buildWeeklyDigest(items, data.generatedAt);
+    await fs.writeFile('dist/data/weekly-digest.md', weeklyMd, 'utf8');
+    await fs.writeFile('data/weekly-digest.md', weeklyMd, 'utf8');
 
     // Generate flat CSV dataset
     const csvContent = buildCsv(data.items);
