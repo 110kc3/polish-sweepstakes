@@ -7,7 +7,36 @@ const els = {
   userView: document.getElementById('userView'),
   activeOnly: document.getElementById('activeOnly'),
   q: document.getElementById('q'),
+  presetChips: document.getElementById('presetChips'),
 };
+
+let activePreset = 'all';
+
+function addDaysToWarsawDate(todayStr, days) {
+  const d = new Date(todayStr + 'T00:00:00');
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+function matchesPreset(it, preset, today) {
+  if (!preset || preset === 'all') return true;
+  if (preset === '72h') {
+    const limit = addDaysToWarsawDate(today, 3);
+    return Boolean(it.deadline && it.deadline >= today && it.deadline <= limit);
+  }
+  if (preset === 'high-value') {
+    return (it.prize?.value || 0) >= 5000;
+  }
+  if (preset === 'new') {
+    const limit = addDaysToWarsawDate(today, -7);
+    return Boolean(it.publishedAt && it.publishedAt.slice(0, 10) >= limit);
+  }
+  if (preset === 'vouchers') {
+    const slugs = itemTagSlugs(it);
+    return slugs.includes('voucher') || slugs.includes('karta-podarunkowa') || slugs.includes('bony');
+  }
+  return true;
+}
 
 // Tag legend from data/lotteries.json: slug -> label, and the kind order used
 // for chips. Falls back to the slug so a new tag still renders.
@@ -341,6 +370,8 @@ function applyFilters(all) {
       if (!it.deadline || it.deadline < today) return false;
     }
 
+    if (!matchesPreset(it, activePreset, today)) return false;
+
     if (q) {
       const tagText = itemTagSlugs(it).map((slug) => `${slug} ${tagLabel(slug)}`).join(' ');
       const prizeValueText = it.prize?.value ? `${it.prize.value} zł` : '';
@@ -360,6 +391,7 @@ function syncUrl() {
   if (els.sort && els.sort.value !== 'deadline-asc') params.set('sort', els.sort.value);
   if (els.userView && els.userView.value !== 'all') params.set('view', els.userView.value);
   if (els.q.value.trim()) params.set('q', els.q.value.trim());
+  if (activePreset !== 'all') params.set('preset', activePreset);
 
   const search = params.toString();
   const newUrl = search ? `?${search}` : window.location.pathname;
@@ -435,8 +467,44 @@ async function load() {
   if (params.has('q')) {
     els.q.value = params.get('q');
   }
+  if (params.has('preset')) {
+    const p = params.get('preset');
+    if (['all', '72h', 'high-value', 'new', 'vouchers'].includes(p)) activePreset = p;
+  }
+
+  function updatePresetChipsUI() {
+    const today = todayInWarsaw();
+    const counts = {
+      '72h': all.filter(it => matchesPreset(it, '72h', today) && it.deadline && it.deadline >= today).length,
+      'high-value': all.filter(it => matchesPreset(it, 'high-value', today) && (!els.activeOnly.checked || (it.deadline && it.deadline >= today))).length,
+      'new': all.filter(it => matchesPreset(it, 'new', today) && (!els.activeOnly.checked || (it.deadline && it.deadline >= today))).length,
+      'vouchers': all.filter(it => matchesPreset(it, 'vouchers', today) && (!els.activeOnly.checked || (it.deadline && it.deadline >= today))).length,
+    };
+    for (const [id, count] of Object.entries(counts)) {
+      const el = document.getElementById(`count-${id}`);
+      if (el) el.textContent = `(${count})`;
+    }
+    if (els.presetChips) {
+      for (const btn of els.presetChips.querySelectorAll('.preset-chip')) {
+        const p = btn.getAttribute('data-preset');
+        btn.classList.toggle('active', p === activePreset);
+      }
+    }
+  }
+
+  if (els.presetChips) {
+    els.presetChips.addEventListener('click', (e) => {
+      const btn = e.target.closest('.preset-chip');
+      if (!btn) return;
+      const chosen = btn.getAttribute('data-preset');
+      activePreset = (activePreset === chosen && chosen !== 'all') ? 'all' : chosen;
+      updatePresetChipsUI();
+      rerender();
+    });
+  }
 
   function rerender() {
+    updatePresetChipsUI();
     const filtered = applyFilters(all);
     const sortMode = els.sort ? els.sort.value : 'deadline-asc';
 

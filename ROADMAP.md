@@ -72,7 +72,7 @@ flowchart TD
 ---
 
 ### Feature 2: Quick-Filter Preset Chips
-- **Status:** Queued (Priority P1)
+- **Status:** Shipped (2026-11-04)
 - **Problem Statement:** Users looking for quick contest opportunities currently must navigate multiple dropdowns and search terms.
 - **Technical Specification:**
   - **UI Placement:** A horizontal chip bar rendered between `.controls` and the contest grid:

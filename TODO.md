@@ -5,13 +5,21 @@ accepted work, verification and the next session's handoff.
 
 ## Queue status — 2026-11-04
 
-**Weekly Newsletter & Community Markdown Digest (`scripts/digest.mjs`, `dist/data/weekly-digest.md`) implemented and verified.**
-All 86 unit, pipeline, notification, service worker, and digest tests pass cleanly; 18 browser smoke checks pass.
+**Quick-Filter Preset Chips (`site/index.html`, `site/styles.css`, `site/app.js`, `scripts/preset.test.mjs`) implemented and verified.**
+All 89 unit, pipeline, notification, service worker, digest, and preset tests pass cleanly; 18 browser smoke checks pass.
 The build produces the static site, offline service worker, RSS 2.0 feed (`feed.xml`), JSON Schema (`data/schema.json`),
 flat CSV export (`data/lotteries.csv`), PWA manifest (`manifest.webmanifest`), compact AI agent digest (`data/active.md`),
-and weekly community digest (`data/weekly-digest.md`).
+weekly community digest (`data/weekly-digest.md`), and pre-rendered listings.
 
-## Current completed batch — 2026-11-04 (Weekly Newsletter & Community Markdown Digest)
+## Current completed batch — 2026-11-04 (Quick-Filter Preset Chips)
+
+Implemented Feature 2 from `ROADMAP.md`:
+- [x] Added horizontal `.preset-chips-bar` to `site/index.html` with preset chips: `72h` (🔥 Kończące się w 72h), `high-value` (💰 Pula > 5 000 zł), `new` (✨ Nowe w tym tygodniu), and `vouchers` (🎁 Bony i vouchery).
+- [x] Implemented responsive chip styles in `site/styles.css` matching dark card and accent themes.
+- [x] Implemented `matchesPreset()`, live item counts badge rendering, one-click toggle, and two-way URL query parameter synchronization (`?preset=...`) in `site/app.js`.
+- [x] Added automated unit test suite `scripts/preset.test.mjs`; all 89 tests pass and build succeeds.
+
+## Previous completed batch — 2026-11-04 (Weekly Newsletter & Community Markdown Digest)
 
 Implemented Feature 4 from `ROADMAP.md`:
 - [x] Created `scripts/digest.mjs` exporting `buildWeeklyDigest()` to curate top expiring contests, highest-value prize pools, and featured creative tasks.

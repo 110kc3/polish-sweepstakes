@@ -82,6 +82,14 @@
       </label>
     </section>
 
+    <div class="preset-chips-bar" id="presetChips">
+      <button type="button" class="preset-chip active" data-preset="all">Wszystkie</button>
+      <button type="button" class="preset-chip" data-preset="72h">🔥 Kończące się w 72h <span class="chip-count" id="count-72h"></span></button>
+      <button type="button" class="preset-chip" data-preset="high-value">💰 Pula &gt; 5 000 zł <span class="chip-count" id="count-high-value"></span></button>
+      <button type="button" class="preset-chip" data-preset="new">✨ Nowe w tym tygodniu <span class="chip-count" id="count-new"></span></button>
+      <button type="button" class="preset-chip" data-preset="vouchers">🎁 Bony i vouchery <span class="chip-count" id="count-vouchers"></span></button>
+    </div>
+
     <div class="user-tracker-bar">
       <span class="muted tracker-label">Moje zapisane:</span>
       <button type="button" id="exportTracker" class="btn-sub" title="Pobierz kopię zapisaną w pliku JSON">📥 Eksportuj moje (JSON)</button>
