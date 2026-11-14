@@ -46,19 +46,16 @@ test('buildWeeklyDigest generates markdown sections with correct ranking and for
   assert.match(digest, /## 💰 Najwyższa pula nagród — najwyższe wygrane/);
   assert.match(digest, /## 🎨 Konkursy kreatywne — wykaż się talentem/);
 
-  // Expiring check: item-3 (deadline 2026-11-05) should appear first in expiring section
   const expiringIndex = digest.indexOf('## ⏳ Ostatnia szansa');
   const highValueIndex = digest.indexOf('## 💰 Najwyższa pula');
   const expiringSection = digest.slice(expiringIndex, highValueIndex);
   assert.ok(expiringSection.includes('Szybki Konkurs Kończący się Jutro'));
 
-  // High-value check: item-2 (10 000 zł) should appear in high-value section
   const creativeIndex = digest.indexOf('## 🎨 Konkursy kreatywne');
   const highValueSection = digest.slice(highValueIndex, creativeIndex);
   assert.ok(highValueSection.includes('Wielka Loteria Gotówkowa'));
   assert.match(highValueSection, /10[\s\u00a0]000\s*PLN/);
 
-  // Creative check: item-1 (fotografia) should appear in creative section
   const creativeSection = digest.slice(creativeIndex);
   assert.ok(creativeSection.includes('Konkurs Fotograficzny Lato'));
   assert.ok(creativeSection.includes('[Regulamin](https://example.com/rules.pdf)'));

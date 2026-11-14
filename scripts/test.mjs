@@ -1,5 +1,3 @@
-// Unit tests for the pure extraction and tagging logic.
-// Run with: npm test   (node's built-in test runner, no dependencies)
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
@@ -56,11 +54,8 @@ test('isUsableLink rejects share intents, media and the aggregators themselves',
 });
 
 test('isUsableLink matches blocked domains on the hostname, not the query string', () => {
-  // Regression: organizer links carry ?utm_source=konkursiada.pl and a substring
-  // match discarded every one of them.
   assert.equal(isUsableLink('https://www.acer-chromebook-315.pl/?utm_source=konkursiada.pl&utm_medium=wpis'), true);
   assert.equal(isUsableLink('https://konkursiada.pl/nagrody/laptopy/'), false);
-  // Subdomains of a blocked host stay blocked; lookalikes do not.
   assert.equal(isUsableLink('https://www.ofree.pl/x'), false);
   assert.equal(isUsableLink('https://ofree.pl.example.com/x'), true);
 });
@@ -96,7 +91,7 @@ test('parsePolishDateToISO rejects impossible and malformed dates', () => {
   assert.equal(parsePolishDateToISO('30.02.2026'), null);
   assert.equal(parsePolishDateToISO('32.01.2026'), null);
   assert.equal(parsePolishDateToISO('01.13.2026'), null);
-  assert.equal(parsePolishDateToISO('11 sierpień 2026'), null); // wrong inflection
+  assert.equal(parsePolishDateToISO('11 sierpień 2026'), null);
   assert.equal(parsePolishDateToISO('nonsense'), null);
 });
 
@@ -116,8 +111,6 @@ test('extractDeadline falls back to the latest date when nothing is marked', () 
 });
 
 test('extractDeadline needs a real word boundary before "do"', () => {
-  // "do" inside another word must not qualify a date as the deadline; here the
-  // marked date is the earlier one and must still win.
   assert.equal(extractDeadline('Zgłoszenia do 10.08.2026. Gala odbędzie się 20.12.2026'), '2026-08-10');
 });
 
@@ -165,7 +158,6 @@ test('extractEntrySummary synthesises from mechanics when the text says nothing'
     extractEntrySummary('Nagrody rzeczowe dla laureatów.', ['facebook', 'komentarz']),
     'Wymagane: facebook, komentarz — szczegóły i pełne zasady w źródle.'
   );
-  // With neither text nor mechanics there is genuinely nothing to say.
   assert.equal(extractEntrySummary('Nagrody rzeczowe dla laureatów.', []), ENTRY_PLACEHOLDER);
 });
 
@@ -264,8 +256,6 @@ test('sourceIdFrom uses the per-source pattern and never mistakes a year for an 
   const ak = /,(\d+)\/?$/;
   assert.equal(sourceIdFrom({ link: 'https://www.pepper.pl/dyskusji/kalendarz-adwentowy-2025-1172087' }, pepper), '1172087');
   assert.equal(sourceIdFrom({ link: 'https://aktualnekonkursy.pl/ad/konkursy-literackie,3/x,24356' }, ak), '24356');
-  // Regression: a slug ending in a year must not become the id (that collided
-  // across every item published in the same year).
   const yearOnly = { link: 'https://www.pepper.pl/dyskusji/konkurs-swiateczny-2025', guid: 'guid-1' };
   assert.equal(sourceIdFrom(yearOnly, pepper), 'guid-1');
   assert.equal(sourceIdFrom({ link: 'https://example.com/no-id' }, pepper), 'https://example.com/no-id');
@@ -284,7 +274,6 @@ test('statusFor uses the Warsaw date, and today still counts as active', () => {
 test('isStaleUndated only drops undated entries past the window', () => {
   assert.equal(isStaleUndated({ deadline: null, publishedAt: '2020-01-01T00:00:00' }), true);
   assert.equal(isStaleUndated({ deadline: null, publishedAt: monthsAgoISO(1) }), false);
-  // A stated deadline always wins, however old the post is.
   assert.equal(isStaleUndated({ deadline: '2026-12-01', publishedAt: '2020-01-01T00:00:00' }), false);
   assert.equal(isStaleUndated({ deadline: null, publishedAt: null }), false);
 });
@@ -317,7 +306,6 @@ test('bestSummary prefers real text over the placeholder', () => {
   assert.equal(bestSummary(placeholder, placeholder), placeholder);
 });
 
-// --- tags -------------------------------------------------------------------
 
 test('slugify produces ASCII slugs from Polish display names', () => {
   assert.equal(slugify('Zdrowie i uroda'), 'zdrowie-i-uroda');
@@ -346,10 +334,8 @@ test('buildTags derives tags from article text when there is no taxonomy', () =>
 });
 
 test('buildTags does not read a cash prize into every złoty amount', () => {
-  // "voucher o wartości 30 000 zł" is a voucher, not a cash prize.
   const voucher = buildTags({ text: 'Nagrody: 1 x voucher wakacje.pl o wartości 30 000 zł' });
   assert.ok(!(voucher.nagroda || []).includes('pieniadze'));
-  // A prize list of amounts is.
   const cash = buildTags({ text: 'Nagrody: • I miejsce – 4 000 zł • II miejsce – 2 500 zł' });
   assert.ok(cash.nagroda.includes('pieniadze'));
 });
@@ -378,7 +364,6 @@ test('tag legend covers every slug in use, including brands', () => {
   assert.deepEqual(collectTagCounts(items), { zabka: 1, acer: 1, agd: 2 });
 });
 
-// --- cross-source merging ---------------------------------------------------
 
 const silent = () => {};
 

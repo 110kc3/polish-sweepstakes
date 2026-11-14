@@ -1,4 +1,3 @@
-// Progressive Web App Service Worker for Polish Sweepstakes
 const CACHE_NAME = 'sweepstakes-v1';
 const STATIC_ASSETS = [
   './',
@@ -28,7 +27,6 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
 
-  // Stale-while-revalidate for data/lotteries.json
   if (url.pathname.endsWith('data/lotteries.json')) {
     event.respondWith(
       caches.open(CACHE_NAME).then(async (cache) => {
@@ -47,7 +45,6 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Cache-first for static assets
   event.respondWith(
     caches.match(event.request).then((cached) => {
       return (

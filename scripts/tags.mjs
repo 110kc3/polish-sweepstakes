@@ -1,12 +1,3 @@
-// Canonical tag vocabulary, shared by the scraper (which assigns tags) and the
-// site (which groups, labels and filters them). Tags come from two places:
-//   1. source-native taxonomies — WP categories/tags, konkursiada's class_list,
-//      the category slug in aktualnekonkursy URLs, pepper's RSS <category>,
-//   2. keyword rules over the article text, for sources with no taxonomy
-//      (pepper) and to fill gaps everywhere else.
-// Unknown native slugs are dropped rather than passed through, so the
-// vocabulary stays a closed set the UI can group, label and offer as filters.
-// The one exception is `marka` (brands), which is open-ended by nature.
 
 export const TAG_KINDS = ['nagroda', 'mechanika', 'temat', 'marka', 'odbiorca', 'zasieg'];
 
@@ -146,10 +137,7 @@ def('zasieg', {
   lokalne: 'Lokalne',
 });
 
-// Native slug -> canonical slug. Only exceptions need an entry: a native slug
-// that already exists in VOCAB maps to itself.
 const NATIVE_MAP = {
-  // --- prize wording (konkursiada `nagrody-*`, fajnekonkursy tags) ---
   bon: 'karta-podarunkowa',
   bony: 'karta-podarunkowa',
   talony: 'karta-podarunkowa',
@@ -220,7 +208,6 @@ const NATIVE_MAP = {
   pieniadze: 'pieniadze',
   wycieczka: 'wycieczka',
 
-  // --- entry conditions (konkursiada `warunki-*`) ---
   'formularz-zgloszeniowy': 'formularz',
   'tekst-kreatywny': 'tekst-kreatywny',
   'zdjecie-film': 'zdjecie',
@@ -232,11 +219,9 @@ const NATIVE_MAP = {
   'udostepnienie-profilu': 'udostepnienie',
   rywalizacja: null,
 
-  // --- contest type (konkursiada `typy-*`) ---
   konkurs: null,
   glosowanie: 'glosowanie',
 
-  // --- industries (konkursiada `branze-*`) ---
   'artykuly-chigieniczne': 'chemia-i-higiena',
   'chemia-techniczna': 'chemia-i-higiena',
   sprzatanie: 'chemia-i-higiena',
@@ -259,7 +244,6 @@ const NATIVE_MAP = {
   'organizacja-spoleczna': 'spoleczne',
   ubezpieczenia: 'finanse',
 
-  // --- wygrajta post tags (its own free-form vocabulary) ---
   konkursy: null,
   nagrody: null,
   wygraj: null,
@@ -288,7 +272,6 @@ const NATIVE_MAP = {
   'materialy-budowlane': 'budowlane',
   'rodzina-i-dzieci': 'dla-dzieci',
 
-  // --- fajnekonkursy / wygrajta / ofree categories and tags ---
   'bez-zakupu': null,
   'z-zakupem': null,
   archiwum: null,
@@ -345,7 +328,6 @@ const NATIVE_MAP = {
   nieruchomosci: 'mieszkanie',
   'produkty-spozywcze': 'produkty-spozywcze',
 
-  // --- aktualnekonkursy and e-konkursy URL categories ---
   'konkursy-literackie': 'literackie',
   'konkursy-fotograficzne': 'fotograficzne',
   'konkursy-plastyczne': 'plastyczne',
@@ -359,7 +341,6 @@ const NATIVE_MAP = {
   'konkursy-konsumenckie': null,
   'inne-konkursy': null,
 
-  // --- konkursyblisko and portal taxonomy categories ---
   gaming: 'konsola',
   fotografia: 'fotograficzne',
   facebook: 'facebook',
@@ -375,7 +356,6 @@ const NATIVE_MAP = {
   kino: 'bilety',
   halloween: 'swiateczne',
 
-  // --- pepper RSS <category> (display names, slugified) ---
   'zdrowie-i-uroda': 'zdrowie-i-uroda',
   'dom-i-mieszkanie': 'dom',
   'dom-i-ogrod': 'dom',
@@ -396,8 +376,6 @@ const NATIVE_MAP = {
   'agd-i-elektronika': 'agd',
 };
 
-// konkursiada exposes brands as `firmy-*`; these two sources use plain slugs,
-// so brands have to be listed to tell them apart from topic categories.
 const BRAND_SLUGS = new Set([
   'biedronka', 'zabka', 'zabka-i-freshmarket', 'rossmann', 'lidl', 'kaufland', 'carrefour',
   'auchan', 'intermarche', 'dino', 'netto', 'stokrotka', 'groszek', 'hebe', 'sephora',
@@ -425,7 +403,6 @@ const BRAND_SLUGS = new Set([
   'paypo', 'testclub',
 ]);
 
-// Brand slugs whose display name isn't recoverable by title-casing.
 const BRAND_LABELS = {
   zabka: 'Żabka',
   'zabka-i-freshmarket': 'Żabka i Freshmarket',
@@ -466,9 +443,6 @@ const BRAND_LABELS = {
   inpost: 'InPost',
 };
 
-// Keyword rules over the article text. They fill in for sources without a
-// taxonomy (pepper) and add mechanics the taxonomies miss. Deliberately
-// narrow: a false tag is worse than a missing one, because tags are filters.
 const TEXT_RULES = [
   ['instagram', /instagram/i],
   ['facebook', /facebook|\bfb\b|fanpage/i],
@@ -491,9 +465,6 @@ const TEXT_RULES = [
   ['formularz', /formularz(?:u|em)?\s+(?:zgłoszeniow|konkursow)|wypełnij\s+formularz/i],
   ['losowanie', /losowani|wylosow/i],
   ['obserwowanie', /zaobserwuj|obserwuj\w*\s+profil|polub\s+(?:nasz\s+)?profil/i],
-  // "I miejsce – 4 000 zł" / "II nagroda – 1 000 zł": a prize list of amounts.
-  // Deliberately tied to the place/prize wording, so "voucher o wartości
-  // 30 000 zł" doesn't read as a cash prize.
   ['pieniadze', /pieniężn|gotówk|\bkwot[aęy]\b|nagrod[aęy]\s+finansow|(?:miejsce|nagroda)\s*[–—-]\s*\d[\d\s.,]*\s*(?:zł|pln)/i],
   ['karta-podarunkowa', /kart[aęy]\s+podarunkow|\bbon(?:y|ów|u|em)?\b|talon/i],
   ['voucher', /voucher/i],
@@ -527,9 +498,6 @@ export function slugify(text) {
 
 const TAXONOMY_PREFIXES = ['nagrody-', 'branze-', 'typy-', 'warunki-', 'firmy-', 'statusy-'];
 
-// Resolves one native slug to { slug, kind }. Returns DROPPED for slugs we
-// deliberately ignore (site plumbing, statuses, "inne", purchase markers) and
-// null for slugs we simply don't know yet — only the latter are worth logging.
 const DROPPED = Symbol('dropped');
 
 function resolveNative(raw) {
@@ -558,8 +526,6 @@ function resolveNative(raw) {
   return null;
 }
 
-// Native slugs that had no mapping, tallied so the vocabulary is easy to grow:
-// the scraper logs the frequent ones at the end of a run.
 export const unmappedNativeSlugs = new Map();
 
 function noteUnmapped(raw) {
@@ -568,13 +534,8 @@ function noteUnmapped(raw) {
   unmappedNativeSlugs.set(slug, (unmappedNativeSlugs.get(slug) || 0) + 1);
 }
 
-/**
- * Builds the per-item tag object, grouped by kind:
- *   { nagroda: [...], mechanika: [...], temat: [...], marka: [...], ... }
- * Kinds with no tags are omitted; keys follow TAG_KINDS order.
- */
 export function buildTags({ nativeSlugs = [], text = '', extra = [] } = {}) {
-  const found = new Map(); // slug -> kind
+  const found = new Map();
 
   for (const raw of nativeSlugs) {
     if (!raw) continue;
@@ -602,7 +563,6 @@ export function buildTags({ nativeSlugs = [], text = '', extra = [] } = {}) {
   );
 }
 
-/** Unions two grouped tag objects (used when merging cross-source duplicates). */
 export function mergeTags(...groups) {
   const byKind = {};
   for (const group of groups) {
@@ -630,10 +590,6 @@ export function tagLabel(slug, kind) {
   return slug;
 }
 
-/**
- * Display labels for every tag actually used in `items`, so the site and any
- * agent reading the JSON can render chips without knowing this module.
- */
 export function collectTagLabels(items) {
   const labels = {};
   for (const it of items) {
@@ -644,7 +600,6 @@ export function collectTagLabels(items) {
   return Object.fromEntries(Object.keys(labels).sort().map((k) => [k, labels[k]]));
 }
 
-/** Tag usage counts, emitted so the UI can order the filter list by frequency. */
 export function collectTagCounts(items) {
   const counts = {};
   for (const it of items) {

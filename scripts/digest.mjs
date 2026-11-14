@@ -1,25 +1,17 @@
-/**
- * Weekly Newsletter & Community Markdown Digest Generator
- * Produces a ready-to-publish Markdown summary of top active contests for
- * Wykop, Reddit (r/Polska), Discord, and newsletter publication.
- */
 
 export function buildWeeklyDigest(items, generatedAt) {
   const updated = generatedAt ? new Date(generatedAt).toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10);
 
-  // 1. Top 5 expiring soonest (urgency)
   const expiring = [...items]
     .filter((it) => it.deadline)
     .sort((a, b) => a.deadline.localeCompare(b.deadline))
     .slice(0, 5);
 
-  // 2. Top 5 highest monetary prize value (value)
   const highValue = [...items]
     .filter((it) => it.prize?.value && it.prize.value > 0)
     .sort((a, b) => b.prize.value - a.prize.value)
     .slice(0, 5);
 
-  // 3. Top 3 featured creative contests (photography, writing, art, tasks)
   const creativeKeywords = ['zdjęcie', 'fotograf', 'film', 'wiersz', 'opowiadanie', 'hasło', 'kreatyw', 'praca', 'rysunek', 'opis'];
   const creative = [...items]
     .filter((it) => {

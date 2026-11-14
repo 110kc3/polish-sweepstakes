@@ -38,8 +38,6 @@ function matchesPreset(it, preset, today) {
   return true;
 }
 
-// Tag legend from data/lotteries.json: slug -> label, and the kind order used
-// for chips. Falls back to the slug so a new tag still renders.
 let tagLabels = {};
 let tagKinds = ['nagroda', 'mechanika', 'temat', 'marka', 'odbiorca', 'zasieg'];
 
@@ -61,8 +59,6 @@ function escapeHtml(s) {
     .replace(/'/g, '&#039;');
 }
 
-// The contests are Polish, so day counts are measured against the date in
-// Warsaw rather than the viewer's own timezone or UTC.
 function todayInWarsaw() {
   return new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Warsaw' });
 }
@@ -447,7 +443,6 @@ async function load() {
     }
   }
 
-  // Restore URL parameters if present
   const params = new URLSearchParams(window.location.search);
   if (params.has('source') && [...els.source.options].some((o) => o.value === params.get('source'))) {
     els.source.value = params.get('source');
@@ -530,7 +525,6 @@ async function load() {
       if (sortMode === 'title-asc') {
         return a.title.localeCompare(b.title, 'pl');
       }
-      // Default: deadline-asc (nulls last)
       const da = a.deadline || '9999-12-31';
       const db = b.deadline || '9999-12-31';
       return da.localeCompare(db);
@@ -628,7 +622,6 @@ async function load() {
 
   rerender();
 
-  // If a target card ID is passed in ?id=... or #...
   const targetId = params.get('id') || window.location.hash.slice(1);
   if (targetId) {
     const targetItem = all.find((it) => it.id === targetId);

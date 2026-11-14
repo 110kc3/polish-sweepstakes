@@ -1,28 +1,14 @@
-// Our own verification pass over data/lotteries.json — so the site doesn't
-// rely purely on what the aggregators claim. It:
-//   1. recomputes active/ended status from deadlines at check time (statuses
-//      would otherwise go stale if a scrape run fails),
-//   2. verifies that each non-ended item's source article and organizer/entry
-//      page are actually reachable,
-//   3. drops items whose source article is definitively gone (404/410/DNS),
-//   4. records a per-item `verification` block for the site and for agents.
-// Conservative on purpose: 403/429/5xx/timeouts are inconclusive (bot
-// blocking, hiccups), only unambiguous signals count as "dead".
 import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { todayInWarsaw } from './extract.mjs';
 import { collectTagLabels, collectTagCounts } from './tags.mjs';
 
-// Overridable so the verification pass can be exercised against a fixture.
 const DATA_PATH = process.argv[2] || 'data/lotteries.json';
 
 const USER_AGENT = 'polish-sweepstakes/0.1 (+https://github.com/110kc3/polish-sweepstakes)';
 const TIMEOUT_MS = 10_000;
-// Six sources mean a few hundred non-ended items per run, each costing up to
-// two requests; 5 at a time made the step the slowest part of the pipeline.
 const CONCURRENCY = 8;
 
-// true = alive, false = definitively dead, null = inconclusive
 async function checkUrl(url) {
   for (const method of ['HEAD', 'GET']) {
     try {
@@ -34,8 +20,6 @@ async function checkUrl(url) {
       });
       res.body?.cancel?.().catch(() => {});
       if (res.ok) {
-        // Soft-404: some sites (fajnekonkursy) redirect removed pages to the
-        // homepage with a 200. Deep path in, bare root out = page is gone.
         try {
           const requested = new URL(url);
           const landed = new URL(res.url);
@@ -47,16 +31,15 @@ async function checkUrl(url) {
         return true;
       }
       if (res.status === 404 || res.status === 410) {
-        // Some servers 404 on HEAD but serve GET; confirm before declaring dead.
         if (method === 'HEAD') continue;
         return false;
       }
       if (method === 'HEAD' && (res.status === 405 || res.status === 501)) continue;
-      return null; // 403/429/5xx and friends: inconclusive
+      return null;
     } catch (e) {
       const code = e?.cause?.code || e?.code || '';
       if (code === 'ENOTFOUND') return false;
-      if (method === 'HEAD') continue; // timeouts etc.: try GET once
+      if (method === 'HEAD') continue;
       return null;
     }
   }
@@ -65,8 +48,6 @@ async function checkUrl(url) {
 
 function recomputeStatus(item) {
   if (!item.deadline) return 'unknown';
-  // Warsaw, not UTC: the contests are Polish, and a UTC date would flip
-  // same-day deadlines up to two hours early.
   return item.deadline >= todayInWarsaw() ? 'active' : 'ended';
 }
 
@@ -95,7 +76,6 @@ export async function main(dataPath = DATA_PATH) {
     it.status = status;
   }
 
-  // Only spend network time on items the site actually shows.
   const toCheck = items.filter((it) => it.status !== 'ended');
   console.log(`Checking ${toCheck.length} non-ended items (${items.length} total)...`);
 
@@ -104,22 +84,14 @@ export async function main(dataPath = DATA_PATH) {
     const rules = it.links?.regulamin;
     const organizer = it.links?.organizer;
     const regulaminOk = rules ? await checkUrl(rules) : null;
-    // A definitively dead rules page must not hide a working entry page. Probe
-    // that alternate independently before the UI can offer it as a fallback.
-    // Inconclusive rules checks keep the original preferred link.
     let organizerPageOk = null;
     if (organizer && (!rules || regulaminOk === false)) {
       organizerPageOk = organizer === rules ? regulaminOk : await checkUrl(organizer);
     }
-    // Keep the original contract: organizerOk describes the preferred target
-    // (rules if present), even when an independently checked alternate is live.
     const organizerOk = rules ? regulaminOk : organizerPageOk;
     it.verification = { checkedAt, sourceOk, organizerOk, regulaminOk, organizerPageOk };
   });
 
-  // A merged item's card points at one source, but the same contest is listed
-  // elsewhere. If the primary article is gone, promote a live alternative
-  // instead of dropping a contest that is still published.
   const dead = toCheck.filter((it) => it.verification?.sourceOk === false);
   let promoted = 0;
   for (const it of dead) {
@@ -153,8 +125,6 @@ export async function main(dataPath = DATA_PATH) {
 
   data.items = kept;
   data.checkedAt = checkedAt;
-  // Dropping items changes which tags are still in use, so the legend has to be
-  // rebuilt or it would advertise tags and counts the dataset no longer backs.
   if (data.tagLabels || data.tagCounts) {
     data.tagLabels = collectTagLabels(kept);
     data.tagCounts = collectTagCounts(kept);

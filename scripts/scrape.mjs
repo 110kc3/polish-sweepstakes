@@ -44,8 +44,6 @@ const SOURCES = [
     type: 'wp',
     baseUrl: 'https://fajnekonkursy.pl',
     wpPostsEndpoint: '/wp-json/wp/v2/posts',
-    // 88 = bez-zakupu. Every contest on this site is tagged either 88 or 89
-    // (z-zakupem), so 88 alone covers all no-purchase content.
     categories: [88],
     excludeCategories: [89],
     maxPages: 5,
@@ -74,15 +72,8 @@ const SOURCES = [
     type: 'wp',
     baseUrl: 'https://wygrajta.pl',
     wpPostsEndpoint: '/wp-json/wp/v2/posts',
-    // Creative / online-entry contest categories: artystyczne, literackie,
-    // fotograficzne, plastyczne, graficzne, filmowe, książkowe, internetowe,
-    // muzyczne, radiowe, dla dzieci, dla młodzieży, na facebooku.
     categories: [32, 26, 34, 27, 35, 33, 38, 36, 39, 28, 71, 70, 40],
-    // "konsumenckie"/"promocyjne" and the retailer/brand categories are
-    // receipt-based promotions — exactly what this site must not list.
     excludeCategories: [37, 25, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 98, 99],
-    // This source is mostly an archive (hundreds of posts from 2023 with no
-    // stated deadline), so only the recent window is worth fetching.
     sinceMonths: 24,
     maxPages: 7,
     noPurchaseNotes: 'Kategorie twórcze/internetowe tego źródła (bez kategorii konsumenckich i promocji sklepowych) — potwierdź w regulaminie.',
@@ -93,8 +84,6 @@ const SOURCES = [
     baseUrl: 'https://konkursiada.pl',
     wpPostsEndpoint: '/wp-json/wp/v2/konkursy',
     maxPages: 4,
-    // The site tags each contest with its entry conditions; these ones mean
-    // "buy something first", so they fail the no-purchase premise outright.
     purchaseSlugs: [
       'warunki-paragon', 'warunki-zakup', 'warunki-transakcja', 'warunki-zdrapka',
       'warunki-etykieta-promocyjna', 'warunki-opakowanie-produktu-promocyjnego',
@@ -117,7 +106,6 @@ const SOURCES = [
     type: 'rss',
     detailSelector: '.desc_content',
     feedUrl: 'https://aktualnekonkursy.pl/?format=feed&type=rss',
-    // Item URLs carry their category: /ad/<kategoria>,<id>/<slug>,<adId>
     urlCategoryPattern: /\/ad\/([^,/]+),\d+/,
     idPattern: /,(\d+)\/?$/,
     excludeUrlCategories: ['konkursy-konsumenckie'],
@@ -127,23 +115,13 @@ const SOURCES = [
     source: 'pepper',
     type: 'rss',
     feedUrl: 'https://www.pepper.pl/rss/grupa/konkursy',
-    // Thread URLs end with "-<threadId>". Thread ids are six digits or more;
-    // requiring that keeps a slug ending in a year ("...-adwentowy-2025") from
-    // being read as an id and colliding with every other item ending in 2025.
     idPattern: /-(\d{6,})\/?$/,
-    // Community-posted contests; overwhelmingly free entry, but not editorially
-    // guaranteed like the category-based sources.
     noPurchaseNotes: 'Wpis społeczności Pepper (grupa Konkursy) — zwykle udział darmowy, zawsze sprawdź zasady w źródle.',
   },
 ];
 
-// Preference order when the same contest shows up on several sites: the
-// editorially curated no-purchase categories win over the looser ones.
 const SOURCE_PRIORITY = new Map(SOURCES.map((s, i) => [s.source, i]));
 
-// Bump when fetchArticleDetail changes what it extracts, or when a tags.mjs change
-// should reach entries the source hasn't touched: cached details from older runs
-// are then re-fetched instead of carrying a stale extraction forward.
 const DETAIL_VERSION = 7;
 const DETAIL_CACHE_DAYS = 7;
 const FETCH_TIMEOUT_MS = 15_000;
@@ -186,10 +164,6 @@ const fetchHtml = (url) => fetchText(url, 'text/html,application/xhtml+xml');
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// WP exposes category/tag names only as numeric ids on posts, so resolve the
-// taxonomies once per source and reuse the id -> slug maps for every post.
-// Paginated: two of these sources have close to 200 tags, and a term missing
-// from the map silently costs that post a tag.
 async function fetchWpTermMaps(sourceCfg) {
   const maps = { categories: new Map(), tags: new Map() };
   const MAX_TERM_PAGES = 5;
@@ -204,7 +178,6 @@ async function fetchWpTermMaps(sourceCfg) {
         url.searchParams.set('_fields', 'id,slug');
         terms = await fetchJson(url.toString());
       } catch (e) {
-        // Tags are a bonus; losing them costs tags, not items.
         if (page === 1) console.error(`Could not resolve ${taxonomy} for ${sourceCfg.source}:`, e.message);
         break;
       }
@@ -219,9 +192,6 @@ async function fetchWpTermMaps(sourceCfg) {
   return maps;
 }
 
-// One paginated sweep per source: WP accepts a comma-separated `categories`
-// (OR semantics) plus a server-side `categories_exclude`, so a source with a
-// dozen categories still costs one pass instead of one pass per category.
 async function fetchWpPosts(sourceCfg) {
   const items = [];
   const maxPages = sourceCfg.maxPages ?? 5;
@@ -255,8 +225,6 @@ async function fetchWpPosts(sourceCfg) {
     await sleep(500);
   }
 
-  // Belt and braces: `categories_exclude` is server-side, this catches a source
-  // that ignores the parameter.
   const exclude = sourceCfg.excludeCategories || [];
   return items.filter((p) => !(p.categories || []).some((c) => exclude.includes(c)));
 }
@@ -294,8 +262,6 @@ function normalizeRssItem(source, item) {
   const published = item.pubDate ? new Date(item.pubDate) : null;
   const sourceId = sourceIdFrom(item, source.idPattern);
 
-  // Native taxonomy: pepper ships an RSS <category>, aktualnekonkursy encodes
-  // the contest category in the URL.
   const nativeSlugs = item.categories.map(slugify);
   const urlCategory = source.urlCategoryPattern ? item.link.match(source.urlCategoryPattern)?.[1] : null;
   if (urlCategory) nativeSlugs.push(urlCategory);
@@ -378,10 +344,6 @@ function normalizePost(source, post, termMaps) {
   };
 }
 
-// konkursiada keeps contests in a custom post type. The REST payload carries
-// the site's whole taxonomy in `class_list` (prizes, industry, entry
-// conditions, brand, status) but an empty `content`, so the article page has to
-// be fetched for the deadline and the organizer link.
 async function fetchCptItems(sourceCfg) {
   const items = [];
   const maxPages = sourceCfg.maxPages ?? 4;
@@ -427,7 +389,6 @@ async function fetchCptItems(sourceCfg) {
 const TAXONOMY_CLASS = /^(?:nagrody|branze|typy|warunki|firmy|statusy)-/;
 const isTaxonomyClass = (cls) => TAXONOMY_CLASS.test(cls);
 
-// The article page states the run as "<start> – <end>" in <p class="dates">.
 function extractDatesFromArticle(root) {
   const el = root.querySelector('p.dates');
   if (!el) return null;
@@ -448,7 +409,6 @@ async function fetchArticleDetail(url, selector) {
   const content = article.querySelector('.content')?.innerHTML || articleHtml;
   const links = extractLinks(articleHtml, url);
 
-  // If source uses a join redirect button (e.g. konkursyblisko ?kb_join=123)
   const kbJoin = article.querySelector('a.kb-join-button, a[href*="kb_join="]')?.getAttribute('href');
   if (kbJoin) {
     try {
@@ -467,7 +427,6 @@ async function fetchArticleDetail(url, selector) {
     }
   }
 
-  // Collect native taxonomy slugs from breadcrumbs and tag links (e.g. e-konkursy, blogs)
   const nativeSlugs = [
     ...article.querySelectorAll('a[href*="/tagi/"]').map((a) => a.getAttribute('href')?.split('/').filter(Boolean).pop()),
     ...root.querySelectorAll('.breadcrumb a').map((a) => a.getAttribute('href')?.split('/').filter(Boolean).pop()),
@@ -490,8 +449,6 @@ function normalizeCptItem(source, item, detail) {
   const excerptText = stripText(item?.excerpt?.rendered || '');
   const text = `${excerptText} ${detail?.text || ''}`.trim();
   const deadline = detail?.deadline || extractDeadline(text);
-  // class_list mixes the site's taxonomies with WordPress plumbing
-  // (post-2074, type-konkursy, hentry, …); only the taxonomy terms are tags.
   const nativeTags = buildTags({ nativeSlugs: (item.class_list || []).filter(isTaxonomyClass) });
   const tags = detail?.tags
     ? mergeTags(detail.tags, nativeTags)
@@ -508,8 +465,6 @@ function normalizeCptItem(source, item, detail) {
     links: detail?.links || { organizer: null, regulamin: null },
     deadline,
     status: statusFor(deadline),
-    // On a cache hit the article text is gone, so the tags derived from it last
-    // time are merged back in rather than silently lost.
     tags,
     entry: {
       summary: (detail?.entrySummary !== ENTRY_PLACEHOLDER && detail?.entrySummary) || extractEntrySummary(text, tags.mechanika),
@@ -531,8 +486,6 @@ function normalizeCptItem(source, item, detail) {
   };
 }
 
-// Reuse the previous run's detail extraction when the source hasn't touched the
-// entry, so a daily run costs a handful of article fetches instead of all of them.
 async function loadDetailCache(dataPath) {
   const cache = new Map();
   try {
@@ -548,8 +501,6 @@ async function loadDetailCache(dataPath) {
         text: '',
         entrySummary: it.entry?.summary,
         prizeSummary: it.prize?.summary,
-        // The article text isn't stored, so keep the tags derived from it too —
-        // otherwise a cached entry would lose its text-derived tags.
         tags: it.tags,
         fetchedAt: it.extraction.detailFetchedAt,
         purchaseRequired: false,
@@ -561,12 +512,6 @@ async function loadDetailCache(dataPath) {
   return cache;
 }
 
-/**
- * The same contest is routinely listed on several of these sites. Merge on an
- * exact normalised-title match only (no fuzzy matching): keep the
- * highest-priority source as the card, union the tags, and take whichever
- * source actually managed to extract a deadline, links and summaries.
- */
 export function mergeDuplicates(items, log = console.log) {
   const groups = new Map();
   const singles = [];
@@ -645,7 +590,6 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
                 detailVersion: DETAIL_VERSION, detailFetchedAt: detail.fetchedAt,
               });
             } catch (e) {
-              // A detail-page outage must not discard a usable feed listing.
               console.error(`Could not enrich ${it.link}:`, e.message);
             }
           }
@@ -684,7 +628,6 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
       }
       sourceHealth.push({ source: source.source, status: 'ok', items: all.length - start });
     } catch (e) {
-      // One broken source shouldn't take down the whole scrape.
       all.splice(start);
       console.error(`Error scraping source ${source.source}:`, e);
       sourceHealth.push({ source: source.source, status: 'error', items: 0, error: e.message });
@@ -700,7 +643,6 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
   }
   const fresh = all.filter((it) => !isStaleUndated(it));
 
-  // Deduplicate by id, then merge the same contest across sources.
   const byId = new Map(fresh.map(i => [i.id, i]));
   const items = mergeDuplicates(Array.from(byId.values()))
     .sort((a, b) => {
@@ -715,8 +657,6 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
     version: 2,
     generatedAt: now,
     sourceHealth,
-    // Tag legend, so the site and any agent reading this file can render and
-    // filter tags without knowing scripts/tags.mjs.
     tagKinds: TAG_KINDS,
     tagKindLabels: TAG_KIND_LABELS,
     tagLabels: collectTagLabels(items),
@@ -745,7 +685,6 @@ export async function main({ sources = SOURCES, dataPath = 'data/lotteries.json'
   }
 }
 
-// Importable for tests; only the CLI invocation runs the scrape.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   main().catch((e) => {
     console.error('Fatal error in scrape:', e);

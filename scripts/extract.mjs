@@ -1,16 +1,9 @@
-// Pure text/HTML extraction helpers shared by the scraper and the checker.
-// Kept free of network and filesystem access so scripts/test.mjs can exercise
-// them directly against the shapes the real sources produce.
 import { parse } from 'node-html-parser';
 import { tagLabel } from './tags.mjs';
 
 export function stripText(html) {
   const root = parse(html || '');
-  // .text would otherwise include inline <script>/<style> bodies, which then
-  // show up in the prize/entry summaries ("(adsbygoogle = window...").
   for (const node of root.querySelectorAll('script,style,noscript')) node.remove();
-  // HTML textContent joins adjacent paragraphs/headings without a separator.
-  // Keep entry steps and section headings from becoming one word.
   for (const node of root.querySelectorAll('p,div,h1,h2,h3,h4,li,br')) {
     node.insertAdjacentHTML('beforebegin', ' ');
     node.insertAdjacentHTML('afterend', ' ');
@@ -18,13 +11,8 @@ export function stripText(html) {
   return root.text.trim().replace(/\s+/g, ' ');
 }
 
-// Links we never treat as the contest venue: share intents and media files.
 const LINK_BLOCKLIST = /sharer|\/intent\/|\/share\?|wa\.me|mailto:|\/cdn-cgi\/|\.(?:jpg|jpeg|png|gif|webp|svg|pdf)(?:[?#]|$)/i;
 
-// The aggregators themselves, plus asset hosts. Matched against the hostname
-// only: these domains also turn up inside query strings (organizer links carry
-// `?utm_source=konkursiada.pl`), and blocking on those would discard the very
-// link we are looking for.
 const BLOCKED_HOSTS = /(?:^|\.)(?:fajnekonkursy\.pl|ofree\.pl|pepper\.pl|wygrajta\.pl|konkursiada\.pl|aktualnekonkursy\.pl|konkursyblisko\.pl|e-konkursy\.info|ekonkursy\.info|gstatic\.com|googleapis\.com|googletagmanager\.com|doubleclick\.net)$/i;
 
 export function isUsableLink(href) {
@@ -38,9 +26,6 @@ export function isUsableLink(href) {
   }
 }
 
-// Extract the organizer/entry link and (if present) a direct regulamin link
-// from article HTML. These feed our own checker so we can verify contests
-// at the source instead of trusting the aggregator alone.
 export function extractLinks(html, baseUrl) {
   const root = parse(html || '');
   const anchors = root.querySelectorAll('a')
@@ -55,7 +40,6 @@ export function extractLinks(html, baseUrl) {
       return { href, text, rules };
     })
     .filter((a) => {
-      // Official rules are frequently PDFs; other media still cannot be a venue.
       const candidate = a.rules ? a.href.replace(/\.pdf(?=[?#]|$)/i, '') : a.href;
       return isUsableLink(candidate);
     });
@@ -80,7 +64,6 @@ export const NUMERIC_DATE = String.raw`\d{4}-\d{2}-\d{2}|\d{1,2}[.\-]\d{1,2}[.\-
 const TEXT_DATE = String.raw`\d{1,2}\s+(?:${Object.keys(PL_MONTHS).join('|')})\s+\d{4}`;
 
 export function parsePolishDateToISO(dmy) {
-  // accepts YYYY-MM-DD, DD.MM.YYYY, DD-MM-YYYY or "DD <miesiąca> YYYY"
   const isoMatch = dmy.match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (isoMatch) {
     const [, yyyy, mm, dd] = isoMatch;
@@ -96,7 +79,6 @@ export function parsePolishDateToISO(dmy) {
   const yyyy = num ? num[3] : txt[3];
   if (!(dd >= 1 && dd <= 31) || !(mm >= 1 && mm <= 12)) return null;
   const iso = `${yyyy}-${String(mm).padStart(2, '0')}-${String(dd).padStart(2, '0')}`;
-  // Reject impossible dates like 30.02 (Date would roll them over).
   if (new Date(`${iso}T00:00:00Z`).toISOString().slice(0, 10) !== iso) return null;
   return iso;
 }
@@ -104,8 +86,6 @@ export function parsePolishDateToISO(dmy) {
 export function extractDeadline(text, referenceDate = null) {
   const t = text || '';
 
-  // Prefer a date explicitly marked as a deadline ("do dnia ...", "zgłoszenia do ...").
-  // The \b matters: without it, the "do" inside another word would qualify.
   const explicit = t.match(new RegExp(
     String.raw`(?:\bdo\s+dnia|\bw\s+terminie\s+do|\bzgłoszenia\s+do|\bdo)\s*(${NUMERIC_DATE}|${TEXT_DATE})`, 'iu'
   ));
@@ -114,8 +94,6 @@ export function extractDeadline(text, referenceDate = null) {
     if (iso) return iso;
   }
 
-  // Community posts often put a yearless run in the title. Anchor it to the
-  // publication date, never today's year (which would revive old contests).
   const published = referenceDate ? new Date(referenceDate) : null;
   if (published && Number.isFinite(published.getTime())) {
     const range = t.match(/\b(\d{1,2})\.\s*(\d{1,2})\.?\s*[-–—]\s*(\d{1,2})\.\s*(\d{1,2})\.(?!\s*\d)/);
@@ -126,15 +104,12 @@ export function extractDeadline(text, referenceDate = null) {
     }
   }
 
-  // Fallback: posts often list the start date first and the end date later,
-  // so take the latest date mentioned rather than the first.
   const all = allDates(t);
   if (all.length) return all.at(-1);
 
   return null;
 }
 
-/** Every parseable date in the text, ascending. */
 export function allDates(text) {
   return [...(text || '').matchAll(new RegExp(`${NUMERIC_DATE}|${TEXT_DATE}`, 'giu'))]
     .map((m) => parsePolishDateToISO(m[0]))
@@ -144,17 +119,8 @@ export function allDates(text) {
 
 export const PRIZE_PLACEHOLDER = 'Sprawdź nagrody w źródle.';
 
-// Headings that start the next part of an article. A prize or entry snippet must
-// stop here, otherwise it runs on into the rules section.
 const SECTION_BOUNDARY = /\s(?:Zasady\s+konkursu|Jak\s+wziąć\s+udział|Aby\s+wziąć\s+udział|Do\s+dnia\b|Regulamin\b|Nagrody\s+w\s+konkursie|Konkurs\s+trwa\b|Termin\b)/i;
 
-/**
- * Trims a snippet to something readable: cut at the next section heading, then
- * to a word boundary under the length cap. The source text often has no
- * sentence-ending punctuation at all (bulleted prize lists), so this must not
- * depend on finding a full stop — the previous version relied on the trailing
- * ".push({});" of an inline ad script to end the sentence for it.
- */
 export function clip(snippet, limit = 200) {
   let t = String(snippet || '').trim();
   const boundary = t.search(SECTION_BOUNDARY);
@@ -197,9 +163,6 @@ export function extractPrizeValue(prizeText, title = '') {
 
 export const ENTRY_PLACEHOLDER = 'Sprawdź zasady udziału w źródle.';
 
-// Site furniture that would otherwise be mistaken for content: fajnekonkursy
-// renders a live countdown ("Konkurs kończy się za: 0 0 0 0 Dni 0 0 Godz …")
-// ahead of the article body.
 const NOISE = [
   /Konkurs\s+kończy\s+się\s+za:(?:\s*\d+)*(?:\s*(?:Dni|Godz|Min|Sek)(?:\s*\d+)*)+/gi,
   /\(adsbygoogle[^)]*\)[^;]*;?/gi,
@@ -211,7 +174,6 @@ export function cleanArticleText(text) {
   return t.replace(/\s+/g, ' ').trim();
 }
 
-// Bullet markers the sources use for the individual entry steps.
 const BULLETS = /[🔹🔸▪️•·–]\s*/g;
 
 function tidySteps(chunk, limit = 260) {
@@ -230,25 +192,14 @@ function tidySteps(chunk, limit = 260) {
   return out.endsWith('.') ? out : `${out}.`;
 }
 
-/**
- * How to enter, in the source's own words. Tries, in order of reliability:
- *   1. an explicit "Jak/Aby wziąć udział …" sentence,
- *   2. the task list the aggregators render ("… wykonaj poniższe zadania: 🔹…"),
- *   3. the first sentence built around an entry verb ("wystarczy", "napisz", …),
- *   4. a summary synthesised from the entry-mechanic tags,
- * and only then gives up. Before this, 204 of 212 live cards showed nothing but
- * the placeholder even though the article described the steps.
- */
 export function extractEntrySummary(text, mechanics = []) {
   const t = cleanArticleText(text);
 
   if (t) {
-    // A question heading describes no action; read the following instructions.
     const withoutHeading = t.replace(/Jak\s+(?:wziąć\s+udział|dołączyć)[^.!?]{0,100}\?/gi, '');
     const explicit = withoutHeading.match(/(Aby\s+(?:wziąć\s+udział|dołączyć)[^.!?]{0,220}[.!?])/i)?.[1];
     if (explicit) return explicit.trim();
 
-    // "Do dnia 16.08.2026 wykonaj poniższe zadania: 🔹wymyśl … 🔹opublikuj …"
     const taskList = t.match(
       /(?:wykonaj|spełnij)\s+(?:poniższ\w+\s+)?(?:zadani\w+|krok\w+|warunk\w+)[^:.!?]{0,60}[::]([\s\S]{0,420})/i
     )?.[1];
@@ -272,7 +223,6 @@ export function extractEntrySummary(text, mechanics = []) {
   return ENTRY_PLACEHOLDER;
 }
 
-// Read the actual entry section before introductory marketing copy. Paragraph
 // and list boundaries are preserved so numbered steps can be summarized.
 export function extractEntrySection(html, mechanics = []) {
   const root = parse(html || '');
@@ -289,8 +239,6 @@ export function extractEntrySection(html, mechanics = []) {
   return extractEntrySummary(stripText(html), mechanics);
 }
 
-// Pepper's group contains support threads, coupon swaps and other discussions.
-// Require a contest announcement rather than trusting group membership.
 export function isPepperContest(title, description = '') {
   const name = stripText(title);
   const key = titleKey(name);
@@ -300,16 +248,12 @@ export function isPepperContest(title, description = '') {
     && /\bwygraj\b|\bnagrod\w*|\bdo wygrania\b/iu.test(text);
 }
 
-// Last resort: the tags tell us what entering requires even when no sentence in
-// the article is quotable. Better than telling the reader nothing at all.
 export function synthesiseEntrySummary(mechanics) {
   const labels = mechanics.map((slug) => tagLabel(slug, 'mechanika').toLowerCase());
   if (!labels.length) return ENTRY_PLACEHOLDER;
   return `Wymagane: ${labels.join(', ')} — szczegóły i pełne zasady w źródle.`;
 }
 
-// Minimal RSS 2.0 item parser (regex-based; enough for title/link/description/
-// pubDate/guid/category with optional CDATA). Avoids adding an XML dependency.
 export function parseRssItems(xml) {
   const unwrap = (v) => v.replace(/^<!\[CDATA\[([\s\S]*)\]\]>$/, (_, inner) => inner).trim();
   return [...(xml || '').matchAll(/<item(?:\s[^>]*)?>([\s\S]*?)<\/item>/g)].map((m) => {
@@ -325,7 +269,6 @@ export function parseRssItems(xml) {
       description: desc,
       pubDate: tag('pubDate'),
       guid: tag('guid'),
-      // Feeds may carry several <category> elements; all of them become tags.
       categories: [...block.matchAll(/<category(?:\s[^>]*)?>([\s\S]*?)<\/category>/g)]
         .map((c) => unwrap(c[1].trim()))
         .filter(Boolean),
@@ -333,12 +276,8 @@ export function parseRssItems(xml) {
   });
 }
 
-// Category membership is not proof of free entry: even the curated WordPress
-// feeds can misfile receipt promotions. An affirmative free alternative wins,
-// but questions/negated "bez zakupu" claims do not establish one.
 export function requiresPurchase(text) {
   const t = String(text || '').toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/\p{M}/gu, '');
-  // No purchase is still not free entry when a positive entry fee is stated.
   const fees = t.matchAll(/(?:wpisowe|oplata\s+(?:startowa|za udzial))\s*(?::|wynosi|w wysokosci)?\s*(\d+(?:[.,]\d+)?)\s*(?:zl|pln|eur|€)/gu);
   if ([...fees].some((m) => Number(m[1].replace(',', '.')) > 0)) return true;
 
@@ -349,18 +288,13 @@ export function requiresPurchase(text) {
     && !/\bczy\b[^.!?]{0,100}\bbez\s+(?:koniecznosci\s+)?zakupu\b/.test(s)
     && !deniedFreeClaim.test(s))) return false;
 
-  // A negated receipt condition is not a purchase requirement by itself.
   const requirements = t
     .replace(/\b(?:bez|nie potrzebujesz|nie wymagamy|nie wymaga|nie jest wymagany|nie trzeba(?: miec| zachowywac| zachowac)?|nie musisz(?: miec| zachowywac| zachowac)?)\s+(?:(?:zadnego|zadnych|okazywania|przedstawiania|przesylania|zachowania|skanowania|dolaczania)\s+)*(?:paragon\w*|dowod\w*\s+zakupu|numer\w*\s+zamowieni\w*)/g, '')
     .replace(/\b(?:paragon\w*|dowod\w*\s+zakupu)\s+nie\s+(?:jest|sa)\s+wymagan\w*/g, '');
   return /paragon|dowod zakupu|numer\w*\s+zamowieni\w*|podpisz\s+umowe\s+(?:z operatorem|abonamentowa)|kup\s+(?:produkt|dowoln|min|za|\d)|(?:musisz|nalezy|trzeba)\s+(?:kupic|dokonac zakupu)|(?:warunk\w*|wymag\w*|konieczn\w*)[^.!?]{0,30}\bzakup|za\s+zakup|przy\s+zakupie|zeskanuj\s+paragon|skanuj\s+i\s+wygrywaj|wieczko\s+opakowania|etykiet[ae]\s+promocyjn/.test(requirements);
 }
 
-// Every listed contest is Polish, so "today" has to be today in Warsaw. Using
-// the UTC date would move the active/ended boundary by up to two hours, which
-// is exactly the window in which same-day deadlines matter.
 export function todayInWarsaw() {
-  // 'sv-SE' formats as YYYY-MM-DD, which compares lexicographically.
   return new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Warsaw' });
 }
 
@@ -375,9 +309,6 @@ export function monthsAgoISO(months) {
   return d.toISOString().slice(0, 19);
 }
 
-// An entry with no stated deadline that was published long ago is over in all
-// but name: nothing on the page says when it ends, and it is far too old to
-// still be running. Keeping those would bury the current contests.
 export const STALE_UNDATED_MONTHS = 3;
 export const PEPPER_UNDATED_DAYS = 30;
 
@@ -391,11 +322,6 @@ export function isStaleUndated(item, now = new Date()) {
   return published < cutoff.getTime();
 }
 
-/**
- * Numeric id at the end of an item URL. Each feed has its own shape, so the
- * pattern is per-source: matching any trailing number would turn a slug ending
- * in a year ("...-konkurs-2026") into id "2026" and collide across items.
- */
 export function sourceIdFrom(item, idPattern) {
   const link = (item.link || '').replaceAll('&amp;', '&');
   const guid = (item.guid || '').replaceAll('&amp;', '&');
@@ -416,7 +342,6 @@ export function titleKey(title) {
     .trim();
 }
 
-// Titles shorter than this are too collision-prone to merge on ("konkurs").
 export const MIN_MERGE_KEY_LENGTH = 12;
 
 const PLACEHOLDER_SUMMARY = /^Sprawdź (?:nagrody|zasady udziału) w źródle\.$/;
@@ -428,10 +353,6 @@ export function bestSummary(a, b) {
   return aOk ? a : (bOk ? b : (a || b));
 }
 
-/**
- * Detect social platforms (Instagram, Facebook, TikTok, YouTube) associated
- * with a contest from organizer/rules links and taxonomy tags.
- */
 export function detectSocialPlatforms(item) {
   if (!item) return [];
   const platforms = [];

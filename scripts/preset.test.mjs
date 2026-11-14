@@ -39,23 +39,19 @@ test('preset matching logic works as specified', () => {
 
   const today = '2026-11-04';
 
-  // 72h preset
   assert.equal(matchesPreset({ deadline: '2026-11-05' }, '72h', today), true);
   assert.equal(matchesPreset({ deadline: '2026-11-07' }, '72h', today), true);
   assert.equal(matchesPreset({ deadline: '2026-11-08' }, '72h', today), false);
   assert.equal(matchesPreset({ deadline: '2026-11-03' }, '72h', today), false);
 
-  // high-value preset
   assert.equal(matchesPreset({ prize: { value: 5000 } }, 'high-value', today), true);
   assert.equal(matchesPreset({ prize: { value: 12000 } }, 'high-value', today), true);
   assert.equal(matchesPreset({ prize: { value: 4999 } }, 'high-value', today), false);
   assert.equal(matchesPreset({ prize: null }, 'high-value', today), false);
 
-  // new preset
   assert.equal(matchesPreset({ publishedAt: '2026-11-02T10:00:00Z' }, 'new', today), true);
   assert.equal(matchesPreset({ publishedAt: '2026-10-25T10:00:00Z' }, 'new', today), false);
 
-  // vouchers preset
   assert.equal(matchesPreset({ tags: { nagroda: ['voucher'] } }, 'vouchers', today), true);
   assert.equal(matchesPreset({ tags: { nagroda: ['karta-podarunkowa'] } }, 'vouchers', today), true);
   assert.equal(matchesPreset({ tags: { nagroda: ['gotowka'] } }, 'vouchers', today), false);

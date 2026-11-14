@@ -6,8 +6,6 @@ import { buildWeeklyDigest } from './digest.mjs';
 
 const BASE = 'https://110kc3.github.io/polish-sweepstakes';
 
-// Tag legend from the dataset, so the pre-rendered chips read the same labels
-// the client-side render uses.
 let tagLabels = {};
 let tagKinds = TAG_KINDS;
 
@@ -27,8 +25,6 @@ function esc(s) {
     .replaceAll("'", '&#39;');
 }
 
-// JSON-LD payloads: escape '<' so scraped text can't break out of the
-// <script> block with a literal </script>.
 function jsonLd(obj) {
   return JSON.stringify(obj, null, 2).replace(/</g, '\\u003c');
 }
@@ -55,8 +51,6 @@ function googleCalendarUrl(it) {
   return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${dStart}/${dEnd}&details=${details}`;
 }
 
-// Mirrors render() in site/app.js so the no-JS markup matches what the
-// client re-renders after hydration.
 function card(it) {
   const deadlineBadge = it.deadline
     ? `<span class="badge deadline">Do: ${esc(it.deadline)}</span>`
@@ -104,8 +98,6 @@ function card(it) {
       </article>`;
 }
 
-// Same markup as tagChips() in site/app.js: buttons, so the delegated click
-// handler works on the pre-rendered cards too (before any re-render).
 function tagChips(it) {
   const tags = it.tags || {};
   const chips = tagKinds.flatMap((kind) => (tags[kind] || []).map((slug) => (
@@ -127,7 +119,6 @@ function contestLink(it) {
   const rules = it.links?.regulamin;
   const rulesDead = (it.verification?.regulaminOk ?? it.verification?.organizerOk) === false;
   // Preserve unknown preferred links, but never replace known-dead rules with
-  // an organizer that has not independently passed verification.
   const target = rules
     ? (rulesDead ? (it.verification?.organizerPageOk === true ? it.links?.organizer : null) : rules)
     : ((it.verification?.organizerPageOk ?? it.verification?.organizerOk) === false ? null : it.links?.organizer);
@@ -299,7 +290,6 @@ function buildCsv(items) {
 }
 
 async function main() {
-  // Validate before deleting the previous build or publishing an empty shell.
   const data = JSON.parse(await fs.readFile('data/lotteries.json', 'utf8'));
   if (!Array.isArray(data.items) || !data.items.length || !Number.isFinite(Date.parse(data.generatedAt))) {
     throw new Error('Invalid or empty dataset; run "npm run scrape" first.');
@@ -315,14 +305,10 @@ async function main() {
     tagLabels = data.tagLabels || {};
     if (Array.isArray(data.tagKinds) && data.tagKinds.length) tagKinds = data.tagKinds;
 
-    // Pre-render the default view (known active deadlines, soonest first)
-    // so content is present without JS and for crawlers/agents.
     const items = (Array.isArray(data.items) ? data.items : [])
       .filter((it) => it.status === 'active')
       .sort((a, b) => (a.deadline || '9999-12-31').localeCompare(b.deadline || '9999-12-31'));
 
-    // Replacer functions: with a plain string, replace() would interpret
-    // $-patterns ($&, $') occurring in scraped text and corrupt the output.
     let html = await fs.readFile('dist/index.html', 'utf8');
     const listingsHtml = items.map(card).join('\n');
     const jsonLdHtml = buildJsonLd(items, data.generatedAt);
@@ -335,32 +321,26 @@ async function main() {
     await fs.writeFile('dist/index.html', html, 'utf8');
     console.log(`Pre-rendered ${items.length} listings into dist/index.html`);
 
-    // The listing changes every day, so tell crawlers when it last did.
     if (data.generatedAt) {
       const sitemap = await fs.readFile('dist/sitemap.xml', 'utf8');
       const lastmod = `<lastmod>${esc(data.generatedAt.slice(0, 10))}</lastmod>`;
       await fs.writeFile('dist/sitemap.xml', sitemap.replace('<!-- LASTMOD -->', () => lastmod), 'utf8');
     }
 
-    // Copy data/schema.json to dist/data/schema.json
     try {
       await fs.copyFile('data/schema.json', 'dist/data/schema.json');
     } catch {}
 
-    // Generate RSS 2.0 feed
     const rssXml = buildRssFeed(items, data.generatedAt);
     await fs.writeFile('dist/feed.xml', rssXml, 'utf8');
 
-    // Generate active markdown digest
     const activeMd = buildActiveMarkdown(items, data.generatedAt);
     await fs.writeFile('dist/data/active.md', activeMd, 'utf8');
 
-    // Generate weekly markdown digest (Feature 4: newsletter & community digest)
     const weeklyMd = buildWeeklyDigest(items, data.generatedAt);
     await fs.writeFile('dist/data/weekly-digest.md', weeklyMd, 'utf8');
     await fs.writeFile('data/weekly-digest.md', weeklyMd, 'utf8');
 
-    // Generate flat CSV dataset
     const csvContent = buildCsv(data.items);
     await fs.writeFile('dist/data/lotteries.csv', csvContent, 'utf8');
   }

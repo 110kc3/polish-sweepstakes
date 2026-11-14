@@ -1,5 +1,3 @@
-// Reproducible Chromium gate: exercise production rendering on deterministic
-// fixtures, then smoke-check the actual dist/ that CI is about to publish.
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import http from 'node:http';
@@ -52,9 +50,6 @@ async function context(options = {}, freeze = true) {
   const result = await browser.newContext({ timezoneId: 'America/Los_Angeles', ...options });
   const page = await result.newPage();
   page.on('pageerror', error => failures.push(error.message));
-  // UTC and the browser's local calendar are yesterday at this instant, while
-  // Warsaw has crossed midnight. Keeping today and excluding yesterday proves
-  // deadline filtering uses the contest's calendar rather than either fallback.
   if (freeze) await page.clock.setFixedTime(warsawBoundaryInstant);
   return { context: result, page };
 }
@@ -93,7 +88,6 @@ try {
   browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
   const { page } = await context({ viewport: { width: 1280, height: 900 } });
   await page.goto(`${base}/fixture/`, { waitUntil: 'networkidle' });
-  // Source options are only present after the data load and hydration completes.
   await page.locator('#source option[value="konkursiada"]').waitFor({ state: 'attached' });
   const expected = activeItems(fixtureData).map(item => item.title).sort();
   assert.deepEqual((await cardTitles(page)).sort(), expected);
@@ -117,7 +111,6 @@ try {
   await page.selectOption('#tag', 'film');
   assert.deepEqual(await cardTitles(page), ['Konkurs filmowy Latarnia']);
   await page.selectOption('#tag', 'all');
-  // Bookmarking and personal tracker checks
   const firstSave = page.locator('article.card [data-save]').first();
   const firstTitle = (await cardTitles(page))[0];
   await firstSave.click();
@@ -127,14 +120,12 @@ try {
   assert.deepEqual((await cardTitles(page)).sort(), expected);
   checks++;
 
-  // Tracker JSON export test
   const [download] = await Promise.all([
     page.waitForEvent('download'),
     page.click('#exportTracker')
   ]);
   assert.match(download.suggestedFilename(), /^polish-sweepstakes-tracker-\d{4}-\d{2}-\d{2}\.json$/);
 
-  // Tracker JSON import test
   const importPayload = JSON.stringify({
     version: 1,
     saved: [fixtureData.items[1].id],
@@ -152,19 +143,16 @@ try {
   await page.selectOption('#userView', 'all');
   checks++;
 
-  // Calendar export action
   const calLink = page.locator('article.card .btn--cal').first();
   assert.ok(await calLink.isVisible());
   assert.match(await calLink.getAttribute('href'), /calendar\.google\.com\/calendar\/render/);
   checks++;
 
-  // Sorting
   await page.selectOption('#sort', 'title-asc');
   assert.deepEqual(await cardTitles(page), [...expected].sort((a, b) => a.localeCompare(b, 'pl')));
   await page.selectOption('#sort', 'deadline-asc');
   checks++;
 
-  // URL search parameter synchronization
   await page.fill('#q', 'Atlas');
   await page.waitForURL(url => url.searchParams.get('q') === 'Atlas');
   assert.ok(page.url().includes('q=Atlas'));
@@ -181,7 +169,6 @@ try {
   await page.selectOption('#source', 'all');
   checks++;
 
-  // Filter select dropdown styling: ensure dark background on select and options
   const selectBg = await page.locator('#source').evaluate(el => window.getComputedStyle(el).backgroundColor);
   assert.equal(selectBg, 'rgb(18, 26, 51)', 'Filter select must have dark card background');
   const optionBg = await page.locator('#source option').first().evaluate(el => window.getComputedStyle(el).backgroundColor);
@@ -219,7 +206,6 @@ try {
   assert.equal(await built.locator('article.card').count(), actualData.items.length);
   checks++;
 
-  // Feed, active digest, and schema verification in built site
   const feedRes = await fetch(`${base}/built/feed.xml`);
   assert.equal(feedRes.status, 200);
   const feedText = await feedRes.text();
@@ -245,7 +231,6 @@ try {
   assert.equal(manifestJson.name, 'Konkursy i loterie bez zakupu');
   checks++;
 
-  // Social platform direct badges check on built site
   const socialBadgeCount = await built.locator('.badge--social').count();
   assert.ok(socialBadgeCount > 0, 'Expected social badges on built site');
   const instagramBadges = await built.locator('.badge--instagram').count();

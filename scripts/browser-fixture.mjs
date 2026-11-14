@@ -1,5 +1,3 @@
-// Small local dataset for browser regression checks. Dates are relative to the
-// Warsaw day so a checked-in snapshot cannot silently age these cases away.
 export function browserFixture(today) {
   const yesterday = new Date(`${today}T12:00:00Z`);
   yesterday.setUTCDate(yesterday.getUTCDate() - 1);

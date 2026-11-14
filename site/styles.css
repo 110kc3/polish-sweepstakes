@@ -109,8 +109,7 @@ h1{margin:18px 0 6px;font-size:28px}
   cursor:pointer;
 }
 .tag:hover{filter:brightness(1.25)}
-/* One hue per tag kind, so a card's prizes, entry mechanics and topics stay
-   visually distinct without a legend. */
+
 .tag--nagroda{border-color:rgba(134,239,172,.35);color:var(--ok)}
 .tag--mechanika{border-color:rgba(125,211,252,.3);color:var(--accent)}
 .tag--temat{border-color:rgba(196,181,253,.35);color:#c4b5fd}

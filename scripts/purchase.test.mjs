@@ -65,15 +65,12 @@ async function wpFixture(t, posts) {
 }
 
 test('all WordPress feeds reject both Ofree purchase regressions and retain free-entry contests', async t => {
-  // Shapes observed in Ofree 10216 (bought drinks/receipt) and 10238 (10zl food/receipt),
-  // despite their placement in the source's free-entry category.
   const { dir, base } = await wpFixture(t, [
     wpPost(10216, 'Ceramika za kody spod nakrętek', '<p>Musisz kupić napoje i zachować paragon.</p><p>Do dnia 30.10.2999.</p>'),
     wpPost(10238, 'Loteria Gourmet', '<p>Kup karmę za co najmniej 10 zł i wyślij zgłoszenie z paragonem.</p><p>Do dnia 30.11.2999.</p>'),
     wpPost(9001, 'Konkurs fotograficzny bez zakupu', '<p>Wystarczy przesłać własne zdjęcie do dnia 31.12.2999.</p>'),
     wpPost(9002, 'Alternatywna metoda udziału', '<p>Kup produkt i zgłoś paragon. Alternatywnie zgłoś wiersz bez zakupu.</p><p>Do dnia 31.12.2999.</p>'),
     wpPost(9003, 'Czy można bez zakupu?', '<p>Nie, wymagany jest zakup produktu i zachowanie paragonu.</p><p>Do dnia 31.12.2999.</p>'),
-    // The source must still exclude purchase categories even when its API ignores the query.
     wpPost(9004, 'Inna kategoria', '<p>Napisz wiersz do dnia 31.12.2999.</p>', { categories: [89] }),
   ]);
   const dataPath = path.join(dir, 'lotteries.json');
@@ -87,7 +84,6 @@ test('all WordPress feeds reject both Ofree purchase regressions and retain free
   });
   const data = JSON.parse(await fs.readFile(dataPath, 'utf8'));
   assert.equal(data.version, 2);
-  // Cross-source title merging leaves two contests, each present on all three feeds.
   assert.deepEqual(data.items.map(i => i.sourceId).sort(), [9001, 9002]);
   assert.ok(data.items.every(i => i.alsoOn.length === 2));
   assert.deepEqual(data.sourceHealth.map(i => ({ source: i.source, status: i.status, items: i.items })),

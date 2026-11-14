@@ -19,11 +19,9 @@ const MIME = {
 function resolvePath(urlPath) {
   let p = decodeURIComponent(urlPath.split('?')[0]);
   if (p === '/') p = '/index.html';
-  // data/ lives outside site/; everything else is served from site/
   const inData = p.startsWith('/data/');
   const root = path.resolve(inData ? 'data' : 'site');
   const resolved = path.resolve(root, (inData ? p.slice('/data/'.length) : p.slice(1)));
-  // Containment check: reject anything that resolves outside the root dir.
   if (resolved !== root && !resolved.startsWith(root + path.sep)) return null;
   return resolved;
 }
