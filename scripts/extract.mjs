@@ -223,7 +223,6 @@ export function extractEntrySummary(text, mechanics = []) {
   return ENTRY_PLACEHOLDER;
 }
 
-// and list boundaries are preserved so numbered steps can be summarized.
 export function extractEntrySection(html, mechanics = []) {
   const root = parse(html || '');
   const heading = root.querySelectorAll('h2,h3,h4').find((h) => /jak\s+(?:wziąć\s+udział|dołączyć)/i.test(h.text));

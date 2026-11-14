@@ -62,7 +62,7 @@ const SOURCES = [
     type: 'wp',
     baseUrl: 'https://ofree.pl',
     wpPostsEndpoint: '/wp-json/wp/v2/posts',
-    categories: [3], // darmowe-konkursy
+    categories: [3],
     excludeCategories: [],
     maxPages: 5,
     noPurchaseNotes: 'Źródło znajduje się w kategorii bez zakupu / darmowe (może obejmować alternatywną metodę bezpłatną).',

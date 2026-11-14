@@ -118,7 +118,6 @@ function alsoOnNote(it) {
 function contestLink(it) {
   const rules = it.links?.regulamin;
   const rulesDead = (it.verification?.regulaminOk ?? it.verification?.organizerOk) === false;
-  // Preserve unknown preferred links, but never replace known-dead rules with
   const target = rules
     ? (rulesDead ? (it.verification?.organizerPageOk === true ? it.links?.organizer : null) : rules)
     : ((it.verification?.organizerPageOk ?? it.verification?.organizerOk) === false ? null : it.links?.organizer);
